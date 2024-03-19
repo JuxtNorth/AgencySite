@@ -6,7 +6,7 @@ import {
 	Testimonials,
 	CaseStudies,
 	Services,
-//	Benefits,
+	//	Benefits,
 	Workflow,
 	MembershipDetails,
 	Pricing,
