@@ -1,13 +1,18 @@
-import { FC } from 'react';
+import { FC, ReactNode } from 'react';
 
-interface WorkflowCardProps {}
+interface WorkflowCardProps {
+	children?: ReactNode;
+	serialNo?: string;
+	className?: string;
+}
 
 export const WorkflowCard: FC<WorkflowCardProps> = (props) => {
 	return (
-		<article className="w-96 rounded-2xl bg-green-300 p-8">
+		<article className={props.className || ''}>
+			{props.children}
 			<div className="flex items-center gap-3">
 				<div className="flex h-9 w-9 items-center justify-center rounded-full bg-slate-700 text-2xl font-extrabold text-white">
-					1
+					{props.serialNo}
 				</div>
 				<h1 className="text-3xl font-semibold text-slate-800">Lorem Ipsum</h1>
 			</div>
