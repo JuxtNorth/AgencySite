@@ -1,5 +1,9 @@
 import { FC } from 'react';
 
 export const WorksCarousel: FC = () => {
-	return <section className="h-screen bg-blue-200"></section>;
+	return (
+		<section className="grid h-screen place-items-center bg-blue-200 text-2xl font-semibold">
+			#TODO - Proof of work
+		</section>
+	);
 };
