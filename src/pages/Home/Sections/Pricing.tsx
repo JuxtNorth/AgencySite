@@ -1,5 +1,23 @@
 import { FC } from 'react';
-
+import { PricingCard } from '@/components';
+import { pricingPlans } from '@/constants';
 export const Pricing: FC = () => {
-	return <section className="h-screen bg-blue-200"></section>;
+	return (
+		<section className="p-8">
+			<div className="mx-auto w-72 pb-12 text-center md:w-[48rem]">
+				<h1 className="text-5xl font-medium md:text-7xl">
+					<span className="text-rose-500">Lorem</span> Today, Start{' '}
+					<span className="text-rose-500">Doler</span> Tomorrow
+				</h1>
+				<p className="mt-4 text-lg leading-tight md:text-2xl">
+					Design subscriptions for everyone. Pause or cancel anytime.
+				</p>
+			</div>
+			<section className="grid grid-rows-3 gap-4 md:grid-cols-3">
+				{pricingPlans.map((props) => (
+					<PricingCard {...props} />
+				))}
+			</section>
+		</section>
+	);
 };
