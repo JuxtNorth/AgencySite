@@ -1,5 +1,5 @@
-import { FC } from "react";
+import { FC } from 'react';
 
 export const Pricing: FC = () => {
-	return <section className="h-screen bg-blue-200"></section>
+	return <section className="h-screen bg-blue-200"></section>;
 };

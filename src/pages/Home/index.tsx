@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC } from 'react';
 import {
 	Hero,
 	Clients,
@@ -12,8 +12,8 @@ import {
 	Pricing,
 	Faq,
 	ScheduleCalendar
-} from "./Sections";
-import { Nav, FloatingNav, Footer } from "@/components";
+} from './Sections';
+import { Nav, FloatingNav, Footer } from '@/components';
 
 export const Home: FC = () => {
 	return (

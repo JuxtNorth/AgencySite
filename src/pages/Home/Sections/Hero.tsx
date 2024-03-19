@@ -1,22 +1,22 @@
-import { FC } from "react";
+import { FC } from 'react';
 
 export const Hero: FC = () => {
 	return (
-		<header className="bg-violet-200 py-16 bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] flex flex-col items-center gap-6">
-			<div className="w-72 md:w-[48rem] text-center">
-				<h1 className="text-5xl md:text-8xl font-medium">
+		<header className="flex flex-col items-center gap-6 bg-violet-200 bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] py-16 [background-size:16px_16px]">
+			<div className="w-72 text-center md:w-[48rem]">
+				<h1 className="text-5xl font-medium md:text-8xl">
 					A design agency with a twist.
 				</h1>
-				<p className="text-lg mt-4 md:text-2xl leading-tight">
+				<p className="mt-4 text-lg leading-tight md:text-2xl">
 					Design subscriptions for everyone. Pause or cancel anytime.
 				</p>
 			</div>
-			<button className="px-12 py-4 bg-slate-900 text-white rounded-xl text-lg">
+			<button className="rounded-xl bg-slate-900 px-12 py-4 text-lg text-white">
 				See plans
 			</button>
-			<div className="flex gap-2 items-center">
-				<span className="h-3 w-3 bg-green-500 block rounded-full">
-					<span className="h-3 w-3 bg-green-500 block rounded-full animate-ping"></span>
+			<div className="flex items-center gap-2">
+				<span className="block h-3 w-3 rounded-full bg-green-500">
+					<span className="block h-3 w-3 animate-ping rounded-full bg-green-500"></span>
 				</span>
 				<p className="text-md text-slate-800">Available now</p>
 			</div>

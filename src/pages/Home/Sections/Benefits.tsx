@@ -1,5 +1,5 @@
-import { FC } from "react";
+import { FC } from 'react';
 
 export const Benefits: FC = () => {
-	return <section className="h-screen bg-red-200"></section>
+	return <section className="h-screen bg-red-200"></section>;
 };
