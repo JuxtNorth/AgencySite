@@ -26,7 +26,7 @@ export const Home: FC = () => {
 			<Testimonials />
 			<CaseStudies />
 			<Services />
-			<Benefits />
+			{/*<Benefits />*/}
 			<Workflow />
 			<MembershipDetails />
 			<Pricing />

@@ -1,5 +1,10 @@
 import { FC } from 'react';
+import { WorkflowCard } from '@/components';
 
 export const Workflow: FC = () => {
-	return <section className="h-screen bg-orange-200"></section>;
+	return (
+		<section className="">
+			<WorkflowCard />
+		</section>
+	);
 };
