@@ -1,50 +1,49 @@
 import { FC } from 'react';
 import { HeartIcon } from '@/icons';
-
-const SocialLink: FC = () => {
-	return (
-		<li className="h-8 w-8 rounded-lg bg-gray-700 md:h-10 md:w-10 md:rounded-xl">
-			<a href=""></a>
-		</li>
-	);
-};
+import { LinkedInIcon, XIcon, InstagramIcon } from '@/icons';
+import { SocialLink } from '@/components/ui';
 
 export const Footer: FC = () => {
 	return (
 		<footer className="flex justify-between p-8 md:p-16">
-			<section className="flex flex-col items-start space-y-4 md:space-y-8">
-				<div className="space-y-4">
-					<h1 className="text-4xl font-normal md:w-56 md:w-72 md:text-5xl">
+			<section className="flex flex-col items-start space-y-2 md:space-y-8">
+				<div className=" md:space-y-4">
+					<h1 className="w-56 text-2xl font-normal md:w-72 md:text-4xl md:text-5xl">
 						Hi-Reach Media
 					</h1>
-					<p className="text-left font-light md:text-2xl">
+					<p className="text-md pb-4 text-left font-light md:text-2xl">
 						Email us at <a href="mailto:foo@bar.com">foo@bar.com</a>{' '}
 					</p>
 					<ul className="flex gap-2">
-						<SocialLink></SocialLink>
-						<SocialLink></SocialLink>
-						<SocialLink></SocialLink>
+						<SocialLink>
+							<LinkedInIcon />
+						</SocialLink>
+						<SocialLink>
+							<XIcon />
+						</SocialLink>
+						<SocialLink>
+							<InstagramIcon />
+						</SocialLink>
 					</ul>
 				</div>
-				<p className="md:text-xl">2020 &copy; All rights reserved</p>
+				<p className="pt-4 text-xs md:text-xl">
+					2020 &copy; All rights reserved
+				</p>
 			</section>
-			<section className="flex flex-col md:justify-between">
-				<ul className="mx-auto">
-					<li className="text-sm md:text-xl">
+
+			<section className="flex flex-col justify-between pt-1">
+				<ul className="mx-auto w-full space-y-1.5 text-sm md:text-xl">
+					<li>
 						<a href="#">Privacy Policy</a>
 					</li>
 					<li>
-						<a className="text-sm md:text-xl" href="#">
-							Terms and Conditions
-						</a>
+						<a href="#">Terms and Conditions</a>
 					</li>
 					<li>
-						<a className="text-sm md:text-xl" href="#">
-							Refund Policy
-						</a>
+						<a href="#">Refund Policy</a>
 					</li>
 				</ul>
-				<p className="mx-auto flex items-center gap-1 text-sm md:mx-0 md:text-xl">
+				<p className="mx-auto flex items-center gap-1 text-xs md:mx-0 md:text-xl">
 					Made with <HeartIcon className="text-rose-500" /> by Kiron Dey
 				</p>
 			</section>
