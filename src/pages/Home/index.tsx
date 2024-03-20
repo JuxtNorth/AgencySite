@@ -13,13 +13,13 @@ import {
 	Faq,
 	ScheduleCalendar
 } from './Sections';
-import { Nav, FloatingNav, Footer } from '@/components';
+import { Nav, /*FloatingNav, */ Footer } from '@/components';
 
 export const Home: FC = () => {
 	return (
 		<main>
 			<Nav />
-			<FloatingNav />
+			{/*<FloatingNav />*/}
 			<Hero />
 			<Clients />
 			<WorksCarousel />
