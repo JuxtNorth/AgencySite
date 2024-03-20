@@ -1,4 +1,4 @@
-import { FC, createElement, lazy, Suspense } from 'react';
+import { FC } from 'react';
 import { ServiceCard } from '@/components';
 import { services } from '@/constants';
 import {

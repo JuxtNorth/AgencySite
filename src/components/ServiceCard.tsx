@@ -1,5 +1,4 @@
-import { FC, Suspense, createElement, lazy, ReactNode } from 'react';
-import { MagicIcon } from '@/icons';
+import { FC, ReactNode } from 'react';
 
 export interface ServiceCardProps {
 	children: ReactNode; // Icon
