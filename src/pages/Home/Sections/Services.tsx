@@ -1,6 +1,14 @@
-import { FC } from 'react';
+import { FC, createElement, lazy, Suspense } from 'react';
 import { ServiceCard } from '@/components';
 import { services } from '@/constants';
+import {
+	RankingIcon,
+	ContentIcon,
+	TrendIcon,
+	SalesIcon,
+	VideoIcon,
+	LeadIcon
+} from '@/icons';
 
 export const Services: FC = () => {
 	return (
@@ -9,9 +17,24 @@ export const Services: FC = () => {
 				Our <span className="text-rose-500">Services</span>
 			</h1>
 			<section className="grid grid-rows-6 gap-4 md:grid-cols-3 md:grid-rows-2">
-				{services.map((props, i) => (
-					<ServiceCard {...props} key={i} />
-				))}
+				<ServiceCard {...services[0]}>
+					<RankingIcon />
+				</ServiceCard>
+				<ServiceCard {...services[1]}>
+					<ContentIcon />
+				</ServiceCard>
+				<ServiceCard {...services[2]}>
+					<TrendIcon />
+				</ServiceCard>
+				<ServiceCard {...services[3]}>
+					<SalesIcon />
+				</ServiceCard>
+				<ServiceCard {...services[4]}>
+					<VideoIcon />
+				</ServiceCard>
+				<ServiceCard {...services[5]}>
+					<LeadIcon />
+				</ServiceCard>
 			</section>
 		</section>
 	);
