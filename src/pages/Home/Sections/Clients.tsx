@@ -12,7 +12,7 @@ export const Clients: FC = () => {
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 				</p>
 			</div>
-			<section className="grid grid-rows-6 gap-8  md:grid-cols-3 md:grid-rows-2">
+			<section className="grid grid-cols-2 grid-rows-3 gap-8 md:grid-cols-3 md:grid-rows-2">
 				<Avatar info="1.2m" />
 				<Avatar info="1.8m" />
 				<Avatar info="1.3m" />
