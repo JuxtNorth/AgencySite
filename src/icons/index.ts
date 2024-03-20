@@ -10,3 +10,4 @@ export * from './Video';
 export * from './Ranking';
 export * from './Content';
 export * from './Lead';
+export * from './ChevronDown';

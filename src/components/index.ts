@@ -5,3 +5,4 @@ export * from './WorkflowCard';
 export * from './ServiceCard';
 export * from './Testimonial';
 export * from './PricingCard';
+export * from './FAQAccordion';
