@@ -16,29 +16,30 @@ export interface PricingCardProps {
 export const PricingCard: FC<PricingCardProps> = (props) => {
 	return (
 		<article
-			className={'w-full rounded-2xl p-8 text-slate-900 ' + props.className}
+			className={
+				'w-full rounded-2xl p-8 text-slate-900 shadow-lg ' + props.className
+			}
 		>
-			<section className="space-y-4 border-b border-slate-900 pb-8 text-center md:text-left">
+			<section className="space-y-4 border-b border-slate-700 text-center md:text-left">
 				<h2 className="text-2xl font-semibold">{props.name}</h2>
 				<h1 className="text-5xl font-bold md:text-4xl">
 					₹{props.pricing}/<span className="text-3xl font-semibold">month</span>
 				</h1>
-				<p className="pb-4 text-lg">{props.emphasis}</p>
-				<button className="w-full rounded-xl bg-slate-900 py-4 text-white">
-					{props.buttonLabel}
-				</button>
+				<div className="flex gap-2">
+					<MagicIcon />
+					<p className="-mt-1.5 mb-4 text-lg">Best for {props.bestFor}</p>
+				</div>
 			</section>
-			<section className="pt-4">
+			<section className="py-8">
 				<ul className="space-y-2 px-2">
 					{props.features.map((content, key) => (
 						<FeatureItem {...{ content, key }} />
 					))}
 				</ul>
-				<div className="mt-4 flex w-full items-center gap-4 rounded-xl bg-orange-50 px-4 py-2">
-					<MagicIcon />
-					{props.bestFor}
-				</div>
 			</section>
+			<button className="w-full rounded-xl bg-slate-900 py-4 text-white">
+				{props.buttonLabel}
+			</button>
 		</article>
 	);
 };

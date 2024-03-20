@@ -10,13 +10,13 @@ export const pricingPlans: PricingCardProps[] = [
 		features: [
 			'Lorem ipsum dolor sit amet.',
 			'Consectetur adipisicing elit.',
+			'Praesentium vitae recusandae suscipit.',
 			'Quidem odio quidem praesentium.',
 			'Lorem ipsum doler.',
-			'Quasi blanditiis corrupti nobis.',
-			'Praesentium vitae recusandae suscipit.'
+			'Quasi blanditiis corrupti nobis.'
 		],
 		bestFor: 'podcasters.',
-		className: 'bg-rose-100'
+		className: 'bg-white'
 	},
 	{
 		name: 'Super',
@@ -32,8 +32,8 @@ export const pricingPlans: PricingCardProps[] = [
 			'Consectetur adipisicing elit.',
 			'Lorem ipsum doler.'
 		],
-		bestFor: 'Short Video Creators',
-		className: 'bg-rose-200'
+		bestFor: 'Video Creators',
+		className: 'bg-white'
 	},
 	{
 		name: 'Ultra',
@@ -50,6 +50,6 @@ export const pricingPlans: PricingCardProps[] = [
 			'Quasi blanditiis corrupti nobis.'
 		],
 		bestFor: 'Brands',
-		className: 'bg-rose-300'
+		className: 'bg-white'
 	}
 ];

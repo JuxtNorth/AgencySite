@@ -6,16 +6,15 @@ export const Pricing: FC = () => {
 		<section className="p-8">
 			<div className="mx-auto w-72 pb-12 text-center md:w-[48rem]">
 				<h1 className="text-5xl font-medium md:text-7xl">
-					<span className="text-rose-500">Lorem</span> Today, Start{' '}
-					<span className="text-rose-500">Doler</span> Tomorrow
+					The <span className="font-bold text-rose-500">Pricing</span>
 				</h1>
 				<p className="mt-4 text-lg leading-tight md:text-2xl">
-					Design subscriptions for everyone. Pause or cancel anytime.
+					Lorem Ipsum Dolet Imet.
 				</p>
 			</div>
 			<section className="grid grid-rows-3 gap-4 md:grid-cols-3">
-				{pricingPlans.map((props) => (
-					<PricingCard {...props} />
+				{pricingPlans.map((props, i) => (
+					<PricingCard key={i} {...props} />
 				))}
 			</section>
 		</section>
