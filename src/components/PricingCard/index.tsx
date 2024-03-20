@@ -25,9 +25,11 @@ export const PricingCard: FC<PricingCardProps> = (props) => {
 				<h1 className="text-5xl font-bold md:text-4xl">
 					₹{props.pricing}/<span className="text-3xl font-semibold">month</span>
 				</h1>
-				<div className="flex gap-2">
-					<MagicIcon />
-					<p className="-mt-1.5 mb-4 text-lg">Best for {props.bestFor}</p>
+				<div className="flex justify-center md:justify-start">
+					<div className="flex gap-2">
+						<MagicIcon />
+						<p className="-mt-1.5 mb-4 text-lg">Best for {props.bestFor}</p>
+					</div>
 				</div>
 			</section>
 			<section className="py-8">
