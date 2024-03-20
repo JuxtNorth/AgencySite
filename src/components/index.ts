@@ -6,3 +6,4 @@ export * from './ServiceCard';
 export * from './Testimonial';
 export * from './PricingCard';
 export * from './FAQAccordion';
+export * from './Carousel';

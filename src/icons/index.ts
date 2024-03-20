@@ -12,6 +12,8 @@ export * from './Ranking';
 export * from './Content';
 export * from './Lead';
 export * from './ChevronDown';
+export * from './ChevronLeft';
+export * from './ChevronRight';
 export * from './LinkedIn';
 export * from './X';
 export * from './Instagram';
