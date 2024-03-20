@@ -1,6 +1,6 @@
-import { FC } from 'react';
-import { PricingCard } from '@/components';
-import { pricingPlans } from '@/constants';
+import { FC } from "react";
+import { PricingCard } from "@/components";
+import { pricingPlans } from "@/constants";
 export const Pricing: FC = () => {
 	return (
 		<section className="p-8">
@@ -12,7 +12,7 @@ export const Pricing: FC = () => {
 					Lorem Ipsum Dolet Imet.
 				</p>
 			</div>
-			<section className="grid grid-rows-3 gap-4 md:grid-cols-3">
+			<section className="grid grid-rows-3 gap-4 md:grid-rows-none md:grid-cols-3">
 				{pricingPlans.map((props, i) => (
 					<PricingCard key={i} {...props} />
 				))}
