@@ -1,7 +1,7 @@
 import { FC, ReactNode } from 'react';
 
 export interface ServiceCardProps {
-	children: ReactNode; // Icon
+	children?: ReactNode; // Icon
 	title: string;
 	description: string;
 }
