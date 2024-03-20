@@ -15,13 +15,13 @@ export const Footer: FC = () => {
 						Email us at <a href="mailto:foo@bar.com">foo@bar.com</a>{' '}
 					</p>
 					<ul className="flex gap-2">
-						<SocialLink>
+						<SocialLink to="#">
 							<LinkedInIcon />
 						</SocialLink>
-						<SocialLink>
+						<SocialLink to="#">
 							<XIcon />
 						</SocialLink>
-						<SocialLink>
+						<SocialLink to="#">
 							<InstagramIcon />
 						</SocialLink>
 					</ul>
