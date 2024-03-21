@@ -8,6 +8,7 @@ export * from './Trend';
 export * from './Sales';
 export * from './Video';
 export * from './Heart';
+export * from './Cross';
 export * from './Ranking';
 export * from './Content';
 export * from './Lead';
