@@ -20,6 +20,21 @@ export const Clients: FC = () => {
 				<Avatar info="200k" />
 				<Avatar info="1m" />
 			</section>
+			<section className="mt-16">
+				<h1 className="rounded-2xl bg-[#FAE2CF/] px-8 py-4 text-center text-4xl font-extrabold text-[#343247] md:text-6xl">
+					Our Impact
+				</h1>
+				<div className="mt-8 space-y-8 md:flex md:items-center md:gap-36 md:space-y-0">
+					<div className="mx-auto space-y-1 text-center">
+						<h2 className="text-5xl font-bold text-[#343247]">78,00,000+</h2>
+						<p>Organic Views</p>
+					</div>
+					<div className="mx-auto space-y-1 text-center">
+						<h2 className="text-5xl font-bold text-[#343247]">12,00,000+</h2>
+						<p>Gained Followers</p>
+					</div>
+				</div>
+			</section>
 		</section>
 	);
 };
