@@ -12,6 +12,10 @@
 	}
 }
 
+html {
+	@apply scroll-smooth;
+}
+
 h1,
 h2,
 h3,
