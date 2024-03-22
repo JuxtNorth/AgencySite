@@ -22,19 +22,18 @@ export const PricingCard: FC<PricingCardProps> = (props) => {
 			}
 		>
 			<div>
-				<section className="space-y-4 border-b border-slate-400 pb-4">
-					<h2 className="text-xl font-semibold">{props.name}</h2>
-					<h1 className="font-body text-4xl">
-						{props.pricing}{' '}
-						<span className="text-lg font-normal">per month</span>
-					</h1>
-					<p className="text-sm">{props.emphasis}</p>
-					<div className="flex justify-center md:justify-start">
-						<div className="flex items-center gap-2 rounded-full bg-green-200 px-4 py-2">
-							<MagicIcon className="shrink-0 md:text-sm" />
-							<p className="text-xs leading-tight">{props.bestFor}</p>
-						</div>
+				<section className="flex h-56 flex-col justify-between border-b border-slate-400 pb-4">
+					<div className="space-y-4">
+						<h2 className="text-xl font-semibold">{props.name}</h2>
+						<h1 className="font-body text-4xl">
+							{props.pricing}{' '}
+							<span className="text-lg font-normal">per month</span>
+						</h1>
+						<p className="text-sm">{props.emphasis}</p>
 					</div>
+					<button className="w-full rounded-xl bg-slate-900 py-4 text-white">
+						{props.buttonLabel}
+					</button>
 				</section>
 
 				<section className="py-8">
@@ -45,9 +44,10 @@ export const PricingCard: FC<PricingCardProps> = (props) => {
 					</ul>
 				</section>
 			</div>
-			<button className="w-full rounded-xl bg-slate-900 py-4 text-white">
-				{props.buttonLabel}
-			</button>
+			<div className="flex items-center gap-2 rounded-full bg-green-200 px-4 py-2">
+				<MagicIcon className="shrink-0 md:text-sm" />
+				<p className="text-xs leading-tight">{props.bestFor}</p>
+			</div>
 		</article>
 	);
 };
