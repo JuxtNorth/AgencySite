@@ -20,7 +20,7 @@ export const pricingPlans: PricingCardProps[] = [
 			'Pause or cancel anytime.'
 		],
 		bestFor: 'Built for LinkedIn maverick',
-		className: 'bg-white'
+		className: ''
 	},
 	{
 		name: 'Standard',
@@ -40,7 +40,7 @@ export const pricingPlans: PricingCardProps[] = [
 			'**Complete organic growth package**'
 		],
 		bestFor: 'Tailored for those dedicated towards personal branding',
-		className: 'bg-white'
+		className: ''
 	},
 	{
 		name: 'Premium',
@@ -57,6 +57,6 @@ export const pricingPlans: PricingCardProps[] = [
 			'Your All-in-One Solution to Grow and Monetize your brand'
 		],
 		bestFor: 'Best choice for business growth.',
-		className: 'bg-white'
+		className: ''
 	}
 ];
