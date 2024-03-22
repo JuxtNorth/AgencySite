@@ -3,24 +3,30 @@ import { type PerkCardProps } from '@/components';
 // Change in length of this array also requires updating the grid values of the associated react component.
 export const perks: Omit<PerkCardProps, 'children'>[] = [
 	{
-		title: 'Viral Growth',
+		title: 'World Class Team',
 		description:
-			'Start getting viral  on Instagram, tiktok and YouTube together'
+			'Best editors, designers, copywriters and strategist on your side'
 	},
 	{
-		title: 'Lead Generation',
-		description: 'Make money through organic leads on you doorstep'
+		title: 'Universal Grip',
+		description: 'Grow on instagram, tiktok, youtube all at once'
 	},
 	{
-		title: 'Growth Team',
-		description: 'Get your own dedicated growth team'
+		title: 'Flash like delivery',
+		description: 'Get your content out within 48hrs of shooting'
 	},
 	{
-		title: 'Quick Turnaround Time',
-		description: '2 days of max turnaround time'
+		title: '24/7 Support',
+		description: 'We work at your timings and at your steps'
 	},
 	{
-		title: 'Effective Ads',
-		description: 'Ads and funnels that fills your calender'
+		title: 'Targeted Leads',
+		description:
+			'Get leads through targeted content creation along with paid ads'
+	},
+	{
+		title: 'Monetized Audience',
+		description:
+			'Increase your revenue with our funnels and sales infrastructure'
 	}
 ];
