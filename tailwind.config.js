@@ -3,6 +3,10 @@ export default {
 	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
 	theme: {
 		extend: {
+			fontFamily: {
+				display: '"Raleway", sans-serif',
+				body: '"Varela Round", sans-serif'
+			},
 			keyframes: {
 				'accordion-down': {
 					from: { height: '0' },

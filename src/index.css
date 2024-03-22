@@ -11,3 +11,18 @@
 		scrollbar-width: none;
 	}
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@apply font-display;
+}
+
+p,
+a,
+span {
+	@apply font-body;
+}
