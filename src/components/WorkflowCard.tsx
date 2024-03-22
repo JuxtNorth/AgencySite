@@ -16,7 +16,7 @@ export const WorkflowCard: FC<WorkflowCardProps> = (props) => {
 				</div>
 				<h1 className="text-3xl font-semibold text-slate-800">Lorem Ipsum</h1>
 			</div>
-			<p className="ml-1 mt-4 w-[90%] text-lg leading-tight">
+			<p className="ml-1 mt-4 text-lg leading-tight">
 				Obtuse, rubber goose, green moose, guava juice. Giant snake, birthday
 				cake, large fries, chocolate shake!
 			</p>

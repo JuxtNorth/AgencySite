@@ -1,5 +1,6 @@
 import { FC } from 'react';
-import { WorkflowCard } from '@/components';
+import { WorkflowCard, HowItWorksCard } from '@/components';
+import { howItWorks } from '@/constants';
 import BoltIcon from '@/assets/scribbles/Artboard 11.svg';
 import LeafIcon from '@/assets/scribbles/Artboard 33.svg';
 import StarIcon from '@/assets/scribbles/Artboard 45.svg';
@@ -16,27 +17,50 @@ export const Workflow: FC = () => {
 				</p>
 			</div>
 			<section className="grid grid-rows-3 gap-4 md:grid-cols-3 md:grid-rows-none">
-				<WorkflowCard serialNo="1" className="rounded-2xl bg-rose-300 p-8">
+				<WorkflowCard
+					serialNo="1"
+					className="space-y-4 rounded-2xl bg-rose-300 p-8"
+				>
 					<img
 						src={BoltIcon}
 						alt="Lightning Bolt Icon"
-						className="w-full py-4"
+						className="mx-auto w-[80%] py-4"
 					/>
 				</WorkflowCard>
-				<WorkflowCard serialNo="2" className="rounded-2xl bg-green-300 p-8">
+				<WorkflowCard
+					serialNo="2"
+					className="space-y-4 rounded-2xl bg-green-300 p-8"
+				>
 					<img
 						src={LeafIcon}
 						alt="Lightning Bolt Icon"
-						className="w-full py-4"
+						className="mx-auto w-[80%] py-4"
 					/>
 				</WorkflowCard>
-				<WorkflowCard serialNo="3" className="rounded-2xl bg-purple-300 p-8">
+				<WorkflowCard
+					serialNo="3"
+					className="space-y-4 rounded-2xl bg-purple-300 p-8"
+				>
 					<img
 						src={StarIcon}
 						alt="Lightning Bolt Icon"
-						className="w-full py-4"
+						className="mx-auto w-[80%] py-4"
 					/>
 				</WorkflowCard>
+			</section>
+			<section className="mt-8 rounded-3xl bg-pink-100 p-8 md:space-y-24">
+				<h1 className="mb-8 text-center text-4xl font-bold text-slate-800">
+					How it works
+				</h1>
+				{howItWorks.map((props, i) => (
+					<HowItWorksCard {...props} key={i}>
+						<img
+							src={StarIcon}
+							alt="Lightning Bolt Icon"
+							className="mx-auto w-[80%] py-4 md:w-64 md:py-0"
+						/>
+					</HowItWorksCard>
+				))}
 			</section>
 		</section>
 	);
