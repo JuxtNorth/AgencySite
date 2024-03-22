@@ -23,6 +23,9 @@ h6 {
 
 p,
 a,
+li,
+b,
+i,
 span {
 	@apply font-body;
 }
