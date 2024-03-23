@@ -34,6 +34,8 @@ a,
 li,
 b,
 i,
+button,
+div,
 span {
 	@apply font-body text-font-primary;
 }

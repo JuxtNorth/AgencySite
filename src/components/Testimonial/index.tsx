@@ -1,32 +1,30 @@
 import { FC } from 'react';
-import { Attachment } from './Attachment';
-import { QuoteIcon } from '@/icons';
 
 interface TestimonialProps {}
 
 export const Testimonial: FC<TestimonialProps> = () => {
 	return (
-		<div className="flex gap-2">
-			<Attachment />
-			<article className="w-72 shrink-0 rounded-2xl bg-white p-4 shadow-md">
-				<QuoteIcon className="text-4xl" />
-				<div className="mt-4 h-28 pl-4">
-					<p className="text-sm font-semibold leading-tight text-slate-700">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
-						quasi, facilis iste ab voluptates repellat, modi temporibus
-						laboriosam mollitia asperiores ea!
-					</p>
-				</div>
-				<div className="flex items-center gap-2">
-					<div className="h-9 w-9 rounded-full bg-pink-100" />
-					<div>
-						<h1 className="text-md leading-tight">Kiron Dey</h1>
-						<p className="text-xs leading-tight text-slate-700">
-							Web Developer
-						</p>
+		<article className="w-96 shrink-0 space-y-4 rounded-2xl bg-white p-8 shadow-md md:w-[32rem]">
+			<header className="flex justify-between">
+				<div className="flex gap-2">
+					<div className="h-9 w-9 rounded-full bg-pink-400"></div>
+					<div className="leading-tight">
+						<h1 className="font-semibold">Astro Dog</h1>
+						<p className="text-xs">Professional Ipsum</p>
 					</div>
 				</div>
-			</article>
-		</div>
+				<p className="text-xs text-muted">1 / 5</p>
+			</header>
+			<section>
+				<p className="ml-2 text-sm leading-tight">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem fugiat
+					ipsa amet possimus dolore earum totam praesentium placeat, repellat!
+					Quis optio fugiat, adipisci obcaecati, recusandae quod cupiditate id
+					omnis reprehenderit.
+				</p>
+			</section>
+		</article>
 	);
 };
+
+export * from './ClientAvatar';

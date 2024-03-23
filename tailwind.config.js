@@ -10,7 +10,7 @@ export default {
 			colors: {
 				background: '#FCFCFF',
 				'font-primary': '#343247',
-				'font-muted': '#444444'
+				muted: '#666666'
 			},
 			keyframes: {
 				'accordion-down': {
