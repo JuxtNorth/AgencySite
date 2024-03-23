@@ -3,7 +3,7 @@ import { GlitterIcon } from '@/icons';
 
 export const Hero: FC = () => {
 	return (
-		<header className="flex flex-col items-center gap-6 bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] py-16 [background-size:16px_16px]">
+		<header className="flex flex-col items-center gap-6 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] py-16 [background-size:16px_16px]">
 			<div className="w-96 text-center md:w-[48rem]">
 				<h1 className="font-display text-5xl font-medium md:text-6xl">
 					Forging{' '}

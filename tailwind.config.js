@@ -7,6 +7,11 @@ export default {
 				display: '"Raleway", sans-serif',
 				body: '"Varela Round", sans-serif'
 			},
+			colors: {
+				background: '#FCFCFF',
+				'font-primary': '#343247',
+				'font-muted': '#444444'
+			},
 			keyframes: {
 				'accordion-down': {
 					from: { height: '0' },

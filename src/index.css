@@ -12,6 +12,10 @@
 	}
 }
 
+body {
+	@apply bg-background;
+}
+
 html {
 	@apply scroll-smooth;
 }
@@ -22,7 +26,7 @@ h3,
 h4,
 h5,
 h6 {
-	@apply font-display;
+	@apply font-display text-font-primary;
 }
 
 p,
@@ -31,5 +35,5 @@ li,
 b,
 i,
 span {
-	@apply font-body;
+	@apply font-body text-font-primary;
 }
