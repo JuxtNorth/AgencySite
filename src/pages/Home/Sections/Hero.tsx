@@ -18,10 +18,10 @@ export const Hero: FC = () => {
 					</div>
 					<div className="relative mx-auto w-fit">
 						<img
-							className="absolute top-[12%] scale-75 md:left-[3%] md:scale-[0.64]"
+							className="absolute -left-[3%] top-[12%] scale-75 md:left-[5%] md:scale-[0.64]"
 							src={Arrow}
 						/>
-						<p className="mx-auto mt-0.5 w-[72%] w-fit text-center text-sm md:w-[60%] md:text-lg">
+						<p className="mx-auto mt-0.5 w-[72%] text-center text-sm md:w-[64%] md:text-lg">
 							Subscription here makes your brands go viral there, grab your
 							seats.
 						</p>
