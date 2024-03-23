@@ -5,11 +5,13 @@ export const Hero: FC = () => {
 	return (
 		<header className="flex flex-col items-center gap-6 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] py-16 [background-size:16px_16px]">
 			<div className="w-96 text-center md:w-[48rem]">
-				<h1 className="font-display text-5xl font-medium md:text-6xl">
-					Forging{' '}
-					<span className="whitespace-nowrap rounded-2xl bg-purple-200 px-3 font-display mix-blend-multiply">
+				<h1 className="font-display text-4xl font-medium md:text-6xl">
+					Forging
+					<br />
+					<span className="whitespace-nowrap rounded-2xl bg-purple-200 px-3 font-display font-semibold mix-blend-multiply">
 						personal brand
 					</span>{' '}
+					<br />
 					for social dominance
 				</h1>
 				<p className="mt-4 text-lg leading-tight md:text-xl">
