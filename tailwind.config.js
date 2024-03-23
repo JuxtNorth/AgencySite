@@ -13,6 +13,11 @@ export default {
 				'font-primary': '#343247',
 				muted: '#666666'
 			},
+			spacing: {
+        'tight': '2px',
+        'snug': '4px',
+        'large': '9px',
+      },
 			keyframes: {
 				'accordion-down': {
 					from: { height: '0' },
