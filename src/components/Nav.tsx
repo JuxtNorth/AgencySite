@@ -46,7 +46,7 @@ const Menu: FC<{ onClose: () => void }> = (prop) => {
 };
 
 export const Nav: FC = () => {
-	const [open, setOpen] = useState(true);
+	const [open, setOpen] = useState(false);
 
 	return (
 		<>
