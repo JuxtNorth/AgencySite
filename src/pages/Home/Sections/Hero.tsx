@@ -8,7 +8,7 @@ export const Hero: FC = () => {
 		<header className="min-h-[calc(100vh-4rem)] p-4 pt-1 md:min-h-fit">
 			<div className="relative flex min-h-[calc(100vh-6rem)] flex-col justify-between rounded-3xl bg-[#FFFEDA] py-24 md:min-h-fit">
 				<img className="absolute right-[5%] top-[3%] h-32 w-32" src={Planet} />
-				<div className="my-auto">
+				<div className="my-auto mt-32 md:mt-auto">
 					<div className="text-center text-[2.5rem] font-semibold leading-tight md:text-5xl md:leading-snug">
 						<h1>Forging</h1>
 						<h1 className="mx-auto w-fit rounded-2xl bg-[#D7C6FF] px-4 font-display font-bold md:-mb-1">
