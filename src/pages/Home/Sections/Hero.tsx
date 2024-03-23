@@ -5,8 +5,8 @@ import Planet from '@/assets/scribbles/planet.svg';
 
 export const Hero: FC = () => {
 	return (
-		<header className="min-h-[calc(100vh-4rem)] p-4 pt-1 md:min-h-fit">
-			<div className="relative flex min-h-[calc(100vh-6rem)] flex-col justify-between rounded-3xl bg-[#FFFEDA] py-24 md:min-h-fit">
+		<header className="p-4 pt-1 md:min-h-fit md:p-12">
+			<div className="relative flex min-h-[calc(100vh-7rem)] flex-col justify-between rounded-3xl bg-[#FFFEDA] py-16 md:min-h-fit">
 				<img className="absolute right-[5%] top-[3%] h-32 w-32" src={Planet} />
 				<div className="my-auto mt-32 md:mt-auto">
 					<div className="text-center text-[2.5rem] font-semibold leading-tight md:text-5xl md:leading-snug">
