@@ -19,3 +19,4 @@ export * from './LinkedIn';
 export * from './X';
 export * from './Instagram';
 export * from './Glitter';
+export * from './Burger';
