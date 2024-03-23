@@ -18,3 +18,4 @@ export * from './ChevronRight';
 export * from './LinkedIn';
 export * from './X';
 export * from './Instagram';
+export * from './Glitter';
