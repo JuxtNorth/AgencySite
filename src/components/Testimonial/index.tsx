@@ -1,4 +1,5 @@
-import { FC } from 'react';
+import { FC } from "react";
+import { type ClientAvatarProps, ClientAvatar } from "./ClientAvatar.tsx";
 
 interface TestimonialProps {}
 
@@ -27,4 +28,7 @@ export const Testimonial: FC<TestimonialProps> = () => {
 	);
 };
 
-export * from './ClientAvatar';
+export {
+	type ClientAvatarProps,
+	ClientAvatar
+}

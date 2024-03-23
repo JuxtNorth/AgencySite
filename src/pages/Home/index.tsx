@@ -6,7 +6,6 @@ import {
 	Testimonials,
 	CaseStudies,
 	Services,
-	Benefits,
 	Workflow,
 	MembershipDetails,
 	Pricing,
@@ -26,7 +25,6 @@ export const Home: FC = () => {
 			<Testimonials />
 			<CaseStudies />
 			<Services />
-			<Benefits />
 			<Workflow />
 			<MembershipDetails />
 			<Pricing />

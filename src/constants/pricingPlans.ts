@@ -3,9 +3,9 @@ import { type PricingCardProps } from '@/components';
 // Emphasis property refers to deliverable
 export const pricingPlans: PricingCardProps[] = [
 	{
-		name: 'LinkedIn',
+		name: 'Linkedin Operator',
 		pricing: '$1499',
-		emphasis: '7x posts per week including posts, carousels and video edits',
+		emphasis: 'Your toolkit for wild-fire virality on linkedin',
 		buttonLabel: 'Join Waitlist',
 		buttonTo: '#',
 		features: [
@@ -23,9 +23,9 @@ export const pricingPlans: PricingCardProps[] = [
 		className: ''
 	},
 	{
-		name: 'Standard',
+		name: 'Virality Assistant',
 		pricing: '$2999',
-		emphasis: '25 **Short videos + text and visual content**',
+		emphasis: 'Complete organic growth package for instagram',
 		buttonLabel: 'Join Waitlist',
 		buttonTo: '#',
 		features: [
@@ -36,16 +36,15 @@ export const pricingPlans: PricingCardProps[] = [
 			'Weekly Check-ins and strategy session',
 			'Monthly growth report',
 			'Community building and Management',
-			'Pause or cancel anytime',
-			'**Complete organic growth package**'
+			'Pause or cancel anytime'
 		],
 		bestFor: 'Tailored for those dedicated towards personal branding',
 		className: ''
 	},
 	{
-		name: 'Premium',
+		name: 'Growth Partner',
 		pricing: '$3999',
-		emphasis: 'Unlimited requests + assistance',
+		emphasis: 'Your All-in-One Solution to Grow and Monetize your brand',
 		buttonLabel: 'Book an Appointment',
 		buttonTo: '#',
 		features: [

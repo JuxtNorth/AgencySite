@@ -1,42 +1,41 @@
 import { FC } from 'react';
-import { GlitterIcon } from '@/icons';
+import Arrow from '@/assets/scribbles/arrow.svg';
+import Star from '@/assets/scribbles/star.svg';
+import Planet from '@/assets/scribbles/planet.svg';
 
 export const Hero: FC = () => {
 	return (
-		<header className="flex h-screen flex-col  items-center gap-6 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] py-16 pt-36 [background-size:16px_16px] md:h-auto md:pt-16">
-			<div className="w-96 text-center md:w-[48rem]">
-				<h1 className="font-display text-4xl font-medium md:text-6xl">
-					Forging
-					<span className="mx-auto mb-1 mt-2 block w-fit whitespace-nowrap rounded-2xl bg-purple-200 px-3 py-1 font-display font-semibold mix-blend-multiply ">
-						personal brand
-					</span>{' '}
-					for social dominance
-				</h1>
-				<p className="mt-4 text-lg leading-tight md:text-xl">
-					Subscription here makes brands go viral there, grab your seats.
-				</p>
-			</div>
-			<div className="flex gap-4">
-				<a
-					href="#pricing"
-					className="block flex items-center justify-center gap-2 rounded-xl bg-rose-400 px-5 py-3 text-lg text-white"
-				>
-					<GlitterIcon />
-					See plans
-				</a>
-				<a
-					href="#"
-					className="block flex items-center justify-center gap-2 rounded-xl bg-rose-400 px-5 py-3 text-lg text-white"
-				>
-					<GlitterIcon />
-					Book a call
-				</a>
-			</div>
-			<div className="flex items-center gap-2">
-				<span className="block h-3 w-3 rounded-full bg-green-500">
-					<span className="block h-3 w-3 animate-ping rounded-full bg-green-500"></span>
-				</span>
-				<p className="text-md text-slate-800">Available now</p>
+		<header className="min-h-[calc(100vh-4rem)] p-4 pt-1 md:min-h-fit">
+			<div className="relative flex min-h-[calc(100vh-6rem)] flex-col justify-between rounded-3xl bg-[#FFFEDA] py-24">
+				<img className="absolute right-[5%] top-[3%]" src={Planet} />
+				<div className="my-auto">
+					<div className="text-center text-[2.5rem] font-semibold leading-tight">
+						<h1>Forging</h1>
+						<h1 className="mx-auto w-fit rounded-2xl bg-[#D7C6FF] px-4 font-display font-bold">
+							Personal Brand
+						</h1>
+						<h1>for Social Virality</h1>
+					</div>
+					<div className="relative">
+						<img className="absolute top-[42%] scale-75" src={Arrow} />
+						<p className="mx-auto mt-0.5 w-[72%] text-center text-sm">
+							Subscription here makes your brands go viral there, grab your
+							seats.
+						</p>
+					</div>
+				</div>
+				<div className="relative mx-auto mt-24 flex w-[60%] flex-col gap-4">
+					<button className="rounded-full bg-[#D7C6FF] px-7 py-5 font-display text-[1.3rem] font-semibold">
+						See Pricing
+					</button>
+					<button className="rounded-full bg-[#B8D7FF] px-7 py-5 font-display text-[1.3rem] font-semibold">
+						Book a Call
+					</button>
+					<img
+						className="absolute left-full top-[40%] scale-[0.64]"
+						src={Star}
+					/>
+				</div>
 			</div>
 		</header>
 	);

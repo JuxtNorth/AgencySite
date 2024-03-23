@@ -13,8 +13,8 @@ import {
 export const Services: FC = () => {
 	return (
 		<section className="p-8 text-center">
-			<h1 className="mb-12 text-5xl font-medium md:text-7xl">
-				Our <span className="text-rose-500">Services</span>
+			<h1 className="mb-12 text-5xl font-medium font-semibold md:text-6xl">
+				Our Services
 			</h1>
 			<section className="grid grid-rows-6 gap-4 md:grid-cols-3 md:grid-rows-2">
 				<ServiceCard {...services[0]}>

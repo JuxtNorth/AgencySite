@@ -4,7 +4,6 @@ export * from './WorksCarousel';
 export * from './Testimonials';
 export * from './CaseStudies';
 export * from './Services';
-export * from './Benefits';
 export * from './Workflow';
 export * from './MembershipDetails';
 export * from './Pricing';
