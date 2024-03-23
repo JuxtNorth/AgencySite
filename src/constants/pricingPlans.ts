@@ -52,7 +52,6 @@ export const pricingPlans: PricingCardProps[] = [
 			'Complete Lead generation and Sales infrastructure setup.',
 			'Revenue Growth with Ads, Funnels and Email marketing.',
 			'Automation Setup.',
-			'Lorem ipsum doler.',
 			'Your All-in-One Solution to Grow and Monetize your brand'
 		],
 		bestFor: 'Best choice for business growth.',

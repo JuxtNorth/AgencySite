@@ -36,7 +36,7 @@ export const FAQs: FAQAccordionProps[] = [
 	},
 	{
 		question: `Can you guarantee my brand's growth?`,
-		answer: `Every successful brand is unique, but they share one common trait - they regularly create excellent content. While we can't promise growth, we guarantee to create remarkable content for your brand. Although, we guarantee to beat your current results with a huge margin`
+		answer: `Every successful brand is unique, but they share one common trait - they regularly create excellent content. While we can't promise astronomical growth, we guarantee an increase in your engagement and leads within 90 days through our tailored content and sales setup. And if you don’t achieve the outcome, we will work with you for free until you achieve them.`
 	},
 	{
 		question: `Is there a refund policy if I choose to cancel?`,
