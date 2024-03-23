@@ -10,7 +10,7 @@ import Trend from '@/assets/scribbles/Trend.svg';
 
 const Menu: FC<{ onClose: () => void }> = (prop) => {
 	return (
-		<section className="fixed left-0 top-0 z-50 h-dvh h-screen w-screen bg-[#B7ECAD] md:hidden">
+		<section className="fixed left-0 top-0 z-50 h-dvh w-screen bg-[#B7ECAD] md:hidden">
 			<header>
 				<button
 					onClick={prop.onClose}
