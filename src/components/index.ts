@@ -5,7 +5,7 @@ export * from './WorkflowCard';
 export * from './ServiceCard';
 export * from './Testimonial';
 export * from './PricingCard';
-export * from './FAQAccordion';
+export * from './FAQ';
 export * from './Carousel';
 export * from './PerkCard';
 export * from './HowItWorksCard';

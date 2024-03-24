@@ -1,15 +1,38 @@
 import { FC } from 'react';
 import { FAQAccordion } from '@/components';
 import { FAQs } from '@/constants';
+import Discover from '@/assets/scribbles/Discover.svg';
 
 export const Faq: FC = () => {
 	return (
-		<section className="space-y-4 p-8">
-			<h1 className="mb-8 text-center text-4xl">Frequently Asked Questions</h1>
-
-			{FAQs.map((props, i) => (
-				<FAQAccordion {...props} key={i} />
-			))}
+		<section className="space-y-4 p-8 px-loose md:grid md:grid-cols-[69%_30%] md:gap-snug">
+			<section>
+				<div className="mb-loose md:mt-snug">
+					<h1 className="text-center text-4xl font-semibold md:text-left md:text-6xl">
+						Frequently Asked Questions
+					</h1>
+				</div>
+				<div className="space-y-snug">
+					{FAQs.map((props, i) => (
+						<FAQAccordion {...props} key={i} />
+					))}
+				</div>
+			</section>
+			<section>
+				<div className="rounded-2xl bg-yellow-100 p-6">
+					<h1 className="mb-2 text-4xl font-semibold">Have more questions?</h1>
+					<p className="text-lg leading-tight">
+						Schedule a 15 minute call to have all your questions addressed.
+					</p>
+					<img src={Discover} alt="Person looking through a telescope" />
+					<a
+						href="#"
+						className="block flex w-full items-center justify-center rounded-full bg-[#D7C6FF] py-snug font-display text-[1.3rem] font-semibold"
+					>
+						Book a Call
+					</a>
+				</div>
+			</section>
 		</section>
 	);
 };
