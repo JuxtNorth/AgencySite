@@ -8,13 +8,13 @@ export const Testimonials: FC = () => {
 
 	return (
 		<section className="relative space-y-4 overflow-hidden">
-			<h1 className="my-8 text-center text-4xl font-bold text-gray-800 md:my-12 md:text-7xl">
+			<h1 className="my-8 text-center text-5xl font-bold md:my-12">
 				Client Reviews
 			</h1>
 			<section className="grid place-items-center">
 				<Testimonial />
 			</section>
-			<div className="flex items-center justify-center gap-2 py-4">
+			<div className="flex items-center justify-center gap-2 py-snug">
 				{clients.map((_, i) => (
 					<ClientAvatar
 						key={i}

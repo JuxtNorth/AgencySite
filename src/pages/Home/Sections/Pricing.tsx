@@ -12,7 +12,7 @@ export const Pricing: FC = () => {
 					Lorem Ipsum Dolet Imet.
 				</p>
 			</div>
-			<section className="grid grid-rows-3 gap-4 md:grid-cols-3 md:grid-rows-none">
+			<section className="grid grid-rows-3 gap-snug md:grid-cols-3 md:grid-rows-none">
 				{pricingPlans.map((props, i) => (
 					<PricingCard key={i} {...props} />
 				))}

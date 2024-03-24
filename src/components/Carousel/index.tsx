@@ -35,15 +35,15 @@ export const Carousel = () => {
 					<Slide>12</Slide>
 				</div>
 			</div>
-			<div className="ml-4 flex gap-4">
+			<div className="ml-4 flex gap-snug">
 				<button
-					className="rounded-full bg-lime-200 p-4 md:p-6 md:text-2xl"
+					className="rounded-full bg-lime-200 p-snug md:p-6 md:text-2xl"
 					onClick={scrollPrev}
 				>
 					<ChevronLeftIcon />
 				</button>
 				<button
-					className="rounded-full bg-lime-200 p-4 md:p-6 md:text-2xl"
+					className="rounded-full bg-lime-200 p-snug md:p-6 md:text-2xl"
 					onClick={scrollNext}
 				>
 					<ChevronRightIcon />

@@ -5,20 +5,20 @@ import Planet from '@/assets/scribbles/planet.svg';
 
 export const Hero: FC = () => {
 	return (
-		<header className="p-4 pt-1 md:min-h-fit md:p-9 md:pt-0">
+		<header className="p-snug pt-tight md:min-h-fit md:p-loose md:pt-0">
 			<div className="relative flex min-h-[calc(100vh-7rem)] flex-col justify-between rounded-3xl bg-[#FFFEDA] py-16 md:min-h-fit">
 				<img className="absolute right-[5%] top-[3%] h-32 w-32" src={Planet} />
 				<div className="my-auto mt-28 md:mt-auto">
 					<div className="text-center text-[2.5rem] font-semibold leading-tight md:text-5xl md:leading-snug">
 						<h1>Forging</h1>
-						<h1 className="mx-auto w-fit rounded-2xl bg-[#D7C6FF] px-4 font-display font-bold md:-mb-1">
+						<h1 className="mx-auto w-fit rounded-2xl bg-[#D7C6FF] px-snug font-display font-bold md:-mb-1">
 							Personal Brand
 						</h1>
 						<h1>for Social Virality</h1>
 					</div>
 					<div className="relative mx-auto w-fit">
 						<img
-							className="absolute -left-[3%] top-[12%] scale-75 md:left-[5%] md:scale-[0.64]"
+							className="absolute -left-[3%] top-[12%] scale-[0.8] md:left-[5%] md:scale-[0.64]"
 							src={Arrow}
 						/>
 						<p className="mx-auto mt-0.5 w-[72%] text-center text-sm md:w-[64%] md:text-lg">

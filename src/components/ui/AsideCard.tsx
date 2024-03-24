@@ -8,7 +8,7 @@ export interface AsideCardProps {
 
 export const AsideCard: FC<AsideCardProps> = (props) => {
 	return (
-		<article className="flex gap-4">
+		<article className="flex gap-snug">
 			<div className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-lime-200">
 				{props.children}
 			</div>

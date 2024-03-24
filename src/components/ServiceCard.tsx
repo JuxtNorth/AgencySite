@@ -29,7 +29,7 @@ const jumpToPricingSection = () => {
 
 export const ServiceCard: FC<ServiceCardProps> = (props) => {
 	return (
-		<article className="flex gap-4 rounded-2xl px-4 py-6 text-left">
+		<article className="flex gap-snug rounded-2xl px-snug py-6 text-left">
 			<div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-slate-800 text-xl text-white">
 				{props.children}
 			</div>
@@ -59,7 +59,7 @@ export const ServiceCard: FC<ServiceCardProps> = (props) => {
 							<DialogClose asChild>
 								<button
 									onClick={jumpToPricingSection}
-									className="rounded-2xl bg-black px-8 py-4 text-center text-lg text-white"
+									className="rounded-2xl bg-black px-8 py-snug text-center text-lg text-white"
 								>
 									See Pricing
 								</button>

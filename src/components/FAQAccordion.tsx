@@ -15,7 +15,7 @@ export const FAQAccordion: FC<FAQAccordionProps> = (props) => {
 	return (
 		<Accordion
 			type="single"
-			className="rounded-2xl border px-8 py-4"
+			className="rounded-2xl border px-8 py-snug"
 			collapsible
 		>
 			<AccordionItem className="border-none" value="item-1">

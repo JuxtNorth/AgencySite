@@ -11,7 +11,7 @@ export const Footer: FC = () => {
 					<h1 className="w-44 text-xl font-normal md:w-72 md:text-4xl md:text-5xl">
 						Hi-Reach Media
 					</h1>
-					<p className="pb-4 text-left text-sm font-light md:text-2xl">
+					<p className="pb-snug text-left text-sm font-light md:text-2xl">
 						Email us at <a href="mailto:foo@bar.com">foo@bar.com</a>{' '}
 					</p>
 					<ul className="flex gap-2">
@@ -19,14 +19,14 @@ export const Footer: FC = () => {
 							<LinkedInIcon className="text-background" />
 						</SocialLink>
 						<SocialLink to="#">
-							<XIcon className="text-background"/>
+							<XIcon className="text-background" />
 						</SocialLink>
 						<SocialLink to="#">
-							<InstagramIcon className="text-background"/>
+							<InstagramIcon className="text-background" />
 						</SocialLink>
 					</ul>
 				</div>
-				<p className="pt-4 text-xs md:text-xl">
+				<p className="pt-snug text-xs md:text-xl">
 					2020 &copy; All rights reserved
 				</p>
 			</section>

@@ -22,7 +22,7 @@ export const PricingCard: FC<PricingCardProps> = (props) => {
 			}
 		>
 			<div>
-				<section className="flex h-56 flex-col justify-between border-b border-slate-400 pb-4">
+				<section className="flex h-56 flex-col justify-between border-b border-slate-400 pb-snug">
 					<div className="space-y-4">
 						<h2 className="text-xl font-semibold">{props.name}</h2>
 						<h1 className="font-body text-4xl">
@@ -31,7 +31,7 @@ export const PricingCard: FC<PricingCardProps> = (props) => {
 						</h1>
 						<p className="text-sm">{props.emphasis}</p>
 					</div>
-					<button className="w-full rounded-xl bg-slate-900 py-4 text-white">
+					<button className="w-full rounded-xl bg-slate-900 py-snug text-white">
 						{props.buttonLabel}
 					</button>
 				</section>
@@ -44,7 +44,7 @@ export const PricingCard: FC<PricingCardProps> = (props) => {
 					</ul>
 				</section>
 			</div>
-			<div className="flex items-center gap-2 rounded-full bg-green-200 px-4 py-2">
+			<div className="flex items-center gap-2 rounded-full bg-green-200 px-snug py-2">
 				<MagicIcon className="shrink-0 md:text-sm" />
 				<p className="text-xs leading-tight">{props.bestFor}</p>
 			</div>

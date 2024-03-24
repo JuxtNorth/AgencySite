@@ -14,10 +14,10 @@ export default {
 				muted: '#666666'
 			},
 			spacing: {
-        'tight': '2px',
-        'snug': '4px',
-        'large': '9px',
-      },
+				tight: '0.25rem',
+				snug: '1rem',
+				loose: '2.25rem'
+			},
 			keyframes: {
 				'accordion-down': {
 					from: { height: '0' },

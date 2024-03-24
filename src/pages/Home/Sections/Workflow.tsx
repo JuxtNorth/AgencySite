@@ -16,7 +16,7 @@ export const Workflow: FC = () => {
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 				</p>
 			</div>
-			<section className="grid grid-rows-3 gap-4 md:grid-cols-3 md:grid-rows-none">
+			<section className="grid grid-rows-3 gap-snug md:grid-cols-3 md:grid-rows-none">
 				<WorkflowCard
 					serialNo="1"
 					className="space-y-4 rounded-2xl bg-rose-300 p-8"
@@ -24,7 +24,7 @@ export const Workflow: FC = () => {
 					<img
 						src={BoltIcon}
 						alt="Lightning Bolt Icon"
-						className="mx-auto w-[80%] py-4"
+						className="mx-auto w-[80%] py-snug"
 					/>
 				</WorkflowCard>
 				<WorkflowCard
@@ -34,7 +34,7 @@ export const Workflow: FC = () => {
 					<img
 						src={LeafIcon}
 						alt="Lightning Bolt Icon"
-						className="mx-auto w-[80%] py-4"
+						className="mx-auto w-[80%] py-snug"
 					/>
 				</WorkflowCard>
 				<WorkflowCard
@@ -44,7 +44,7 @@ export const Workflow: FC = () => {
 					<img
 						src={StarIcon}
 						alt="Lightning Bolt Icon"
-						className="mx-auto w-[80%] py-4"
+						className="mx-auto w-[80%] py-snug"
 					/>
 				</WorkflowCard>
 			</section>
@@ -57,7 +57,7 @@ export const Workflow: FC = () => {
 						<img
 							src={StarIcon}
 							alt="Lightning Bolt Icon"
-							className="mx-auto w-[80%] py-4 md:w-64 md:py-0"
+							className="mx-auto w-[80%] py-snug md:w-64 md:py-0"
 						/>
 					</HowItWorksCard>
 				))}
