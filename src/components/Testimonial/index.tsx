@@ -5,13 +5,13 @@ export const TestimonialCard: FC = () => {
 	const [flipped, setFlipped] = useState(false);
 
 	return (
-		<div className="flex h-[32rem] lg:h-[30rem] min-w-0 flex-[0_0_100%] p-loose md:px-24 lg:px-60">
+		<div className="flex min-h-[32rem] lg:min-h-[30rem] min-w-0 flex-[0_0_100%] p-loose md:px-24 lg:px-60">
 			<div
-				className="relative h-full w-full rounded-2xl bg-[#B8D7FF] transition-[rotate] duration-300 [perspective:1000px] [transform-style:preserve-3d] [&[data-flipped='true']]:[rotate:y_180deg]"
+				className="relative h-full w-full rounded-3xl bg-[#B8D7FF] transition-[rotate] duration-300 [perspective:1000px] [transform-style:preserve-3d] [&[data-flipped='true']]:[rotate:y_180deg]"
 				data-flipped={flipped}
 			>
 				<article className="absolute flex h-full w-full flex-col p-6 [backface-visibility:hidden] md:flex-row md:gap-loose md:p-loose">
-					<div className="hidden aspect-[9/16] h-full rounded-2xl bg-pink-100 md:block "></div>
+					<div className="hidden aspect-[11.5/16] h-full rounded-3xl bg-pink-100 md:block "></div>
 					<div className="flex h-full flex-col justify-between">
 						<header className="flex w-full justify-between">
 							<div className="flex items-center gap-2">
@@ -22,7 +22,7 @@ export const TestimonialCard: FC = () => {
 								</div>
 							</div>
 						</header>
-						<p className="pl-tight text-left font-display text-[1.36rem] font-semibold md:text-2xl lg:text-[1.7rem]">
+						<p className="pl-tight text-left font-display text-[1.36rem] font-semibold md:text-2xl lg:text-[1.7rem] xl:text-3xl">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
 							molestiae excepturi earum tenetur porro iste hic saepe amet
 							voluptatibus facilis, id minima optio!
