@@ -6,14 +6,14 @@ import { cva } from 'class-variance-authority';
 
 interface CarouselProps {
 	children?: ReactNode;
-	buttonXPosition?: 'edge' | 'auto';
+	buttonXPosition?: 'edge' | 'center';
 }
 
 const buttonVariants = cva('flex gap-snug', {
 	variants: {
 		buttons: {
 			edge: 'ml-snug',
-			auto: 'ml-loose md:ml-24 lg:ml-64'
+			center: 'justify-center'
 		}
 	}
 });
