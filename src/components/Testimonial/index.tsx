@@ -44,7 +44,7 @@ export const TestimonialCard: FC = () => {
 					</footer>
 				</article>
 				<article className="absolute flex h-full w-full items-center justify-center [backface-visibility:hidden] [rotate:y_180deg]">
-					<button onClick={() => setFlipped(!flipped)}>Flip Black</button>
+					<button onClick={() => setFlipped(!flipped)}>Flip Back</button>
 				</article>
 			</div>
 		</div>
