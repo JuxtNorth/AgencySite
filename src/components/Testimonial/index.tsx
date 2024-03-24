@@ -1,5 +1,5 @@
-import { FC, useState } from 'react';
-import Trend from '@/assets/scribbles/Trend.svg';
+import { FC, useState } from "react";
+import Trend from "@/assets/scribbles/Trend.svg";
 
 export const TestimonialCard: FC = () => {
 	const [flipped, setFlipped] = useState(false);
