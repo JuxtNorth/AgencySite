@@ -2,16 +2,29 @@ import { FC, useCallback, type ReactNode } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@/icons';
 import { Slide } from './Slide';
+import { cva } from 'class-variance-authority';
 
 interface CarouselProps {
 	children?: ReactNode;
+	buttonXPosition?: 'edge' | 'auto';
 }
+
+const buttonVariants = cva('flex gap-snug', {
+	variants: {
+		buttons: {
+			edge: 'ml-snug',
+			auto: 'md:ml-24 lg:ml-52'
+		}
+	}
+});
 
 export const Carousel: FC<CarouselProps> = (props) => {
 	const [emblaRef, emblaApi] = useEmblaCarousel({
 		loop: true,
 		skipSnaps: true
 	});
+
+	const { buttonXPosition = 'edge' } = props;
 
 	const scrollPrev = useCallback(() => {
 		if (emblaApi) emblaApi.scrollPrev();
@@ -43,7 +56,7 @@ export const Carousel: FC<CarouselProps> = (props) => {
 					)}
 				</div>
 			</div>
-			<div className="ml-4 flex gap-snug">
+			<div className={buttonVariants({ buttons: buttonXPosition })}>
 				<button
 					className="rounded-full bg-lime-200 p-snug md:p-6 md:text-2xl"
 					onClick={scrollPrev}
