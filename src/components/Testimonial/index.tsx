@@ -5,7 +5,7 @@ export const TestimonialCard: FC = () => {
 	const [flipped, setFlipped] = useState(false);
 
 	return (
-		<div className="flex h-[32rem] lg:h-[28rem] min-w-0 flex-[0_0_100%] p-loose md:px-24 lg:px-64">
+		<div className="flex h-[32rem] lg:h-[30rem] min-w-0 flex-[0_0_100%] p-loose md:px-24 lg:px-60">
 			<div
 				className="relative h-full w-full rounded-2xl bg-[#B8D7FF] transition-[rotate] duration-300 [perspective:1000px] [transform-style:preserve-3d] [&[data-flipped='true']]:[rotate:y_180deg]"
 				data-flipped={flipped}
