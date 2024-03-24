@@ -31,11 +31,10 @@ export const PricingCard: FC<PricingCardProps> = (props) => {
 						</h1>
 						<p className="text-sm">{props.emphasis}</p>
 					</div>
-					<button className="w-full rounded-xl bg-slate-900 py-snug text-white">
+					<button className="w-full rounded-xl  bg-slate-800 py-snug text-white">
 						{props.buttonLabel}
 					</button>
 				</section>
-
 				<section className="py-8">
 					<ul className="space-y-2 px-2">
 						{props.features.map((content, key) => (

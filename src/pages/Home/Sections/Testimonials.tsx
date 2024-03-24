@@ -1,28 +1,16 @@
-import { FC, useState } from 'react';
-import { Testimonial, ClientAvatar } from '@/components';
-
-const clients = new Array(5).fill(0);
+import { FC } from 'react';
+import { Carousel, TestimonialCard } from '@/components';
 
 export const Testimonials: FC = () => {
-	const [expandedIndex, setExpandedIndex] = useState(2);
-
 	return (
-		<section className="relative mt-loose space-y-4 overflow-hidden">
-			<h1 className="my-8 text-center text-5xl font-semibold md:my-12">
-				Client Reviews
-			</h1>
-			<section className="grid place-items-center">
-				<Testimonial />
-			</section>
-			<div className="flex items-center justify-center gap-2 py-snug">
-				{clients.map((_, i) => (
-					<ClientAvatar
-						key={i}
-						isExpanded={expandedIndex === i}
-						onClick={() => setExpandedIndex(i)}
-					/>
-				))}
-			</div>
+		<section className="relative mt-loose h-[86vh] space-y-4 overflow-hidden overflow-visible text-center">
+			<h1 className="text-5xl font-semibold">Case Reviews</h1>
+			<Carousel>
+				<TestimonialCard />
+				<TestimonialCard />
+				<TestimonialCard />
+				<TestimonialCard />
+			</Carousel>
 		</section>
 	);
 };

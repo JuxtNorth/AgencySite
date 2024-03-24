@@ -1,31 +1,52 @@
-import { FC } from 'react';
-import { type ClientAvatarProps, ClientAvatar } from './ClientAvatar.tsx';
+import { FC, useState } from 'react';
+import Trend from '@/assets/scribbles/Trend.svg';
 
-interface TestimonialProps {}
+export const TestimonialCard: FC = () => {
+	const [flipped, setFlipped] = useState(false);
 
-export const Testimonial: FC<TestimonialProps> = () => {
 	return (
-		<article className="w-96 shrink-0 space-y-4 rounded-2xl bg-white p-8 shadow-md md:w-[32rem]">
-			<header className="flex justify-between">
-				<div className="flex gap-2">
-					<div className="h-9 w-9 rounded-full bg-pink-400"></div>
-					<div className="leading-tight">
-						<h1 className="font-semibold">Astro Dog</h1>
-						<p className="text-xs">Professional Ipsum</p>
-					</div>
-				</div>
-				<p className="text-xs text-muted">1 / 5</p>
-			</header>
-			<section>
-				<p className="ml-2 text-sm leading-tight">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem fugiat
-					ipsa amet possimus dolore earum totam praesentium placeat, repellat!
-					Quis optio fugiat, adipisci obcaecati, recusandae quod cupiditate id
-					omnis reprehenderit.
-				</p>
-			</section>
-		</article>
+		<div className="flex h-[67vh] min-w-0 flex-[0_0_100%] p-loose">
+			<div
+				className="relative h-full w-full rounded-2xl bg-[#B8D7FF] transition-[rotate] duration-300 [perspective:1000px] [transform-style:preserve-3d] [&[data-flipped='true']]:[rotate:y_180deg]"
+				data-flipped={flipped}
+			>
+				<article className="absolute flex h-full w-full flex-col justify-between p-6 [backface-visibility:hidden]">
+					<header className="flex w-full w-full justify-between">
+						<div className="flex items-center gap-2">
+							<div className="h-12 w-12 rounded-full bg-green-200" />
+							<div className="flex flex-col text-left leading-tight">
+								<h1 className="text-xl font-bold">Lorem Ipsum</h1>
+								<p className="text-sm">Lorem Ipsum</p>
+							</div>
+						</div>
+						<button className="h-fit rounded-full bg-[#FFFEDA] px-snug pb-1.5 pt-2 text-sm font-bold leading-tight">
+							1.2M+
+						</button>
+					</header>
+					<p className="pl-tight text-left font-display text-[1.36rem] font-semibold">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
+						molestiae excepturi earum tenetur porro iste hic saepe amet
+						voluptatibus facilis, id minima optio!
+					</p>
+					<footer className="flex items-center justify-between">
+						<div className="flex items-center gap-2">
+							<div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#FFFEDA]">
+								<img className="h-5 w-5" src={Trend} alt="Trend Icon" />
+							</div>
+							<p>Gained 400k followers</p>
+						</div>
+						<button
+							className="rounded-full bg-[#FFFEDA] px-snug py-2 font-display text-sm font-semibold"
+							onClick={() => setFlipped(!flipped)}
+						>
+							See Work
+						</button>
+					</footer>
+				</article>
+				<article className="absolute flex h-full w-full items-center justify-center [backface-visibility:hidden] [rotate:y_180deg]">
+					<button onClick={() => setFlipped(!flipped)}>Flip Black</button>
+				</article>
+			</div>
+		</div>
 	);
 };
-
-export { type ClientAvatarProps, ClientAvatar };
