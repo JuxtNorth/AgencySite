@@ -3,7 +3,7 @@ import { FC } from 'react';
 export const CaseStudies: FC = () => {
 	return (
 		<section className="m-4 rounded-2xl p-8 pt-16 text-center">
-			<h1 className="text-4xl font-extrabold md:text-5xl">Case Study</h1>
+			<h1 className="text-5xl font-semibold">Case Study</h1>
 			<h2 className="text-md md:text-lg">on client results</h2>
 			<div className="mx-auto mt-12 w-[90%] space-y-2 md:w-[48%] md:space-y-4">
 				<div className="flex h-12 items-center gap-5 md:gap-8">

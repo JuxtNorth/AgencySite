@@ -6,7 +6,7 @@ export const WorksCarousel: FC = () => {
 		<section className="mt-12 text-center">
 			<div>
 				<h1 className="text-5xl font-semibold">Our Work</h1>
-				<p className="text-lg">Making your vision a reality</p>
+				<p className="text-md">Making your vision a reality</p>
 			</div>
 			<Carousel />
 		</section>

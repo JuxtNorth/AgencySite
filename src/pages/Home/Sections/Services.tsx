@@ -14,7 +14,7 @@ export const Services: FC = () => {
 	return (
 		<section className="p-snug text-center md:p-loose">
 			<div className="rounded-3xl bg-purple-100 p-snug md:p-loose">
-				<h1 className="mb-12 mt-loose text-4xl font-medium font-semibold md:text-5xl">
+				<h1 className="mb-12 mt-snug text-4xl font-medium font-semibold md:text-5xl">
 					Our Services
 				</h1>
 				<section className="grid grid-rows-6 gap-snug md:grid-cols-3 md:grid-rows-2">

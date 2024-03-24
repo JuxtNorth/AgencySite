@@ -7,8 +7,8 @@ export const Testimonials: FC = () => {
 	const [expandedIndex, setExpandedIndex] = useState(2);
 
 	return (
-		<section className="relative space-y-4 overflow-hidden">
-			<h1 className="my-8 text-center text-5xl font-bold md:my-12">
+		<section className="relative mt-loose space-y-4 overflow-hidden">
+			<h1 className="my-8 text-center text-5xl font-semibold md:my-12">
 				Client Reviews
 			</h1>
 			<section className="grid place-items-center">
