@@ -5,13 +5,11 @@ import Discover from '@/assets/scribbles/Discover.svg';
 
 export const Faq: FC = () => {
 	return (
-		<section className="space-y-4 md:grid md:grid-cols-[70%_30%] md:p-loose">
+		<section className="space-y-4 md:p-loose md:grid md:grid-cols-[70%_30%]">
 			<section className="px-loose md:px-0 md:pr-loose">
 				<div className="mb-loose md:mt-snug">
 					<h1 className="text-center text-4xl font-semibold md:text-left md:text-6xl">
-						Frequently Asked
-						<br />
-						Questions
+						Frequently Asked<br />Questions
 					</h1>
 				</div>
 				<div className="space-y-tight">
@@ -26,11 +24,7 @@ export const Faq: FC = () => {
 					<p className="text-lg leading-tight">
 						Schedule a 15 minute call to have all your questions addressed.
 					</p>
-					<img
-						className="mx-auto"
-						src={Discover}
-						alt="Person looking through a telescope"
-					/>
+					<img className="mx-auto" src={Discover} alt="Person looking through a telescope" />
 					<a
 						href="#"
 						className="block flex w-full items-center justify-center rounded-full bg-[#D7C6FF] py-snug font-display text-[1.3rem] font-semibold"
