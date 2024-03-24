@@ -13,7 +13,7 @@ const buttonVariants = cva('flex gap-snug', {
 	variants: {
 		buttons: {
 			edge: 'ml-snug',
-			auto: 'md:ml-24 lg:ml-52'
+			auto: 'ml-loose md:ml-24 lg:ml-52'
 		}
 	}
 });
