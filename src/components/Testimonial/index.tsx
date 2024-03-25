@@ -22,7 +22,7 @@ export const TestimonialCard: FC = () => {
 								</div>
 							</div>
 						</header>
-						<p className="pl-tight text-left font-display text-[1.36rem] font-semibold leading-relaxed xl:text-3xl ">
+						<p className="pl-tight text-left font-display text-[1.36rem] font-semibold leading-snug lg:leading-relaxed xl:text-3xl ">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
 							molestiae excepturi earum tenetur porro iste hic saepe amet
 							voluptatibus facilis, id minima optio!
@@ -32,10 +32,10 @@ export const TestimonialCard: FC = () => {
 								<div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#FFFEDA]">
 									<img className="h-5 w-5" src={Trend} alt="Trend Icon" />
 								</div>
-								<p>Gained 400k followers</p>
+								<p className="text-xs md:text-sm lg:text-md xl:text-lg">Gained 400k followers</p>
 							</div>
 							<button
-								className="rounded-full bg-[#FFFEDA] px-snug py-2 font-display text-sm font-semibold md:hidden"
+								className="rounded-full bg-[#FFFEDA] px-snug py-2 font-display text-xs md:text-sm lg:text-md xl:text-lg font-semibold md:hidden"
 								onClick={() => setFlipped(!flipped)}
 							>
 								See Work
