@@ -17,7 +17,7 @@ interface ContentProps {
 const Content: FC<ContentProps> = (props) => {
 	return (
 		<article>
-			<h3 className="mb-4 font-semibold">
+			<h3 className="lg:text-4xl  mb-4 font-semibold">
 				<span className="rounded-full bg-pink-300 px-2">{props.index}</span>{' '}
 				{props.title}
 			</h3>
