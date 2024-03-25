@@ -16,7 +16,7 @@ export const Hero: FC = () => {
 						</h1>
 						<h1>for Social Virality</h1>
 					</div>
-					<div className="relative mx-auto w-fit lg:mb-12 xl:mb-20 2xl:mb-24">
+					<div className="relative mx-auto w-fit lg:mb-12 xl:mb-16">
 						<img
 							className="absolute -left-[3%] top-[12%] scale-[0.8] md:left-[5%] md:scale-[0.64]"
 							src={Arrow}
