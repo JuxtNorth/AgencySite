@@ -5,7 +5,7 @@ import WavyArrow from '@/assets/scribbles/wavy-arrow-up.svg';
 
 const Impact: FC = () => {
 	return (
-		<section className="mt-16 w-full max-w-[100rem] rounded-3xl bg-green-100 py-loose md:pb-16 md:pt-12 mx-auto">
+		<section className="mx-auto mt-16 w-full max-w-[100rem] rounded-3xl bg-green-100 py-loose md:pb-16 md:pt-12">
 			<h2 className="rounded-2xl text-center font-semibold">Our Impact</h2>
 			<div className="mt-loose space-y-loose md:flex md:items-center md:gap-36 md:space-y-0">
 				<div className="mx-auto text-center">
@@ -29,7 +29,7 @@ const Impact: FC = () => {
 
 export const Clients: FC = () => {
 	return (
-		<section className="flex max-w-[100rem] flex-col mx-auto items-center p-snug md:p-loose">
+		<section className="mx-auto flex max-w-[100rem] flex-col items-center p-snug md:p-loose">
 			<section className="w-full rounded-2xl bg-lime-100 p-snug py-loose text-center lg:flex lg:justify-between lg:p-loose lg:text-left xl:p-relaxed">
 				<div className="lg:flex lg:flex-col lg:justify-between">
 					<div>
@@ -57,7 +57,7 @@ export const Clients: FC = () => {
 						<Avatar />
 					</div>
 					<img
-						className="hidden lg:block mx-auto h-24 w-24 lg:h-36 lg:w-36"
+						className="mx-auto hidden h-24 w-24 lg:block lg:h-36 lg:w-36"
 						src={WavyArrow}
 						alt="An image a wavy arrow pointing up"
 					/>

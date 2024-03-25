@@ -16,7 +16,7 @@ export const Hero: FC = () => {
 						</h1>
 						<h1>for Social Virality</h1>
 					</div>
-					<div className="relative mx-auto w-fit lg:mb-12 xl:mb-14">
+					<div className="relative mx-auto w-fit lg:mb-snug 2xl:mb-loose">
 						<img
 							className="absolute -left-[3%] top-[12%] scale-[0.8] md:left-[5%] md:scale-[0.64]"
 							src={Arrow}
@@ -27,7 +27,7 @@ export const Hero: FC = () => {
 						</p>
 					</div>
 				</div>
-				<div className="relative mx-auto mt-24 flex w-[60%] flex-col gap-4 md:mt-12 md:w-fit md:flex-row 2xl:mt-0">
+				<div className="relative mx-auto mt-24 flex w-[60%] max-w-56 flex-col gap-4 md:mt-12 md:w-fit md:max-w-fit md:flex-row 2xl:mt-0">
 					<button className="rounded-full bg-[#D7C6FF] px-7 py-5 font-display text-[1.3rem] font-semibold">
 						See Pricing
 					</button>
