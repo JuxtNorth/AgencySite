@@ -34,7 +34,7 @@ export const Clients: FC = () => {
 				<div className="lg:flex lg:flex-col lg:justify-between">
 					<div>
 						<h1 className="font-extrabold leading-none">
-							Our <br />
+							Our <br className="hidden lg:inline" />
 							Clients
 						</h1>
 						<p className="text-sm lg:text-lg">
