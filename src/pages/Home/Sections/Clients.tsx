@@ -6,10 +6,10 @@ import { Avatar } from '@/components/ui';
 export const Clients: FC = () => {
 	return (
 		<section className="flex flex-col items-center p-snug md:p-loose">
-			<div className="w-72 space-y-tight pb-12 text-center md:w-[32rem]">
-				<h1 className="text-5xl font-semibold">Our Clients</h1>
-				<p className="text-md leading-tight md:text-2xl">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+			<div className="space-y-tight pb-12 text-center">
+				<h1 className="font-semibold">Our Clients</h1>
+				<p className="leading-tight">
+					Lorem ipsum dolor sit amet, <br /> consectetur adipisicing elit.
 				</p>
 			</div>
 			<section className="grid grid-cols-2 grid-rows-3 gap-loose md:grid-cols-3 md:grid-rows-2 md:gap-14">

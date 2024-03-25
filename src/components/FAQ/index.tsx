@@ -15,7 +15,7 @@ export const FAQAccordion: FC<FAQAccordionProps> = (props) => {
 	return (
 		<Accordion type="single" className="py-tight" collapsible>
 			<AccordionItem className="border-none" value="item-1">
-				<AccordionTrigger className="md:text-2xl">
+				<AccordionTrigger className="lg:text-3xl xl:text-3xl">
 					{props.question}
 				</AccordionTrigger>
 				<AccordionContent className="md:text-xl">

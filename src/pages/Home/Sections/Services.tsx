@@ -14,9 +14,9 @@ export const Services: FC = () => {
 	return (
 		<section className="p-snug text-center md:p-loose">
 			<div className="rounded-3xl bg-purple-100 p-snug md:p-loose">
-				<h1 className="mb-12 mt-snug text-4xl font-medium font-semibold md:text-5xl">
+				<h2 className="mb-12 mt-snug font-medium font-semibold">
 					Our Services
-				</h1>
+				</h2>
 				<section className="grid grid-rows-6 gap-snug md:grid-cols-3 md:grid-rows-2">
 					<ServiceCard {...services[0]}>
 						<RankingIcon />

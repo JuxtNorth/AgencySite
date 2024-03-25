@@ -17,12 +17,10 @@ interface ContentProps {
 const Content: FC<ContentProps> = (props) => {
 	return (
 		<article>
-			<h1 className="mb-4 text-3xl font-semibold">
-				<span className="rounded-full bg-pink-300 px-2 text-2xl">
-					{props.index}
-				</span>{' '}
+			<h3 className="mb-4 font-semibold">
+				<span className="rounded-full bg-pink-300 px-2">{props.index}</span>{' '}
 				{props.title}
-			</h1>
+			</h3>
 			<p className="leading-tight">{props.description}</p>
 		</article>
 	);

@@ -10,7 +10,7 @@ export const Hero: FC = () => {
 			<div className="relative flex min-h-[calc(100vh-7rem)] flex-col justify-between rounded-3xl bg-[#FFFEDA] py-16">
 				<img className="absolute right-[5%] top-[3%] h-32 w-32" src={Planet} />
 				<div className="my-auto mt-28 md:mt-auto">
-					<div className="text-center font-semibold leading-tight md:leading-snug">
+					<div className="text-center font-semibold leading-tight md:space-y-2 md:leading-snug xl:space-y-3">
 						<Heading>Forging</Heading>
 						<Heading className="mx-auto w-fit rounded-2xl bg-[#D7C6FF] px-snug font-display font-bold md:-mb-1">
 							Personal Brand

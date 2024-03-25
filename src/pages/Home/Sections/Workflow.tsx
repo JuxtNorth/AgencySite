@@ -8,9 +8,9 @@ import StarIcon from '@/assets/scribbles/Artboard 45.svg';
 export const Workflow: FC = () => {
 	return (
 		<section className="p-8">
-			<div className="mx-auto w-80 space-y-tight pb-8 text-center md:w-[32rem]">
-				<h1 className="text-5xl font-semibold">Our Workflow</h1>
-				<p className="text-md leading-tight md:text-2xl">
+			<div className="mx-auto space-y-tight pb-8 text-center">
+				<h2 className="font-semibold">Our Workflow</h2>
+				<p className="leading-tight">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 				</p>
 			</div>
@@ -47,9 +47,9 @@ export const Workflow: FC = () => {
 				</WorkflowCard>
 			</section>
 			<section className="mt-8 rounded-3xl bg-pink-100 p-8 md:space-y-24">
-				<h1 className="mb-8 text-center text-4xl font-bold text-slate-800">
+				<h2 className="mb-8 text-center font-semibold text-slate-800">
 					How it works
-				</h1>
+				</h2>
 				{howItWorks.map((props, i) => (
 					<HowItWorksCard {...props} key={i}>
 						<img

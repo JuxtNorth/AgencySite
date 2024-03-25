@@ -22,7 +22,7 @@ export const TestimonialCard: FC = () => {
 								</div>
 							</div>
 						</header>
-						<p className="pl-tight text-left font-display text-[1.36rem] font-semibold md:text-2xl lg:text-[1.7rem] xl:text-3xl">
+						<p className="pl-tight text-left font-display text-[1.36rem] font-semibold leading-relaxed xl:text-3xl ">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
 							molestiae excepturi earum tenetur porro iste hic saepe amet
 							voluptatibus facilis, id minima optio!

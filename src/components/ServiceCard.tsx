@@ -34,12 +34,14 @@ export const ServiceCard: FC<ServiceCardProps> = (props) => {
 				{props.children}
 			</div>
 			<div className="space-y-2">
-				<h1 className="text-3xl font-bold text-slate-800">{props.title}</h1>
-				<p className="w-[80%] text-sm leading-tight">{props.description}</p>
+				<h1 className="text-3xl font-bold text-slate-800 lg:text-4xl">
+					{props.title}
+				</h1>
+				<p className="w-[80%] leading-tight xl:text-2xl">{props.description}</p>
 				<Dialog>
 					<DialogTrigger>
 						{' '}
-						<p>
+						<p className="xl:text-2xl">
 							<button>Learn More</button>
 						</p>
 					</DialogTrigger>
