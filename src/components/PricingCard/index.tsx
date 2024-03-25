@@ -17,7 +17,7 @@ export const PricingCard: FC<PricingCardProps> = (props) => {
 	return (
 		<article
 			className={
-				'flex w-full flex-col justify-between rounded-2xl bg-[#F6F8F7] p-8 text-slate-900 ' +
+				'flex w-full flex-col justify-between rounded-2xl bg-[#F6F8F7] p-6 text-slate-900 md:p-loose ' +
 				props.className
 			}
 		>
