@@ -21,11 +21,11 @@ export const Home: FC = () => {
 			{/*<FloatingNav />*/}
 			<Hero />
 			<Clients />
+			<Workflow />
 			<WorksCarousel />
 			<Testimonials />
 			<CaseStudies />
 			<Services />
-			<Workflow />
 			<MembershipDetails />
 			<Pricing />
 			<Faq />

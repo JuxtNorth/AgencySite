@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { Heading } from '@/components/typography';
 import Arrow from '@/assets/scribbles/arrow.svg';
 import Star from '@/assets/scribbles/star.svg';
 import Planet from '@/assets/scribbles/planet.svg';
@@ -6,15 +7,15 @@ import Planet from '@/assets/scribbles/planet.svg';
 export const Hero: FC = () => {
 	return (
 		<header className="p-snug pt-tight md:min-h-fit md:p-loose md:pt-0">
-			<div className="relative flex min-h-[calc(100vh-7rem)] flex-col justify-between rounded-3xl bg-[#FFFEDA] py-16 md:min-h-fit">
+			<div className="relative flex min-h-[calc(100vh-7rem)] flex-col justify-between rounded-3xl bg-[#FFFEDA] py-16">
 				<img className="absolute right-[5%] top-[3%] h-32 w-32" src={Planet} />
 				<div className="my-auto mt-28 md:mt-auto">
-					<div className="text-center text-[2.5rem] font-semibold leading-tight md:text-5xl md:leading-snug">
-						<h1>Forging</h1>
-						<h1 className="mx-auto w-fit rounded-2xl bg-[#D7C6FF] px-snug font-display font-bold md:-mb-1">
+					<div className="text-center font-semibold leading-tight md:leading-snug">
+						<Heading>Forging</Heading>
+						<Heading className="mx-auto w-fit rounded-2xl bg-[#D7C6FF] px-snug font-display font-bold md:-mb-1">
 							Personal Brand
-						</h1>
-						<h1>for Social Virality</h1>
+						</Heading>
+						<Heading>for Social Virality</Heading>
 					</div>
 					<div className="relative mx-auto w-fit">
 						<img
