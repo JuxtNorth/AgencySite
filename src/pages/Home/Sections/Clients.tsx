@@ -57,9 +57,9 @@ export const Clients: FC = () => {
 						<Avatar />
 					</div>
 					<img
-						className="mx-auto h-24 w-24 lg:h-36 lg:w-36"
+						className="hidden lg:block mx-auto h-24 w-24 lg:h-36 lg:w-36"
 						src={WavyArrow}
-						alt="An image of three sparkles"
+						alt="An image a wavy arrow pointing up"
 					/>
 				</div>
 			</section>

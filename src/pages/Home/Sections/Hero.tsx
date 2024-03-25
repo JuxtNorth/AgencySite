@@ -6,7 +6,7 @@ import Planet from '@/assets/scribbles/planet.svg';
 export const Hero: FC = () => {
 	return (
 		<header className="mx-auto min-h-fit max-w-[100rem] p-snug pt-tight md:p-loose md:pt-0">
-			<div className="relative flex max-h-[64rem] min-h-fit flex-col justify-between rounded-3xl bg-[#FFFEDA] py-16 lg:h-[calc(100vh-5rem)] 2xl:max-h-[52rem]">
+			<div className="relative flex min-h-fit flex-col justify-between rounded-3xl bg-[#FFFEDA] py-16">
 				<img className="absolute right-[5%] top-[3%] h-32 w-32" src={Planet} />
 				<div className="my-auto mt-28 md:mt-auto">
 					<div className="text-center font-semibold leading-tight md:space-y-2 md:leading-snug xl:space-y-3">
@@ -16,7 +16,7 @@ export const Hero: FC = () => {
 						</h1>
 						<h1>for Social Virality</h1>
 					</div>
-					<div className="relative mx-auto w-fit">
+					<div className="relative mx-auto w-fit lg:mb-12 xl:mb-20 2xl:mb-24">
 						<img
 							className="absolute -left-[3%] top-[12%] scale-[0.8] md:left-[5%] md:scale-[0.64]"
 							src={Arrow}
