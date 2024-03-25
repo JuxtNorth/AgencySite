@@ -9,7 +9,7 @@ export const WorksCarousel: FC = () => {
 				<h2 className="font-semibold">Our Work</h2>
 				<p>Making your vision a reality</p>
 			</div>
-			<Carousel plugins={[AutoPlay({ duration: 1400 })]} />
+			<Carousel buttonXPosition='center' plugins={[AutoPlay({ duration: 1400 })]} />
 		</section>
 	);
 };
