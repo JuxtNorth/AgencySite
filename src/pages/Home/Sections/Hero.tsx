@@ -5,8 +5,8 @@ import Planet from '@/assets/scribbles/planet.svg';
 
 export const Hero: FC = () => {
 	return (
-		<header className="p-snug pt-tight md:min-h-fit md:p-loose md:pt-0">
-			<div className="relative flex min-h-[calc(100vh-7rem)] flex-col justify-between rounded-3xl bg-[#FFFEDA] py-16">
+		<header className="mx-auto max-w-[100rem] p-snug pt-tight md:min-h-fit md:p-loose md:pt-0">
+			<div className="relative flex max-h-[64rem] flex-col justify-between rounded-3xl bg-[#FFFEDA] py-16 lg:h-[calc(100vh-5rem)] 2xl:max-h-[52rem]">
 				<img className="absolute right-[5%] top-[3%] h-32 w-32" src={Planet} />
 				<div className="my-auto mt-28 md:mt-auto">
 					<div className="text-center font-semibold leading-tight md:space-y-2 md:leading-snug xl:space-y-3">
@@ -27,7 +27,7 @@ export const Hero: FC = () => {
 						</p>
 					</div>
 				</div>
-				<div className="relative mx-auto mt-24 flex w-[60%] flex-col gap-4 md:mt-12 md:w-fit md:flex-row">
+				<div className="relative mx-auto mt-24 flex w-[60%] flex-col gap-4 md:mt-12 md:w-fit md:flex-row 2xl:mt-0">
 					<button className="rounded-full bg-[#D7C6FF] px-7 py-5 font-display text-[1.3rem] font-semibold">
 						See Pricing
 					</button>
