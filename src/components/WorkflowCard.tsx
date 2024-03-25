@@ -9,14 +9,14 @@ interface WorkflowCardProps {
 export const WorkflowCard: FC<WorkflowCardProps> = (props) => {
 	return (
 		<article className={props.className || ''}>
-			<div className="flex aspect-[1/1] h-8 items-center justify-center rounded-full bg-slate-700 font-extrabold text-white md:h-12 md:text-2xl lg:h-14 lg:text-3xl xl:text-4xl">
+			<div className="flex aspect-[1/1] h-8 items-center justify-center rounded-full bg-slate-700 font-extrabold text-white md:h-12 md:text-2xl lg:h-14 lg:text-4xl xl:text-4xl">
 				{props.serialNo}
 			</div>
 			{props.children}
 			<div className="flex gap-3">
-				<h3 className="font-semibold text-slate-800">Lorem Ipsum</h3>
+				<h3 className="font-semibold lg:text-5xl">Lorem Ipsum</h3>
 			</div>
-			<p className="ml-1 mt-4 leading-tight">
+			<p className="ml-1 mt-4 leading-tight lg:text-lg">
 				Obtuse, rubber goose, green moose, guava juice. Giant snake, birthday
 				cake, large fries, chocolate shake!
 			</p>

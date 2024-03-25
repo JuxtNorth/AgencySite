@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { Carousel } from '@/components';
+import AutoPlay from 'embla-carousel-autoplay';
 
 export const WorksCarousel: FC = () => {
 	return (
@@ -8,7 +9,7 @@ export const WorksCarousel: FC = () => {
 				<h2 className="font-semibold">Our Work</h2>
 				<p>Making your vision a reality</p>
 			</div>
-			<Carousel />
+			<Carousel plugins={[AutoPlay({ duration: 1400 })]} />
 		</section>
 	);
 };

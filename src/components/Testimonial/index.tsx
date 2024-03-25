@@ -11,7 +11,7 @@ export const TestimonialCard: FC = () => {
 				data-flipped={flipped}
 			>
 				<article className="absolute flex h-full w-full flex-col p-6 [backface-visibility:hidden] md:flex-row md:gap-loose md:p-loose">
-					<div className="hidden aspect-[11.5/16] h-full rounded-3xl bg-pink-100 lg:block "></div>
+					<div className="hidden aspect-[11.5/16] h-full rounded-3xl bg-pink-100 xl:block"></div>
 					<div className="flex min-h-full flex-col justify-between">
 						<header className="flex w-full justify-between">
 							<div className="flex items-center gap-2">

@@ -10,6 +10,15 @@ import {
 	LeadIcon
 } from '@/icons';
 
+const icons = [
+	<RankingIcon />,
+	<ContentIcon />,
+	<TrendIcon />,
+	<SalesIcon />,
+	<VideoIcon />,
+	<LeadIcon />
+];
+
 export const Services: FC = () => {
 	return (
 		<section className="mx-auto max-w-[100rem] p-snug text-center md:p-loose">
@@ -17,25 +26,10 @@ export const Services: FC = () => {
 				<h2 className="mb-12 mt-snug font-medium font-semibold">
 					Our Services
 				</h2>
-				<section className="grid grid-rows-6 gap-snug md:grid-cols-3 md:grid-rows-2">
-					<ServiceCard {...services[0]}>
-						<RankingIcon />
-					</ServiceCard>
-					<ServiceCard {...services[1]}>
-						<ContentIcon />
-					</ServiceCard>
-					<ServiceCard {...services[2]}>
-						<TrendIcon />
-					</ServiceCard>
-					<ServiceCard {...services[3]}>
-						<SalesIcon />
-					</ServiceCard>
-					<ServiceCard {...services[4]}>
-						<VideoIcon />
-					</ServiceCard>
-					<ServiceCard {...services[5]}>
-						<LeadIcon />
-					</ServiceCard>
+				<section className="grid grid-rows-6 gap-snug lg:grid-cols-3 lg:grid-rows-2">
+					{services.map((props, i) => (
+						<ServiceCard {...props}>{icons[i]}</ServiceCard>
+					))}
 				</section>
 			</div>
 		</section>

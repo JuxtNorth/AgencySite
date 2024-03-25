@@ -49,10 +49,10 @@ h2 {
 }
 
 h3 {
-	@apply text-xl md:text-3xl lg:text-5xl xl:text-6xl;
+	@apply text-xl md:text-2xl lg:text-4xl xl:text-5xl;
 }
 
 p,
 span {
-	@apply text-sm md:text-lg lg:text-2xl xl:text-3xl 2xl:text-[1.7rem];
+	@apply text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-[1.7rem];
 }

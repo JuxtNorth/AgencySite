@@ -1,5 +1,6 @@
 import { FC, useCallback, type ReactNode } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
+import { EmblaPluginType } from 'embla-carousel';
 import { ChevronLeftIcon, ChevronRightIcon } from '@/icons';
 import { Slide } from './Slide';
 import { cva } from 'class-variance-authority';
@@ -7,6 +8,7 @@ import { cva } from 'class-variance-authority';
 interface CarouselProps {
 	children?: ReactNode;
 	buttonXPosition?: 'edge' | 'center';
+	plugins?: EmblaPluginType[];
 }
 
 const buttonVariants = cva('flex gap-snug', {
@@ -19,10 +21,13 @@ const buttonVariants = cva('flex gap-snug', {
 });
 
 export const Carousel: FC<CarouselProps> = (props) => {
-	const [emblaRef, emblaApi] = useEmblaCarousel({
-		loop: true,
-		skipSnaps: true
-	});
+	const [emblaRef, emblaApi] = useEmblaCarousel(
+		{
+			loop: true,
+			skipSnaps: true
+		},
+		props.plugins
+	);
 
 	const { buttonXPosition = 'edge' } = props;
 
