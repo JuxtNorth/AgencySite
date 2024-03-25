@@ -21,8 +21,8 @@ export const Home: FC = () => {
 			{/*<FloatingNav />*/}
 			<Hero />
 			<Clients />
-			<Workflow />
 			<WorksCarousel />
+			<Workflow />
 			<Testimonials />
 			<CaseStudies />
 			<Services />

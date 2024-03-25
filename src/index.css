@@ -39,3 +39,11 @@ div,
 span {
 	@apply font-body text-font-primary;
 }
+
+h1 {
+	@apply text-[2.5rem] md:text-5xl lg:text-7xl xl:text-8xl 2xl:text-9xl;
+}
+
+p {
+	@apply text-sm md:text-lg lg:text-2xl xl:text-3xl 2xl:text-4xl;
+}
