@@ -41,11 +41,11 @@ span {
 }
 
 h1 {
-	@apply text-[2.5rem] md:text-5xl lg:text-7xl xl:text-8xl 2xl:text-9xl;
+	@apply text-[2.5rem] md:text-5xl lg:text-7xl;
 }
 
 h2 {
-	@apply text-3xl md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl;
+	@apply text-3xl md:text-4xl lg:text-6xl;
 }
 
 h3 {

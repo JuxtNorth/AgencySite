@@ -1,6 +1,5 @@
 import { FC } from 'react';
-import { WorkflowCard, HowItWorksCard } from '@/components';
-import { howItWorks } from '@/constants';
+import { WorkflowCard } from '@/components';
 import BoltIcon from '@/assets/scribbles/Artboard 11.svg';
 import LeafIcon from '@/assets/scribbles/Artboard 33.svg';
 import StarIcon from '@/assets/scribbles/Artboard 45.svg';
@@ -45,20 +44,6 @@ export const Workflow: FC = () => {
 						className="mx-auto w-[80%] py-snug"
 					/>
 				</WorkflowCard>
-			</section>
-			<section className="mt-8 rounded-3xl bg-pink-100 p-8 md:space-y-24">
-				<h2 className="mb-8 text-center font-semibold text-slate-800">
-					How it works
-				</h2>
-				{howItWorks.map((props, i) => (
-					<HowItWorksCard {...props} key={i}>
-						<img
-							src={StarIcon}
-							alt="Lightning Bolt Icon"
-							className="mx-auto w-[80%] py-snug md:w-64 md:py-0"
-						/>
-					</HowItWorksCard>
-				))}
 			</section>
 		</section>
 	);

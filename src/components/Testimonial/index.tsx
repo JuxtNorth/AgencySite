@@ -32,10 +32,12 @@ export const TestimonialCard: FC = () => {
 								<div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#FFFEDA]">
 									<img className="h-5 w-5" src={Trend} alt="Trend Icon" />
 								</div>
-								<p className="text-xs md:text-sm lg:text-md xl:text-lg">Gained 400k followers</p>
+								<p className="lg:text-md text-xs md:text-sm xl:text-lg">
+									Gained 400k followers
+								</p>
 							</div>
 							<button
-								className="rounded-full bg-[#FFFEDA] px-snug py-2 font-display text-xs md:text-sm lg:text-md xl:text-lg font-semibold md:hidden"
+								className="lg:text-md rounded-full bg-[#FFFEDA] px-snug py-2 font-display text-xs font-semibold md:hidden md:text-sm xl:text-lg"
 								onClick={() => setFlipped(!flipped)}
 							>
 								See Work

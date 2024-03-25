@@ -5,6 +5,7 @@ export * from './Testimonials';
 export * from './CaseStudies';
 export * from './Services';
 export * from './Workflow';
+export * from './HowItWorks';
 export * from './MembershipDetails';
 export * from './Pricing';
 export * from './Faq';

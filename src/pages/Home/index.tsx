@@ -5,6 +5,7 @@ import {
 	WorksCarousel,
 	Testimonials,
 	CaseStudies,
+	HowItWorks,
 	Services,
 	Workflow,
 	MembershipDetails,
@@ -25,9 +26,10 @@ export const Home: FC = () => {
 			<Workflow />
 			<Testimonials />
 			<CaseStudies />
+			<HowItWorks />
 			<Services />
-			<MembershipDetails />
 			<Pricing />
+			<MembershipDetails />
 			<Faq />
 			<ScheduleCalendar />
 			<Footer />

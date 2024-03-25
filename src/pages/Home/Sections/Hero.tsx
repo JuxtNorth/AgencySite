@@ -1,5 +1,4 @@
 import { FC } from 'react';
-import { Heading, Para } from '@/components/typography';
 import Arrow from '@/assets/scribbles/arrow.svg';
 import Star from '@/assets/scribbles/star.svg';
 import Planet from '@/assets/scribbles/planet.svg';
@@ -11,21 +10,21 @@ export const Hero: FC = () => {
 				<img className="absolute right-[5%] top-[3%] h-32 w-32" src={Planet} />
 				<div className="my-auto mt-28 md:mt-auto">
 					<div className="text-center font-semibold leading-tight md:space-y-2 md:leading-snug xl:space-y-3">
-						<Heading>Forging</Heading>
-						<Heading className="mx-auto w-fit rounded-2xl bg-[#D7C6FF] px-snug font-display font-bold md:-mb-1">
+						<h1>Forging</h1>
+						<h1 className="mx-auto w-fit rounded-2xl bg-[#D7C6FF] px-snug font-display font-bold md:-mb-1">
 							Personal Brand
-						</Heading>
-						<Heading>for Social Virality</Heading>
+						</h1>
+						<h1>for Social Virality</h1>
 					</div>
 					<div className="relative mx-auto w-fit">
 						<img
 							className="absolute -left-[3%] top-[12%] scale-[0.8] md:left-[5%] md:scale-[0.64]"
 							src={Arrow}
 						/>
-						<Para className="mx-auto mt-0.5 w-[72%] text-center text-sm md:w-[64%] md:text-lg">
+						<p className="mx-auto mt-0.5 w-[72%] text-center text-sm md:w-[64%] md:text-lg">
 							Subscription here makes your brands go viral there, grab your
 							seats.
-						</Para>
+						</p>
 					</div>
 				</div>
 				<div className="relative mx-auto mt-24 flex w-[60%] flex-col gap-4 md:mt-12 md:w-fit md:flex-row">
