@@ -12,8 +12,8 @@ import {
 
 export const Services: FC = () => {
 	return (
-		<section className="p-snug text-center md:p-loose">
-			<div className="rounded-3xl bg-purple-100 p-snug md:p-loose">
+		<section className="mx-auto max-w-[100rem] p-snug text-center md:p-loose">
+			<div className="rounded-3xl bg-purple-100 p-snug md:p-loose lg:p-relaxed">
 				<h2 className="mb-12 mt-snug font-medium font-semibold">
 					Our Services
 				</h2>

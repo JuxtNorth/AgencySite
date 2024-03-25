@@ -16,7 +16,8 @@ export default {
 			spacing: {
 				tight: '0.25rem',
 				snug: '1rem',
-				loose: '2.25rem'
+				loose: '2.25rem',
+				relaxed: '5rem'
 			},
 			keyframes: {
 				'accordion-down': {

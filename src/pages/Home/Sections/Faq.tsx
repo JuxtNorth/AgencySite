@@ -5,7 +5,7 @@ import Discover from '@/assets/scribbles/Discover.svg';
 
 export const Faq: FC = () => {
 	return (
-		<section className="space-y-4 md:grid md:grid-cols-[70%_30%] md:p-loose">
+		<section className="mx-auto max-w-[100rem] space-y-4 md:grid md:grid-cols-[70%_30%] md:p-loose">
 			<section className="px-loose md:px-0 md:pr-loose">
 				<div className="mb-loose md:mt-snug">
 					<h1 className="text-center text-4xl font-semibold md:text-left md:text-6xl">

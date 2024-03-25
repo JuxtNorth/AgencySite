@@ -5,9 +5,9 @@ import StarIcon from '@/assets/scribbles/Artboard 45.svg';
 
 export const HowItWorks: FC = () => {
 	return (
-		<section className="p-8">
-			<div className="mt-8 rounded-3xl bg-pink-100 p-8 md:space-y-24">
-				<h2 className="mb-8 text-center font-semibold text-slate-800">
+		<section className="mx-auto max-w-[100rem] p-8">
+			<div className="mt-8 rounded-3xl bg-pink-100 p-loose md:space-y-24 lg:space-y-36 lg:p-relaxed">
+				<h2 className="mb-8 mt-snug text-center font-semibold text-slate-800 lg:mt-12">
 					How it works
 				</h2>
 				{howItWorks.map((props, i) => (

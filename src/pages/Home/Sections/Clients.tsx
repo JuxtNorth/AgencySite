@@ -20,7 +20,7 @@ export const Clients: FC = () => {
 				<Avatar info="200k" />
 				<Avatar info="1m" />
 			</section>
-			<section className="mt-16 w-full rounded-3xl bg-green-100 py-loose md:pb-16 md:pt-12 ">
+			<section className="mt-16 w-full max-w-[100rem] rounded-3xl bg-green-100 py-loose md:pb-16 md:pt-12 ">
 				<h1 className="rounded-2xl text-center text-4xl font-bold md:text-5xl">
 					Our Impact
 				</h1>

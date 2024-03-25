@@ -2,7 +2,7 @@ import { FC } from 'react';
 
 export const CaseStudies: FC = () => {
 	return (
-		<section className="m-4 rounded-2xl p-8 pt-16 text-center">
+		<section className="m-4 mx-auto max-w-[100rem] rounded-2xl p-8 pt-16 text-center">
 			<h2 className="font-semibold">Case Study</h2>
 			<p>on client results</p>
 			<div className="mx-auto mt-12 w-[90%] space-y-2 md:w-[48%] md:space-y-4">

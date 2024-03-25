@@ -3,7 +3,7 @@ import { PricingCard } from '@/components';
 import { pricingPlans } from '@/constants';
 export const Pricing: FC = () => {
 	return (
-		<section className="p-8">
+		<section className="mx-auto max-w-[100rem] p-8">
 			<div className="mx-auto w-72 space-y-tight pb-12 text-center md:w-[48rem]">
 				<h1 id="pricing" className="text-5xl font-semibold">
 					The Pricing
