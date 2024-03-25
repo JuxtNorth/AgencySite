@@ -5,7 +5,7 @@ import WavyArrow from '@/assets/scribbles/wavy-arrow-up.svg';
 
 const Impact: FC = () => {
 	return (
-		<section className="mt-16 w-full max-w-[100rem] rounded-3xl bg-green-100 py-loose md:pb-16 md:pt-12">
+		<section className="mt-16 w-full max-w-[100rem] rounded-3xl bg-green-100 py-loose md:pb-16 md:pt-12 mx-auto">
 			<h2 className="rounded-2xl text-center font-semibold">Our Impact</h2>
 			<div className="mt-loose space-y-loose md:flex md:items-center md:gap-36 md:space-y-0">
 				<div className="mx-auto text-center">
