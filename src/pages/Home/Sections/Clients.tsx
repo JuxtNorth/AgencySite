@@ -29,7 +29,7 @@ const Impact: FC = () => {
 
 export const Clients: FC = () => {
 	return (
-		<section className="flex max-w-[100rem] flex-col items-center p-snug md:p-loose">
+		<section className="flex max-w-[100rem] flex-col mx-auto items-center p-snug md:p-loose">
 			<section className="w-full rounded-2xl bg-lime-100 p-snug py-loose text-center lg:flex lg:justify-between lg:p-loose lg:text-left xl:p-relaxed">
 				<div className="lg:flex lg:flex-col lg:justify-between">
 					<div>
