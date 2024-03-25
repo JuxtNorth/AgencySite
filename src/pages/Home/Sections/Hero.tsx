@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { Heading } from '@/components/typography';
+import { Heading, Para } from '@/components/typography';
 import Arrow from '@/assets/scribbles/arrow.svg';
 import Star from '@/assets/scribbles/star.svg';
 import Planet from '@/assets/scribbles/planet.svg';
@@ -22,10 +22,10 @@ export const Hero: FC = () => {
 							className="absolute -left-[3%] top-[12%] scale-[0.8] md:left-[5%] md:scale-[0.64]"
 							src={Arrow}
 						/>
-						<p className="mx-auto mt-0.5 w-[72%] text-center text-sm md:w-[64%] md:text-lg">
+						<Para className="mx-auto mt-0.5 w-[72%] text-center text-sm md:w-[64%] md:text-lg">
 							Subscription here makes your brands go viral there, grab your
 							seats.
-						</p>
+						</Para>
 					</div>
 				</div>
 				<div className="relative mx-auto mt-24 flex w-[60%] flex-col gap-4 md:mt-12 md:w-fit md:flex-row">
