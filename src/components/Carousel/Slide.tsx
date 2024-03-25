@@ -13,6 +13,18 @@ const slideVariants = cva(
 	}
 );
 
+const containerVariants = cva(
+	'flex h-[28rem] min-w-0 items-center justify-center rounded-2xl last:mr-24 md:h-[32rem] md:rounded-3xl md:p-0',
+	{
+		variants: {
+			variant: {
+				horizontal: 'flex-[0_0_86%] md:flex-[0_0_48rem]',
+				vertical: 'flex-[0_0_48%] md:flex-[0_0_22rem]'
+			}
+		}
+	}
+);
+
 export interface SlideProps {
 	children: ReactNode;
 	variant?: 'vertical' | 'horizontal';
@@ -23,7 +35,7 @@ export const Slide: FC<SlideProps> = (props) => {
 	const { variant = 'horizontal' } = props;
 
 	return (
-		<div className="flex h-[28rem] min-w-0 flex-[0_0_86%] items-center justify-center rounded-2xl p-8 last:mr-24 md:h-[32rem] md:flex-[0_0_42%] md:rounded-3xl md:p-0">
+		<div className={containerVariants({ variant })}>
 			<div className={slideVariants({ variant })}>{props.children}</div>
 		</div>
 	);
