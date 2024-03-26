@@ -18,7 +18,7 @@ export const FAQAccordion: FC<FAQAccordionProps> = (props) => {
 				<AccordionTrigger className="text-[1.08rem] lg:text-xl xl:text-2xl">
 					{props.question}
 				</AccordionTrigger>
-				<AccordionContent className="md:text-xl">
+				<AccordionContent className="">
 					{props.answer}
 				</AccordionContent>
 			</AccordionItem>

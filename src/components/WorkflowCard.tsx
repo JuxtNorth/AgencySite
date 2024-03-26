@@ -14,9 +14,9 @@ export const WorkflowCard: FC<WorkflowCardProps> = (props) => {
 			</div>
 			{props.children}
 			<div className="flex gap-3">
-				<h3 className="font-semibold lg:text-5xl">Lorem Ipsum</h3>
+				<h3 className="font-semibold">Lorem Ipsum</h3>
 			</div>
-			<p className="ml-1 mt-4 leading-tight lg:text-lg">
+			<p className="ml-1 mt-4 leading-tight">
 				Obtuse, rubber goose, green moose, guava juice. Giant snake, birthday
 				cake, large fries, chocolate shake!
 			</p>
