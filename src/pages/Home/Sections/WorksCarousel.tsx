@@ -3,7 +3,7 @@ import { Carousel3D, Video } from '@/components';
 
 export const WorksCarousel: FC = () => {
 	return (
-		<section className="mt-12 text-center overflow-hidden">
+		<section className="mt-12 overflow-hidden text-center">
 			<div className="mb-loose xl:mb-16">
 				<h2 className="font-semibold">Our Work</h2>
 				<p>Making your vision a reality</p>
