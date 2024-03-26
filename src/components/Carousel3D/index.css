@@ -20,7 +20,7 @@
 	transform: rotateY(calc(var(--offset) * 50deg))
 		scaleY(calc(1 + var(--abs-offset) * -0.4))
 		translateZ(calc(var(--abs-offset) * -30rem))
-		translateX(calc(var(--direction) * -5rem));
+		translateX(calc(var(--direction) * -9rem));
 	filter: blur(calc(var(--abs-offset) * 1rem));
 	transition: all 0.3s ease-out;
 	overflow: hidden;
