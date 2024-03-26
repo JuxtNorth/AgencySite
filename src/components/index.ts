@@ -7,6 +7,7 @@ export * from './Testimonial';
 export * from './PricingCard';
 export * from './FAQ';
 export * from './Carousel';
+export * from './Carousel3D';
 export * from './PerkCard';
 export * from './HowItWorksCard';
 export * from './Video';

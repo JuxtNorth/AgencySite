@@ -1,23 +1,27 @@
-import { FC, ReactNode } from 'react';
+import { FC, ReactNode, VideoHTMLAttributes } from 'react';
 
-export interface VideoProps {
+export interface VideoProps extends VideoHTMLAttributes<HTMLVideoElement> {
 	children?: ReactNode;
 	placeContentAtBottom?: boolean;
 }
 
-export const Video: FC<VideoProps> = (props) => {
-	if (props?.placeContentAtBottom) {
+export const Video: FC<VideoProps> = ({
+	placeContentAtBottom,
+	children,
+	...restProps
+}) => {
+	if (placeContentAtBottom) {
 		return (
-			<div>
-				<div className="aspect-[16/9] rounded-2xl bg-sky-300"></div>
-				{props?.children}
+			<div className="h-full w-full">
+				<video {...restProps} />
+				{children}
 			</div>
 		);
 	}
 	return (
-		<div>
-			{props?.children}
-			<div className="aspect-[16/9] rounded-2xl bg-sky-300"></div>
+		<div className="h-full w-full">
+			{children}
+			<video {...restProps} />
 		</div>
 	);
 };

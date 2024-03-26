@@ -51,51 +51,22 @@ export const Scheduled: FC = () => {
 						</Video>
 					</div>
 				</div>
-				<div className="pt-loose">
+				<div className="space-y-loose pt-loose">
 					<h1>Our Members' Results</h1>
-					<div className="mb-snug grid grid-flow-row gap-snug md:grid-cols-2 lg:grid-cols-3">
-						<Video placeContentAtBottom>
-							<h4 className="mb-snug">Lorem ipsum dolor sit amet.</h4>
-						</Video>
-						<Video placeContentAtBottom>
-							<h4 className="mb-snug">Lorem ipsum dolor sit amet.</h4>
-						</Video>
-						<Video placeContentAtBottom>
-							<h4 className="mb-snug">Lorem ipsum dolor sit amet.</h4>
-						</Video>
-						<Video placeContentAtBottom>
-							<h4 className="mb-snug">Lorem ipsum dolor sit amet.</h4>
-						</Video>
-						<Video placeContentAtBottom>
-							<h4 className="mb-snug">Lorem ipsum dolor sit amet.</h4>
-						</Video>
-						<Video placeContentAtBottom>
-							<h4 className="mb-snug">Lorem ipsum dolor sit amet.</h4>
-						</Video>
-						<Video placeContentAtBottom>
-							<h4 className="mb-snug">Lorem ipsum dolor sit amet.</h4>
-						</Video>
-						<Video placeContentAtBottom>
-							<h4 className="mb-snug">Lorem ipsum dolor sit amet.</h4>
-						</Video>
-						<Video placeContentAtBottom>
-							<h4 className="mb-snug">Lorem ipsum dolor sit amet.</h4>
-						</Video>
+					<div className="grid grid-flow-row gap-loose md:grid-cols-2 lg:grid-cols-3">
+						<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
+						<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
+						<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
+						<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
+						<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
+						<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
+						<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
+						<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
+						<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
+						<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
+						<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
+						<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
 					</div>
-				</div>
-				<div className="grid grid-flow-row gap-loose md:grid-cols-2">
-					<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
-					<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
-					<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
-					<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
-					<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
-					<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
-					<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
-					<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
-					<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
-					<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
-					<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
-					<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
 				</div>
 			</section>
 		</main>
