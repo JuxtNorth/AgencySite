@@ -49,10 +49,10 @@ h2 {
 }
 
 h3 {
-	@apply text-[36px];
+	@apply text-[24px] md:text-[32px] lg:text-[36px];
 }
 
 p,
 span {
-	@apply text-[24px];
+	@apply text-[12px] md:text-[14px] lg:text-[24px];
 }
