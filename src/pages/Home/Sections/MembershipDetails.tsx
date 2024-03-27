@@ -1,8 +1,16 @@
 import { FC } from 'react';
 import { PerkCard } from '@/components';
 import { perks } from '@/constants';
-import BoltIcon from '@/assets/scribbles/Artboard 11.svg';
 import { BlobOverlay, type BlobIndex } from '@/components/ui';
+
+import Peace from '@/assets/scribbles/peace.svg';
+import Planet from '@/assets/scribbles/planet.svg';
+import Bolt from '@/assets/scribbles/Artboard 11.svg';
+import Clock from '@/assets/scribbles/clock.svg';
+import Target from '@/assets/scribbles/target.svg';
+import Money from '@/assets/scribbles/money.svg';
+
+const scribbles = [Peace, Planet, Bolt, Clock, Target, Money];
 
 export const MembershipDetails: FC = () => {
 	return (
@@ -13,7 +21,7 @@ export const MembershipDetails: FC = () => {
 				{perks.map((perk, index) => (
 					<PerkCard {...perk} key={index}>
 						<BlobOverlay type={index as BlobIndex}>
-							<img className="h-28" src={BoltIcon} alt="Bolt Icon" />
+							<img className="h-28" src={scribbles[index]} alt="Bolt Icon" />
 						</BlobOverlay>
 					</PerkCard>
 				))}

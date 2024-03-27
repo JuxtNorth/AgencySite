@@ -14,7 +14,7 @@ export const FeatureItem: FC<FeatureItemProps> = ({ content }) => {
 	}
 
 	return (
-		<li className="text-base flex gap-2 font-normal md:text-sm">
+		<li className="flex gap-2 text-base font-normal md:text-sm">
 			<CheckIcon className="mt-[0.2rem] shrink-0" /> {contentElem || content}
 		</li>
 	);

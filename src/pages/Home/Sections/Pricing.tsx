@@ -5,9 +5,9 @@ import { CrownIcon } from '@/icons';
 
 const icons = [
 	<div />,
-	<CrownIcon className='text-green-300 md:text-lg xl:text-xl'/>,
-	<CrownIcon className='text-rose-500 md:text-lg xl:text-xl'/>
-]
+	<CrownIcon className="text-green-300 md:text-lg xl:text-xl" />,
+	<CrownIcon className="text-rose-500 md:text-lg xl:text-xl" />
+];
 
 export const Pricing: FC = () => {
 	return (

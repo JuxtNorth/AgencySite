@@ -25,9 +25,9 @@ export const PricingCard: FC<PricingCardProps> = (props) => {
 			<div>
 				<section className="flex h-56 flex-col justify-between border-b border-slate-400 pb-snug">
 					<div className="space-y-4">
-						<div className='flex justify-between'>
-						<h2 className="text-xl font-semibold">{props.name}</h2>
-						{props.children}
+						<div className="flex justify-between">
+							<h2 className="text-xl font-semibold">{props.name}</h2>
+							{props.children}
 						</div>
 						<h1 className="font-body text-4xl">
 							{props.pricing}{' '}

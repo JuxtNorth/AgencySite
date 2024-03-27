@@ -54,7 +54,7 @@ export const Nav: FC = () => {
 			<div className="sticky top-0 z-10 box-border flex h-16 items-center justify-between bg-background px-snug text-center md:justify-center">
 				<div className="flex items-center gap-2">
 					<img className="h-5 w-5" src={Trend} />
-					<p className="text-base font-comfortaa font-bold">Hi Reach Media</p>
+					<p className="font-comfortaa text-base font-bold">Hi Reach Media</p>
 				</div>
 				<button
 					onClick={() => setOpen(true)}
