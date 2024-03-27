@@ -1,4 +1,4 @@
-import { FC, useState } from 'react';
+import { Dispatch, FC, SetStateAction, useEffect, useState } from 'react';
 import {
 	CrossIcon,
 	BurgerIcon,
@@ -8,12 +8,28 @@ import {
 } from '@/icons';
 import Trend from '@/assets/scribbles/Trend.svg';
 
-const Menu: FC<{ onClose: () => void }> = (prop) => {
+interface MenuProps {
+	setOpened: Dispatch<SetStateAction<boolean>>;
+}
+
+const Menu: FC<MenuProps> = ({ setOpened }) => {
+	const [animate, setAnimate] = useState(false);
+
+	useEffect(() => setAnimate(true), []);
+
+	const close = () => {
+		setAnimate(false);
+		setTimeout(() => setOpened(false), 800);
+	};
+
 	return (
-		<section className="fixed left-0 top-0 z-50 h-dvh w-screen bg-[#B7ECAD] md:hidden">
+		<section
+			className="fixed left-0 top-0 z-50 h-dvh w-screen bg-[#B7ECAD] transition-[clip-path] duration-700 ease-[cubic-bezier(.8,0,.36,.9)] [clip-path:circle(24px_at_calc(95vw-1rem)_calc(5vh))] md:hidden [&[data-opened='true']]:[clip-path:circle(100%_at_50vh_50vh)]"
+			data-opened={animate}
+		>
 			<header>
 				<button
-					onClick={prop.onClose}
+					onClick={close}
 					className="ml-auto mr-4 mt-2 flex h-12 w-12 items-center justify-center rounded-full bg-yellow-100 text-2xl md:hidden"
 				>
 					<CrossIcon />
@@ -46,18 +62,17 @@ const Menu: FC<{ onClose: () => void }> = (prop) => {
 };
 
 export const Nav: FC = () => {
-	const [open, setOpen] = useState(false);
-
+	const [opened, setOpened] = useState(true);
 	return (
 		<>
-			{open && <Menu onClose={() => setOpen(false)} />}
+			{opened && <Menu setOpened={setOpened} />}
 			<div className="sticky top-0 z-10 box-border flex h-16 items-center justify-between bg-background px-snug text-center md:justify-center">
 				<div className="flex items-center gap-2">
 					<img className="h-5 w-5" src={Trend} />
 					<p className="font-comfortaa text-base font-bold">Hi Reach Media</p>
 				</div>
 				<button
-					onClick={() => setOpen(true)}
+					onClick={() => setOpened(true)}
 					className="flex h-12 w-12 items-center justify-center rounded-full bg-purple-100 text-2xl md:hidden"
 				>
 					<BurgerIcon className="text-lg" />
