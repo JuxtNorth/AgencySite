@@ -7,6 +7,10 @@ import {
 	InstagramIcon
 } from '@/icons';
 import Trend from '@/assets/scribbles/Trend.svg';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+
+gsap.registerPlugin(useGSAP);
 
 interface MenuProps {
 	setOpened: Dispatch<SetStateAction<boolean>>;
@@ -14,6 +18,34 @@ interface MenuProps {
 
 const Menu: FC<MenuProps> = ({ setOpened }) => {
 	const [animate, setAnimate] = useState(false);
+
+	useGSAP(() => {
+		gsap.fromTo(
+			'.gsap-menu-item',
+			{ x: 60, opacity: 0 },
+			{
+				x: 0,
+				opacity: 1,
+				stagger: 0.09,
+				ease: 'circ.out',
+				delay: 0.34,
+				duration: 0.4
+			}
+		);
+
+		gsap.fromTo(
+			'.gsap-menu-footer',
+			{ y: -32, opacity: 0 },
+			{
+				y: 0,
+				opacity: 1,
+				stagger: 0.09,
+				ease: 'circ.out',
+				delay: 0.7,
+				duration: 0.4
+			}
+		);
+	});
 
 	useEffect(() => setAnimate(true), []);
 
@@ -36,12 +68,12 @@ const Menu: FC<MenuProps> = ({ setOpened }) => {
 				</button>
 			</header>
 			<menu className="mt-[20%] space-y-2 text-center text-[2.5rem] font-extrabold">
-				<li className="font-display">Perks</li>
-				<li className="font-display">Testimonials</li>
-				<li className="font-display">How it works</li>
-				<li className="font-display">Pricing</li>
+				<li className="gsap-menu-item font-display">Perks</li>
+				<li className="gsap-menu-item font-display">Testimonials</li>
+				<li className="gsap-menu-item font-display">How it works</li>
+				<li className="gsap-menu-item font-display">Pricing</li>
 			</menu>
-			<section className="absolute bottom-4 flex w-full flex-col items-center gap-2">
+			<section className="gsap-menu-footer absolute bottom-4 flex w-full flex-col items-center gap-2">
 				<p>
 					Email us at <a href="mailto:foo@bar.com">foo@bar.com</a>
 				</p>
