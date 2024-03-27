@@ -41,7 +41,7 @@ export const ServiceCard: FC<ServiceCardProps> = (props) => {
 				<Dialog>
 					<DialogTrigger>
 						{' '}
-						<button className="xl:text-md lg:text-sm">Learn More</button>
+						<button className="xl:text-base lg:text-sm">Learn More</button>
 					</DialogTrigger>
 					<DialogContent className="w-[90%] space-y-4 rounded-2xl bg-white">
 						<DialogHeader className="text-left">

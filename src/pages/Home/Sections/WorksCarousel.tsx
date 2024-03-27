@@ -12,7 +12,7 @@ export const WorksCarousel: FC = () => {
 				{[...new Array(10)].map(() => (
 					<Video
 						className="h-[32rem] w-auto rounded-[1rem] object-cover p-[5px] "
-						src="https://ik.imagekit.io/Hireachmedia/OurWork/1.mp4"
+						src=""
 						poster="https://ik.imagekit.io/Hireachmedia/default-image.jpg?updatedAt=1710837663835"
 						autoPlay
 						controls

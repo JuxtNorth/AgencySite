@@ -1,7 +1,7 @@
 import { type PricingCardProps } from '@/components';
 
 // Emphasis property refers to deliverable
-export const pricingPlans: PricingCardProps[] = [
+export const pricingPlans: Omit<PricingCardProps, 'children'>[] = [
 	{
 		name: 'Linkedin Operator',
 		pricing: '$1499',
@@ -39,7 +39,7 @@ export const pricingPlans: PricingCardProps[] = [
 			'Pause or cancel anytime'
 		],
 		bestFor: 'Tailored for those dedicated towards personal branding',
-		className: ''
+		className: 'bg-red-50'
 	},
 	{
 		name: 'Growth Partner',
@@ -55,6 +55,6 @@ export const pricingPlans: PricingCardProps[] = [
 			'Your All-in-One Solution to Grow and Monetize your brand'
 		],
 		bestFor: 'Best choice for business growth.',
-		className: ''
+		className: 'bg-red-200'
 	}
 ];
