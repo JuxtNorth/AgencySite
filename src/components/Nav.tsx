@@ -94,7 +94,7 @@ const Menu: FC<MenuProps> = ({ setOpened }) => {
 };
 
 export const Nav: FC = () => {
-	const [opened, setOpened] = useState(true);
+	const [opened, setOpened] = useState(false);
 	return (
 		<>
 			{opened && <Menu setOpened={setOpened} />}
