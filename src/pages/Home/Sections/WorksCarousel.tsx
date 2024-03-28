@@ -12,11 +12,11 @@ export const WorksCarousel: FC = () => {
 			<Carousel
 				buttonXPosition="either"
 				buttonYPosition="middle"
-				className="gap-snug"
+				className="gap-snug 2xl:gap-loose"
 				plugins={[ClassNames()]}
 			>
-				{new Array(8).fill(0).map((_, i) => (
-					<div className="last:mr-snug">
+				{new Array(24).fill(0).map((_, i) => (
+					<div className="last:mr-snug 2xl:last:mr-loose">
 						<Slide key={i} variant="vertical" className="overflow-hidden">
 							<Video
 								className="w-full rounded-2xl object-cover blur-[4px] transition-[filter] duration-300 lg:rounded-3xl"
