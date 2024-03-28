@@ -1,0 +1,5 @@
+.is-snapped {
+	video {
+		filter: blur(0) brightness(100%);
+	}
+}

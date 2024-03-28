@@ -4,11 +4,14 @@ import { EmblaPluginType } from 'embla-carousel';
 import { ChevronLeftIcon, ChevronRightIcon } from '@/icons';
 import { Slide } from './Slide';
 import { cva } from 'class-variance-authority';
+import { cn } from '@/lib/utils';
+import './index.css';
 
 interface CarouselProps {
 	children?: ReactNode;
 	buttonXPosition?: 'edge' | 'center';
 	plugins?: EmblaPluginType[];
+	className?: string;
 }
 
 const buttonVariants = cva('flex gap-snug', {
@@ -42,23 +45,8 @@ export const Carousel: FC<CarouselProps> = (props) => {
 	return (
 		<section className="mx-auto space-y-4 overflow-hidden">
 			<div className="overflow-hidden" ref={emblaRef}>
-				<div className="flex gap-24">
-					{props.children || (
-						<>
-							<Slide>1</Slide>
-							<Slide>2</Slide>
-							<Slide variant="vertical">3</Slide>
-							<Slide>4</Slide>
-							<Slide>5</Slide>
-							<Slide variant="vertical">6</Slide>
-							<Slide variant="vertical">7</Slide>
-							<Slide>8</Slide>
-							<Slide>9</Slide>
-							<Slide>10</Slide>
-							<Slide>11</Slide>
-							<Slide>12</Slide>
-						</>
-					)}
+				<div className={cn('flex gap-24', props.className)}>
+					{props.children}
 				</div>
 			</div>
 			<div className={buttonVariants({ buttons: buttonXPosition })}>
@@ -78,3 +66,5 @@ export const Carousel: FC<CarouselProps> = (props) => {
 		</section>
 	);
 };
+
+export { Slide };

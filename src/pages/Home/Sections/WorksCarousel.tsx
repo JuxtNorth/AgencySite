@@ -1,5 +1,6 @@
 import { FC } from 'react';
-import { Carousel3D, Video } from '@/components';
+import { Carousel, Slide, Video } from '@/components';
+import ClassNames from 'embla-carousel-class-names';
 
 export const WorksCarousel: FC = () => {
 	return (
@@ -8,17 +9,20 @@ export const WorksCarousel: FC = () => {
 				<h2 className="font-semibold">Our Work</h2>
 				<p>Making your vision a reality</p>
 			</div>
-			<Carousel3D>
-				{[...new Array(10)].map(() => (
-					<Video
-						className="h-[32rem] w-auto rounded-[1rem] object-cover p-[5px] "
-						src=""
-						poster="https://ik.imagekit.io/Hireachmedia/default-image.jpg?updatedAt=1710837663835"
-						autoPlay
-						controls
-					></Video>
+			<Carousel
+				buttonXPosition="center"
+				className="gap-snug"
+				plugins={[ClassNames()]}
+			>
+				{new Array(12).fill(0).map(() => (
+					<Slide variant="vertical" className="overflow-hidden last:mr-snug">
+						<Video
+							className="h-full rounded-2xl object-cover blur-sm transition-[filter] duration-300 lg:rounded-3xl"
+							poster="https://ik.imagekit.io/Hireachmedia/default-image.jpg"
+						/>
+					</Slide>
 				))}
-			</Carousel3D>
+			</Carousel>
 		</section>
 	);
 };
