@@ -24,8 +24,12 @@ export const WorksCarousel: FC = () => {
 							/>
 						</Slide>
 						<div className="flex justify-between p-1">
-							<p className="_stat_ text-xs font-semibold opacity-0 duration-300">Lorem, ipsum.</p>
-							<p className="_stat_ text-xs font-semibold text-blue-500 opacity-0 duration-300">10M+</p>
+							<p className="_stat_ text-xs font-semibold opacity-0 duration-300">
+								Lorem, ipsum.
+							</p>
+							<p className="_stat_ text-xs font-semibold text-blue-500 opacity-0 duration-300">
+								10M+
+							</p>
 						</div>
 					</div>
 				))}

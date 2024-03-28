@@ -15,7 +15,7 @@ interface CarouselProps {
 	className?: string;
 }
 
-const buttonVariants = cva('w-full flex gap-snug', {
+const buttonVariants = cva('w-full flex gap-snug pointer-events-none', {
 	variants: {
 		buttons: {
 			edge: 'ml-snug',
@@ -23,7 +23,8 @@ const buttonVariants = cva('w-full flex gap-snug', {
 			either: 'justify-between'
 		},
 		vertical: {
-			middle: 'absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] max-w-[80rem]',
+			middle:
+				'absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] max-w-[80rem]',
 			default: ''
 		}
 	}
@@ -51,7 +52,7 @@ export const Carousel: FC<CarouselProps> = (props) => {
 
 	return (
 		<section className="relative mx-auto space-y-4 overflow-hidden">
-			<div className="overflow-hidden" ref={emblaRef}>
+			<div className="overflow-hidden cursor-grab active:cursor-grabbing" ref={emblaRef}>
 				<div className={cn('flex gap-24', props.className)}>
 					{props.children}
 				</div>
@@ -63,13 +64,13 @@ export const Carousel: FC<CarouselProps> = (props) => {
 				})}
 			>
 				<button
-					className="rounded-full bg-lime-200 p-snug md:p-6 md:text-2xl"
+					className="rounded-full pointer-events-auto cursor-pointer bg-lime-200 p-snug md:p-6 md:text-2xl"
 					onClick={scrollPrev}
 				>
 					<ChevronLeftIcon />
 				</button>
 				<button
-					className="rounded-full bg-lime-200 p-snug md:p-6 md:text-2xl"
+					className="rounded-full pointer-events-auto cursor-pointer bg-lime-200 p-snug md:p-6 md:text-2xl"
 					onClick={scrollNext}
 				>
 					<ChevronRightIcon />
