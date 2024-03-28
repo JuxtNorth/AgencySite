@@ -53,6 +53,7 @@ h3 {
 }
 
 p,
-span {
+span,
+li {
 	@apply text-[14px] md:text-[18px];
 }

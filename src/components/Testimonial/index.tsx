@@ -1,5 +1,6 @@
 import { FC, useState } from 'react';
 import Trend from '@/assets/scribbles/Trend.svg';
+import { Video } from '@/components';
 
 export const TestimonialCard: FC = () => {
 	const [flipped, setFlipped] = useState(false);
@@ -46,7 +47,9 @@ export const TestimonialCard: FC = () => {
 					</div>
 				</article>
 				<article className="absolute flex h-full w-full items-center justify-center [backface-visibility:hidden] [rotate:y_180deg]">
-					<button onClick={() => setFlipped(!flipped)}>Flip Back</button>
+					<div className='bg-rose-100 rounded-3xl size-full'>
+						<Video />
+					</div>
 				</article>
 			</div>
 		</div>

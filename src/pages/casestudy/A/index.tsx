@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { Header, Mission } from '../Sections';
+import { Header, Mission, Outcome, Results } from '../Sections';
 
 const data = {
 	header: {
@@ -27,6 +27,8 @@ export const A: FC = () => {
 		<main className="space-y-loose p-snug md:p-loose">
 			<Header {...data.header} />
 			<Mission {...data.mission} />
+			<Outcome />
+			<Results />
 		</main>
 	);
 };
