@@ -10,17 +10,24 @@ export const WorksCarousel: FC = () => {
 				<p>Making your vision a reality</p>
 			</div>
 			<Carousel
-				buttonXPosition="center"
-				className="gap-loose"
+				buttonXPosition="either"
+				buttonYPosition="middle"
+				className="gap-snug"
 				plugins={[ClassNames()]}
 			>
 				{new Array(8).fill(0).map((_, i) => (
-					<Slide key={i} variant="vertical" className="overflow-hidden last:mr-loose">
-						<Video
-							className="h-full rounded-2xl object-cover blur-sm transition-[filter] duration-300 lg:rounded-3xl"
-							poster={`https://ik.imagekit.io/Hireachmedia/OurWork/thumbnails/tr:pr-true,q-80,w-580/poster-${(i % 8) + 1}.jpg`}
-						/>
-					</Slide>
+					<div className="last:mr-snug">
+						<Slide key={i} variant="vertical" className="overflow-hidden">
+							<Video
+								className="w-full rounded-2xl object-cover blur-[2px] transition-[filter] duration-300 lg:rounded-3xl"
+								poster={`https://ik.imagekit.io/Hireachmedia/OurWork/thumbnails/tr:pr-true,q-80,w-580/poster-${(i % 8) + 1}.jpg`}
+							/>
+						</Slide>
+						<div className="flex justify-between p-1">
+							<p className="text-xs text-muted">Lorem, ipsum.</p>
+							<p className="text-xs text-muted">10M+</p>
+						</div>
+					</div>
 				))}
 			</Carousel>
 		</section>

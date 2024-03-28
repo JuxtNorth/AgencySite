@@ -9,16 +9,22 @@ import './index.css';
 
 interface CarouselProps {
 	children?: ReactNode;
-	buttonXPosition?: 'edge' | 'center';
+	buttonXPosition?: 'edge' | 'center' | 'either';
+	buttonYPosition?: 'middle' | 'default';
 	plugins?: EmblaPluginType[];
 	className?: string;
 }
 
-const buttonVariants = cva('flex gap-snug', {
+const buttonVariants = cva('w-full flex gap-snug', {
 	variants: {
 		buttons: {
 			edge: 'ml-snug',
-			center: 'justify-center'
+			center: 'justify-center',
+			either: 'justify-between'
+		},
+		vertical: {
+			middle: 'absolute top-[50%] -translate-y-[50%]',
+			default: ''
 		}
 	}
 });
@@ -33,6 +39,7 @@ export const Carousel: FC<CarouselProps> = (props) => {
 	);
 
 	const { buttonXPosition = 'edge' } = props;
+	const { buttonYPosition = 'default' } = props;
 
 	const scrollPrev = useCallback(() => {
 		if (emblaApi) emblaApi.scrollPrev();
@@ -43,13 +50,18 @@ export const Carousel: FC<CarouselProps> = (props) => {
 	}, [emblaApi]);
 
 	return (
-		<section className="mx-auto space-y-4 overflow-hidden">
+		<section className="relative mx-auto space-y-4 overflow-hidden">
 			<div className="overflow-hidden" ref={emblaRef}>
 				<div className={cn('flex gap-24', props.className)}>
 					{props.children}
 				</div>
 			</div>
-			<div className={buttonVariants({ buttons: buttonXPosition })}>
+			<div
+				className={buttonVariants({
+					buttons: buttonXPosition,
+					vertical: buttonYPosition
+				})}
+			>
 				<button
 					className="rounded-full bg-lime-200 p-snug md:p-6 md:text-2xl"
 					onClick={scrollPrev}

@@ -15,7 +15,7 @@ const slideVariants = cva(
 );
 
 const containerVariants = cva(
-	'flex h-[24rem] min-w-0 items-center justify-center rounded-2xl last:mr-24 md:rounded-3xl md:p-0',
+	'flex flex-col h-[24rem] min-w-0 items-center justify-center rounded-2xl last:mr-24 md:rounded-3xl md:p-0',
 	{
 		variants: {
 			variant: {
