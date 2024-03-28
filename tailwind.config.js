@@ -5,7 +5,7 @@ export default {
 		extend: {
 			fontFamily: {
 				display: '"Raleway", sans-serif',
-				body: '"Varela Round", sans-serif',
+				body: '"Rubik", sans-serif',
 				comfortaa: '"Comfortaa", sans-serif'
 			},
 			colors: {

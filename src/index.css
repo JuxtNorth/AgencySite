@@ -54,5 +54,5 @@ h3 {
 
 p,
 span {
-	@apply text-[12px] md:text-[14px] lg:text-[24px];
+	@apply text-[14px] md:text-[18px];
 }
