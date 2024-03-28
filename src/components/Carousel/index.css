@@ -2,4 +2,10 @@
 	video {
 		filter: blur(0) brightness(100%);
 	}
+
+	._stat_ {
+		opacity: 100;
+		transition: opacity;
+		transition-duration: 1000ms;
+	}
 }

@@ -19,13 +19,13 @@ export const WorksCarousel: FC = () => {
 					<div className="last:mr-snug">
 						<Slide key={i} variant="vertical" className="overflow-hidden">
 							<Video
-								className="w-full rounded-2xl object-cover blur-[2px] transition-[filter] duration-300 lg:rounded-3xl"
+								className="w-full rounded-2xl object-cover blur-[4px] transition-[filter] duration-300 lg:rounded-3xl"
 								poster={`https://ik.imagekit.io/Hireachmedia/OurWork/thumbnails/tr:pr-true,q-80,w-580/poster-${(i % 8) + 1}.jpg`}
 							/>
 						</Slide>
 						<div className="flex justify-between p-1">
-							<p className="text-xs text-muted">Lorem, ipsum.</p>
-							<p className="text-xs text-muted">10M+</p>
+							<p className="_stat_ text-xs text-muted opacity-0 duration-300">Lorem, ipsum.</p>
+							<p className="_stat_ text-xs text-muted opacity-0 duration-300">10M+</p>
 						</div>
 					</div>
 				))}

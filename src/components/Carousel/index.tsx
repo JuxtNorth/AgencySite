@@ -23,7 +23,7 @@ const buttonVariants = cva('w-full flex gap-snug', {
 			either: 'justify-between'
 		},
 		vertical: {
-			middle: 'absolute top-[50%] -translate-y-[50%]',
+			middle: 'absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] max-w-[80rem]',
 			default: ''
 		}
 	}
