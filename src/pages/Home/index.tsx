@@ -14,8 +14,14 @@ import {
 	ScheduleCalendar
 } from './Sections';
 import { Nav, /*FloatingNav, */ Footer } from '@/components';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
 
 export const Home: FC = () => {
+	useGSAP(() => {
+		gsap.fromTo('.gsap-text', { y: -12 }, { y: 0 });
+	});
+
 	return (
 		<main>
 			<Nav />

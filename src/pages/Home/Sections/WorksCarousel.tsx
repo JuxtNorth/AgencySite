@@ -14,11 +14,11 @@ export const WorksCarousel: FC = () => {
 				className="gap-snug"
 				plugins={[ClassNames()]}
 			>
-				{new Array(12).fill(0).map(() => (
+				{new Array(16).fill(0).map((_, i) => (
 					<Slide variant="vertical" className="overflow-hidden last:mr-snug">
 						<Video
 							className="h-full rounded-2xl object-cover blur-sm transition-[filter] duration-300 lg:rounded-3xl"
-							poster="https://ik.imagekit.io/Hireachmedia/default-image.jpg"
+							poster={`https://ik.imagekit.io/Hireachmedia/OurWork/thumbnails/poster-${(i % 8) + 1}.jpg`}
 						/>
 					</Slide>
 				))}

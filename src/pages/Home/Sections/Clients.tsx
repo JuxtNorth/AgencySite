@@ -48,7 +48,7 @@ export const Clients: FC = () => {
 					/>
 				</div>
 				<div>
-					<div className="mx-auto grid w-fit grid-cols-3 grid-rows-2 gap-4 p-loose">
+					<div className="mx-auto grid w-fit grid-flow-row grid-cols-3 gap-4 p-loose">
 						<Avatar />
 						<Avatar />
 						<Avatar />
