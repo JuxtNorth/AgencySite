@@ -56,13 +56,14 @@ const Menu: FC<MenuProps> = ({ setOpened }) => {
 
 	return (
 		<section
-			className="fixed left-0 top-0 z-50 h-dvh w-screen bg-[#B7ECAD] transition-[clip-path] duration-700 ease-[cubic-bezier(.8,0,.36,.9)] [clip-path:circle(24px_at_calc(95vw-1rem)_calc(5vh))] md:hidden [&[data-opened='true']]:[clip-path:circle(100%_at_50vh_50vh)]"
+			className="fixed left-0 top-0 z-50 h-dvh w-screen bg-[#B7ECAD] transition-[clip-path] duration-700 ease-[cubic-bezier(.8,0,.36,.9)] [clip-path:circle(24px_at_calc(50vw)_calc(-8vh))] md:hidden [&[data-opened='true']]:[clip-path:circle(100%_at_50vh_50vh)]"
 			data-opened={animate}
 		>
 			<header>
 				<button
 					onClick={close}
-					className="ml-auto mr-4 mt-2 flex h-12 w-12 items-center justify-center rounded-full bg-yellow-100 text-2xl md:hidden"
+					className="ml-auto mr-4 mt-2 flex h-12 w-12 items-center justify-center rounded-full bg-yellow-100 text-2xl transition-transform delay-100 duration-[1200ms] ease-in-out md:hidden [&[data-opened='false']]:rotate-180"
+					data-opened={animate}
 				>
 					<CrossIcon />
 				</button>
