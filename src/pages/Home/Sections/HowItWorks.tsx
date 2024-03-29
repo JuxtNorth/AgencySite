@@ -30,7 +30,7 @@ export const HowItWorks: FC = () => {
 							src={illustrations[i]}
 							alt=""
 							aria-hidden
-							className="mx-auto w-[80%] py-snug md:w-64 md:py-0 mt-12 mb-snug lg:mt-0 lg:mb-0"
+							className="mx-auto mb-snug mt-12 w-[80%] py-snug md:w-64 md:py-0 lg:mb-0 lg:mt-0"
 						/>
 					</HowItWorksCard>
 				))}

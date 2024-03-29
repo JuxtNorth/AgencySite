@@ -50,7 +50,10 @@ export const Clients: FC = () => {
 				<div>
 					<div className="mx-auto grid w-fit grid-flow-row grid-cols-3 gap-4 p-loose">
 						{new Array(6).fill(0).map((_, i) => (
-							<Avatar profileUrl={`https://ik.imagekit.io/Hireachmedia/Clients/tr:w-400,pr-true/${i + 1}.jpg`} name={i.toString()}/>
+							<Avatar
+								profileUrl={`https://ik.imagekit.io/Hireachmedia/Clients/tr:w-400,pr-true/${i + 1}.jpg`}
+								name={i.toString()}
+							/>
 						))}
 					</div>
 					<img
