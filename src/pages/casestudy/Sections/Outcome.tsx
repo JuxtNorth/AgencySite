@@ -10,7 +10,7 @@ export const Outcome: FC<OutcomeProps> = () => {
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod quidem
 				sequi praesentium fugiat deserunt veniam labore non itaque.
 			</p>
-			<ol className="mb-snug list-decimal space-y-snug pl-snug">
+			<ol className="mb-snug list-decimal space-y-snug pl-snug lg:pl-loose">
 				<li>
 					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
 					unde amet libero.

@@ -22,4 +22,4 @@ export * from './Glitter';
 export * from './Burger';
 export * from './Crown';
 export * from './Bolt';
-export * from "./Go"
+export * from './Go';

@@ -68,11 +68,11 @@ const Menu: FC<MenuProps> = ({ setOpened }) => {
 					<CrossIcon />
 				</button>
 			</header>
-			<menu className="mt-[20%] space-y-2 text-center text-[2.5rem] font-extrabold">
-				<li className="gsap-menu-item font-display">Perks</li>
-				<li className="gsap-menu-item font-display">Testimonials</li>
-				<li className="gsap-menu-item font-display">How it works</li>
-				<li className="gsap-menu-item font-display">Pricing</li>
+			<menu className="mt-[20%] space-y-2 text-center font-extrabold">
+				<li className="gsap-menu-item font-display text-[2.5rem]">Perks</li>
+				<li className="gsap-menu-item font-display text-[2.5rem]">Testimonials</li>
+				<li className="gsap-menu-item font-display text-[2.5rem]">How it works</li>
+				<li className="gsap-menu-item font-display text-[2.5rem]">Pricing</li>
 			</menu>
 			<section className="gsap-menu-footer absolute bottom-4 flex w-full flex-col items-center gap-2">
 				<p>
