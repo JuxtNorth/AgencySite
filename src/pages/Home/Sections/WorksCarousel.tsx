@@ -23,11 +23,11 @@ export const WorksCarousel: FC = () => {
 								poster={`https://ik.imagekit.io/Hireachmedia/OurWork/thumbnails/tr:pr-true,q-80,w-580/poster-${(i % 8) + 1}.jpg`}
 							/>
 						</Slide>
-						<div className="flex justify-between p-1">
-							<p className="_stat_ text-xs font-semibold opacity-0 duration-300">
+						<div className="_stat_ flex justify-between py-1 px-2 opacity-0 duration-300 bg-rose-500 rounded-full mt-2">
+							<p className="text-xs font-semibold text-white">
 								Lorem, ipsum.
 							</p>
-							<p className="_stat_ text-xs font-semibold text-blue-500 opacity-0 duration-300">
+							<p className="text-xs font-semibold text-white">
 								10M+
 							</p>
 						</div>

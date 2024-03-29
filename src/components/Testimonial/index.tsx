@@ -47,7 +47,7 @@ export const TestimonialCard: FC = () => {
 					</div>
 				</article>
 				<article className="absolute flex h-full w-full items-center justify-center [backface-visibility:hidden] [rotate:y_180deg]">
-					<div className='bg-rose-100 rounded-3xl size-full'>
+					<div className="size-full rounded-3xl bg-rose-100">
 						<Video />
 					</div>
 				</article>
