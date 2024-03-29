@@ -70,8 +70,12 @@ const Menu: FC<MenuProps> = ({ setOpened }) => {
 			</header>
 			<menu className="mt-[20%] space-y-2 text-center font-extrabold">
 				<li className="gsap-menu-item font-display text-[2.5rem]">Perks</li>
-				<li className="gsap-menu-item font-display text-[2.5rem]">Testimonials</li>
-				<li className="gsap-menu-item font-display text-[2.5rem]">How it works</li>
+				<li className="gsap-menu-item font-display text-[2.5rem]">
+					Testimonials
+				</li>
+				<li className="gsap-menu-item font-display text-[2.5rem]">
+					How it works
+				</li>
 				<li className="gsap-menu-item font-display text-[2.5rem]">Pricing</li>
 			</menu>
 			<section className="gsap-menu-footer absolute bottom-4 flex w-full flex-col items-center gap-2">

@@ -8,13 +8,13 @@ export const TestimonialCard: FC = () => {
 	return (
 		<div className="flex min-h-[32rem] min-w-0 max-w-[100rem] flex-[0_0_100%] p-loose md:px-24 lg:min-h-[30rem] lg:px-60">
 			<div
-				className="relative h-fit min-h-full w-full rounded-3xl bg-[#B8D7FF] transition-[rotate] duration-300 [perspective:1000px] [transform-style:preserve-3d] [&[data-flipped='true']]:[rotate:y_180deg]"
+				className="relative h-fit min-h-full w-full rounded-3xl bg-[#ebfddd] transition-[rotate] duration-300 [perspective:1000px] [transform-style:preserve-3d] [&[data-flipped='true']]:[rotate:y_180deg]"
 				data-flipped={flipped}
 			>
 				<article className="absolute flex h-full w-full flex-col p-6 [backface-visibility:hidden] md:flex-row md:gap-loose md:p-loose">
-					<div className="hidden aspect-[11.5/16] h-full rounded-3xl xl:block">
+					<div className="hidden aspect-[11.5/16] h-full xl:block">
 						<Video
-							className="size-full rounded-3xl"
+							className="size-full rounded-3xl object-cover overflow-clip"
 							poster="https://ik.imagekit.io/Hireachmedia/OurWork/thumbnails/tr:pr-true,q-80,w-580/poster-2.jpg"
 						/>
 					</div>
