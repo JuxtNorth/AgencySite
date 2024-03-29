@@ -12,13 +12,13 @@ const Impact: FC = () => {
 					<h2 className="gsap-header text-4xl font-bold text-[#343247] md:text-5xl">
 						78,00,000+
 					</h2>
-					<p className='gsap-para'>Organic Views</p>
+					<p className="gsap-para">Organic Views</p>
 				</div>
 				<div className="mx-auto text-center">
 					<h2 className="gsap-header text-4xl font-bold text-[#343247] md:text-5xl">
 						12,00,000+
 					</h2>
-					<p className='gsap-para'>Gained Followers</p>
+					<p className="gsap-para">Gained Followers</p>
 				</div>
 			</div>
 		</section>

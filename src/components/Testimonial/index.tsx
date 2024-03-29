@@ -12,7 +12,9 @@ export const TestimonialCard: FC = () => {
 				data-flipped={flipped}
 			>
 				<article className="absolute flex h-full w-full flex-col p-6 [backface-visibility:hidden] md:flex-row md:gap-loose md:p-loose">
-					<div className="hidden aspect-[11.5/16] h-full rounded-3xl bg-pink-100 xl:block"></div>
+					<div className="hidden aspect-[11.5/16] h-full rounded-3xl xl:block">
+						<Video className='size-full rounded-3xl' poster='https://ik.imagekit.io/Hireachmedia/OurWork/thumbnails/tr:pr-true,q-80,w-580/poster-2.jpg' />
+					</div>
 					<div className="flex min-h-full flex-col justify-between">
 						<header className="flex w-full justify-between">
 							<div className="flex items-center gap-2">
