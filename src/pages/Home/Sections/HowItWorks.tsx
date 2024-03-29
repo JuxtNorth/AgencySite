@@ -1,7 +1,21 @@
 import { FC } from 'react';
 import { HowItWorksCard } from '@/components';
 import { howItWorks } from '@/constants';
-import StarIcon from '@/assets/scribbles/Artboard 45.svg';
+import Ideate from '@/assets/illustrations/undraw_thought_process_re_om58.svg';
+import Strategy from '@/assets/illustrations/undraw_business_decisions_re_84ag.svg';
+import Videos from '@/assets/illustrations/undraw_video_files_fu10.svg';
+import Traffic from '@/assets/illustrations/undraw_photo_sharing_re_jip7.svg';
+import Sales from '@/assets/illustrations/undraw_shopping_re_hdd9.svg';
+import Launch from '@/assets/illustrations/undraw_launching_re_tomg.svg';
+
+const illustrations: string[] = [
+	Strategy,
+	Ideate,
+	Videos,
+	Traffic,
+	Sales,
+	Launch
+];
 
 export const HowItWorks: FC = () => {
 	return (
@@ -13,9 +27,10 @@ export const HowItWorks: FC = () => {
 				{howItWorks.map((props, i) => (
 					<HowItWorksCard {...props} key={i}>
 						<img
-							src={StarIcon}
-							alt="Lightning Bolt Icon"
-							className="mx-auto w-[80%] py-snug md:w-64 md:py-0"
+							src={illustrations[i]}
+							alt=""
+							aria-hidden
+							className="mx-auto w-[80%] py-snug md:w-64 md:py-0 mt-12 mb-snug lg:mt-0 lg:mb-0"
 						/>
 					</HowItWorksCard>
 				))}

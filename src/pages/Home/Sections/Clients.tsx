@@ -49,12 +49,9 @@ export const Clients: FC = () => {
 				</div>
 				<div>
 					<div className="mx-auto grid w-fit grid-flow-row grid-cols-3 gap-4 p-loose">
-						<Avatar />
-						<Avatar />
-						<Avatar />
-						<Avatar />
-						<Avatar />
-						<Avatar />
+						{new Array(6).fill(0).map((_, i) => (
+							<Avatar profileUrl={`https://ik.imagekit.io/Hireachmedia/Clients/tr:w-400,pr-true/${i + 1}.jpg`} name={i.toString()}/>
+						))}
 					</div>
 					<img
 						className="mx-auto hidden h-24 w-24 lg:block lg:h-36 lg:w-36"
