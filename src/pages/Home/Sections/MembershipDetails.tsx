@@ -14,10 +14,10 @@ const scribbles = [Peace, Planet, Bolt, Clock, Target, Money];
 
 export const MembershipDetails: FC = () => {
 	return (
-		<section className="mx-auto max-w-[100rem] text-center">
+		<section className="mx-auto max-w-[100rem] mt-12 text-center">
 			<h1 className="text-4xl font-semibold md:text-5xl">Membership Perks</h1>
 			<p className="md:text-lg">Lorem Ipsum Doler Imet Constrctuer</p>
-			<div className="grid grid-cols-1 grid-rows-6 place-items-center gap-8 p-8 md:grid-cols-3 md:grid-rows-2">
+			<div className="grid grid-cols-1 grid-rows-6 place-items-center gap-loose p-loose xl:p-relaxed md:grid-cols-3 md:grid-rows-2">
 				{perks.map((perk, index) => (
 					<PerkCard {...perk} key={index}>
 						<BlobOverlay type={index as BlobIndex}>
