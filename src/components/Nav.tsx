@@ -7,45 +7,15 @@ import {
 	InstagramIcon
 } from '@/icons';
 import Trend from '@/assets/scribbles/Trend.svg';
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
-
-gsap.registerPlugin(useGSAP);
 
 interface MenuProps {
 	setOpened: Dispatch<SetStateAction<boolean>>;
 }
 
+const menuOptions = ['Perks', 'Testimonials', 'How it works', 'Pricing'];
+
 const Menu: FC<MenuProps> = ({ setOpened }) => {
 	const [animate, setAnimate] = useState(false);
-
-	useGSAP(() => {
-		gsap.fromTo(
-			'.gsap-menu-item',
-			{ x: 60, opacity: 0 },
-			{
-				x: 0,
-				opacity: 1,
-				stagger: 0.09,
-				ease: 'circ.out',
-				delay: 0.34,
-				duration: 0.4
-			}
-		);
-
-		gsap.fromTo(
-			'.gsap-menu-footer',
-			{ y: -32, opacity: 0 },
-			{
-				y: 0,
-				opacity: 1,
-				stagger: 0.09,
-				ease: 'circ.out',
-				delay: 0.7,
-				duration: 0.4
-			}
-		);
-	});
 
 	useEffect(() => setAnimate(true), []);
 
@@ -69,14 +39,16 @@ const Menu: FC<MenuProps> = ({ setOpened }) => {
 				</button>
 			</header>
 			<menu className="mt-[20%] space-y-2 text-center font-extrabold">
-				<li className="gsap-menu-item font-display text-[2.5rem]">Perks</li>
-				<li className="gsap-menu-item font-display text-[2.5rem]">
-					Testimonials
-				</li>
-				<li className="gsap-menu-item font-display text-[2.5rem]">
-					How it works
-				</li>
-				<li className="gsap-menu-item font-display text-[2.5rem]">Pricing</li>
+				{menuOptions.map((option, i) => (
+					<li
+						key={option}
+						data-opened={animate}
+						style={{ transitionDelay: `${i * 120 + (animate ? 0 : 500)}ms`}}
+						className="translate-y-16 font-display text-[2.5rem] opacity-0 transition-[transform,opacity] duration-700 ease-out [&[data-opened='true']]:translate-y-0 [&[data-opened='true']]:opacity-100"
+					>
+						{option}
+					</li>
+				))}
 			</menu>
 			<section className="gsap-menu-footer absolute bottom-4 flex w-full flex-col items-center gap-2">
 				<p>
