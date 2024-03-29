@@ -23,7 +23,7 @@ export const WorksCarousel: FC = () => {
 								poster={`https://ik.imagekit.io/Hireachmedia/OurWork/thumbnails/tr:pr-true,q-80,w-580/poster-${(i % 8) + 1}.jpg`}
 							/>
 						</Slide>
-						<div className="_stat_ mt-2 flex justify-between rounded-full bg-rose-500 px-2 py-1 opacity-0 duration-300">
+						<div className="_stat_ mt-2 flex justify-between rounded-full bg-slate-900 px-2 py-1 opacity-0 duration-300">
 							<p className="text-xs font-semibold text-white">Lorem, ipsum.</p>
 							<p className="text-xs font-semibold text-white">10M+</p>
 						</div>

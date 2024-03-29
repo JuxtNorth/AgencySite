@@ -1,3 +1,4 @@
+import { GoIcon } from '@/icons';
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -16,7 +17,7 @@ export const CaseStudies: FC = () => {
 						/>
 					</div>
 					<h3 className="whitespace-nowrap text-2xl font-semibold md:text-3xl">
-						<Link to="/casestudy/a">Lorem Chaudhary →</Link>
+						<Link to="/casestudy/a">Lorem Chaudhary <GoIcon className='inline text-xl ml-4' /></Link>
 					</h3>
 				</div>
 				<hr className="border-slate-300" />
@@ -29,7 +30,7 @@ export const CaseStudies: FC = () => {
 						/>
 					</div>
 					<h3 className="whitespace-nowrap text-2xl font-semibold md:text-3xl">
-						<Link to="/casestudy/b">Lorem Sharma →</Link>
+						<Link to="/casestudy/b">Lorem Sharma <GoIcon className='inline text-xl ml-4' /></Link>
 					</h3>
 				</div>
 			</div>

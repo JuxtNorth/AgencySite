@@ -13,7 +13,10 @@ export const TestimonialCard: FC = () => {
 			>
 				<article className="absolute flex h-full w-full flex-col p-6 [backface-visibility:hidden] md:flex-row md:gap-loose md:p-loose">
 					<div className="hidden aspect-[11.5/16] h-full rounded-3xl xl:block">
-						<Video className='size-full rounded-3xl' poster='https://ik.imagekit.io/Hireachmedia/OurWork/thumbnails/tr:pr-true,q-80,w-580/poster-2.jpg' />
+						<Video
+							className="size-full rounded-3xl"
+							poster="https://ik.imagekit.io/Hireachmedia/OurWork/thumbnails/tr:pr-true,q-80,w-580/poster-2.jpg"
+						/>
 					</div>
 					<div className="flex min-h-full flex-col justify-between">
 						<header className="flex w-full justify-between">
