@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import { Carousel, Slide, Video } from '@/components';
 import ClassNames from 'embla-carousel-class-names';
+import { EyeIcon } from '@/icons';
 
 export const WorksCarousel: FC = () => {
 	return (
@@ -23,9 +24,13 @@ export const WorksCarousel: FC = () => {
 								poster={`https://ik.imagekit.io/Hireachmedia/OurWork/thumbnails/tr:pr-true,q-80,w-580/poster-${(i % 8) + 1}.jpg`}
 							/>
 						</Slide>
-						<div className="_stat_ mt-2 flex justify-between rounded-full bg-slate-900 px-2 py-1 opacity-0 duration-300">
-							<p className="text-xs font-semibold text-white">Lorem, ipsum.</p>
-							<p className="text-xs font-semibold text-white">10M+</p>
+						<div className="_stat_ mt-2 flex justify-between rounded-full py-1 opacity-0 duration-300">
+							<p className="rounded-lg bg-blue-100 px-2 py-1 text-xs font-semibold">
+								Lorem Ipsum
+							</p>
+							<p className="rounded-lg bg-blue-100 px-2 py-1 text-xs font-semibold">
+								<EyeIcon className="inline" /> 10M+
+							</p>
 						</div>
 					</div>
 				))}
