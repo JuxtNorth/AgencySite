@@ -23,7 +23,8 @@ export const howItWorks: Omit<HowItWorksCardProps, 'children'>[] = [
 		alternate: true
 	},
 	{
-		title: 'Your content generates traffic, we nurture it and turn it into leads.',
+		title:
+			'Your content generates traffic, we nurture it and turn it into leads.',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem dicta laboriosam, corporis ipsum culpa delectus voluptate commodi repudiandae distinctio qui repellendus pariatur inventore assumenda, praesentium velit nihil in nesciunt. Sunt.',
 		index: 4,

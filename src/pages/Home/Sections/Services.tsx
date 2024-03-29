@@ -26,7 +26,9 @@ export const Services: FC = () => {
 				<h2 className="mb-12 mt-snug font-semibold">Our Services</h2>
 				<section className="grid grid-rows-6 gap-snug lg:grid-cols-3 lg:grid-rows-2">
 					{services.map((props, i) => (
-						<ServiceCard {...props}>{icons[i]}</ServiceCard>
+						<ServiceCard key={i} {...props}>
+							{icons[i]}
+						</ServiceCard>
 					))}
 				</section>
 			</div>

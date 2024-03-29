@@ -25,6 +25,7 @@
 		"gsap": "^3.12.5",
 		"hi-tech-media": "link:",
 		"react": "^18.2.0",
+		"react-calendly": "^4.3.0",
 		"react-dom": "^18.2.0",
 		"react-router-dom": "^6.22.3",
 		"redux": "^5.0.1",

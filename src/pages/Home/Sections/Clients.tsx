@@ -53,6 +53,7 @@ export const Clients: FC = () => {
 							<Avatar
 								profileUrl={`https://ik.imagekit.io/Hireachmedia/Clients/tr:w-400,pr-true/${i + 1}.jpg`}
 								name={i.toString()}
+								key={i}
 							/>
 						))}
 					</div>

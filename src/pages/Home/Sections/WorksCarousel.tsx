@@ -16,8 +16,8 @@ export const WorksCarousel: FC = () => {
 				plugins={[ClassNames()]}
 			>
 				{new Array(24).fill(0).map((_, i) => (
-					<div className="last:mr-snug 2xl:last:mr-loose">
-						<Slide key={i} variant="vertical" className="overflow-hidden">
+					<div key={i} className="last:mr-snug 2xl:last:mr-loose">
+						<Slide variant="vertical" className="overflow-hidden">
 							<Video
 								className="w-full rounded-2xl object-cover blur-[4px] transition-[filter] duration-300 lg:rounded-3xl"
 								poster={`https://ik.imagekit.io/Hireachmedia/OurWork/thumbnails/tr:pr-true,q-80,w-580/poster-${(i % 8) + 1}.jpg`}
