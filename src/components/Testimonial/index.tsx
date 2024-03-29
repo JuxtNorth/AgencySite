@@ -14,7 +14,7 @@ export const TestimonialCard: FC = () => {
 				<article className="absolute flex h-full w-full flex-col p-6 [backface-visibility:hidden] md:flex-row md:gap-loose md:p-loose">
 					<div className="hidden aspect-[11.5/16] h-full xl:block">
 						<Video
-							className="size-full rounded-3xl object-cover overflow-clip"
+							className="size-full overflow-clip rounded-3xl object-cover"
 							poster="https://ik.imagekit.io/Hireachmedia/OurWork/thumbnails/tr:pr-true,q-80,w-580/poster-2.jpg"
 						/>
 					</div>
