@@ -9,8 +9,8 @@ export const Hero: FC = () => {
 	useGSAP(() => {
 		gsap.fromTo(
 			'.gsap-hero',
-			{ y: 120, opacity: 0 },
-			{ y: 0, opacity: 1, stagger: 0.06, delay: 0.3 }
+			{ y: 80, opacity: 0 },
+			{ y: 0, opacity: 1, stagger: 0.12, delay: 0.8 }
 		);
 	});
 

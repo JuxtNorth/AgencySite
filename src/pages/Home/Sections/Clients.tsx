@@ -9,16 +9,16 @@ const Impact: FC = () => {
 			<h2 className="rounded-2xl text-center font-semibold">Our Impact</h2>
 			<div className="mt-loose space-y-loose md:flex md:items-center md:gap-36 md:space-y-0">
 				<div className="mx-auto text-center">
-					<h2 className="text-4xl font-bold text-[#343247] md:text-5xl">
+					<h2 className="gsap-header text-4xl font-bold text-[#343247] md:text-5xl">
 						78,00,000+
 					</h2>
-					<p>Organic Views</p>
+					<p className='gsap-para'>Organic Views</p>
 				</div>
 				<div className="mx-auto text-center">
-					<h2 className="text-4xl font-bold text-[#343247] md:text-5xl">
+					<h2 className="gsap-header text-4xl font-bold text-[#343247] md:text-5xl">
 						12,00,000+
 					</h2>
-					<p>Gained Followers</p>
+					<p className='gsap-para'>Gained Followers</p>
 				</div>
 			</div>
 		</section>
@@ -33,11 +33,11 @@ export const Clients: FC = () => {
 			<section className="w-full rounded-2xl bg-lime-100 p-snug py-loose text-center lg:flex lg:justify-between lg:p-loose lg:text-left xl:p-relaxed">
 				<div className="lg:flex lg:flex-col lg:justify-between">
 					<div>
-						<h1 className="font-extrabold leading-none">
+						<h1 className="gsap-header font-extrabold leading-none">
 							Our <br className="hidden lg:inline" />
 							Clients
 						</h1>
-						<p className="text-sm lg:text-lg">
+						<p className="gsap-para text-sm lg:text-lg">
 							Lorem Ipsum Doler Imet Constrctuer
 						</p>
 					</div>

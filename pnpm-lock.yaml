@@ -50,6 +50,9 @@ dependencies:
   redux:
     specifier: ^5.0.1
     version: 5.0.1
+  split-type:
+    specifier: ^0.3.4
+    version: 0.3.4
   tailwind-merge:
     specifier: ^2.2.2
     version: 2.2.2
@@ -2890,6 +2893,10 @@ packages:
     resolution: {integrity: sha512-9vC2SfsJzlej6MAaMPLu8HiBSHGdRAJ9hVFYN1ibZoNkeanmDmLUcIrj6G9DGL7XMJ54AKg/G75akXl1/izTOw==}
     engines: {node: '>=0.10.0'}
     dev: true
+
+  /split-type@0.3.4:
+    resolution: {integrity: sha512-otEk9vnD8qwfLsk3Lx0gz+qRkNIJCx0mlyL47ImP/DjMuV39d75Lpfwjn9fHteDRz0aoOblSzQjSNT9+Sswxcg==}
+    dev: false
 
   /string-width@4.2.3:
     resolution: {integrity: sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==}

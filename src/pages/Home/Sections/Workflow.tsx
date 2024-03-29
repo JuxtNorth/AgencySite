@@ -7,8 +7,8 @@ import StarIcon from '@/assets/scribbles/Artboard 45.svg';
 export const Workflow: FC = () => {
 	return (
 		<section className="mx-auto mt-12 max-w-[100rem] p-snug md:p-loose">
-			<div className="mx-auto space-y-tight pb-8 text-center">
-				<h2 className="font-semibold">Our Workflow</h2>
+			<div className="gsap-text-container mx-auto space-y-tight pb-8 text-center">
+				<h2 className="gsap-header font-semibold">Our Workflow</h2>
 				<p className="leading-tight">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 				</p>

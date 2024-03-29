@@ -4,7 +4,7 @@ import { pricingPlans } from '@/constants';
 import { BoltIcon, CrownIcon } from '@/icons';
 
 const icons = [
-	<BoltIcon className='text-indigo-400 md:text-lg xl:text-xl' />,
+	<BoltIcon className="text-indigo-400 md:text-lg xl:text-xl" />,
 	<CrownIcon className="text-green-300 md:text-lg xl:text-xl" />,
 	<CrownIcon className="text-rose-500 md:text-lg xl:text-xl" />
 ];
