@@ -21,3 +21,4 @@ export * from './Instagram';
 export * from './Glitter';
 export * from './Burger';
 export * from './Crown';
+export * from "./Bolt";

@@ -1,10 +1,10 @@
 import { FC } from 'react';
 import { PricingCard } from '@/components';
 import { pricingPlans } from '@/constants';
-import { CrownIcon } from '@/icons';
+import { BoltIcon, CrownIcon } from '@/icons';
 
 const icons = [
-	<div />,
+	<BoltIcon className='text-indigo-400 md:text-lg xl:text-xl' />,
 	<CrownIcon className="text-green-300 md:text-lg xl:text-xl" />,
 	<CrownIcon className="text-rose-500 md:text-lg xl:text-xl" />
 ];

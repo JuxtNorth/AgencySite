@@ -6,7 +6,7 @@ import StarIcon from '@/assets/scribbles/Artboard 45.svg';
 
 export const Workflow: FC = () => {
 	return (
-		<section className="mx-auto max-w-[100rem] p-loose mt-12">
+		<section className="mx-auto mt-12 max-w-[100rem] p-loose">
 			<div className="mx-auto space-y-tight pb-8 text-center">
 				<h2 className="font-semibold">Our Workflow</h2>
 				<p className="leading-tight">
