@@ -16,7 +16,7 @@ export const Mission: FC<MissionProps> = (props) => {
 				<p>{props.contentBlock1}</p>
 				<ul className="list-disc space-y-2 pl-snug">
 					{props.list.map((item) => (
-						<li className='ml-2'>
+						<li className="ml-2">
 							<p>{item}</p>
 						</li>
 					))}
