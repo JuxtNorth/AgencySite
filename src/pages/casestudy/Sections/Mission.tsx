@@ -9,7 +9,7 @@ export interface MissionProps {
 export const Mission: FC<MissionProps> = (props) => {
 	return (
 		<section className="space-y-snug rounded-2xl bg-purple-300 p-loose md:rounded-3xl md:p-relaxed lg:grid lg:grid-cols-[64%_36%]">
-			<article className="space-y-snug lg:pr-loose">
+			<article className="space-y-snug md:my-loose lg:pr-loose">
 				<h2 className="mb-snug font-bold leading-tight">
 					Mission &<br className="md:hidden" /> Challenge
 				</h2>
@@ -27,7 +27,7 @@ export const Mission: FC<MissionProps> = (props) => {
 				src="https://ik.imagekit.io/Hireachmedia/CaseStudy/1/tr:w-720,pr-true/profile.jpg"
 				alt="An Image"
 				width={720}
-				className="w-full rounded-2xl object-cover md:rounded-3xl"
+				className="mx-auto w-full max-w-[28rem] rounded-2xl object-cover md:rounded-3xl"
 			/>
 		</section>
 	);

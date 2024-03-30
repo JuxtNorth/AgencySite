@@ -24,7 +24,7 @@ const data = {
 
 export const A: FC = () => {
 	return (
-		<main className="space-y-loose p-snug md:p-loose">
+		<main className="space-y-loose p-snug md:p-loose max-w-[100rem] mx-auto">
 			<Header {...data.header} />
 			<Mission {...data.mission} />
 			<Outcome />
