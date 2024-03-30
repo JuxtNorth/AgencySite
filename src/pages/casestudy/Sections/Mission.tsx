@@ -4,6 +4,10 @@ export interface MissionProps {
 	contentBlock1: string;
 	contentBlock2: string;
 	list: string[];
+	picture: {
+		src: string;
+		alt: string;
+	}
 }
 
 export const Mission: FC<MissionProps> = (props) => {
@@ -24,10 +28,10 @@ export const Mission: FC<MissionProps> = (props) => {
 				<p>{props.contentBlock2}</p>
 			</article>
 			<img
-				src="https://ik.imagekit.io/Hireachmedia/CaseStudy/1/tr:w-720,pr-true/profile.jpg"
-				alt="An Image"
+				src={props.picture.src}
+				alt={props.picture.alt}
 				width={720}
-				className="mx-auto w-full max-w-[28rem] rounded-2xl object-cover md:rounded-3xl"
+				className="mx-auto w-full h-[42rem] max-w-[28rem] rounded-2xl object-cover md:rounded-3xl"
 			/>
 		</section>
 	);
