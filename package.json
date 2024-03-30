@@ -10,7 +10,7 @@
 		"preview": "vite preview",
 		"format": "prettier . --write",
 		"prepare": "husky",
-		"precommit": "pnpm format && echo 'Test build' && pnpm build",
+		"precommit": "pnpm format && pnpm build",
 		"deploy": "pnpm precommit && firebase deploy"
 	},
 	"dependencies": {
