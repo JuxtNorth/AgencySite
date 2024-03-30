@@ -10,7 +10,8 @@
 		"preview": "vite preview",
 		"format": "prettier . --write",
 		"prepare": "husky",
-		"precommit": "pnpm format && echo 'Test build' && pnpm build"
+		"precommit": "pnpm format && echo 'Test build' && pnpm build",
+		"deploy": "pnpm precommit && firebase deploy"
 	},
 	"dependencies": {
 		"@gsap/react": "^2.1.0",
