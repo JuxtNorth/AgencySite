@@ -7,9 +7,9 @@ const Stat: FC<{ children: ReactNode; text: string }> = ({
 	text
 }) => {
 	return (
-		<div className='flex gap-2 items-center'>
-			<div className='p-2 bg-[#b2ffa3] rounded-full'>{children}</div>
-			<p className='font-semibold text-[12px] lg:text-[16px]'>{text}</p>
+		<div className="flex items-center gap-2">
+			<div className="rounded-full bg-[#b2ffa3] p-2">{children}</div>
+			<p className="text-[12px] font-semibold lg:text-[16px]">{text}</p>
 		</div>
 	);
 };
@@ -40,7 +40,7 @@ export const TestimonialCard: FC = () => {
 								</div>
 							</div>
 							<div className="flex max-h-loose items-center rounded-full bg-[#b2ffa3] px-snug">
-								<p className='font-semibold mt-px'>1.5M</p>
+								<p className="mt-px font-semibold">1.5M</p>
 							</div>
 						</header>
 						<p className="pl-tight text-left font-display text-[18px] font-semibold leading-snug lg:leading-relaxed xl:text-3xl ">
@@ -48,14 +48,20 @@ export const TestimonialCard: FC = () => {
 							molestiae excepturi earum tenetur porro iste hic saepe amet
 							voluptatibus facilis, id minima optio!
 						</p>
-						<footer className="flex flex-col gap-3 items-center justify-between md:flex-row md:gap-0">
-							<section className="flex justify-between w-full">
-								<Stat text="400k+"><TrendIcon /></Stat>
-								<Stat text="12M+"><EyeLightIcon /></Stat>
-								<Stat text="$60k+"><MoneyIcon /></Stat>
+						<footer className="flex flex-col items-center justify-between gap-3 md:flex-row md:gap-0">
+							<section className="flex w-full justify-between">
+								<Stat text="400k+">
+									<TrendIcon />
+								</Stat>
+								<Stat text="12M+">
+									<EyeLightIcon />
+								</Stat>
+								<Stat text="$60k+">
+									<MoneyIcon />
+								</Stat>
 							</section>
 							<button
-								className="rounded-full bg-[#b2ffa3] w-full py-3 font-display text-xs font-semibold md:hidden md:text-sm lg:text-base xl:text-lg"
+								className="w-full rounded-full bg-[#b2ffa3] py-3 font-display text-xs font-semibold md:hidden md:text-sm lg:text-base xl:text-lg"
 								onClick={() => setFlipped(!flipped)}
 							>
 								See Work

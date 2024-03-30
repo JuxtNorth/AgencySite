@@ -47,9 +47,9 @@ export const PricingCard: FC<PricingCardProps> = (props) => {
 					</ul>
 				</section>
 			</div>
-			<div className="flex items-center gap-2 rounded-full bg-green-200 px-snug py-2">
+			<div className="flex items-center gap-2 rounded-full bg-rose-300 px-snug py-2">
 				<MagicIcon className="shrink-0 md:text-sm" />
-				<p className="text-xs leading-tight">{props.bestFor}</p>
+				<p className="text-sm leading-tight">{props.bestFor}</p>
 			</div>
 		</article>
 	);
