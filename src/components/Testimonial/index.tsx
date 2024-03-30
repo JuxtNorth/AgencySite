@@ -1,6 +1,18 @@
-import { FC, useState } from 'react';
-import Trend from '@/assets/scribbles/Trend.svg';
+import { FC, ReactNode, useState } from 'react';
 import { Video } from '@/components';
+import { EyeLightIcon, MoneyIcon, TrendIcon } from '@/icons';
+
+const Stat: FC<{ children: ReactNode; text: string }> = ({
+	children,
+	text
+}) => {
+	return (
+		<div className='flex gap-2 items-center'>
+			<div className='p-2 bg-[#b2ffa3] rounded-full'>{children}</div>
+			<p className='font-semibold text-[12px] lg:text-[16px]'>{text}</p>
+		</div>
+	);
+};
 
 export const TestimonialCard: FC = () => {
 	const [flipped, setFlipped] = useState(false);
@@ -27,23 +39,23 @@ export const TestimonialCard: FC = () => {
 									<p className="text-sm">Lorem Ipsum</p>
 								</div>
 							</div>
+							<div className="flex max-h-loose items-center rounded-full bg-[#b2ffa3] px-snug">
+								<p className='font-semibold mt-px'>1.5M</p>
+							</div>
 						</header>
-						<p className="pl-tight text-left font-display text-[1.36rem] font-semibold leading-snug lg:leading-relaxed xl:text-3xl ">
+						<p className="pl-tight text-left font-display text-[18px] font-semibold leading-snug lg:leading-relaxed xl:text-3xl ">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
 							molestiae excepturi earum tenetur porro iste hic saepe amet
 							voluptatibus facilis, id minima optio!
 						</p>
-						<footer className="flex items-center justify-between">
-							<div className="flex items-center gap-2">
-								<div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#FFFEDA]">
-									<img className="h-5 w-5" src={Trend} alt="Trend Icon" />
-								</div>
-								<p className="text-xs md:text-sm lg:text-base xl:text-lg">
-									Gained 400k followers
-								</p>
-							</div>
+						<footer className="flex flex-col gap-3 items-center justify-between md:flex-row md:gap-0">
+							<section className="flex justify-between w-full">
+								<Stat text="400k+"><TrendIcon /></Stat>
+								<Stat text="12M+"><EyeLightIcon /></Stat>
+								<Stat text="$60k+"><MoneyIcon /></Stat>
+							</section>
 							<button
-								className="rounded-full bg-[#FFFEDA] px-snug py-2 font-display text-xs font-semibold md:hidden md:text-sm lg:text-base xl:text-lg"
+								className="rounded-full bg-[#b2ffa3] w-full py-3 font-display text-xs font-semibold md:hidden md:text-sm lg:text-base xl:text-lg"
 								onClick={() => setFlipped(!flipped)}
 							>
 								See Work

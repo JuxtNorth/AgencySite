@@ -25,3 +25,5 @@ export * from './Bolt';
 export * from './Go';
 export * from './Eye';
 export * from './Star';
+export * from './Money';
+export * from './EyeLight';
