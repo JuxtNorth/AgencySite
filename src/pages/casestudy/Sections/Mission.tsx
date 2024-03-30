@@ -8,15 +8,15 @@ export interface MissionProps {
 
 export const Mission: FC<MissionProps> = (props) => {
 	return (
-		<section className="space-y-snug rounded-2xl bg-purple-300 p-loose md:rounded-3xl md:p-relaxed lg:grid lg:grid-cols-[64%_36%] lg:gap-snug">
-			<article className="space-y-snug">
+		<section className="space-y-snug rounded-2xl bg-purple-300 p-loose md:rounded-3xl md:p-relaxed lg:grid lg:grid-cols-[64%_36%]">
+			<article className="space-y-snug lg:pr-loose">
 				<h2 className="mb-snug font-bold leading-tight">
 					Mission &<br className="md:hidden" /> Challenge
 				</h2>
 				<p>{props.contentBlock1}</p>
 				<ul className="list-disc space-y-2 pl-snug">
 					{props.list.map((item) => (
-						<li>
+						<li className='ml-2'>
 							<p>{item}</p>
 						</li>
 					))}

@@ -43,7 +43,7 @@ export const ServiceCard: FC<ServiceCardProps> = (props) => {
 				<Dialog>
 					<DialogTrigger>
 						{' '}
-						<button className="lg:text-sm xl:text-base">Learn More</button>
+						<p className="lg:text-sm xl:text-base">Learn More</p>
 					</DialogTrigger>
 					<DialogContent className="w-[90%] space-y-4 rounded-2xl bg-white">
 						<DialogHeader className="text-left">
@@ -58,13 +58,10 @@ export const ServiceCard: FC<ServiceCardProps> = (props) => {
 							</DialogDescription>
 						</DialogHeader>
 						<DialogFooter>
-							<DialogClose asChild>
-								<button
-									onClick={jumpToPricingSection}
-									className="rounded-2xl bg-black px-8 py-snug text-center text-lg text-white"
-								>
+							<DialogClose onClick={jumpToPricingSection} asChild>
+								<p className="rounded-2xl bg-black px-8 py-snug text-center text-lg text-white">
 									See Pricing
-								</button>
+								</p>
 							</DialogClose>
 						</DialogFooter>
 					</DialogContent>

@@ -24,3 +24,4 @@ export * from './Crown';
 export * from './Bolt';
 export * from './Go';
 export * from './Eye';
+export * from './Star';
