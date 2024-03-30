@@ -16,12 +16,15 @@ const menuOptions = ['Perks', 'Testimonials', 'How it works', 'Pricing'];
 
 const Menu: FC<MenuProps> = ({ setOpened }) => {
 	const [animate, setAnimate] = useState(false);
+	const [timeoutID, setTimeoutID] = useState<null | number>(null);
 
 	useEffect(() => setAnimate(true), []);
 
 	const close = () => {
 		setAnimate(false);
-		setTimeout(() => setOpened(false), 800);
+		if (timeoutID !== null) clearTimeout(timeoutID);
+		const id = setTimeout(() => setOpened(false), 800);
+		setTimeoutID(id);
 	};
 
 	return (
@@ -43,7 +46,7 @@ const Menu: FC<MenuProps> = ({ setOpened }) => {
 					<li
 						key={option}
 						data-opened={animate}
-						style={{ transitionDelay: `${i * 120 + (animate ? 0 : 500)}ms`}}
+						style={{ transitionDelay: `${i * 120 + (animate ? 0 : 500)}ms` }}
 						className="translate-y-16 font-display text-[2.5rem] opacity-0 transition-[transform,opacity] duration-700 ease-out [&[data-opened='true']]:translate-y-0 [&[data-opened='true']]:opacity-100"
 					>
 						{option}
