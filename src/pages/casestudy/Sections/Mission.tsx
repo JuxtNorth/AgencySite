@@ -7,7 +7,7 @@ export interface MissionProps {
 	picture: {
 		src: string;
 		alt: string;
-	}
+	};
 }
 
 export const Mission: FC<MissionProps> = (props) => {
@@ -31,7 +31,7 @@ export const Mission: FC<MissionProps> = (props) => {
 				src={props.picture.src}
 				alt={props.picture.alt}
 				width={720}
-				className="mx-auto w-full h-[42rem] max-w-[28rem] rounded-2xl object-cover md:rounded-3xl"
+				className="mx-auto h-[42rem] w-full max-w-[28rem] rounded-2xl object-cover md:rounded-3xl"
 			/>
 		</section>
 	);
