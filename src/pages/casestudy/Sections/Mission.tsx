@@ -31,7 +31,7 @@ export const Mission: FC<MissionProps> = (props) => {
 				src={props.picture.src}
 				alt={props.picture.alt}
 				width={720}
-				className="mx-auto h-[42rem] w-full max-w-[28rem] rounded-2xl object-cover md:rounded-3xl"
+				className="mx-auto h-[24rem] md:h-[36rem] lg:h-[42rem] w-full max-w-[28rem] rounded-2xl object-cover md:rounded-3xl"
 			/>
 		</section>
 	);
