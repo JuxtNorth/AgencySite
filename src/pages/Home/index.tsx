@@ -28,9 +28,10 @@ export const Home: FC = () => {
 			{ opacity: 0 },
 			{
 				opacity: 1,
-				duration: 1.2,
+				duration: 2.4,
 				stagger: 0.06,
-				scrollTrigger: '.gsap-header'
+				scrollTrigger: '.gsap-header',
+				ease: "circ.in"
 			}
 		);
 
@@ -42,22 +43,24 @@ export const Home: FC = () => {
 	});
 
 	return (
-		<main>
+		<>
 			<Nav />
-			{/*<FloatingNav />*/}
-			<Hero />
-			<Clients />
-			<WorksCarousel />
-			<Workflow />
-			<Testimonials />
-			<CaseStudies />
-			<HowItWorks />
-			<Services />
-			<Pricing />
-			<MembershipDetails />
-			<Faq />
-			<ScheduleCalendar />
-			<Footer />
-		</main>
+			<main>
+				{/*<FloatingNav />*/}
+				<Hero />
+				<Clients />
+				<WorksCarousel />
+				<Workflow />
+				<Testimonials />
+				<CaseStudies />
+				<HowItWorks />
+				<Services />
+				<Pricing />
+				<MembershipDetails />
+				<Faq />
+				<ScheduleCalendar />
+				<Footer />
+			</main>
+		</>
 	);
 };
