@@ -12,12 +12,23 @@
 	}
 }
 
+:root {
+	--background: #11111C;
+	--surface: #282c35;
+	--primary: #3d4cf5;
+	--primary-varient: #5249f4;
+	--secondary: #17e1e1;
+	--accent: #F13772;
+	--font-primary: #f6f8f7;
+	--muted: #888888;
+}
+
 body {
 	@apply bg-background;
 }
 
 html {
-	@apply scroll-smooth;
+	@apply scroll-smooth font-body;
 }
 
 h1,
@@ -29,30 +40,6 @@ h6 {
 	@apply font-display text-font-primary;
 }
 
-p,
-a,
-li,
-b,
-i,
-button,
-span {
-	@apply font-body text-font-primary;
-}
-
-h1 {
-	@apply text-[2.5rem] md:text-5xl lg:text-7xl;
-}
-
-h2 {
-	@apply text-3xl md:text-4xl lg:text-6xl;
-}
-
-h3 {
-	@apply text-[24px] md:text-[28px] lg:text-[30px];
-}
-
-p,
-span,
-li {
-	@apply text-[14px] md:text-[16px];
+p, a {
+	@apply text-font-primary;
 }

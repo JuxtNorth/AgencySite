@@ -1,71 +1,33 @@
+import { Grid } from '@/components/ui';
 import { FC } from 'react';
-import Arrow from '@/assets/scribbles/arrow.svg';
-import Star from '@/assets/scribbles/star.svg';
-import Planet from '@/assets/scribbles/planet.svg';
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
 
 export const Hero: FC = () => {
-	useGSAP(() => {
-		gsap.fromTo(
-			'.gsap-hero',
-			{ y: 80, opacity: 0 },
-			{
-				y: 0,
-				opacity: 1,
-				duration: 2,
-				ease: 'power2.out',
-				stagger: 0.12,
-				delay: 0.8
-			}
-		);
-
-		const images = document.querySelectorAll(".gsap-img");
-
-		gsap.fromTo(images[0], { opacity: 0, y: -32 }, { opacity: 1, y: 0, delay: 0.8, duration: 2 });
-		gsap.fromTo(images[1], { opacity: 0 }, { opacity: 1, delay: 2, duration: 4 });
-		gsap.fromTo(images[2], { opacity: 0, y: 50 }, { opacity: 1, y: 0, delay: 0.8, duration: 2 });
-	});
-
 	return (
-		<header className="mx-auto min-h-fit max-w-[100rem] p-snug pt-tight md:p-loose md:pt-0">
-			<div className="relative flex min-h-fit flex-col justify-between rounded-3xl bg-[#FFFEDA] py-16">
-				<img
-					className="gsap-img absolute right-[5%] top-[3%] h-32 w-32"
-					src={Planet}
-				/>
-				<div className="my-auto mt-28 md:mt-auto">
-					<div className="text-center font-semibold leading-tight md:space-y-2 md:leading-snug xl:space-y-3">
-						<h1 className="gsap-hero">Forging</h1>
-						<h1 className="gsap-hero mx-auto w-fit rounded-2xl bg-[#D7C6FF] px-snug font-display font-bold md:-mb-1">
-							Personal Brand
-						</h1>
-						<h1 className="gsap-hero">for Social Virality</h1>
-					</div>
-					<div className="relative mx-auto w-fit lg:mb-snug 2xl:mb-loose">
-						<img
-							className="gsap-img absolute -left-[3%] top-[12%] scale-[0.8] md:left-[5%] md:scale-[0.64]"
-							src={Arrow}
-						/>
-						<p className="gsap-hero mx-auto mt-5 w-[72%] text-center text-[0.9rem] md:w-[64%] md:text-lg">
-							Subscription here makes your brands go viral there, grab your
-							seats.
-						</p>
-					</div>
+		<header className="mx-auto flex min-h-[min(100vh,72rem)] max-w-[100rem] flex-col items-center justify-center">
+			<div className="relative mb-2 text-center text-[1.86rem] font-semibold leading-[2.3rem]">
+				<div className='absolute -top-[42px]'>
+					<Grid />
 				</div>
-				<div className="relative mx-auto mt-20 flex w-[60%] max-w-56 flex-col gap-4 md:mt-12 md:w-fit md:max-w-fit md:flex-row 2xl:mt-0">
-					<button className="gsap-hero rounded-full bg-[#D7C6FF] px-6 py-4 font-display text-[1.3rem] font-semibold">
-						See Pricing
-					</button>
-					<button className="gsap-hero rounded-full bg-[#B8D7FF] px-6 py-4 font-display text-[1.3rem] font-semibold">
-						Book a Call
-					</button>
-					<img
-						className="gsap-img absolute left-full top-[40%] scale-[0.64] md:scale-[1.08]"
-						src={Star}
-					/>
-				</div>
+				<h1>FORGING</h1>
+				<h1 className="to-secondary inline-block bg-gradient-to-r from-primary from-10% bg-clip-text text-transparent">
+					PERSONAL BRAND
+				</h1>
+				<h1>
+					FOR{' '}
+					<span className="inline-block bg-gradient-to-r from-accent to-primary to-60% bg-clip-text text-transparent">
+						SOCIAL VIRALITY
+					</span>
+				</h1>
 			</div>
+			<p className="w-[80%] text-center text-xs">
+				Subscription here makes brands go viral there, grab your seats.
+			</p>
+			<a
+				className="mt-16 rounded-lg border border-primary px-8 py-4 text-xs"
+				href="#"
+			>
+				See Plans
+			</a>
 		</header>
 	);
 };

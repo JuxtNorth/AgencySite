@@ -4,14 +4,18 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				display: '"Raleway", sans-serif',
-				body: '"Rubik", sans-serif',
-				comfortaa: '"Comfortaa", sans-serif'
+				display: '"Nunito", sans-serif',
+				body: '"Comfortaa", sans-serif'
 			},
 			colors: {
-				background: '#FCFCFF',
-				'font-primary': '#343247',
-				muted: '#666666'
+				background: 'var(--background)',
+				surface: 'var(--surface)',
+				primary: 'var(--primary)',
+				'primary-varient': 'var(--primary-varient)',
+				secondary: 'var(--secondary)',
+				accent: 'var(--accent)',
+				'font-primary': 'var(--font-primary)',
+				muted: 'var(--muted)'
 			},
 			spacing: {
 				tight: '0.25rem',
@@ -27,11 +31,17 @@ export default {
 				'accordion-up': {
 					from: { height: 'var(--radix-accordion-content-height)' },
 					to: { height: '0' }
+				},
+				blob: {
+					'0%': { rotate: '0deg' },
+					'50%': { scale: '1 1.36' },
+					'100%': { rotate: '360deg' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				blob: 'blob 18s linear infinite'
 			}
 		}
 	},
