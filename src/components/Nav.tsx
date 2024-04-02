@@ -1,6 +1,7 @@
 import { FC, useEffect, useState } from 'react';
 import Trend from '@/assets/scribbles/Trend.svg';
 import { BurgerIcon } from '@/icons';
+import { Link } from 'react-router-dom';
 
 export const Nav: FC = () => {
 	const [blur, setBlur] = useState(0);
@@ -30,14 +31,28 @@ export const Nav: FC = () => {
 					<img className="h-5 w-5 invert" src={Trend} />
 					<p className="font-body text-xs font-bold">Hi Reach Media</p>
 				</div>
-				<div className="flex items-center gap-2">
+				<div className="flex items-center gap-2 ">
+					<menu className="mr-loose hidden gap-snug text-xs lg:flex">
+						<li>
+							<Link className='hover:underline' to="#">Our Work</Link>
+						</li>
+						<li>
+							<Link className='hover:underline' to="#">Pricing</Link>
+						</li>
+						<li>
+							<Link className='hover:underline' to="#">Reviews</Link>
+						</li>
+						<li>
+							<Link className='hover:underline' to="#">About</Link>
+						</li>
+					</menu>
 					<a
 						className="flex h-10 grow-0 items-center justify-center rounded-full border border-primary px-6 font-display text-xs leading-7"
 						href="#schedule"
 					>
 						Book a call
 					</a>
-					<button className="flex size-10 items-center justify-center rounded-full bg-primary text-xl text-font-primary">
+					<button className="flex size-10 items-center justify-center rounded-full bg-primary text-xl text-font-primary lg:hidden">
 						<BurgerIcon />
 					</button>
 				</div>

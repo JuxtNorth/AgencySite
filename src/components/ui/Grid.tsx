@@ -13,7 +13,7 @@ export const Grid: FC<GridProps> = (props) => {
 	const { gridX = 8, gridY = 8, width = 300, height = 300 } = props;
 	const rects = [];
 	const squareW = width / gridX;
-	const squareH = height / gridX;
+	const squareH = height / gridY;
 
 	for (let y = 0; y < gridY; y++) {
 		for (let x = 0; x < gridX; x++) {
@@ -24,8 +24,13 @@ export const Grid: FC<GridProps> = (props) => {
 	}
 
 	return (
-		<div className="relative mix-blend-screen -z-20" style={{ width, height }}>
-			<div className={cn("absolute size-full bg-[radial-gradient(ellipse_60%_70%,var(--primary-varient),black_70%)] mix-blend-multiply", props.className)}></div>
+		<div className="relative -z-20 mix-blend-screen" style={{ width, height }}>
+			<div
+				className={cn(
+					'absolute size-full bg-[radial-gradient(ellipse_60%_70%,var(--primary-varient),black_70%)] lg:bg-[radial-gradient(ellipse_80%_60%,var(--primary-varient),black_70%)] mix-blend-multiply',
+					props.className
+				)}
+			></div>
 			<svg
 				width={width}
 				height={height}
