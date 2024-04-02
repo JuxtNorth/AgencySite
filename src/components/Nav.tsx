@@ -24,7 +24,7 @@ export const Nav: FC = () => {
 	return (
 		<>
 			<nav
-				className="fixed top-0 z-10 box-border flex h-16 w-full items-center justify-between px-snug transition-[backdrop-filter]"
+				className="fixed top-0 z-50 box-border flex h-16 w-full items-center justify-between px-snug transition-[backdrop-filter]"
 				style={{ backdropFilter: `blur(${blur}px)` }}
 			>
 				<div className="flex items-center gap-2">
@@ -34,16 +34,24 @@ export const Nav: FC = () => {
 				<div className="flex items-center gap-2 ">
 					<menu className="mr-loose hidden gap-snug text-xs lg:flex">
 						<li>
-							<Link className='hover:underline' to="#">Our Work</Link>
+							<Link className="hover:underline" to="#">
+								Our Work
+							</Link>
 						</li>
 						<li>
-							<Link className='hover:underline' to="#">Pricing</Link>
+							<Link className="hover:underline" to="#">
+								Pricing
+							</Link>
 						</li>
 						<li>
-							<Link className='hover:underline' to="#">Reviews</Link>
+							<Link className="hover:underline" to="#">
+								Reviews
+							</Link>
 						</li>
 						<li>
-							<Link className='hover:underline' to="#">About</Link>
+							<Link className="hover:underline" to="#">
+								About
+							</Link>
 						</li>
 					</menu>
 					<a
