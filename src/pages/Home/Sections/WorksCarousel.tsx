@@ -25,10 +25,10 @@ export const WorksCarousel: FC = () => {
 							/>
 						</Slide>
 						<div className="_stat_ mt-2 flex justify-between rounded-full py-1 opacity-0 duration-300">
-							<p className="rounded-lg bg-blue-100 px-2 py-1 text-xs font-semibold">
+							<p className="rounded-lg px-2 py-1 text-xs font-semibold">
 								Lorem Ipsum
 							</p>
-							<p className="rounded-lg bg-blue-100 px-2 py-1 text-xs font-semibold">
+							<p className="rounded-lg px-2 py-1 text-xs font-semibold">
 								<EyeIcon className="inline" /> 10M+
 							</p>
 						</div>

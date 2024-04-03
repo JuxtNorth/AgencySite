@@ -33,7 +33,7 @@ export const GlowyBlob: FC<GlowyBlobProps> = () => {
 	return (
 		<div
 			ref={ref}
-			className="absolute left-[80%] top-[90%] -z-20 size-[14rem] lg:size-[36vmax] lg:saturate-[0.6] animate-blob rounded-[50%] bg-gradient-to-l from-primary to-secondary blur-3xl [translate:-50%_-50%]"
+			className="absolute left-[80%] top-[90%] -z-20 size-[14rem] animate-blob rounded-[50%] bg-gradient-to-l from-primary to-secondary blur-3xl [translate:-50%_-50%] lg:size-[36vmax] lg:saturate-[0.6]"
 		>
 			<div className="size-full scale-150 backdrop-blur-lg"></div>
 		</div>

@@ -5,17 +5,17 @@ import WavyArrow from '@/assets/scribbles/wavy-arrow-up.svg';
 
 const Impact: FC = () => {
 	return (
-		<section className="mx-auto mt-16 w-full max-w-[100rem] rounded-3xl bg-green-100 py-loose md:pb-16 md:pt-12">
+		<section className="mx-auto mt-16 w-full max-w-[100rem] rounded-3xl bg-surface py-loose md:pb-16 md:pt-12">
 			<h2 className="rounded-2xl text-center font-semibold">Our Impact</h2>
 			<div className="mt-loose space-y-loose md:flex md:items-center md:gap-36 md:space-y-0">
 				<div className="mx-auto text-center">
-					<h2 className="gsap-header text-4xl font-bold text-[#343247] md:text-5xl">
+					<h2 className="gsap-header text-4xl font-bold md:text-5xl">
 						78,00,000+
 					</h2>
 					<p className="gsap-para">Organic Views</p>
 				</div>
 				<div className="mx-auto text-center">
-					<h2 className="gsap-header text-4xl font-bold text-[#343247] md:text-5xl">
+					<h2 className="gsap-header text-4xl font-bold md:text-5xl">
 						12,00,000+
 					</h2>
 					<p className="gsap-para">Gained Followers</p>
@@ -30,7 +30,7 @@ const Impact: FC = () => {
 export const Clients: FC = () => {
 	return (
 		<section className="mx-auto flex max-w-[100rem] flex-col items-center p-snug md:p-loose">
-			<section className="w-full rounded-2xl bg-lime-100 p-snug py-loose text-center lg:flex lg:justify-between lg:p-loose lg:text-left xl:p-relaxed">
+			<section className="w-full rounded-2xl bg-surface p-snug py-loose text-center lg:flex lg:justify-between lg:p-loose lg:text-left xl:p-relaxed">
 				<div className="lg:flex lg:flex-col lg:justify-between">
 					<div>
 						<h1 className="gsap-header font-extrabold leading-none">
@@ -42,7 +42,7 @@ export const Clients: FC = () => {
 						</p>
 					</div>
 					<img
-						className="mx-auto mt-loose h-24 w-24 lg:h-44 lg:w-44"
+						className="mx-auto mt-loose h-24 w-24 lg:h-44 lg:w-44 invert"
 						src={Sparkles}
 						alt="An image of three sparkles"
 					/>
@@ -58,7 +58,7 @@ export const Clients: FC = () => {
 						))}
 					</div>
 					<img
-						className="mx-auto hidden h-24 w-24 lg:block lg:h-36 lg:w-36"
+						className="mx-auto hidden h-24 w-24 lg:block lg:h-36 lg:w-36 invert"
 						src={WavyArrow}
 						alt="An image a wavy arrow pointing up"
 					/>

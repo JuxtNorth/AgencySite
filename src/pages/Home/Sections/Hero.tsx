@@ -1,16 +1,23 @@
 import { Grid } from '@/components/ui';
-import { FC } from 'react';
+import { FC, useEffect, useState } from 'react';
 
 export const Hero: FC = () => {
-	const isDesktop = window.matchMedia('(min-width: 768px)').matches;
+	const [isDesktop, setIsDesktop] = useState<boolean>(
+		window.matchMedia('(min-width: 768px)').matches
+	);
 
-	let gridWidth = 300;
-	let gridHeight = 300;
+	useEffect(() => {
+		const onResize = () => {
+			setIsDesktop(window.matchMedia('(min-width: 1024px)').matches);
+		};
 
-	if (isDesktop) {
-		gridWidth = 675;
-		gridHeight = 600;
-	}
+		window.addEventListener('resize', onResize);
+
+		return () => window.removeEventListener('resize', onResize);
+	}, []);
+
+	const gridWidth = isDesktop ? 675 : 300;
+	const gridHeight = isDesktop ? 600 : 300;
 
 	return (
 		<header className="mx-auto flex min-h-[min(100vh,72rem)] max-w-[100rem] flex-col items-center justify-center lg:pt-16">
@@ -45,7 +52,7 @@ export const Hero: FC = () => {
 				Subscription here makes brands go viral there, grab your seats.
 			</p>
 			<a
-				className="mt-16 rounded-lg bg-primary px-8 py-4 text-xs cursor-pointer hover:bg-primary-varient transition-colors z-10"
+				className="z-10 mt-16 cursor-pointer rounded-lg bg-primary px-8 py-4 text-xs transition-colors hover:bg-primary-varient"
 				href="#"
 			>
 				See Plans
