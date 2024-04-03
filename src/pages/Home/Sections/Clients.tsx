@@ -42,7 +42,7 @@ export const Clients: FC = () => {
 						</p>
 					</div>
 					<img
-						className="mx-auto mt-loose h-24 w-24 lg:h-44 lg:w-44 invert"
+						className="mx-auto mt-loose h-24 w-24 invert lg:h-44 lg:w-44"
 						src={Sparkles}
 						alt="An image of three sparkles"
 					/>
@@ -58,7 +58,7 @@ export const Clients: FC = () => {
 						))}
 					</div>
 					<img
-						className="mx-auto hidden h-24 w-24 lg:block lg:h-36 lg:w-36 invert"
+						className="mx-auto hidden h-24 w-24 invert lg:block lg:h-36 lg:w-36"
 						src={WavyArrow}
 						alt="An image a wavy arrow pointing up"
 					/>
