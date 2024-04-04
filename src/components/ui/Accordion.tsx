@@ -31,7 +31,7 @@ const AccordionTrigger = React.forwardRef<
 			{...props}
 		>
 			{children}
-			<button className="ml-2 rounded-full bg-[#D7C6FF] p-2 text-lg transition-transform duration-200">
+			<button className="ml-2 rounded-full bg-primary p-2 text-lg transition-transform duration-200">
 				<ChevronDownIcon className="shrink-0" />
 			</button>
 		</AccordionPrimitive.Trigger>

@@ -39,7 +39,7 @@ export const pricingPlans: Omit<PricingCardProps, 'children'>[] = [
 			'Pause or cancel anytime'
 		],
 		bestFor: 'Tailored for those dedicated towards personal branding',
-		className: 'bg-red-50'
+		className: ''
 	},
 	{
 		name: 'Growth Partner',
@@ -55,6 +55,6 @@ export const pricingPlans: Omit<PricingCardProps, 'children'>[] = [
 			'Your All-in-One Solution to Grow and Monetize your brand'
 		],
 		bestFor: 'Best choice for business growth.',
-		className: 'bg-red-200'
+		className: ''
 	}
 ];

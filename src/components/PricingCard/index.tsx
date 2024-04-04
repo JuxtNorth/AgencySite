@@ -18,7 +18,7 @@ export const PricingCard: FC<PricingCardProps> = (props) => {
 	return (
 		<article
 			className={
-				'flex w-full flex-col justify-between rounded-2xl bg-[#F6F8F7] p-6 text-slate-900 md:p-loose ' +
+				'flex w-full flex-col justify-between rounded-2xl bg-surface p-6 md:p-loose ' +
 				props.className
 			}
 		>
@@ -35,7 +35,7 @@ export const PricingCard: FC<PricingCardProps> = (props) => {
 						</h1>
 						<p className="text-sm">{props.emphasis}</p>
 					</div>
-					<button className="w-full rounded-xl  bg-slate-800 py-snug text-white">
+					<button className="w-full rounded-xl bg-slate-800 py-snug text-white">
 						{props.buttonLabel}
 					</button>
 				</section>
@@ -47,7 +47,7 @@ export const PricingCard: FC<PricingCardProps> = (props) => {
 					</ul>
 				</section>
 			</div>
-			<div className="flex items-center gap-2 rounded-full bg-rose-300 px-snug py-2">
+			<div className="flex items-center gap-2 rounded-full bg-primary-varient px-snug py-2">
 				<MagicIcon className="shrink-0 md:text-sm" />
 				<p className="text-sm leading-tight">{props.bestFor}</p>
 			</div>
