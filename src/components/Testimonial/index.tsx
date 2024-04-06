@@ -8,7 +8,7 @@ const Stat: FC<{ children: ReactNode; text: string }> = ({
 }) => {
 	return (
 		<div className="flex items-center gap-2">
-			<div className="rounded-full bg-[#b2ffa3] p-2">{children}</div>
+			<div className="rounded-full bg-primary p-2">{children}</div>
 			<p className="text-[12px] font-semibold lg:text-[16px]">{text}</p>
 		</div>
 	);
@@ -20,7 +20,7 @@ export const TestimonialCard: FC = () => {
 	return (
 		<div className="flex min-h-[32rem] min-w-0 max-w-[100rem] flex-[0_0_100%] p-loose md:px-24 lg:min-h-[30rem] lg:px-60">
 			<div
-				className="relative h-fit min-h-full w-full rounded-3xl bg-[#ebfddd] transition-[rotate] duration-300 [perspective:1000px] [transform-style:preserve-3d] [&[data-flipped='true']]:[rotate:y_180deg]"
+				className="relative h-fit min-h-full w-full rounded-3xl bg-surface transition-[rotate] duration-300 [perspective:1000px] [transform-style:preserve-3d] [&[data-flipped='true']]:[rotate:y_180deg]"
 				data-flipped={flipped}
 			>
 				<article className="absolute flex h-full w-full flex-col p-6 [backface-visibility:hidden] md:flex-row md:gap-loose md:p-loose">
@@ -33,13 +33,13 @@ export const TestimonialCard: FC = () => {
 					<div className="flex min-h-full flex-col justify-between">
 						<header className="flex w-full justify-between">
 							<div className="flex items-center gap-2">
-								<div className="h-12 w-12 rounded-full bg-green-200" />
+								<div className="h-12 w-12 rounded-full bg-primary" />
 								<div className="flex flex-col text-left leading-tight">
 									<h1 className="text-xl font-bold">Lorem Ipsum</h1>
 									<p className="text-sm">Lorem Ipsum</p>
 								</div>
 							</div>
-							<div className="flex max-h-loose items-center rounded-full bg-[#b2ffa3] px-snug">
+							<div className="flex max-h-loose items-center rounded-full bg-primary px-snug">
 								<p className="mt-px font-semibold">1.5M</p>
 							</div>
 						</header>

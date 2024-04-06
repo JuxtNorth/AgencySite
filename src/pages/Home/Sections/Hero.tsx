@@ -48,7 +48,7 @@ export const Hero: FC = () => {
 					</span>
 				</h1>
 			</div>
-			<p className="w-[80%] mt-2 text-center text-xs lg:hidden">
+			<p className="mt-2 w-[80%] text-center text-xs lg:hidden">
 				Subscription here makes brands go viral there, grab your seats.
 			</p>
 			<a

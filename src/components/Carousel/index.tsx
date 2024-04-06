@@ -67,13 +67,13 @@ export const Carousel: FC<CarouselProps> = (props) => {
 				})}
 			>
 				<button
-					className="pointer-events-auto cursor-pointer rounded-full bg-lime-200 p-snug md:p-6 md:text-2xl"
+					className="pointer-events-auto cursor-pointer rounded-full bg-primary p-snug md:p-6 md:text-2xl"
 					onClick={scrollPrev}
 				>
 					<ChevronLeftIcon />
 				</button>
 				<button
-					className="pointer-events-auto cursor-pointer rounded-full bg-lime-200 p-snug md:p-6 md:text-2xl"
+					className="pointer-events-auto cursor-pointer rounded-full bg-primary p-snug md:p-6 md:text-2xl"
 					onClick={scrollNext}
 				>
 					<ChevronRightIcon />
