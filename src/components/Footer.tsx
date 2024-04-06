@@ -27,7 +27,7 @@ export const Footer: FC = () => {
 					</ul>
 				</div>
 				<p className="pt-snug text-xs md:text-xl">
-					2020 &copy; All rights reserved
+					2024 &copy; All rights reserved
 				</p>
 			</section>
 

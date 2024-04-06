@@ -6,8 +6,10 @@ import { cn } from '@/lib/utils';
 export const Workflow: FC = () => {
 	return (
 		<section className="mx-auto mt-12 max-w-[70rem] p-snug md:p-loose">
-			<h1 className="text-center text-4xl font-semibold mb-relaxed">Workflow</h1>
-			<div className='space-y-relaxed'>
+			<h1 className="mb-relaxed text-center text-4xl font-semibold">
+				Workflow
+			</h1>
+			<div className="space-y-relaxed">
 				{workflows.map(({ ...restProps }, i) => (
 					<section
 						key={i}
