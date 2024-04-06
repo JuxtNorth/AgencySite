@@ -1,5 +1,6 @@
 import { cva } from 'class-variance-authority';
 import { FC } from 'react';
+import { Stars } from '@/components/ui';
 
 export interface WorkflowCardProps {
 	serialNo: string;
@@ -54,6 +55,9 @@ export const WorkflowCard: FC<WorkflowCardProps> = (props) => {
 				<h1 className="text-3xl md:text-2xl lg:text-[2.5rem] lg:leading-[108%]">
 					{props.header}
 				</h1>
+			</div>
+			<div className="absolute bottom-0 right-0 w-48 h-48">
+				<Stars seed={Number(props.serialNo) + 1} />
 			</div>
 			<div className={blobVariants({ type: aesthetics })} />
 		</div>

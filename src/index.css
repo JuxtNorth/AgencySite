@@ -13,10 +13,10 @@
 	.continuous-gradient {
 		background: linear-gradient(
 			90deg,
-			var(--primary),
-			var(--primary-varient),
-			var(--primary),
-			var(--primary-varient)
+			rgb(var(--primary)),
+			rgb(var(--primary-varient)),
+			rgb(var(--primary)),
+			rgb(var(--primary-varient))
 		);
 		background-size: 300%;
 		animation: flow 2s linear infinite;

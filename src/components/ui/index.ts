@@ -6,3 +6,4 @@ export * from './Dialog';
 export * from './BlobOverlay';
 export * from './Grid';
 export * from './GlowyBlob';
+export * from "./Stars";
