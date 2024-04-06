@@ -27,7 +27,7 @@ export const Grid: FC<GridProps> = (props) => {
 		<div className="relative -z-20 mix-blend-screen" style={{ width, height }}>
 			<div
 				className={cn(
-					'absolute size-full bg-[radial-gradient(ellipse_60%_70%,var(--primary-varient),black_70%)] mix-blend-multiply lg:bg-[radial-gradient(ellipse_80%_60%,var(--primary-varient),black_70%)]',
+					'absolute size-full bg-[radial-gradient(ellipse_60%_70%,rgb(var(--primary-varient)),black_70%)] mix-blend-multiply lg:bg-[radial-gradient(ellipse_80%_60%,rgb(var(--primary-varient)),black_70%)]',
 					props.className
 				)}
 			></div>

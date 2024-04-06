@@ -20,7 +20,7 @@ export const Home: FC = () => {
 	return (
 		<>
 			<Nav />
-			<div className="absolute h-screen w-screen overflow-hidden bg-gradient-to-b from-transparent from-60% to-background">
+			<div className="absolute h-screen w-full overflow-hidden bg-gradient-to-b from-transparent from-60% to-background">
 				<GlowyBlob />
 			</div>
 			<main>

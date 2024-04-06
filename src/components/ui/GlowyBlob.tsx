@@ -1,10 +1,11 @@
+import { useMediaQuery } from '@/hooks';
 import { FC, useEffect, useRef } from 'react';
 
 export interface GlowyBlobProps {}
 
 export const GlowyBlob: FC<GlowyBlobProps> = () => {
 	const ref = useRef<HTMLDivElement>(null);
-	const isDesktop = window.matchMedia('(min-width: 768px)').matches;
+	const { match: isDesktop } = useMediaQuery();
 
 	useEffect(() => {
 		if (isDesktop) {

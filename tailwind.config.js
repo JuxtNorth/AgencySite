@@ -8,14 +8,14 @@ export default {
 				body: '"Comfortaa", sans-serif'
 			},
 			colors: {
-				background: 'var(--background)',
-				surface: 'var(--surface)',
-				primary: 'var(--primary)',
-				'primary-varient': 'var(--primary-varient)',
-				secondary: 'var(--secondary)',
-				accent: 'var(--accent)',
-				'font-primary': 'var(--font-primary)',
-				muted: 'var(--muted)'
+				background: 'rgb(var(--background))',
+				surface: 'rgb(var(--surface))',
+				primary: 'rgb(var(--primary))',
+				'primary-varient': 'rgb(var(--primary-varient))',
+				secondary: 'rgb(var(--secondary))',
+				accent: 'rgb(var(--accent))',
+				'font-primary': 'rgb(var(--font-primary))',
+				muted: 'rgb(var(--muted))'
 			},
 			spacing: {
 				tight: '0.25rem',

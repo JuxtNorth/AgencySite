@@ -1,50 +1,45 @@
 import { FC } from 'react';
 import { WorkflowCard } from '@/components';
-import BoltIcon from '@/assets/scribbles/Artboard 11.svg';
-import LeafIcon from '@/assets/scribbles/Artboard 33.svg';
-import StarIcon from '@/assets/scribbles/Artboard 45.svg';
+import { workflows } from '@/constants';
+import { useMediaQuery } from '@/hooks';
 
 export const Workflow: FC = () => {
+	const { match: isDesktop } = useMediaQuery();
+
 	return (
-		<section className="mx-auto mt-12 max-w-[100rem] p-snug md:p-loose">
-			<div className="gsap-text-container mx-auto space-y-tight pb-8 text-center">
-				<h2 className="gsap-header font-semibold">Our Workflow</h2>
-				<p className="leading-tight">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-				</p>
-			</div>
-			<section className="grid grid-rows-3 gap-loose md:grid-cols-3 md:grid-rows-none">
-				<WorkflowCard
-					serialNo="1"
-					className="space-y-4 rounded-2xl bg-rose-300 p-8"
-				>
-					<img
-						src={BoltIcon}
-						alt="Lightning Bolt Icon"
-						className="mx-auto w-[80%] py-snug"
-					/>
-				</WorkflowCard>
-				<WorkflowCard
-					serialNo="2"
-					className="space-y-4 rounded-2xl bg-green-300 p-8"
-				>
-					<img
-						src={LeafIcon}
-						alt="Lightning Bolt Icon"
-						className="mx-auto w-[80%] py-snug"
-					/>
-				</WorkflowCard>
-				<WorkflowCard
-					serialNo="3"
-					className="space-y-4 rounded-2xl bg-purple-300 p-8"
-				>
-					<img
-						src={StarIcon}
-						alt="Lightning Bolt Icon"
-						className="mx-auto w-[80%] py-snug"
-					/>
-				</WorkflowCard>
-			</section>
+		<section className="mx-auto mt-12 max-w-[80rem] p-snug md:p-loose">
+			<h1 className="text-center text-4xl font-semibold">Workflow</h1>
+			{workflows.map(({ ...restProps }, i) => (
+				<section key={i} className="py-loose md:flex gap-loose lg:gap-relaxed md:px-24 lg:px-32 max-w-[80rem]">
+					{isDesktop && (i % 2 === 0) ? (
+						<>
+							<WorkflowCard {...restProps} />
+							<article className="hidden md:block">
+								<p className="font-display text-lg font-semibold text-muted">
+									{restProps.serialNo}
+								</p>
+								<h1 className="max-w-80 text-4xl">{restProps.header}</h1>
+								<p className="mt-loose text-sm font-semibold lg:text-lg">
+									{restProps.description}
+								</p>
+							</article>
+						</>
+					) : (
+						<>
+							<article className="hidden md:block">
+								<p className="font-display text-lg font-semibold text-muted">
+									{restProps.serialNo}
+								</p>
+								<h1 className="max-w-80 text-4xl">{restProps.header}</h1>
+								<p className="mt-loose text-sm font-semibold lg:text-lg">
+									{restProps.description}
+								</p>
+							</article>
+							<WorkflowCard {...restProps} />
+						</>
+					)}
+				</section>
+			))}
 		</section>
 	);
 };

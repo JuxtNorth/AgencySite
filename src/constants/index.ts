@@ -4,3 +4,4 @@ export * from './benefits';
 export * from './FAQs';
 export * from './perks';
 export * from './howItWorks';
+export * from './workflows';

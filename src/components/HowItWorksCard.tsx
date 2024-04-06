@@ -1,3 +1,4 @@
+import { useMediaQuery } from '@/hooks';
 import { FC, ReactNode } from 'react';
 
 export interface HowItWorksCardProps {
@@ -26,9 +27,9 @@ const Content: FC<ContentProps> = (props) => {
 };
 
 export const HowItWorksCard: FC<HowItWorksCardProps> = (props) => {
-	const isDesktop = window.matchMedia('(min-width: 768px)');
+	const { match: isDesktop } = useMediaQuery();
 
-	if (props.alternate && isDesktop.matches) {
+	if (props.alternate && isDesktop) {
 		return (
 			<article className="grid md:grid-cols-2">
 				<Content
