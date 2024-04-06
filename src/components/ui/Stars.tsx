@@ -22,7 +22,7 @@ export const Stars: FC<StarProps> = (props) => {
 	}
 
 	return (
-		<svg aria-hidden viewBox='0 0 400 400' height='100%' width='100%'>
+		<svg aria-hidden viewBox="0 0 400 400" height="100%" width="100%">
 			{positions.map(({ x, y }, i) => (
 				<circle key={i} cx={x} cy={y} r={1 + scale * random()} fill="white" />
 			))}

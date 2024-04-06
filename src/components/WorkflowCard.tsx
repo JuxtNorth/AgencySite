@@ -34,9 +34,9 @@ const containerVariants = cva(
 	{
 		variants: {
 			type: {
-				a: '-rotate-[8deg]',
-				b: 'rotate-[10deg]',
-				c: '-rotate-[9deg]'
+				a: '-rotate-[6deg]',
+				b: 'rotate-[5deg]',
+				c: '-rotate-[7deg]'
 			}
 		}
 	}
@@ -56,7 +56,7 @@ export const WorkflowCard: FC<WorkflowCardProps> = (props) => {
 					{props.header}
 				</h1>
 			</div>
-			<div className="absolute bottom-0 right-0 w-48 h-48">
+			<div className="absolute bottom-0 right-0 h-48 w-48">
 				<Stars seed={Number(props.serialNo) + 1} />
 			</div>
 			<div className={blobVariants({ type: aesthetics })} />

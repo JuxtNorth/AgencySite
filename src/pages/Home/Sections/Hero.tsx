@@ -21,7 +21,7 @@ export const Hero: FC = () => {
 
 	return (
 		<header className="mx-auto flex min-h-[min(100vh,72rem)] max-w-[100rem] flex-col items-center justify-center lg:pt-16">
-			<div className="relative mb-2 text-center text-[clamp(1.86rem,6vw,7.5rem)] font-semibold leading-[98%]">
+			<div className="relative mb-2 text-center text-[clamp(1.86rem,6vw,7.5rem)] font-bold leading-9 md:leading-[98%]">
 				<div className="absolute -top-[42px] left-[calc(50%-150px)] lg:-top-[150px] lg:left-[calc(50%-337px)]">
 					<Grid
 						gridX={isDesktop ? 9 : 8}
@@ -48,7 +48,7 @@ export const Hero: FC = () => {
 					</span>
 				</h1>
 			</div>
-			<p className="w-[80%] text-center text-xs lg:hidden">
+			<p className="w-[80%] mt-2 text-center text-xs lg:hidden">
 				Subscription here makes brands go viral there, grab your seats.
 			</p>
 			<a

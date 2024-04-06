@@ -5,10 +5,10 @@ export function cn(...inputs: ClassValue[]) {
 	return twMerge(clsx(inputs));
 }
 
-export function seed (s: number) {
+export function seed(s: number) {
 	const mask = 0xffffffff;
-	let m_w  = (123456789 + s) & mask;
-	let m_z  = (987654321 - s) & mask;
+	let m_w = (123456789 + s) & mask;
+	let m_z = (987654321 - s) & mask;
 
 	return () => {
 		m_z = (36969 * (m_z & 65535) + (m_z >>> 16)) & mask;
@@ -17,9 +17,9 @@ export function seed (s: number) {
 		let result = ((m_z << 16) + (m_w & 65535)) >>> 0;
 		result /= 4294967296;
 		return result;
-	}
+	};
 }
 
 const random = seed(1);
-console.log(random())
-console.log(random())
+console.log(random());
+console.log(random());
