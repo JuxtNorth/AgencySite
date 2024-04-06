@@ -1,9 +1,7 @@
 import { useEffect, useState } from 'react';
 
 export const useMediaQuery = (query = '(min-width: 768px)') => {
-	const [match, setDesktop] = useState(
-		window.matchMedia(query).matches
-	);
+	const [match, setDesktop] = useState(window.matchMedia(query).matches);
 
 	useEffect(() => {
 		const onResize = () => {

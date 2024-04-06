@@ -28,15 +28,18 @@ const blobVariants = cva('absolute rounded-full', {
 	}
 });
 
-const containerVariants = cva('relative mx-auto flex aspect-[3/3.6] w-[80%] max-w-96 flex-col justify-between overflow-hidden rounded-3xl bg-surface p-6 md:w-[100%]', {
-	variants: {
-		type: {
-			a: '-rotate-[8deg]',
-			b: 'rotate-[10deg]',
-			c: '-rotate-[9deg]'
+const containerVariants = cva(
+	'relative mx-auto flex aspect-[3/3.6] w-[80%] max-h-[28rem] flex-col justify-between overflow-hidden rounded-3xl bg-surface p-6 md:w-full',
+	{
+		variants: {
+			type: {
+				a: '-rotate-[8deg]',
+				b: 'rotate-[10deg]',
+				c: '-rotate-[9deg]'
+			}
 		}
 	}
-});
+);
 
 export const WorkflowCard: FC<WorkflowCardProps> = (props) => {
 	const { aesthetics = 'a' } = props;
@@ -48,7 +51,7 @@ export const WorkflowCard: FC<WorkflowCardProps> = (props) => {
 				<p className="font-display font-semibold text-muted md:text-lg">
 					{props.serialNo}
 				</p>
-				<h1 className="text-3xl md:text-xl lg:text-[2.5rem] lg:leading-[108%]">
+				<h1 className="text-3xl md:text-2xl lg:text-[2.5rem] lg:leading-[108%]">
 					{props.header}
 				</h1>
 			</div>
