@@ -10,6 +10,26 @@
 		-ms-overflow-style: none;
 		scrollbar-width: none;
 	}
+	.continuous-gradient {
+		background: linear-gradient(
+			90deg,
+			var(--primary),
+			var(--primary-varient),
+			var(--primary),
+			var(--primary-varient)
+		);
+		background-size: 300%;
+		animation: flow 2s linear infinite;
+	}
+}
+
+@keyframes flow {
+	from {
+		background-position: 0%;
+	}
+	to {
+		background-position: 100%;
+	}
 }
 
 :root {

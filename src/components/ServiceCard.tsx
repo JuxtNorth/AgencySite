@@ -30,7 +30,7 @@ const jumpToPricingSection = () => {
 export const ServiceCard: FC<ServiceCardProps> = (props) => {
 	return (
 		<article className="flex gap-snug rounded-2xl px-snug py-6 text-left">
-			<div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full text-xl ">
+			<div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full text-xl">
 				{props.children}
 			</div>
 			<div className="space-y-2">
