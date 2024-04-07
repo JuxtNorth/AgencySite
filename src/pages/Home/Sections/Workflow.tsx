@@ -11,7 +11,7 @@ export const Workflow: FC = () => {
 				Workflow
 			</h1>
 			<div className="space-y-relaxed">
-				{workflows.map(({ emphasis, ...restProps }, i) => (
+				{workflows.map((props, i) => (
 					<section
 						key={i}
 						className={cn(
@@ -19,14 +19,14 @@ export const Workflow: FC = () => {
 							i % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
 						)}
 					>
-						<WorkflowCard {...restProps} />
+						<WorkflowCard {...props} />
 						<article className="hidden w-full md:block">
 							<p className="font-display text-lg font-semibold text-muted">
-								{restProps.serialNo}
+								{props.serialNo}
 							</p>
-							<h1 className="max-w-80 text-4xl">{restProps.header}</h1>
+							<h1 className="max-w-80 text-4xl">{props.header}</h1>
 							<p className="mt-loose text-sm font-semibold lg:text-lg">
-								{restProps.description}
+								{props.description}
 							</p>
 							<div
 								className={cn(
@@ -35,7 +35,7 @@ export const Workflow: FC = () => {
 								)}
 							>
 								<StarIcon className="mt-0.5" />
-								<p>{emphasis}</p>
+								<p>{props.emphasis}</p>
 							</div>
 						</article>
 					</section>

@@ -1,25 +1,33 @@
 import { cva } from 'class-variance-authority';
-import { FC, useState } from 'react';
+import { FC, useEffect, useRef, useState } from 'react';
 import { Stars } from '@/components/ui';
 import { useMediaQuery } from '@/hooks';
-import "./index.css";
+import { cn } from '@/lib/utils';
+import { StarIcon } from '@/icons';
+import Anime from '@mollycule/react-anime';
+import anime from 'animejs';
+import './index.css';
 
 export interface WorkflowCardProps {
 	serialNo: string;
 	header: string;
 	description: string;
+	emphasis: string;
 	aesthetics?: 'a' | 'b' | 'c';
 }
 
-const cardVariants = cva('size-8 rotate-45 rounded-lg', {
-	variants: {
-		aesthetics: {
-			a: 'bg-primary [box-shadow:0px_0px_8px_4px_rgba(var(--primary),0.5),0px_0px_9px_12px_rgba(var(--primary),0.2)]',
-			b: 'bg-accent [box-shadow:0px_0px_8px_4px_rgba(var(--accent),0.5),0px_0px_9px_12px_rgba(var(--accent),0.2)]',
-			c: 'bg-secondary [box-shadow:0px_0px_8px_4px_rgba(var(--secondary),0.5),0px_0px_9px_12px_rgba(var(--secondary),0.2)]'
+const shapeVariants = cva(
+	'size-8 rotate-45 rounded-lg transition-opacity shape',
+	{
+		variants: {
+			aesthetics: {
+				a: 'bg-primary [box-shadow:0px_0px_8px_4px_rgba(var(--primary),0.5),0px_0px_9px_12px_rgba(var(--primary),0.2)]',
+				b: 'bg-accent [box-shadow:0px_0px_8px_4px_rgba(var(--accent),0.5),0px_0px_9px_12px_rgba(var(--accent),0.2)]',
+				c: 'bg-secondary [box-shadow:0px_0px_8px_4px_rgba(var(--secondary),0.5),0px_0px_9px_12px_rgba(var(--secondary),0.2)]'
+			}
 		}
 	}
-});
+);
 
 const blobVariants = cva('absolute rounded-full', {
 	variants: {
@@ -44,28 +52,97 @@ const containerVariants = cva(
 	}
 );
 
+const emphasisVariant = cva('', {
+	variants: {
+		type: {
+			a: 'text-primary',
+			b: 'text-accent',
+			c: 'text-secondary'
+		}
+	}
+});
+
 export const WorkflowCard: FC<WorkflowCardProps> = (props) => {
 	const { aesthetics = 'a' } = props;
-
 	const { match: isDesktop } = useMediaQuery();
 	const [expanded, setExpanded] = useState(false);
+	const shapeRef = useRef<HTMLDivElement>(null);
+  const outerContentRef = useRef<HTMLDivElement>(null)
+
+	useEffect(() => {
+		if (expanded && shapeRef.current) {
+			anime({
+				targets: shapeRef.current,
+				scale: 10,
+				rotate: [45, 135]
+			});
+		} else if (!expanded && shapeRef.current && outerContentRef.current) {
+			anime({
+				targets: shapeRef.current,
+				scale: 1,
+				rotate: [135, 45],
+				easing: 'easeOutExpo'
+			});
+      anime({
+        targets: outerContentRef.current,
+        translateY: [48, 0]
+      })
+		}
+	}, [expanded]);
 
 	return (
 		<div
 			role="button"
 			tabIndex={isDesktop ? -1 : 0}
-			onClick={() => isDesktop && setExpanded(!expanded)}
-			className={containerVariants({ type: aesthetics })}
+			data-expanded={expanded}
+			onClick={() => !isDesktop && setExpanded(!expanded)}
+			className={cn(containerVariants({ type: aesthetics }), 'card')}
 		>
-			<div
-				className="relative mx-auto flex size-full flex-col justify-between overflow-hidden rounded-3xl bg-surface p-6 md:w-full"
-				data-expanded={expanded}
-			>
-				<div className={cardVariants({ aesthetics })} />
-				<div className="z-10">
-					<p className="font-display font-semibold text-muted md:text-lg">
+			<div className="relative mx-auto flex size-full flex-col justify-between overflow-hidden rounded-3xl bg-surface p-6 md:w-full">
+				{expanded && (
+					<div className="absolute left-0 top-0 z-20 flex size-full flex-col justify-between p-loose">
+						<div>
+							<Anime
+								in
+								appear
+								duration={1000}
+								onEntering={{
+									opacity: [0, 1],
+									translateY: [48, 0],
+									delay: anime.stagger(120)
+								}}
+							>
+								<span className="font-display font-semibold md:text-lg">
+									{props.serialNo}
+								</span>
+								<h1 className="mb-snug text-3xl">{props.header}</h1>
+								<p className="text-xs">{props.description}</p>
+							</Anime>
+						</div>
+						<Anime
+							in
+							appear
+							duration={1000}
+							onEntering={{
+								opacity: [0, 1],
+								translateY: [32, 0],
+								delay: 360
+							}}
+						>
+							<p className={'card-emphasis-text mt-loose flex gap-1.5 text-xs'}>
+								<StarIcon
+									className={cn('mt-px', emphasisVariant({ type: aesthetics }))}
+								/>{' '}
+								{props.emphasis}
+							</p>
+						</Anime>
+					</div>
+				)}
+				<div ref={shapeRef} className={shapeVariants({ aesthetics })} />
+				<div ref={outerContentRef} className="card-outer-text z-10">
+					<span className="font-display font-semibold text-muted md:text-lg">
 						{props.serialNo}
-					</p>
+					</span>
 					<h1 className="text-3xl md:text-2xl lg:text-[2.5rem] lg:leading-[108%]">
 						{props.header}
 					</h1>

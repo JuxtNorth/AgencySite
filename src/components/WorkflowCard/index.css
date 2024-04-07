@@ -1,0 +1,22 @@
+.card {
+  .shape {
+   transform: rotate(45deg);
+  }
+	&[data-expanded='true'] {
+		.card-outer-text {
+			opacity: 0;
+			transition: opacity;
+		}
+	}
+}
+
+@keyframes shape-expand {
+	from {
+		scale: 1;
+		rotate: 45deg;
+	}
+	to {
+		scale: 10;
+		rotate: 90deg;
+	}
+}
