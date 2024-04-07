@@ -5,7 +5,7 @@ import { SocialLink } from '@/components/ui';
 
 export const Footer: FC = () => {
 	return (
-		<footer className="mx-auto flex max-w-[100rem] justify-between p-8 md:p-16">
+		<footer className="mx-auto bg-surface mt-relaxed flex max-w-[100rem] justify-between p-8 md:p-16">
 			<section className="flex flex-col items-start space-y-2 md:space-y-8">
 				<div className=" md:space-y-4">
 					<h1 className="w-44 text-xl font-normal md:w-72 md:text-4xl">
@@ -16,13 +16,13 @@ export const Footer: FC = () => {
 					</p>
 					<ul className="flex gap-2">
 						<SocialLink to="#">
-							<LinkedInIcon className="text-background" />
+							<LinkedInIcon />
 						</SocialLink>
 						<SocialLink to="#">
-							<XIcon className="text-background" />
+							<XIcon />
 						</SocialLink>
 						<SocialLink to="#">
-							<InstagramIcon className="text-background" />
+							<InstagramIcon />
 						</SocialLink>
 					</ul>
 				</div>

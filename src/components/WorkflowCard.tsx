@@ -56,8 +56,8 @@ export const WorkflowCard: FC<WorkflowCardProps> = (props) => {
 					{props.header}
 				</h1>
 			</div>
-			<div className="absolute bottom-0 right-0 h-48 w-48">
-				<Stars seed={Number(props.serialNo) + 1} />
+			<div className="absolute bottom-0 right-0 size-56">
+				<Stars seed={Number(props.serialNo) + 1} count={50} scale={2} />
 			</div>
 			<div className={blobVariants({ type: aesthetics })} />
 		</div>
