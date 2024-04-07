@@ -116,7 +116,7 @@ export const WorkflowCard: FC<WorkflowCardProps> = (props) => {
 								<span className="font-display font-semibold md:text-lg">
 									{props.serialNo}
 								</span>
-								<h1 className="mb-snug text-3xl">{props.header}</h1>
+								<h1 className="mb-snug text-3xl font-semibold">{props.header}</h1>
 								<p className="text-xs">{props.description}</p>
 							</Anime>
 						</div>
@@ -146,7 +146,7 @@ export const WorkflowCard: FC<WorkflowCardProps> = (props) => {
 					<span className="font-display font-semibold text-muted md:text-lg">
 						{props.serialNo}
 					</span>
-					<h1 className="text-3xl md:text-2xl lg:text-[2.5rem] lg:leading-[108%]">
+					<h1 className="text-3xl md:text-2xl lg:text-[2.5rem] lg:leading-[108%] font-semibold">
 						{props.header}
 					</h1>
 				</div>
