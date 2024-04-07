@@ -134,7 +134,9 @@ export const WorkflowCard: FC<WorkflowCardProps> = (props) => {
 								<StarIcon
 									className={cn('mt-px', emphasisVariant({ type: aesthetics }))}
 								/>
-								<span className='font-display'>{ReactHtmlParser(parseBoldDirective(props.emphasis))}</span>
+								<span className="font-display">
+									{ReactHtmlParser(parseBoldDirective(props.emphasis))}
+								</span>
 							</p>
 						</Anime>
 					</div>
@@ -155,7 +157,7 @@ export const WorkflowCard: FC<WorkflowCardProps> = (props) => {
 			</div>
 			{!isDesktop && (
 				<p className="absolute left-[50%] mt-1 -translate-x-[50%] whitespace-nowrap text-xs">
-					click to <strong className='text-accent'>learn more</strong>.
+					click to <strong className="text-accent">learn more</strong>.
 				</p>
 			)}
 		</div>

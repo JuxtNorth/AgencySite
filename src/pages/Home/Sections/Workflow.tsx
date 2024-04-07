@@ -1,8 +1,9 @@
 import { FC } from 'react';
 import { WorkflowCard } from '@/components';
 import { workflows } from '@/constants';
-import { cn } from '@/lib/utils';
+import { cn, parseBoldDirective } from '@/lib/utils';
 import { StarIcon } from '@/icons';
+import ReactHtmlParser from "react-html-parser";
 
 export const Workflow: FC = () => {
 	return (
@@ -35,7 +36,7 @@ export const Workflow: FC = () => {
 								)}
 							>
 								<StarIcon className="mt-0.5" />
-								<p>{props.emphasis}</p>
+								<p>{ReactHtmlParser(parseBoldDirective(props.emphasis))}</p>
 							</div>
 						</article>
 					</section>
