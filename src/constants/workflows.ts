@@ -6,7 +6,7 @@ export const workflows: Array<WorkflowCardProps & { emphasis: string }> = [
 		header: 'Strategy & Positioning',
 		description:
 			'Our expert strategists understand your business, develop unique brand strategies, and position you as a leading authority in your niche. You just need to open up to us and we handle the rest',
-		emphasis: 'Only 2.7% of personal brands ever hit **10,000 followers**',
+		emphasis: '**Only 2.7%** of personal brands ever hit 10,000 followers',
 		aesthetics: 'a'
 	},
 	{
