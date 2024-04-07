@@ -5,13 +5,13 @@ export const useMediaQuery = (query = '(min-width: 768px)') => {
 
 	useEffect(() => {
 		const onResize = () => {
-			setDesktop(window.matchMedia('(min-width: 768px)').matches);
+			setDesktop(window.matchMedia(query).matches);
 		};
 
 		window.addEventListener('resize', onResize);
 
 		return () => window.removeEventListener('resize', onResize);
-	}, []);
+	}, [query]);
 
 	return { match };
 };
