@@ -11,7 +11,7 @@ export const Workflow: FC = () => {
 			<h1 className="mb-relaxed text-center text-4xl font-semibold">
 				Workflow
 			</h1>
-			<div className="space-y-relaxed">
+			<div className="space-y-12 lg:space-y-relaxed">
 				{workflows.map((props, i) => (
 					<section
 						key={i}
