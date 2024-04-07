@@ -1,7 +1,7 @@
 .card {
-  .shape {
-   transform: rotate(45deg);
-  }
+	.shape {
+		transform: rotate(45deg);
+	}
 	&[data-expanded='true'] {
 		.card-outer-text {
 			opacity: 0;

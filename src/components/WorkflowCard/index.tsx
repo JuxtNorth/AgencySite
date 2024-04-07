@@ -67,7 +67,7 @@ export const WorkflowCard: FC<WorkflowCardProps> = (props) => {
 	const { match: isDesktop } = useMediaQuery();
 	const [expanded, setExpanded] = useState(false);
 	const shapeRef = useRef<HTMLDivElement>(null);
-  const outerContentRef = useRef<HTMLDivElement>(null)
+	const outerContentRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
 		if (expanded && shapeRef.current) {
@@ -83,10 +83,10 @@ export const WorkflowCard: FC<WorkflowCardProps> = (props) => {
 				rotate: [135, 45],
 				easing: 'easeOutExpo'
 			});
-      anime({
-        targets: outerContentRef.current,
-        translateY: [48, 0]
-      })
+			anime({
+				targets: outerContentRef.current,
+				translateY: [48, 0]
+			});
 		}
 	}, [expanded]);
 
