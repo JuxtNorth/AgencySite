@@ -20,6 +20,9 @@ export function seed(s: number) {
 	};
 }
 
-const random = seed(1);
-console.log(random());
-console.log(random());
+export const parseBoldDirective = (text: string): string => {
+	const regexBold = /\*\*(.*?)\*\*/gm;
+	const html = text.replace(regexBold, '<strong>$1</strong>');
+	console.log(html)
+	return html;
+};

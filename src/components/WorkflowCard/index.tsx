@@ -2,10 +2,11 @@ import { cva } from 'class-variance-authority';
 import { FC, useEffect, useRef, useState } from 'react';
 import { Stars } from '@/components/ui';
 import { useMediaQuery } from '@/hooks';
-import { cn } from '@/lib/utils';
+import { cn, parseBoldDirective } from '@/lib/utils';
 import { StarIcon } from '@/icons';
 import Anime from '@mollycule/react-anime';
 import anime from 'animejs';
+import ReactHtmlParser from 'react-html-parser';
 import './index.css';
 
 export interface WorkflowCardProps {
@@ -132,8 +133,8 @@ export const WorkflowCard: FC<WorkflowCardProps> = (props) => {
 							<p className={'card-emphasis-text mt-loose flex gap-1.5 text-xs'}>
 								<StarIcon
 									className={cn('mt-px', emphasisVariant({ type: aesthetics }))}
-								/>{' '}
-								{props.emphasis}
+								/>
+								<span className='font-display'>{ReactHtmlParser(parseBoldDirective(props.emphasis))}</span>
 							</p>
 						</Anime>
 					</div>
@@ -153,8 +154,8 @@ export const WorkflowCard: FC<WorkflowCardProps> = (props) => {
 				<div className={blobVariants({ type: aesthetics })} />
 			</div>
 			{!isDesktop && (
-				<p className="absolute left-[50%] mt-1 -translate-x-[50%] whitespace-nowrap text-xs text-muted ">
-					click to learn more.
+				<p className="absolute left-[50%] mt-1 -translate-x-[50%] whitespace-nowrap text-xs">
+					click to <strong className='text-accent'>learn more</strong>.
 				</p>
 			)}
 		</div>
