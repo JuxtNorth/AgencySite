@@ -2,6 +2,7 @@ import { FC } from 'react';
 import { WorkflowCard } from '@/components';
 import { workflows } from '@/constants';
 import { cn } from '@/lib/utils';
+import { StarIcon } from '@/icons';
 
 export const Workflow: FC = () => {
 	return (
@@ -10,7 +11,7 @@ export const Workflow: FC = () => {
 				Workflow
 			</h1>
 			<div className="space-y-relaxed">
-				{workflows.map(({ ...restProps }, i) => (
+				{workflows.map(({ emphasis, ...restProps }, i) => (
 					<section
 						key={i}
 						className={cn(
@@ -27,6 +28,15 @@ export const Workflow: FC = () => {
 							<p className="mt-loose text-sm font-semibold lg:text-lg">
 								{restProps.description}
 							</p>
+							<div
+								className={cn(
+									'mt-loose flex gap-2',
+									['text-primary', 'text-accent', 'text-secondary'][i] as string
+								)}
+							>
+								<StarIcon className="mt-0.5" />
+								<p>{emphasis}</p>
+							</div>
 						</article>
 					</section>
 				))}

@@ -31,21 +31,19 @@ export const ServiceCard: FC<ServiceCardProps> = (props) => {
 	return (
 		<article className="flex flex-col justify-between rounded-2xl bg-surface p-loose text-left">
 			<div className="space-y-snug">
-				<div className='text-xl mb-loose'>{props.children}</div>
-				<div className="space-y-2 pl-2">
-					<h3 className="max-w-[80%] font-bold text-[2.4rem] leading-tight">
+				<div className="mb-loose text-xl">{props.children}</div>
+				<div className="space-y-2">
+					<h3 className="max-w-[80%] text-[2.4rem] font-bold leading-tight">
 						{props.title}
 					</h3>
-					<p className="w-[80%] leading-tight text-sm ml-1">
-						{props.description}
-					</p>
+					<p className="text-sm leading-tight">{props.description}</p>
 				</div>
 			</div>
 
 			<Dialog>
 				<DialogTrigger className="w-full">
 					{' '}
-					<button className="w-full rounded-full bg-primary py-snug mt-snug">
+					<button className="mt-snug w-full rounded-full bg-primary py-snug">
 						Learn More
 					</button>
 				</DialogTrigger>
