@@ -66,13 +66,15 @@ const data = {
 
 export const A: FC = () => {
 	return (
-		<main className="mx-auto max-w-[100rem] space-y-loose p-snug md:p-loose">
-			<Header {...data.header} />
-			<Mission {...data.mission} />
-			<Outcome {...data.outcome} />
-			<Results {...data.results} />
-			<ScheduleCalendar />
+		<>
+			<main className="mx-auto max-w-[100rem] space-y-loose p-snug md:p-loose">
+				<Header {...data.header} />
+				<Mission {...data.mission} />
+				<Outcome {...data.outcome} />
+				<Results {...data.results} />
+				<ScheduleCalendar />
+			</main>
 			<Footer />
-		</main>
+		</>
 	);
 };

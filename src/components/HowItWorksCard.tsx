@@ -18,10 +18,12 @@ interface ContentProps {
 const Content: FC<ContentProps> = (props) => {
 	return (
 		<article className="lg:space-y-loose">
-			<h3 className="mb-4 text-[1.6rem] md:text-[1.8rem] lg:text-[2.4rem] leading-[1.4] font-semibold">
+			<h3 className="mb-4 text-[1.6rem] font-semibold leading-[1.4] md:text-[1.8rem] lg:text-[2.4rem]">
 				{props.index}. {props.title}
 			</h3>
-			<p className="leading-6 xl:leading-[2rem] text-sm lg:text-base">{props.description}</p>
+			<p className="text-sm leading-6 lg:text-base xl:leading-[2rem]">
+				{props.description}
+			</p>
 		</article>
 	);
 };
