@@ -6,17 +6,17 @@ import {
 	ContentIcon,
 	TrendIcon,
 	SalesIcon,
-	VideoIcon,
+	CustomisationIcon,
 	LeadIcon
 } from '@/icons';
 
 const icons = [
-	<RankingIcon className="text-2xl md:text-3xl lg:text-4xl" />,
-	<ContentIcon className="text-2xl md:text-3xl lg:text-4xl" />,
-	<TrendIcon className="text-2xl md:text-3xl lg:text-4xl" />,
-	<SalesIcon className="text-2xl md:text-3xl lg:text-4xl" />,
-	<VideoIcon className="text-2xl md:text-3xl lg:text-4xl" />,
-	<LeadIcon className="text-2xl md:text-3xl lg:text-4xl" />
+	<RankingIcon className="text-2xl md:text-3xl text-accent" />,
+	<ContentIcon className="text-2xl md:text-3xl text-accent" />,
+	<TrendIcon className="text-2xl md:text-3xl text-accent" />,
+	<SalesIcon className="text-2xl md:text-3xl text-accent" />,
+	<CustomisationIcon className="text-2xl md:text-3xl text-accent" />,
+	<LeadIcon className="text-2xl md:text-3xl text-accent" />
 ];
 
 export const Services: FC = () => {
