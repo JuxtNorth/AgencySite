@@ -21,12 +21,12 @@ const icons = [
 
 export const Services: FC = () => {
 	return (
-		<section className="mx-auto max-w-[100rem] p-snug text-center md:p-loose">
+		<section className="mx-auto max-w-[80rem] p-snug text-center md:p-loose">
 			<div className="rounded-3xl">
 				<h2 className="mb-12 mt-snug font-semibold">Our Services</h2>
 				<section className="grid grid-flow-row gap-snug md:grid-cols-2 lg:grid-cols-3">
 					{services.map((props, i) => (
-						<ServiceCard key={i} {...props}>
+						<ServiceCard key={i} serialNo={`0${i + 1}`} {...props}>
 							{icons[i]}
 						</ServiceCard>
 					))}
