@@ -57,7 +57,7 @@ export const Services: FC = () => {
 					left: `${event.clientX}px`,
 					top: `${event.clientY}px`
 				},
-				{ fill: 'forwards', duration: 3000 }
+				{ fill: 'forwards', duration: 3000, easing: 'cubic-bezier(.33,1.32,.58,1.41)'  }
 			);
 		};
 
@@ -79,10 +79,10 @@ export const Services: FC = () => {
 			className="mx-auto max-w-[80rem] p-snug text-center md:p-loose"
 		>
 			<div
-				className="fixed left-[50%] top-[50%] z-40 hidden size-32 -translate-x-full -translate-y-full opacity-0 "
+				className="fixed left-[50%] top-[50%] z-40 size-32 -translate-x-full -translate-y-full hidden"
 				ref={hintWrapperRef}
 			>
-				<div ref={hintRef} className="size-full rounded-full bg-white"></div>
+				<div ref={hintRef} className="size-full rounded-full bg-white opacity-0"></div>
 			</div>
 			<div className="rounded-3xl">
 				<h2 className="mb-12 mt-snug font-semibold">Our Services</h2>
