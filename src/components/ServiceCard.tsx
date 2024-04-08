@@ -8,7 +8,6 @@ export interface ServiceCardProps {
 	description: string;
 }
 
-
 // const jumpToPricingSection = () => {
 // 	setTimeout(() => {
 // 		const elem = document.getElementById('pricing');
@@ -22,7 +21,7 @@ export interface ServiceCardProps {
 
 export const ServiceCard: FC<ServiceCardProps> = (props) => {
 	return (
-		<article className="flex flex-col md:grid md:grid-cols-[auto_30%_45%] md:items-center justify-between space-y-snug md:space-y-0 py-6 md:py-12 relative after:contents after:w-full after:bg-[#555] after:h-px after:bottom-0 after:absolute text-left">
+		<article className="relative flex flex-col justify-between space-y-snug py-6 text-left after:absolute after:bottom-0 after:right-0 after:h-px after:w-full after:bg-[#555] after:content-[''] md:grid md:grid-cols-[auto_30%_45%] md:items-center md:space-y-0 md:py-12">
 			<span className="font-display text-lg">{props.serialNo}</span>
 			<div className="flex items-center gap-snug text-2xl md:w-full">
 				{props.children}
@@ -31,7 +30,7 @@ export const ServiceCard: FC<ServiceCardProps> = (props) => {
 			<p className="text-sm font-semibold leading-7 text-[#aaa]">
 				{props.description}
 			</p>
-			<button className="text-display md:hidden !mb-6 !mt-6 w-fit rounded-full bg-primary px-4 py-2 text-xs font-semibold">
+			<button className="text-display !mb-6 !mt-6 w-fit rounded-full bg-primary px-4 py-2 text-xs font-semibold md:hidden">
 				Learn more <ArrowIcon className="inline -rotate-45 scale-75" />
 			</button>
 		</article>
