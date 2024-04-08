@@ -21,7 +21,7 @@ export interface ServiceCardProps {
 
 export const ServiceCard: FC<ServiceCardProps> = (props) => {
 	return (
-		<article className="relative flex flex-col justify-between space-y-snug py-6 text-left after:absolute after:bottom-0 after:right-0 after:h-px after:w-full after:bg-[#555] after:content-[''] md:grid md:grid-cols-[auto_30%_45%] md:items-center md:space-y-0 md:py-12 md:px-loose first:border-t first:border-[#555]">
+		<article className="relative flex flex-col justify-between space-y-snug py-6 text-left after:absolute after:bottom-0 after:right-0 after:h-px after:w-full after:bg-[#555] after:content-[''] md:grid md:grid-cols-[auto_30%_45%] md:items-center md:space-y-0 md:py-12 md:px-relaxed first:border-t first:border-[#555]">
 			<span className="font-display text-lg">{props.serialNo}</span>
 			<div className="flex items-center gap-snug md:gap-6 text-2xl md:w-full">
 				{props.children}
