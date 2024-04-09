@@ -20,14 +20,13 @@ export interface ServiceCardProps {
 
 export const ServiceCard: FC<ServiceCardProps> = (props) => {
 	return (
-		<article className="bg-surface p-loose flex gap-snug items-start rounded-2xl">
-			<div className="text-2xl pt-2">
-				{props.children}
-			</div>
-			<div className='text-left'>
-				<p className="text-sm font-semibold leading-7 text-[#aaa] pb-4">
+		<article className="flex items-start gap-snug rounded-2xl bg-surface p-loose">
+			<div className="pt-2 text-2xl">{props.children}</div>
+			<div className="text-left">
+				<p className="pb-4 text-sm font-semibold leading-7 text-[#aaa]">
 					{props.description}
 				</p>
+				
 				<button className="text-display text-base font-semibold text-white">
 					Learn more
 				</button>

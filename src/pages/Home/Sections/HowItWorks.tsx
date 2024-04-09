@@ -20,7 +20,7 @@ const illustrations: string[] = [
 export const HowItWorks: FC = () => {
 	return (
 		<section className="mx-auto max-w-[100rem] p-snug md:p-loose">
-			<div className="mt-8 rounded-3xl bg-surface p-loose md:space-y-24 lg:space-y-36 lg:p-relaxed">
+			<div className="mt-8 rounded-3xl p-loose md:space-y-24 lg:space-y-36 lg:p-relaxed">
 				<h2 className="mb-8 mt-snug text-center text-4xl font-semibold md:text-5xl lg:mt-12">
 					How it works
 				</h2>
