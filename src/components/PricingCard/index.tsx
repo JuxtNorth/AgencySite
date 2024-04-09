@@ -16,26 +16,23 @@ export interface PricingCardProps {
 	variant?: 'a' | 'b' | 'c';
 }
 
-const variants = cva(
-	'absolute size-32 rounded-full top-0 left-0',
-	{
-		variants: {
-			variant: {
-				a: '',
-				b: 'bg-primary blur-3xl',
-				c: 'bg-accent blur-[80px] size-32'
-			}
+const variants = cva('absolute size-32 rounded-full top-0 left-0', {
+	variants: {
+		variant: {
+			a: '',
+			b: 'bg-primary blur-3xl',
+			c: 'bg-accent blur-[80px] size-32'
 		}
 	}
-);
+});
 
 export const PricingCard: FC<PricingCardProps> = (props) => {
 	const { variant = 'a' } = props;
 
 	return (
-		<article className='relative flex w-full flex-col justify-between rounded-2xl bg-surface p-6 md:p-loose overflow-hidden'>
+		<article className="relative flex w-full flex-col justify-between overflow-hidden rounded-2xl bg-surface p-6 md:p-loose">
 			<div className={variants({ variant })} />
-			<div className='z-[1]'>
+			<div className="z-[1]">
 				<section className="flex h-56 flex-col justify-between border-b border-slate-400 pb-snug">
 					<div className="space-y-4">
 						<div className="flex justify-between">

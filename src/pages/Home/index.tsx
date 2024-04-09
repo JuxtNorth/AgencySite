@@ -8,7 +8,7 @@ import {
 	HowItWorks,
 	Services,
 	Workflow,
-	MembershipDetails,
+	MembershipPerks,
 	Pricing,
 	Faq,
 	ScheduleCalendar
@@ -34,7 +34,7 @@ export const Home: FC = () => {
 				<HowItWorks />
 				<Services />
 				<Pricing />
-				<MembershipDetails />
+				<MembershipPerks />
 				<Faq />
 				<ScheduleCalendar />
 				<Footer />

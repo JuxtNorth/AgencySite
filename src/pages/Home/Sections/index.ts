@@ -6,7 +6,7 @@ export * from './CaseStudies';
 export * from './Services';
 export * from './Workflow';
 export * from './HowItWorks';
-export * from './MembershipDetails';
+export * from './MembershipPerks';
 export * from './Pricing';
 export * from './Faq';
 export * from './ScheduleCalendar';

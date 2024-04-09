@@ -18,10 +18,10 @@ export interface BlobOverlayProps {
 export const BlobOverlay: FC<BlobOverlayProps> = (props) => {
 	const blobIndex = props.type || 0;
 	return (
-		<div className="relative mx-auto mb-12 grid w-fit grid-cols-1 place-items-center">
+		<div className="relative mx-auto mb-12 lg:mb-loose grid w-fit grid-cols-1 place-items-center">
 			<div className="col-start-1 row-start-1">{props.children}</div>
 			<img
-				className="-z-[1] col-start-1 row-start-1 h-52"
+				className="-z-[1] col-start-1 row-start-1 h-40"
 				src={blobs[blobIndex] as string}
 				alt=""
 				aria-hidden="true"
