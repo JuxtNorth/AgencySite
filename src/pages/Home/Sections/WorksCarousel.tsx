@@ -3,12 +3,12 @@ import { Carousel, Slide, Video } from '@/components';
 import ClassNames from 'embla-carousel-class-names';
 import { EyeIcon } from '@/icons';
 
-export const WorksCarousel: FC = () => {
+export const Works: FC = () => {
 	return (
 		<section className="mt-12 overflow-hidden text-center">
 			<div className="mb-loose xl:mb-16">
-				<h2 className="font-semibold">Our Work</h2>
-				<p>Making your vision a reality</p>
+				<h2 className="text-4xl font-semibold md:text-5xl">Our Work</h2>
+				<p className='text-sm md:text-base'>Making your vision a reality</p>
 			</div>
 			<Carousel
 				buttonXPosition="either"

@@ -1,6 +1,7 @@
 import { FC, ReactNode } from 'react';
 import { FeatureItem } from './FeatureItem';
 import { MagicIcon } from '@/icons';
+import { cva } from 'class-variance-authority';
 
 export interface PricingCardProps {
 	name: string;
@@ -10,18 +11,28 @@ export interface PricingCardProps {
 	buttonTo: string;
 	features: string[];
 	bestFor: string;
-	className: string;
 	children: ReactNode;
+	variant?: 'a' | 'b' | 'c';
 }
 
-export const PricingCard: FC<PricingCardProps> = (props) => {
-	return (
-		<article
-			className={
-				'flex w-full flex-col justify-between rounded-2xl bg-surface p-6 md:p-loose ' +
-				props.className
+const variants = cva(
+	'flex w-full flex-col justify-between rounded-2xl bg-surface p-6 md:p-loose',
+	{
+		variants: {
+			variant: {
+				a: '',
+				b: 'bg-gradient-to-b from-primary from-[-30%] to-surface to-[12%]',
+				c: 'bg-gradient-to-b from-accent from-[-30%] to-surface to-[12%]'
 			}
-		>
+		}
+	}
+);
+
+export const PricingCard: FC<PricingCardProps> = (props) => {
+	const { variant = 'a' } = props;
+
+	return (
+		<article className={variants({ variant })}>
 			<div>
 				<section className="flex h-56 flex-col justify-between border-b border-slate-400 pb-snug">
 					<div className="space-y-4">

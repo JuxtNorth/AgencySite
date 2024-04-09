@@ -2,7 +2,7 @@ import { FC } from 'react';
 import {
 	Hero,
 	Clients,
-	WorksCarousel,
+	Works,
 	Testimonials,
 	CaseStudies,
 	HowItWorks,
@@ -27,7 +27,7 @@ export const Home: FC = () => {
 				{/*<FloatingNav />*/}
 				<Hero />
 				<Clients />
-				<WorksCarousel />
+				<Works />
 				<Workflow />
 				<Testimonials />
 				<CaseStudies />

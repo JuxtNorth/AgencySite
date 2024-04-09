@@ -16,7 +16,7 @@ export const MembershipDetails: FC = () => {
 	return (
 		<section className="mx-auto mt-12 max-w-[100rem] text-center">
 			<h1 className="text-4xl font-semibold md:text-5xl">Membership Perks</h1>
-			<p className="md:text-lg">Lorem Ipsum Doler Imet Constrctuer</p>
+			<p className="text-sm md:text-lg">Lorem Ipsum Doler Imet Constrctuer</p>
 			<div className="grid grid-cols-1 grid-rows-6 place-items-center gap-loose p-loose md:grid-cols-3 md:grid-rows-2 xl:p-relaxed">
 				{perks.map((perk, index) => (
 					<PerkCard {...perk} key={index}>

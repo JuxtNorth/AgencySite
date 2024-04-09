@@ -5,8 +5,8 @@ import WavyArrow from '@/assets/scribbles/wavy-arrow-up.svg';
 
 const Impact: FC = () => {
 	return (
-		<section className="mx-auto mt-16 w-full max-w-[100rem] rounded-3xl bg-surface py-loose md:pb-16 md:pt-12">
-			<h2 className="rounded-2xl text-center font-semibold">Our Impact</h2>
+		<section className="mx-auto mt-16 w-full max-w-[100rem] rounded-3xl bg-surface py-loose md:pb-16 md:pt-12 z-10">
+			<h2 className="text-4xl font-semibold md:text-5xl text-center">Our Impact</h2>
 			<div className="mt-loose space-y-loose md:flex md:items-center md:gap-36 md:space-y-0">
 				<div className="mx-auto text-center">
 					<h2 className="gsap-header text-4xl font-bold md:text-5xl">
@@ -29,11 +29,11 @@ const Impact: FC = () => {
 
 export const Clients: FC = () => {
 	return (
-		<section className="mx-auto flex max-w-[100rem] flex-col items-center p-snug md:p-loose">
+		<section className="mx-auto flex max-w-[100rem] flex-col items-center p-snug md:p-loose z-20">
 			<section className="w-full rounded-2xl bg-surface p-snug py-loose text-center lg:flex lg:justify-between lg:p-loose lg:text-left xl:p-relaxed">
 				<div className="lg:flex lg:flex-col lg:justify-between">
 					<div>
-						<h1 className="gsap-header font-extrabold leading-none">
+						<h1 className="gsap-header text-4xl lg:text-7xl font-semibold leading-none">
 							Our <br className="hidden lg:inline" />
 							Clients
 						</h1>
@@ -48,7 +48,7 @@ export const Clients: FC = () => {
 					/>
 				</div>
 				<div>
-					<div className="mx-auto grid w-fit grid-flow-row grid-cols-3 gap-4 p-loose">
+					<div className="mx-auto grid w-fit grid-flow-row grid-cols-3 gap-4 px-loose pb-loose">
 						{new Array(6).fill(0).map((_, i) => (
 							<Avatar
 								profileUrl={`https://ik.imagekit.io/Hireachmedia/Clients/tr:w-400,pr-true/${i + 1}.jpg`}
