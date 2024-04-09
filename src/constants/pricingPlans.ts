@@ -19,8 +19,7 @@ export const pricingPlans: Omit<PricingCardProps, 'children'>[] = [
 			'Monthly growth reports.',
 			'Pause or cancel anytime.'
 		],
-		bestFor: 'Built for LinkedIn maverick',
-		className: ''
+		bestFor: 'Built for LinkedIn maverick'
 	},
 	{
 		name: 'Virality Assistant',
@@ -38,8 +37,7 @@ export const pricingPlans: Omit<PricingCardProps, 'children'>[] = [
 			'Community building and Management',
 			'Pause or cancel anytime'
 		],
-		bestFor: 'Tailored for those dedicated towards personal branding',
-		className: ''
+		bestFor: 'Tailored for those dedicated towards personal branding'
 	},
 	{
 		name: 'Growth Partner',
@@ -54,7 +52,6 @@ export const pricingPlans: Omit<PricingCardProps, 'children'>[] = [
 			'Automation Setup.',
 			'Your All-in-One Solution to Grow and Monetize your brand'
 		],
-		bestFor: 'Best choice for business growth.',
-		className: ''
+		bestFor: 'Best choice for business growth.'
 	}
 ];

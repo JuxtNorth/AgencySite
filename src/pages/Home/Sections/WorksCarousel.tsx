@@ -8,7 +8,7 @@ export const Works: FC = () => {
 		<section className="mt-12 overflow-hidden text-center">
 			<div className="mb-loose xl:mb-16">
 				<h2 className="text-4xl font-semibold md:text-5xl">Our Work</h2>
-				<p className='text-sm md:text-base'>Making your vision a reality</p>
+				<p className="text-sm md:text-base">Making your vision a reality</p>
 			</div>
 			<Carousel
 				buttonXPosition="either"

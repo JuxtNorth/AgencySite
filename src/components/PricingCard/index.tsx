@@ -2,6 +2,7 @@ import { FC, ReactNode } from 'react';
 import { FeatureItem } from './FeatureItem';
 import { MagicIcon } from '@/icons';
 import { cva } from 'class-variance-authority';
+import { GlowButton } from '@/components';
 
 export interface PricingCardProps {
 	name: string;
@@ -16,13 +17,13 @@ export interface PricingCardProps {
 }
 
 const variants = cva(
-	'flex w-full flex-col justify-between rounded-2xl bg-surface p-6 md:p-loose',
+	'absolute size-32 rounded-full top-0 left-0',
 	{
 		variants: {
 			variant: {
 				a: '',
-				b: 'bg-gradient-to-b from-primary from-[-30%] to-surface to-[12%]',
-				c: 'bg-gradient-to-b from-accent from-[-30%] to-surface to-[12%]'
+				b: 'bg-primary blur-3xl',
+				c: 'bg-accent blur-[80px] size-32'
 			}
 		}
 	}
@@ -32,8 +33,9 @@ export const PricingCard: FC<PricingCardProps> = (props) => {
 	const { variant = 'a' } = props;
 
 	return (
-		<article className={variants({ variant })}>
-			<div>
+		<article className='relative flex w-full flex-col justify-between rounded-2xl bg-surface p-6 md:p-loose overflow-hidden'>
+			<div className={variants({ variant })} />
+			<div className='z-[1]'>
 				<section className="flex h-56 flex-col justify-between border-b border-slate-400 pb-snug">
 					<div className="space-y-4">
 						<div className="flex justify-between">
@@ -46,9 +48,9 @@ export const PricingCard: FC<PricingCardProps> = (props) => {
 						</h1>
 						<p className="text-sm">{props.emphasis}</p>
 					</div>
-					<button className="w-full rounded-xl bg-slate-800 py-snug text-white">
+					<GlowButton variant={variant} className="w-full">
 						{props.buttonLabel}
-					</button>
+					</GlowButton>
 				</section>
 				<section className="py-8">
 					<ul className="space-y-2 px-2">

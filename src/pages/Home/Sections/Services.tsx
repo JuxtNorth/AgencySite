@@ -78,22 +78,21 @@ export const Services: FC = () => {
 	}, []);
 
 	return (
-		<section
-			ref={sectionRef}
-			className="mx-auto max-w-[80rem] p-snug text-center md:p-loose"
-		>
+		<section className="mx-auto max-w-[80rem] p-snug text-center md:p-loose">
 			<div
 				className="fixed left-[50%] top-[50%] z-40 hidden size-32 -translate-x-full -translate-y-full"
 				ref={hintWrapperRef}
 			>
 				<div
 					ref={hintRef}
-					className="size-full rounded-full bg-primary opacity-0 box-border p-6 flex justify-center items-center font-display font-semibold"
-				>Don't click</div> 
+					className="box-border flex size-full items-center justify-center rounded-full bg-primary p-6 font-display font-semibold opacity-0"
+				>
+					Don't click
+				</div>
 			</div>
 			<div className="rounded-3xl">
 				<h2 className="mb-12 mt-snug font-semibold">Our Services</h2>
-				<section>
+				<section ref={sectionRef}>
 					{services.map((props, i) => (
 						<ServiceCard key={i} serialNo={`0${i + 1}`} {...props}>
 							{icons[i]}

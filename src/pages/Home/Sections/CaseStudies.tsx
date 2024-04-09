@@ -6,7 +6,7 @@ export const CaseStudies: FC = () => {
 	return (
 		<section className="m-4 mx-auto max-w-[100rem] rounded-2xl p-8 pt-16 text-center">
 			<h2 className="text-4xl font-semibold md:text-5xl">Case Study</h2>
-			<p className='text-sm md:text-base'>on client results</p>
+			<p className="text-sm md:text-base">on client results</p>
 			<div className="mx-auto mt-12 w-[90%] space-y-2 md:w-[48%] md:space-y-4">
 				<div className="flex h-12 items-center gap-5 md:gap-8">
 					<div className="size-10 shrink-0 overflow-hidden rounded-full md:size-14">
