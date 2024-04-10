@@ -31,7 +31,7 @@ export const Dialog: FC<DialogProps> = (props) => {
 	return (
 		<dialog
 			ref={dialogRef}
-			className="w-[80%] max-w-[90rem] overflow-visible bg-transparent backdrop:bg-black/80 backdrop:backdrop-blur-sm"
+			className="w-[80%] max-w-[100rem] xl:w-[70%] overflow-visible bg-transparent backdrop:bg-black/80 backdrop:backdrop-blur-sm"
 		>
 			<button
 				className="absolute -right-12 block rounded-full bg-surface p-3 text-font-primary transition-[filter] hover:brightness-125"
@@ -42,7 +42,7 @@ export const Dialog: FC<DialogProps> = (props) => {
 			<div className="relative grid size-full grid-cols-[auto_24%] gap-x-loose rounded-[2.6rem] bg-surface p-9">
 				<article className="text-left">
 					<h1 className="mb-snug text-4xl">{props.title}</h1>
-					<div className="text-font-primary text-sm pl-2">
+					<div className="pl-2 text-sm xl:text-base 2xl:text-lg text-font-primary">
 						{ReactHtmlParser(props.markdownContent)}
 					</div>
 				</article>
