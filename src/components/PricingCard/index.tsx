@@ -2,7 +2,7 @@ import { FC, ReactNode } from 'react';
 import { FeatureItem } from './FeatureItem';
 import { MagicIcon } from '@/icons';
 import { cva } from 'class-variance-authority';
-import { GlowButton } from '@/components';
+import { GlowButton } from '@/components/ui';
 
 export interface PricingCardProps {
 	name: string;

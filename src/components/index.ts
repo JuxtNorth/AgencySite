@@ -10,4 +10,3 @@ export * from './Carousel';
 export * from './PerkCard';
 export * from './HowItWorksCard';
 export * from './Video';
-export * from './RippleButton';

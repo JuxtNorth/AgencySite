@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import { Carousel, Slide, Video } from '@/components';
 import ClassNames from 'embla-carousel-class-names';
+import AutoPlay from 'embla-carousel-autoplay';
 import { EyeIcon } from '@/icons';
 
 export const Works: FC = () => {
@@ -14,7 +15,7 @@ export const Works: FC = () => {
 				buttonXPosition="either"
 				buttonYPosition="middle"
 				className="gap-snug 2xl:gap-loose"
-				plugins={[ClassNames()]}
+				plugins={[ClassNames(), AutoPlay({ duration: 1200 })]}
 			>
 				{new Array(24).fill(0).map((_, i) => (
 					<div key={i} className="last:mr-snug 2xl:last:mr-loose">

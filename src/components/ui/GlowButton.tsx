@@ -1,8 +1,9 @@
 import { cn } from '@/lib/utils';
 import { cva } from 'class-variance-authority';
-import { FC, ReactNode } from 'react';
+import { ButtonHTMLAttributes, FC, ReactNode } from 'react';
 
-export interface GlowButtonProps {
+export interface GlowButtonProps
+	extends ButtonHTMLAttributes<HTMLButtonElement> {
 	className: string;
 	children: ReactNode;
 	variant?: 'a' | 'b' | 'c';
@@ -21,12 +22,15 @@ const variants = cva(
 	}
 );
 
-export const GlowButton: FC<GlowButtonProps> = (props) => {
-	const { variant = 'a' } = props;
-
+export const GlowButton: FC<GlowButtonProps> = ({
+	variant = 'a',
+	children,
+	className,
+	...restProps
+}) => {
 	return (
-		<button className={cn(variants({ variant }), props.className)}>
-			{props.children}
+		<button {...restProps} className={cn(variants({ variant }), className)}>
+			{children}
 		</button>
 	);
 };
