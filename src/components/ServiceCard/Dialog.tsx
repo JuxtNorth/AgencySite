@@ -31,7 +31,7 @@ export const Dialog: FC<DialogProps> = (props) => {
 	return (
 		<dialog
 			ref={dialogRef}
-			className="w-[76%] max-w-[74rem] overflow-visible bg-transparent backdrop:bg-black/80 backdrop:backdrop-blur-sm"
+			className="w-[80%] max-w-[90rem] overflow-visible bg-transparent backdrop:bg-black/80 backdrop:backdrop-blur-sm"
 		>
 			<button
 				className="absolute -right-12 block rounded-full bg-surface p-3 text-font-primary transition-[filter] hover:brightness-125"
@@ -40,9 +40,9 @@ export const Dialog: FC<DialogProps> = (props) => {
 				<CrossIcon />
 			</button>
 			<div className="relative grid size-full grid-cols-[auto_24%] gap-x-loose rounded-[2.6rem] bg-surface p-9">
-				<article className="overflow-scroll text-left">
+				<article className="text-left">
 					<h1 className="mb-snug text-4xl">{props.title}</h1>
-					<div className="text-font-primary">
+					<div className="text-font-primary text-sm pl-2">
 						{ReactHtmlParser(props.markdownContent)}
 					</div>
 				</article>
@@ -71,7 +71,7 @@ export const Dialog: FC<DialogProps> = (props) => {
 					</div>
 					<GlowButton
 						variant="c"
-						className="flex w-full items-center justify-center gap-snug rounded-full bg-transparent py-snug font-display text-accent outline outline-1 outline-slate-600 hover:outline-0 hover:text-font-primary "
+						className="flex w-full items-center justify-center gap-snug rounded-full bg-transparent py-snug font-display text-accent outline outline-1 outline-slate-600 hover:text-font-primary hover:outline-0 "
 					>
 						<GiftIcon className="text-xl" />
 						Get your Gift
