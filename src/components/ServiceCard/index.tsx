@@ -1,18 +1,12 @@
 import { FC, ReactNode, useState } from 'react';
-import { Dialog } from './Dialog';
+import { Dialog, type DialogProps } from './Dialog';
 
 export interface ServiceCardProps {
 	children?: ReactNode; // Icon
 	serialNo: string;
 	title: string;
 	description: string;
-	dialog: {
-		markdownContent: string;
-		stat: {
-			title: string;
-			value: number;
-		};
-	};
+	dialog: Omit<DialogProps, 'title' | 'isOpen' | 'onClose'>;
 }
 
 // const jumpToPricingSection = () => {
@@ -37,20 +31,22 @@ export const ServiceCard: FC<ServiceCardProps> = (props) => {
 		<>
 			<Dialog
 				isOpen={dialogOpen}
-        title={props.title}
+				title={props.title}
 				{...props.dialog}
 				onClose={() => setDialogOpen(false)}
 			/>
 			<article className="flex items-start gap-snug rounded-2xl bg-surface p-loose">
 				<div className="pt-2 text-2xl">{props.children}</div>
-				<div className="text-left">
-					<h1 className="mb-snug mt-1 text-4xl font-semibold">{props.title}</h1>
-					<p className="pb-4 text-sm font-semibold leading-7 text-[#aaa]">
-						{props.description}
-					</p>
+				<div className="text-left flex flex-col justify-between items-start h-full">
+					<div>
+						<h1 className="mb-snug mt-1 text-4xl font-semibold">{props.title}</h1>
+						<p className="pb-4 text-sm font-semibold leading-7 text-[#aaa]">
+							{props.description}
+						</p>
+					</div>
 					<button
 						onClick={onClick}
-						className="text-display text-base font-semibold text-white"
+						className="text-display text-base font-semibold mt-auto"
 					>
 						Learn more
 					</button>

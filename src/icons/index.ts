@@ -27,5 +27,5 @@ export * from './Eye';
 export * from './Star';
 export * from './Money';
 export * from './EyeLight';
-export * from "./Gift";
-export * from "./Schedule";
+export * from './Gift';
+export * from './Schedule';

@@ -1,13 +1,18 @@
 import { CrossIcon, GiftIcon, ScheduleIcon } from '@/icons';
 import { FC, useEffect, useRef } from 'react';
 import { GlowButton } from '@/components/ui';
-import Markdown from 'react-markdown'
+import ReactHtmlParser from 'react-html-parser';
+import { PieChart } from 'react-minimal-pie-chart';
 
 export interface DialogProps {
 	title: string;
 	markdownContent: string;
 	onClose: () => void;
 	isOpen: boolean;
+	stat: {
+		title: string;
+		value: number;
+	};
 }
 
 export const Dialog: FC<DialogProps> = (props) => {
@@ -26,30 +31,42 @@ export const Dialog: FC<DialogProps> = (props) => {
 	return (
 		<dialog
 			ref={dialogRef}
-			className="w-[76%] max-w-[74rem]  overflow-visible rounded-2xl bg-surface"
+			className="w-[76%] max-w-[74rem] overflow-visible bg-transparent backdrop:bg-black/80 backdrop:backdrop-blur-sm"
 		>
-			<div className="relative grid size-full grid-cols-[auto_24%] gap-x-loose p-loose">
-				<button
-					className="absolute -right-12 block rounded-full bg-surface p-3 text-font-primary  transition-[filter] hover:brightness-125"
+			<button
+					className="absolute -right-12 block rounded-full bg-surface p-3 text-font-primary transition-[filter] hover:brightness-125"
 					onClick={props.onClose}
 				>
 					<CrossIcon />
 				</button>
-				<article className="text-left">
+			<div className="bg-surface rounded-[2.6rem] relative grid size-full grid-cols-[auto_24%] gap-x-loose p-9">
+				<article className="text-left overflow-scroll">
 					<h1 className="mb-snug text-4xl">{props.title}</h1>
-					<Markdown components={{
-						p(props) {
-							const {["node"]: _, ...rest} = props;
-							return <p className='text-font-primary text-sm' {...rest} />
-						},
-						ul(props) {
-							const {["node"]: _, ...rest} = props;
-							return <ul className='text-font-primary text-sm pl-snug list-disc' {...rest} />
-						}
-					}}>{props.markdownContent}</Markdown>
+					<div className="text-font-primary">
+						{ReactHtmlParser(props.markdownContent)}
+					</div>
 				</article>
 				<section className="space-y-snug">
-					<div className="aspect-square w-full rounded-2xl border border-slate-600"></div>
+					<div className="aspect-square w-full rounded-[2.5rem] border border-slate-600 p-snug grid grid-cols-1 grid-rows-1 place-items-center">
+						<p className='text-sm row-start-1 col-start-1 text-primary text-center'>Some Stat</p>
+						<PieChart
+						className='row-start-1 col-start-1'
+							data={[
+								{
+									title: 'foo',
+									color: 'rgb(var(--primary))',
+									value: 80
+								},
+								{
+									title: 'bar',
+									color: 'rgba(var(--primary-varient),0.3)',
+									value: 20
+								}
+							]}
+							rounded
+							lineWidth={24}
+						/>
+					</div>
 					<GlowButton
 						variant="c"
 						className="flex w-full items-center justify-center gap-snug rounded-full border border-slate-600 bg-transparent py-snug font-display text-accent hover:text-font-primary"
