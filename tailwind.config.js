@@ -36,12 +36,12 @@ export default {
 					'0%': { rotate: '0deg' },
 					'50%': { scale: '1 1.36' },
 					'100%': { rotate: '360deg' }
-				},
+				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				blob: 'blob 18s linear infinite',
+				blob: 'blob 18s linear infinite'
 			}
 		}
 	},

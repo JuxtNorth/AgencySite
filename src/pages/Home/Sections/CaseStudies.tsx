@@ -1,43 +1,32 @@
 import { GoIcon } from '@/icons';
 import { FC } from 'react';
-import { Link } from 'react-router-dom';
 
 export const CaseStudies: FC = () => {
 	return (
-		<section className="m-4 mx-auto max-w-[100rem] rounded-2xl p-8 pt-16 text-center">
-			<h2 className="text-4xl font-semibold md:text-5xl">Case Study</h2>
-			<p className="text-sm md:text-base">on client results</p>
-			<div className="mx-auto mt-12 w-[90%] space-y-2 md:w-[48%] md:space-y-4">
-				<div className="flex h-12 items-center gap-5 md:gap-8">
-					<div className="size-10 shrink-0 overflow-hidden rounded-full md:size-14">
-						<img
-							width={300}
-							src="https://ik.imagekit.io/Hireachmedia/CaseStudy/2/tr:q-2,w-300,pr-true/profile.jpg"
-							alt="An image of lorem ipsum"
-						/>
+		<div className="m-4 mx-auto max-w-[100rem] p-8 pt-16 text-center">
+			<section className="size-full rounded-[4.2rem] bg-surface p-relaxed text-left">
+				<h1 className="text-8xl">Case Study</h1>
+				<h2 className="text-5xl mb-loose">
+					on client <span className="text-secondary">results</span>
+				</h2>
+				<div className="bg-[#fff] p-loose py-relaxed rounded-[3.8rem] space-y-loose text-5xl font-semibold">
+					<div className='flex gap-snug w-full border-b border-slate-600 pb-loose pl-loose items-center'>
+						<img className='aspect-square rounded-full object-cover h-20 mr-snug' src="https://ik.imagekit.io/Hireachmedia/CaseStudy/1/profile.jpg" alt="An image of foo bar" />
+						<h1 className='font-body text-slate-800'>John Doe</h1>
+						<GoIcon className='text-slate-800 text-lg'/>
 					</div>
-					<h3 className="whitespace-nowrap text-2xl font-semibold md:text-3xl">
-						<Link to="/casestudy/a">
-							Lorem Chaudhary <GoIcon className="ml-4 inline text-base" />
-						</Link>
-					</h3>
-				</div>
-				<hr className="border-slate-300" />
-				<div className="flex h-12 items-center gap-5 md:gap-8">
-					<div className="size-10 shrink-0 overflow-hidden rounded-full md:size-14">
-						<img
-							width={300}
-							src="https://ik.imagekit.io/Hireachmedia/CaseStudy/1/tr:q-2,w-300,pr-true/profile.jpg"
-							alt="An image of lorem ipsum"
-						/>
+					<div className='flex gap-snug w-full border-b border-slate-600 pb-loose pl-loose items-center'>
+						<img className='aspect-square rounded-full object-cover h-20 mr-snug' src="https://ik.imagekit.io/Hireachmedia/CaseStudy/2/profile.jpg" alt="An image of foo bar" />
+						<h1 className='font-body text-slate-800'>Jane Doe</h1>
+						<GoIcon className='text-slate-800 text-lg'/>
 					</div>
-					<h3 className="whitespace-nowrap text-2xl font-semibold md:text-3xl">
-						<Link to="/casestudy/b">
-							Lorem Sharma <GoIcon className="ml-4 inline text-base" />
-						</Link>
-					</h3>
+					<div className='flex gap-snug w-full border-b border-slate-600 pb-loose pl-loose items-center last:border-none last:pb-0'>
+						<img className='aspect-square rounded-full object-cover h-20 mr-snug' src="https://ik.imagekit.io/Hireachmedia/CaseStudy/1/profile.jpg" alt="An image of foo bar" />
+						<h1 className='font-body text-slate-800'>Lorem Ipsum</h1>
+						<GoIcon className='text-slate-800 text-lg'/>
+					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+		</div>
 	);
 };

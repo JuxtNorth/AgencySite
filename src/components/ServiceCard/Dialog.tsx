@@ -56,7 +56,7 @@ export const Dialog: FC<DialogProps> = (props) => {
 		<dialog
 			ref={dialogRef}
 			data-open={visible}
-			className="w-[80%] max-w-[100rem] scale-[2] overflow-visible bg-transparent opacity-0 duration-300 [&[data-open='true']]:duration-[400ms] ease-[cubic-bezier(0.165,0.840,0.440,1.000)] backdrop:bg-black/80 backdrop:backdrop-blur-sm xl:w-[70%] [&[data-open='true']]:scale-[1] [&[data-open='true']]:opacity-100"
+			className="w-[80%] max-w-[100rem] scale-[2] overflow-visible bg-transparent opacity-0 duration-300 ease-[cubic-bezier(0.165,0.840,0.440,1.000)] backdrop:bg-black/80 backdrop:backdrop-blur-sm xl:w-[70%] [&[data-open='true']]:scale-[1] [&[data-open='true']]:opacity-100 [&[data-open='true']]:duration-[400ms]"
 		>
 			<div className="flex size-full flex-col items-center gap-loose rounded-3xl bg-surface p-loose text-font-primary lg:hidden">
 				<GiftIcon className="text-[72px] text-accent" />
