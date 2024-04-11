@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 
 export const CaseStudies: FC = () => {
 	return (
-		<div className="m-4 mx-auto max-w-[100rem] p-8 pt-16 text-center">
+		<div className="m-4 mx-auto max-w-[100rem] p-2 pt-16 text-center lg:p-8">
 			<section className="size-full rounded-3xl p-snug text-center md:rounded-[4.2rem] lg:p-loose lg:text-left">
 				<h1 className="text-4xl lg:text-7xl">Case Study</h1>
 				<h2 className="mb-loose text-xl lg:text-4xl">
 					on client <span className="text-secondary">results</span>
 				</h2>
-				<div className="space-y-snug rounded-2xl bg-surface p-snug py-snug text-xl font-semibold lg:space-y-loose lg:p-loose lg:py-loose lg:text-3xl">
+				<div className="space-y-snug rounded-2xl bg-surface p-snug text-lg font-semibold lg:space-y-loose lg:p-loose lg:py-loose lg:text-3xl">
 					<div className="flex w-full items-center gap-snug border-b border-slate-600 pb-snug md:pl-loose lg:pb-loose">
 						<img
 							className="aspect-square h-12 rounded-full object-cover lg:mr-snug lg:h-20"
