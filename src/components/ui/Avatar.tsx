@@ -3,12 +3,13 @@ import { FC } from 'react';
 export interface AvatarProps {
 	profileUrl?: string;
 	name?: string;
+	stat?: string;
 }
 
 export const Avatar: FC<AvatarProps> = (props) => {
 	return (
 		<div className="flex flex-col items-center">
-			<div className="h-20 w-20 rounded-full bg-lime-400 object-cover md:h-36 md:w-36">
+			<div className="size-20 rounded-full bg-primary object-cover md:size-36 mb-2">
 				{props.profileUrl && (
 					<img
 						className="aspect-[1/1] size-full rounded-full object-cover"
@@ -18,6 +19,8 @@ export const Avatar: FC<AvatarProps> = (props) => {
 					/>
 				)}
 			</div>
+			<h3 className='text-sm'>{props?.name}</h3>
+			<p className='text-xs text-primary font-semibold'>{props?.stat}</p>
 		</div>
 	);
 };

@@ -5,3 +5,4 @@ export * from './FAQs';
 export * from './perks';
 export * from './howItWorks';
 export * from './workflows';
+export * from "./clients"

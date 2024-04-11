@@ -2,6 +2,7 @@ import { FC } from 'react';
 import { Avatar } from '@/components/ui';
 import Sparkles from '@/assets/scribbles/sparkles.svg';
 import WavyArrow from '@/assets/scribbles/wavy-arrow-up.svg';
+import { clients } from '@/constants';
 
 const Impact: FC = () => {
 	return (
@@ -44,17 +45,17 @@ export const Clients: FC = () => {
 						</p>
 					</div>
 					<img
-						className="mx-auto mt-loose h-24 w-24 invert lg:h-44 lg:w-44"
+						className="mx-auto mt-loose size-24 invert lg:size-44 mb-loose md:mb-0"
 						src={Sparkles}
 						alt="An image of three sparkles"
 					/>
 				</div>
 				<div>
-					<div className="mx-auto grid w-fit grid-flow-row grid-cols-3 gap-4 px-loose pb-loose">
-						{new Array(6).fill(0).map((_, i) => (
+					<div className="mx-auto grid w-fit grid-flow-row grid-cols-2 lg:grid-cols-3 gap-loose px-loose pb-loose">
+						{clients.map((props, i) => (
 							<Avatar
 								profileUrl={`https://ik.imagekit.io/Hireachmedia/Clients/tr:w-400,pr-true/${i + 1}.jpg`}
-								name={i.toString()}
+								{...props}
 								key={i}
 							/>
 						))}
