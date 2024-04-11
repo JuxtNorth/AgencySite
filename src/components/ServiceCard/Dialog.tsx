@@ -1,5 +1,5 @@
 import { CrossIcon, GiftIcon, ScheduleIcon } from '@/icons';
-import { FC, useEffect, useRef } from 'react';
+import { FC, useCallback, useEffect, useRef, useState } from 'react';
 import { GlowButton } from '@/components/ui';
 import ReactHtmlParser from 'react-html-parser';
 import { PieChart } from 'react-minimal-pie-chart';
@@ -17,32 +17,73 @@ export interface DialogProps {
 
 export const Dialog: FC<DialogProps> = (props) => {
 	const dialogRef = useRef<HTMLDialogElement>(null);
+	const [visible, setVisibility] = useState(false);
 
-	const { isOpen } = props;
+	const { isOpen, onClose: onCloseResponse } = props;
 
 	useEffect(() => {
 		if (isOpen) {
 			dialogRef.current?.showModal();
+			setVisibility(true);
 		} else {
 			dialogRef.current?.close();
 		}
 	}, [isOpen]);
 
+	const onClose = useCallback(() => {
+		setVisibility(false);
+		setTimeout(() => {
+			onCloseResponse();
+		}, 280);
+	}, [onCloseResponse]);
+
+	useEffect(() => {
+		// Close modal if user clicks outside it's main content
+		const onClick = (event: Event) => {
+			if (event.target === dialogRef.current!) {
+				onClose();
+			}
+		};
+
+		window.addEventListener('click', onClick);
+
+		return () => {
+			window.removeEventListener('click', onClick);
+		};
+	}, [onClose]);
+
 	return (
 		<dialog
 			ref={dialogRef}
-			className="w-[80%] max-w-[100rem] xl:w-[70%] overflow-visible bg-transparent backdrop:bg-black/80 backdrop:backdrop-blur-sm"
+			data-open={visible}
+			className="w-[80%] max-w-[100rem] scale-[2] overflow-visible bg-transparent opacity-0 duration-300 [&[data-open='true']]:duration-[400ms] ease-[cubic-bezier(0.165,0.840,0.440,1.000)] backdrop:bg-black/80 backdrop:backdrop-blur-sm xl:w-[70%] [&[data-open='true']]:scale-[1] [&[data-open='true']]:opacity-100"
 		>
+			<div className="flex size-full flex-col items-center gap-loose rounded-3xl bg-surface p-loose text-font-primary lg:hidden">
+				<GiftIcon className="text-[72px] text-accent" />
+				<p>
+					View the website on a desktop to get a{' '}
+					<span className="bg-gradient-to-r from-primary to-secondary to-80% bg-clip-text text-transparent">
+						free gift
+					</span>
+					.
+				</p>
+				<button
+					onClick={onClose}
+					className="w-full rounded-full py-snug outline outline-1 outline-slate-600"
+				>
+					Close Modal
+				</button>
+			</div>
 			<button
-				className="absolute -right-12 block rounded-full bg-surface p-3 text-font-primary transition-[filter] hover:brightness-125"
-				onClick={props.onClose}
+				className="absolute -right-12 hidden rounded-full bg-surface p-3 text-font-primary transition-[filter] hover:brightness-125 lg:block"
+				onClick={onClose}
 			>
 				<CrossIcon />
 			</button>
-			<div className="relative grid size-full grid-cols-[auto_24%] gap-x-loose rounded-[2.6rem] bg-surface p-9">
+			<div className="relative hidden size-full grid-cols-[auto_24%] gap-x-loose rounded-[2.6rem] bg-surface p-9 lg:grid">
 				<article className="text-left">
 					<h1 className="mb-snug text-4xl">{props.title}</h1>
-					<div className="pl-2 text-sm xl:text-base 2xl:text-lg text-font-primary">
+					<div className="pl-2 text-sm text-font-primary xl:text-base 2xl:text-lg">
 						{ReactHtmlParser(props.markdownContent)}
 					</div>
 				</article>

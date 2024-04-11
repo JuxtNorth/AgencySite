@@ -4,16 +4,16 @@ import { services } from '@/constants';
 import {
 	RankingIcon,
 	ContentIcon,
-	TrendIcon,
 	SalesIcon,
 	CustomisationIcon,
-	LeadIcon
+	LeadIcon,
+	MagicIcon
 } from '@/icons';
 
 const icons = [
 	<RankingIcon className="overflow-visible text-2xl text-accent md:text-3xl" />,
 	<ContentIcon className="overflow-visible text-2xl text-accent md:text-3xl" />,
-	<TrendIcon className="overflow-visible text-2xl text-accent md:text-3xl" />,
+	<MagicIcon className="overflow-visible text-2xl text-accent md:text-3xl" />,
 	<SalesIcon className="overflow-visible text-2xl text-accent md:text-3xl" />,
 	<CustomisationIcon className="overflow-visible text-2xl text-accent md:text-3xl" />,
 	<LeadIcon className="overflow-visible text-2xl text-accent md:text-3xl" />

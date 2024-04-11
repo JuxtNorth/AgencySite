@@ -16,7 +16,7 @@ export const services: Omit<ServiceCardProps, 'serialNo'>[] = [
 				We give clients the insights they need to succeed and remain distinctive. Our research and expertise in brand management allow us to advise Coaches, Consultants and online service providers on positioning their brand in various industries and markets.
 			</p>
 			<br>
-			<strong>There is a cost to your inaction: </strong>
+			<strong class='text-lg'>There is a cost to your inaction: </strong>
 			<ul class="pl-snug list-disc">
 				<li>A never ending frustration of finding leads.</li>
 				<li>No authority or dominance in your niche.</li>
@@ -64,6 +64,7 @@ export const services: Omit<ServiceCardProps, 'serialNo'>[] = [
     	  your brand and make you money.
     	</p>
 			<br>
+			<strong class='text-lg'>Sub services:</strong>
     	<ul class="pl-snug list-disc">
     	  <li>Niche specific content</li>
     	  <li>Content Calendar</li>
@@ -101,7 +102,7 @@ export const services: Omit<ServiceCardProps, 'serialNo'>[] = [
 		<br>
     <p>Sounds risk good? Books a call and let's get started</p>
     <br>
-    <strong>Sub services</strong>
+    <strong class='text-lg'>Sub services:</strong>
     <ul class="pl-snug list-disc">
       <li>Long-form into short-form (30 shorts/month)</li>
       <li>Animations, B-rolls, motion graphics etc.</li>
@@ -136,7 +137,7 @@ export const services: Omit<ServiceCardProps, 'serialNo'>[] = [
       media, build thousands of fans and get them to buy your stuff.
     </p>
 		<br>
-    <strong>Sub services:</strong>
+    <strong class='text-lg'>Sub services:</strong>
     <ul class="pl-4 list-disc">
 			<li><strong>Social Media Content Strategy</strong></li>
 			<li>Brand Storytelling</li>
@@ -172,7 +173,7 @@ export const services: Omit<ServiceCardProps, 'serialNo'>[] = [
       book a call and we will create one for you
     </p>
 		<br>
-    <strong>Sub services</strong>
+    <strong class='text-lg'>Sub services:</strong>
     <ul class="pl-snug list-disc">
       <li>Content Funnel (TOFU, MOFU and BOFU)</li>
       <li>Building Communities</li>
@@ -206,7 +207,7 @@ export const services: Omit<ServiceCardProps, 'serialNo'>[] = [
       clients. And Boohah! you got credited.
     </p>
 		<br>
-    <strong>Sub services:</strong>
+    <strong class='text-lg'>Sub services:</strong>
     <ul class="pl-snug list-disc">
       <li>Create Lead Magnets to get emails</li>
       <li>Retargeting Ads to convert leads</li>
