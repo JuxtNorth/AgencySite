@@ -22,7 +22,7 @@ export const Hero: FC = () => {
 
 	return (
 		<header className="mx-auto flex min-h-[min(100vh,72rem)] max-w-[100rem] flex-col items-center justify-center lg:pt-16">
-			<div className="relative mb-2 text-center text-[clamp(1.86rem,calc(6vw+2px),7.5rem)] font-extrabold md:font-bold leading-9 md:leading-[98%]">
+			<div className="relative mb-2 text-center text-[clamp(1.86rem,calc(6vw+2px),7.5rem)] font-extrabold leading-9 md:font-bold md:leading-[98%]">
 				<div className="absolute -top-[42px] left-[calc(50%-150px)] lg:-top-[150px] lg:left-[calc(50%-337px)]">
 					<Grid
 						gridX={isDesktop ? 9 : 8}
@@ -53,10 +53,10 @@ export const Hero: FC = () => {
 				Subscription here makes brands go viral there, grab your seats.
 			</p>
 			<a
-				className="hover:continuous-gradient relative z-10 mt-16 cursor-pointer rounded-lg px-6 py-4 text-xs bg-primary"
+				className="hover:continuous-gradient relative z-10 mt-16 cursor-pointer rounded-lg bg-primary px-6 py-4 text-xs"
 				href="#"
 			>
-				<GlitterIcon className='inline mr-2 text-sm'/>
+				<GlitterIcon className="mr-2 inline text-sm" />
 				Book a Call
 			</a>
 		</header>
