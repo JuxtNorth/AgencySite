@@ -71,4 +71,3 @@ export const Clients: FC = () => {
 		</section>
 	);
 };
- 

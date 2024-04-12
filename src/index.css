@@ -63,3 +63,7 @@ h5,
 h6 {
 	@apply font-display text-font-primary;
 }
+
+.service-container:hover > .service-card::after {
+	opacity: 1;
+}

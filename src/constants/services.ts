@@ -1,7 +1,7 @@
 import { type ServiceCardProps } from '@/components';
 
 // Update the grid classNames in Services section if number of services change.
-export const services: Omit<ServiceCardProps, 'serialNo'>[] = [
+export const services: Omit<ServiceCardProps, 'serialNo' | 'mousePos'>[] = [
 	{
 		title: 'Personal Branding',
 		description:

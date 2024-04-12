@@ -21,7 +21,7 @@ export const Home: FC = () => {
 		<>
 			<Nav />
 			<div className="absolute top-0 -z-20 h-screen w-full overflow-hidden">
-				<div className="bg-gradient-to-b size-full from-transparent from-60% to-background" />
+				<div className="size-full bg-gradient-to-b from-transparent from-60% to-background" />
 				<GlowyBlob />
 			</div>
 			<main>
