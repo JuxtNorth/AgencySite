@@ -1,7 +1,6 @@
 import { FC } from 'react';
 import { Avatar } from '@/components/ui';
 import Sparkles from '@/assets/scribbles/sparkles.svg';
-import WavyArrow from '@/assets/scribbles/wavy-arrow-up.svg';
 import { clients } from '@/constants';
 
 const Impact: FC = () => {
