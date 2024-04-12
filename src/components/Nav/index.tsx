@@ -2,9 +2,11 @@ import { FC, useEffect, useState } from 'react';
 import Trend from '@/assets/scribbles/Trend.svg';
 import { BurgerIcon } from '@/icons';
 import { Link } from 'react-router-dom';
+import { MobileMenu } from './MobileMenu';
 
 export const Nav: FC = () => {
 	const [blur, setBlur] = useState(0);
+  const [open, setOpen] = useState(true);
 
 	useEffect(() => {
 		const onScroll = () => {
@@ -23,6 +25,7 @@ export const Nav: FC = () => {
 
 	return (
 		<>
+      <MobileMenu isOpen={open} onClose={() => setOpen(false)} />
 			<nav
 				className="fixed top-0 z-50 box-border flex h-16 w-full items-center justify-between px-snug transition-[backdrop-filter]"
 				style={{ backdropFilter: `blur(${blur}px)` }}
@@ -60,7 +63,7 @@ export const Nav: FC = () => {
 					>
 						Book a call
 					</a>
-					<button className="flex size-10 items-center justify-center rounded-full bg-primary text-xl text-font-primary lg:hidden">
+					<button onClick={() => setOpen(true)} data-open={open} className="flex size-10 items-center justify-center rounded-full bg-primary text-xl text-font-primary lg:hidden [&[data-open='true']]:translate-x-16 transition-transform">
 						<BurgerIcon />
 					</button>
 				</div>
