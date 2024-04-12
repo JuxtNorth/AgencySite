@@ -22,7 +22,8 @@ export const Hero: FC = () => {
 
 	return (
 		<header className="mx-auto flex min-h-[min(100vh,72rem)] max-w-[100rem] flex-col items-center justify-center lg:pt-16">
-			<div className="relative mb-2 text-center text-[clamp(1.86rem,7.8vw,7.5rem)] md:text-[clamp(1.86rem,6vw,7.5rem)] font-extrabold leading-[88%] md:font-bold md:leading-[98%]">
+			
+			<div className="relative mb-2 text-center text-[clamp(1.86rem,7.8vw,7.5rem)] font-extrabold leading-[88%] md:text-[clamp(1.86rem,6vw,7.5rem)] md:font-bold md:leading-[98%]">
 				<div className="absolute -top-[42px] left-[calc(50%-150px)] lg:-top-[150px] lg:left-[calc(50%-337px)]">
 					<Grid
 						gridX={isDesktop ? 9 : 8}

@@ -13,18 +13,18 @@ import {
 	Faq,
 	ScheduleCalendar
 } from './Sections';
-import { Nav, /*FloatingNav, */ Footer } from '@/components';
+import { Nav, Footer } from '@/components';
 import { GlowyBlob } from '@/components/ui';
 
 export const Home: FC = () => {
 	return (
 		<>
 			<Nav />
-			<div className="absolute h-screen w-full overflow-hidden bg-gradient-to-b from-transparent from-60% to-background">
+			<div className="absolute top-0 -z-20 h-screen w-full overflow-hidden">
+				<div className="bg-gradient-to-b size-full from-transparent from-60% to-background" />
 				<GlowyBlob />
 			</div>
 			<main>
-				{/*<FloatingNav />*/}
 				<Hero />
 				<Clients />
 				<Works />
