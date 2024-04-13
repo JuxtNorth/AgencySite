@@ -1,4 +1,4 @@
-import { CrossIcon, InstagramIcon, LinkedInIcon, XIcon } from '@/icons';
+import { CrossIcon } from '@/icons';
 import { FC, useEffect, useRef } from 'react';
 import anime from 'animejs';
 
