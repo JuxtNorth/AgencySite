@@ -4,7 +4,7 @@ import { AnimatedStat } from '@/components/ui';
 
 export const Impact: FC = () => {
 	return (
-		<section className="mx-auto z-10 my-16 w-full max-w-[100rem] rounded-3xl py-loose md:pb-24 md:pt-12 lg:px-2">
+		<section className="mx-auto z-10 my-16 w-full max-w-[100rem] py-loose md:pb-24 md:pt-12 lg:px-2 [background-image:url('plus.svg')] [background-size:36px_36px]">
 			<h2 className="text-center text-4xl font-semibold md:text-5xl mb-relaxed">
 				Our Impact
 			</h2>
