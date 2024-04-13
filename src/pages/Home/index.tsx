@@ -12,7 +12,8 @@ import {
 	MembershipPerks,
 	Pricing,
 	Faq,
-	ScheduleCalendar
+	ScheduleCalendar,
+	PreFooter
 } from './Sections';
 import { Nav, Footer } from '@/components';
 import { GlowyBlob } from '@/components/ui';
@@ -39,6 +40,7 @@ export const Home: FC = () => {
 				<MembershipPerks />
 				<Faq />
 				<ScheduleCalendar />
+				<PreFooter />
 				<Footer />
 			</main>
 		</>

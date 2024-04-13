@@ -53,7 +53,7 @@ export const Hero: FC = () => {
 				Subscription here makes brands go viral there, grab your seats.
 			</p>
 			<a
-				className="hover:continuous-gradient relative z-10 mt-16 cursor-pointer rounded-lg bg-primary px-6 py-4 text-xs"
+				className="relative z-10 mt-16 cursor-pointer rounded-lg bg-primary px-6 py-4 text-xs"
 				href="#"
 			>
 				<GlitterIcon className="mr-2 inline text-sm" />
