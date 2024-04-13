@@ -31,21 +31,29 @@ export const MobileMenu: FC<MobileMenuProps> = ({ isOpen, onClose }) => {
 	return (
 		<section
 			data-open={isOpen}
-			className="fixed z-[100] flex h-dvh w-screen flex-col justify-between items-center py-12 bg-font-primary p-snug transition-[clip-path] duration-500 [clip-path:circle(0px_at_50%_-20px)] before:fixed before:left-0 before:top-0 before:-z-40 before:h-screen before:w-screen before:bg-font-primary before:content-[''] [&[data-open='false']]:delay-150 [&[data-open='true']]:[clip-path:circle(120vmax_at_50%_-20px)]"
+			className="fixed z-[100] flex h-dvh w-screen flex-col items-center justify-between bg-font-primary p-snug py-12 transition-[clip-path] duration-500 [clip-path:circle(0px_at_50%_-20px)] before:fixed before:left-0 before:top-0 before:-z-40 before:h-screen before:w-screen before:bg-font-primary before:content-[''] [&[data-open='false']]:delay-150 [&[data-open='true']]:[clip-path:circle(120vmax_at_50%_-20px)]"
 		>
 			<h1 className="text-center text-4xl font-extrabold text-surface">
 				Hi Reach Media
 			</h1>
 			<menu className="space-y-2 text-center font-display text-4xl font-extrabold text-surface">
-				<li className="py-2 mx-auto px-8 w-fit rounded-full border-slate-500 border">Workflow</li>
-				<li className="py-2 mx-auto px-8 w-fit rounded-full border-slate-500 border">Our Works</li>
-				<li className="py-2 mx-auto px-8 w-fit rounded-full border-slate-500 border">Pricing</li>
-				<li className="py-2 mx-auto px-8 w-fit rounded-full border-slate-500 border">FAQs</li>
+				<li className="mx-auto w-fit rounded-full border border-slate-500 px-8 py-2">
+					Workflow
+				</li>
+				<li className="mx-auto w-fit rounded-full border border-slate-500 px-8 py-2">
+					Our Works
+				</li>
+				<li className="mx-auto w-fit rounded-full border border-slate-500 px-8 py-2">
+					Pricing
+				</li>
+				<li className="mx-auto w-fit rounded-full border border-slate-500 px-8 py-2">
+					FAQs
+				</li>
 			</menu>
 			<button
 				ref={closeBtnRef}
 				onClick={onClose}
-				className="rounded-full bg-primary p-snug text-xl w-fit"
+				className="w-fit rounded-full bg-primary p-snug text-xl"
 			>
 				<CrossIcon />
 			</button>

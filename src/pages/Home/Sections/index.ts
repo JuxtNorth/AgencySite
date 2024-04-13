@@ -1,6 +1,6 @@
 export * from './Hero';
 export * from './Clients';
-export * from './Impact'
+export * from './Impact';
 export * from './WorksCarousel';
 export * from './Testimonials';
 export * from './CaseStudies';

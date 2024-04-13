@@ -20,7 +20,7 @@
 		"@radix-ui/react-dialog": "^1.0.5",
 		"@types/react-html-parser": "^2.0.6",
 		"@types/react-transition-group": "^4.4.10",
-		"animejs": "^2.0.0",
+		"animejs": "^3.1.0",
 		"class-variance-authority": "^0.7.0",
 		"clsx": "^2.1.0",
 		"embla-carousel": "^8.0.0",

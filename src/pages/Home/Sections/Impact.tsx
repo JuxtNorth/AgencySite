@@ -4,12 +4,12 @@ import { AnimatedStat } from '@/components/ui';
 
 export const Impact: FC = () => {
 	return (
-		<section className="mx-auto z-10 my-16 w-full max-w-[100rem] py-loose md:pb-24 md:pt-12 lg:px-2 [background-image:url('plus.svg')] [background-size:36px_36px]">
-			<h2 className="text-center text-4xl font-semibold md:text-5xl mb-relaxed">
+		<section className="z-10 mx-auto my-16 w-full max-w-[100rem] py-loose [background-image:url('plus.svg')] [background-size:36px_36px] md:pb-24 md:pt-12 lg:px-2">
+			<h2 className="mb-relaxed text-center text-4xl font-semibold md:text-5xl">
 				Our Impact
 			</h2>
-			<div className="mt-loose md:flex flex-col items-center md:space-y-0">
-				<div className='flex flex-col gap-relaxed md:gap-0 md:flex-row w-full justify-between mb-relaxed'>
+			<div className="mt-loose flex-col items-center md:flex md:space-y-0">
+				<div className="mb-relaxed flex w-full flex-col justify-between gap-relaxed md:flex-row md:gap-0">
 					<div className="mx-auto text-center">
 						<h2 className="gsap-header text-4xl font-bold text-primary md:text-7xl">
 							<AnimatedStat target={2400000} />+

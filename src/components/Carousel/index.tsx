@@ -24,7 +24,7 @@ const buttonVariants = cva('w-full flex gap-snug pointer-events-none', {
 		},
 		vertical: {
 			middle:
-				'absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] max-w-[80rem]',
+				'absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[calc(50%+2.3rem)] max-w-[80rem]',
 			default: ''
 		}
 	}
