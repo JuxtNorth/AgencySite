@@ -31,7 +31,7 @@ export const MobileMenu: FC<MobileMenuProps> = ({ isOpen, onClose }) => {
 	return (
 		<section
 			data-open={isOpen}
-			className="fixed z-[100] flex h-dvh w-screen flex-col justify-between bg-font-primary p-snug transition-[clip-path] duration-500 [clip-path:circle(0px_at_50%_-20px)] [&[data-open='false']]:delay-150 [&[data-open='true']]:[clip-path:circle(120vmax_at_50%_-20px)]"
+			className="fixed z-[100] flex h-screen w-screen flex-col justify-between bg-font-primary p-snug transition-[clip-path] duration-500 [clip-path:circle(0px_at_50%_-20px)] [&[data-open='false']]:delay-150 [&[data-open='true']]:[clip-path:circle(120vmax_at_50%_-20px)]"
 		>
 			<div>
 				<button
