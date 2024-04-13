@@ -6,7 +6,7 @@ import { MobileMenu } from './MobileMenu';
 
 export const Nav: FC = () => {
 	const [blur, setBlur] = useState(0);
-	const [open, setOpen] = useState(true);
+	const [open, setOpen] = useState(false);
 
 	useEffect(() => {
 		const onScroll = () => {
@@ -27,7 +27,7 @@ export const Nav: FC = () => {
 		<>
 			<MobileMenu isOpen={open} onClose={() => setOpen(false)} />
 			<nav
-				className="fixed top-0 z-50 box-border flex p-snug w-full items-center justify-between px-snug transition-[backdrop-filter]"
+				className="fixed top-0 z-50 box-border flex w-full items-center justify-between p-snug px-snug transition-[backdrop-filter]"
 				style={{ backdropFilter: `blur(${blur}px)` }}
 			>
 				<div className="flex items-center gap-2">
@@ -58,7 +58,7 @@ export const Nav: FC = () => {
 						</li>
 					</menu>
 					<a
-						className="flex py-2 grow-0 items-center justify-center rounded-full border border-primary px-6 font-display text-sm leading-7"
+						className="flex grow-0 items-center justify-center rounded-full border border-primary px-6 py-2 font-display text-sm leading-7"
 						href="#schedule"
 					>
 						Book a call
@@ -66,7 +66,7 @@ export const Nav: FC = () => {
 					<button
 						onClick={() => setOpen(true)}
 						data-open={open}
-						className="flex p-3.5 text-xl items-center justify-center rounded-full bg-primary transition-transform lg:hidden [&[data-open='true']]:translate-x-16"
+						className="flex items-center justify-center rounded-full bg-primary p-3.5 text-xl transition-transform lg:hidden [&[data-open='true']]:translate-x-16"
 					>
 						<BurgerIcon />
 					</button>
