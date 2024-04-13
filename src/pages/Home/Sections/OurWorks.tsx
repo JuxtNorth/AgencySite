@@ -6,7 +6,7 @@ import { EyeIcon } from '@/icons';
 
 export const Works: FC = () => {
 	return (
-		<section className="mt-12 overflow-hidden text-center">
+		<section className="mx-auto mt-12 max-w-[125rem] overflow-hidden text-center">
 			<div className="mb-loose xl:mb-16">
 				<h2 className="text-4xl font-semibold md:text-5xl">Our Work</h2>
 				<p className="text-sm md:text-base">Making your vision a reality</p>
@@ -17,7 +17,7 @@ export const Works: FC = () => {
 				className="gap-snug 2xl:gap-loose"
 				plugins={[ClassNames(), AutoPlay({ duration: 1200 })]}
 			>
-				{new Array(24).fill(0).map((_, i) => (
+				{new Array(12).fill(0).map((_, i) => (
 					<div key={i} className="last:mr-snug 2xl:last:mr-loose">
 						<Slide variant="vertical" className="overflow-hidden">
 							<Video
