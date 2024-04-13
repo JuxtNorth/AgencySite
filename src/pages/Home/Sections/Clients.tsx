@@ -3,32 +3,6 @@ import { Avatar } from '@/components/ui';
 import Sparkles from '@/assets/scribbles/sparkles.svg';
 import { clients } from '@/constants';
 
-const Impact: FC = () => {
-	return (
-		<section className="z-10 mx-auto mt-16 w-full max-w-[76rem] rounded-3xl bg-surface py-loose md:pb-16 md:pt-12">
-			<h2 className="text-center text-4xl font-semibold md:text-5xl">
-				Our Impact
-			</h2>
-			<div className="mt-loose space-y-loose md:flex md:items-center md:gap-36 md:space-y-0">
-				<div className="mx-auto text-center">
-					<h2 className="gsap-header text-4xl font-bold md:text-5xl">
-						78,00,000+
-					</h2>
-					<p className="gsap-para">Organic Views</p>
-				</div>
-				<div className="mx-auto text-center">
-					<h2 className="gsap-header text-4xl font-bold md:text-5xl">
-						12,00,000+
-					</h2>
-					<p className="gsap-para">Gained Followers</p>
-				</div>
-			</div>
-		</section>
-	);
-};
-
-// Change grid classes if the number of avatars are changed.
-
 export const Clients: FC = () => {
 	return (
 		<section className="z-20 mx-auto flex max-w-[76rem] flex-col items-center p-snug md:p-loose">
@@ -61,7 +35,6 @@ export const Clients: FC = () => {
 					</div>
 				</div>
 			</section>
-			<Impact />
 		</section>
 	);
 };

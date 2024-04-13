@@ -2,6 +2,7 @@ import { FC } from 'react';
 import {
 	Hero,
 	Clients,
+	Impact,
 	Works,
 	Testimonials,
 	CaseStudies,
@@ -27,6 +28,7 @@ export const Home: FC = () => {
 			<main>
 				<Hero />
 				<Clients />
+				<Impact />
 				<Works />
 				<Workflow />
 				<Testimonials />

@@ -8,3 +8,4 @@ export * from './Grid';
 export * from './GlowyBlob';
 export * from './Stars';
 export * from './GlowButton';
+export * from './AnimatedStat';
