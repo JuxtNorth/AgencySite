@@ -6,7 +6,7 @@ import { MobileMenu } from './MobileMenu';
 
 export const Nav: FC = () => {
 	const [blur, setBlur] = useState(0);
-  const [open, setOpen] = useState(true);
+	const [open, setOpen] = useState(true);
 
 	useEffect(() => {
 		const onScroll = () => {
@@ -25,13 +25,13 @@ export const Nav: FC = () => {
 
 	return (
 		<>
-      <MobileMenu isOpen={open} onClose={() => setOpen(false)} />
+			<MobileMenu isOpen={open} onClose={() => setOpen(false)} />
 			<nav
-				className="fixed top-0 z-50 box-border flex h-16 w-full items-center justify-between px-snug transition-[backdrop-filter]"
+				className="fixed top-0 z-50 box-border flex p-snug w-full items-center justify-between px-snug transition-[backdrop-filter]"
 				style={{ backdropFilter: `blur(${blur}px)` }}
 			>
 				<div className="flex items-center gap-2">
-					<img className="h-5 w-5 invert" src={Trend} />
+					<img className="size-5 invert" src={Trend} />
 					<p className="font-body text-xs font-bold">Hi Reach Media</p>
 				</div>
 				<div className="flex items-center gap-2 ">
@@ -58,12 +58,16 @@ export const Nav: FC = () => {
 						</li>
 					</menu>
 					<a
-						className="flex h-10 grow-0 items-center justify-center rounded-full border border-primary px-6 font-display text-xs leading-7"
+						className="flex py-2 grow-0 items-center justify-center rounded-full border border-primary px-6 font-display text-sm leading-7"
 						href="#schedule"
 					>
 						Book a call
 					</a>
-					<button onClick={() => setOpen(true)} data-open={open} className="flex size-10 items-center justify-center rounded-full bg-primary text-xl text-font-primary lg:hidden [&[data-open='true']]:translate-x-16 transition-transform">
+					<button
+						onClick={() => setOpen(true)}
+						data-open={open}
+						className="flex p-3.5 text-xl items-center justify-center rounded-full bg-primary transition-transform lg:hidden [&[data-open='true']]:translate-x-16"
+					>
 						<BurgerIcon />
 					</button>
 				</div>

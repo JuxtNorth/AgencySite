@@ -1,6 +1,6 @@
 import { CrossIcon, InstagramIcon, LinkedInIcon, XIcon } from '@/icons';
-import anime from 'animejs';
 import { FC, useEffect, useRef } from 'react';
+import anime from 'animejs';
 
 export interface MobileMenuProps {
 	isOpen: boolean;
@@ -15,16 +15,14 @@ export const MobileMenu: FC<MobileMenuProps> = ({ isOpen, onClose }) => {
 			if (isOpen) {
 				anime({
 					targets: closeBtnRef.current,
-					translateX: [80, 0],
-					translateY: [-50, 0],
+					translateX: [80, 1],
 					rotateZ: ['72deg', '0deg']
 				});
 			} else {
 				anime({
 					targets: closeBtnRef.current,
-					translateX: 80,
-					translateY: -50,
-					rotateZ: '72deg'
+					translateX: [0, 80],
+					rotateZ: ['0deg', '72deg']
 				});
 			}
 		}
@@ -33,16 +31,17 @@ export const MobileMenu: FC<MobileMenuProps> = ({ isOpen, onClose }) => {
 	return (
 		<section
 			data-open={isOpen}
-			className="fixed z-[100] flex h-dvh w-screen flex-col justify-between bg-font-primary p-loose transition-[clip-path] duration-500 [clip-path:circle(0px_at_50%_-20px)] [&[data-open='false']]:delay-150 [&[data-open='true']]:[clip-path:circle(120vh_at_50%_-20px)]"
+			className="fixed z-[100] flex h-dvh w-screen flex-col justify-between bg-font-primary p-snug transition-[clip-path] duration-500 [clip-path:circle(0px_at_50%_-20px)] [&[data-open='false']]:delay-150 [&[data-open='true']]:[clip-path:circle(120vmax_at_50%_-20px)]"
 		>
 			<div>
 				<button
 					ref={closeBtnRef}
 					onClick={onClose}
-					className="float-right rounded-full bg-primary p-snug text-xl"
+					className="float-right rounded-full bg-primary p-3.5 text-lg"
 				>
 					<CrossIcon />
 				</button>
+
 				<menu className="space-y-2 font-display text-5xl font-extrabold text-surface">
 					<li>Review</li>
 					<li>About</li>
