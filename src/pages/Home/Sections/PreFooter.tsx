@@ -4,7 +4,7 @@ import { FC } from 'react';
 export const PreFooter: FC = () => {
 	return (
 		<section className="relative mx-auto mt-24 max-w-[100rem] p-loose py-32 text-center">
-			<div className="absolute left-0 top-0 -z-[1] size-full [background-image:url('plus-long.svg')] [background-size:48px_48px]">
+			<div className="absolute left-0 top-0 -z-[1] size-full [background-image:url('/plus-long.svg')] [background-size:48px_48px]">
 				<div className="size-full bg-[radial-gradient(ellipse_at_center,transparent,rgb(var(--background)))] mix-blend-multiply" />
 			</div>
 			<h1 className="mb-24 text-6xl font-bold">
