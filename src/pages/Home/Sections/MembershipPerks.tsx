@@ -16,10 +16,10 @@ export const MembershipPerks: FC = () => {
 	return (
 		<section className="mx-auto mt-12 max-w-[100rem] px-snug text-center lg:px-loose">
 			<h1 className="text-4xl font-semibold md:text-5xl">Membership Perks</h1>
-			<p className="mb-12 md:mb-snug text-sm md:text-lg">
+			<p className="mb-12 text-sm md:mb-snug md:text-lg">
 				Lorem Ipsum Doler Imet Constrctuer
 			</p>
-			<div className="grid grid-flow-row place-items-center gap-x-snug gap-y-relaxed grid-cols-2 md:gap-y-12 lg:grid-cols-3 xl:p-relaxed">
+			<div className="grid grid-flow-row grid-cols-2 place-items-center gap-x-snug gap-y-relaxed md:gap-y-12 lg:grid-cols-3 xl:p-relaxed">
 				{perks.map((perk, index) => (
 					<PerkCard {...perk} key={index}>
 						<BlobOverlay type={index as BlobIndex}>

@@ -9,7 +9,7 @@ export const Impact: FC = () => {
 				Our Impact
 			</h2>
 			<div className="mt-loose flex-col items-center md:flex md:space-y-0">
-				<div className="mb-relaxed flex w-full flex-col justify-between gap-relaxed md:flex-row md:gap-0">
+				<div className="mb-16 flex w-full flex-col justify-between gap-16 md:flex-row md:gap-0">
 					<div className="mx-auto text-center">
 						<h2 className="gsap-header text-4xl font-bold text-primary md:text-7xl">
 							<AnimatedStat target={2400000} />+
