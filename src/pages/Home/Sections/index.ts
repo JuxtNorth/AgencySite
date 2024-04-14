@@ -11,4 +11,4 @@ export * from './MembershipPerks';
 export * from './Pricing';
 export * from './Faq';
 export * from './ScheduleCalendar';
-export * from "./PreFooter"
+export * from './PreFooter';
