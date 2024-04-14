@@ -9,15 +9,15 @@ export const pricingPlans: Omit<PricingCardProps, 'children'>[] = [
 		buttonLabel: 'Join Waitlist',
 		buttonTo: '#',
 		features: [
-			'Rebranding and Profile makeover optimized for conversions.',
-			'Strategy, Ideation and scripting.',
-			'Expert Copywriter, Ghostwriter and designers.',
-			'Lead generation and Sales System setup (ads, funnels, email marketing)',
-			'Weekly Check-ins with strategy session.',
-			'Dedicated Linkedin Manager.',
-			'Community building and Management.',
-			'Monthly growth reports.',
-			'Pause or cancel anytime.'
+			'Rebranding and Profile makeover optimized for conversions',
+			'Strategy, Ideation and scripting',
+			'Expert Copywriter, Ghostwriter and designers',
+			'Lead generation and Sales System',
+			'Building funnels, Linkedin Ads and appt. setting',
+			'Weekly Check-ins with strategy session',
+			'Dedicated Linkedin Manager',
+			'Monthly growth reports',
+			'Pause or cancel anytime'
 		],
 		bestFor: 'Built for LinkedIn maverick'
 	},
@@ -28,16 +28,18 @@ export const pricingPlans: Omit<PricingCardProps, 'children'>[] = [
 		buttonLabel: 'Join Waitlist',
 		buttonTo: '#',
 		features: [
-			'World-class video editors and animators.',
-			'Brand audit, positioning strategy, content ideation and scripting.',
-			'Dedicated Personal Brand Manager.',
-			'Unlimited Revision.',
-			'Weekly Check-ins and strategy session',
+			'Positioning strategy, content ideation and scripting',
+			'Personalized video branding',
+			'World-class video editors and animators',
+			'Organic lead generation',
+			'Bi-weekly Check-ins and strategy session',
+			'Unlimited Revision',
+			'Dedicated Personal Brand Manager',
 			'Monthly growth report',
-			'Community building and Management',
 			'Pause or cancel anytime'
 		],
-		bestFor: 'Tailored for those dedicated towards personal branding'
+		bestFor: 'Tailored to increase reach of your brand.',
+		recommended: true
 	},
 	{
 		name: 'Growth Partner',
@@ -46,11 +48,11 @@ export const pricingPlans: Omit<PricingCardProps, 'children'>[] = [
 		buttonLabel: 'Book an Appointment',
 		buttonTo: '#',
 		features: [
-			'**Everything you get in Standard Plus:**',
-			'Complete Lead generation and Sales infrastructure setup.',
-			'Revenue Growth with Ads, Funnels and Email marketing.',
-			'Automation Setup.',
-			'Your All-in-One Solution to Grow and Monetize your brand'
+			'<strong>Everything you get in</strong> Virality Assistant <strong>Plus:</strong>',
+			'Revenue Growth through content creation and/or running ads',
+			'Complete Lead generation and Sales infrastructure setup',
+			'Funnel building, VSL scripting and appointment setting',
+			'Automation Setup'
 		],
 		bestFor: 'Best choice for business growth.'
 	}

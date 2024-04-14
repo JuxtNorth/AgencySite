@@ -1,17 +1,17 @@
 import { FC } from 'react';
 import { PricingCard } from '@/components';
 import { pricingPlans } from '@/constants';
-import { BoltIcon, CrownIcon, MagicIcon } from '@/icons';
+import { BoltIcon, CrownIcon, GlitterIcon } from '@/icons';
 
 const icons = [
-	<BoltIcon className="text-green-400 md:text-lg xl:text-xl" />,
-	<MagicIcon className="text-primary-varient md:text-lg xl:text-xl" />,
-	<CrownIcon className="text-accent md:text-lg xl:text-xl" />
+	<BoltIcon className="text-green-400 text-xl inline overflow-visible" />,
+	<GlitterIcon className="text-primary text-xl inline overflow-visible" />,
+	<CrownIcon className="text-accent text-xl inline overflow-visible" />
 ];
 
 export const Pricing: FC = () => {
 	return (
-		<section className="mx-auto max-w-[100rem] p-snug md:p-loose">
+		<section className="mx-auto max-w-[92rem] p-snug md:p-loose">
 			<div className="mx-auto w-72 space-y-tight pb-12 text-center md:w-[48rem]">
 				<h1 id="pricing" className="text-4xl font-semibold md:text-5xl">
 					The Pricing
