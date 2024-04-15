@@ -12,14 +12,14 @@ export const Video: FC<VideoProps> = ({
 }) => {
 	if (placeContentAtBottom) {
 		return (
-			<div className="h-full w-full">
+			<div className="size-full">
 				<video {...restProps} />
 				{children}
 			</div>
 		);
 	}
 	return (
-		<div className="h-full w-full">
+		<div className="size-full">
 			{children}
 			<video {...restProps} />
 		</div>

@@ -3,7 +3,7 @@ import {
 	Hero,
 	Clients,
 	Impact,
-	Works,
+	OurWorks,
 	Testimonials,
 	CaseStudies,
 	HowItWorks,
@@ -30,7 +30,7 @@ export const Home: FC = () => {
 				<Hero />
 				<Clients />
 				<Impact />
-				<Works />
+				<OurWorks />
 				<Workflow />
 				<Testimonials />
 				<CaseStudies />

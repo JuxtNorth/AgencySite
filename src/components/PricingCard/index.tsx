@@ -60,7 +60,7 @@ export const PricingCard: FC<PricingCardProps> = (props) => {
 						<p className="text-sm">{props.emphasis}</p>
 					</div>
 					<GlowButton variant={variant} className="w-full bg-black/30">
-						{props.buttonLabel}
+						{props.buttonLabel}  
 					</GlowButton>
 				</section>
 				<section className="py-8">
