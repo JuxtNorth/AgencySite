@@ -37,7 +37,7 @@ export const Services: FC = () => {
 				<h2 className="mb-12 mt-snug font-semibold">Our Services</h2>
 				<section
 					onMouseMove={onMouseMove}
-					className="service-container grid grid-flow-row gap-snug md:grid-cols-2 lg:grid-cols-3"
+					className="service-container grid grid-flow-row gap-snug md:grid-cols-2 md:p-loose lg:grid-cols-3"
 				>
 					{services.map((props, i) => (
 						<ServiceCard

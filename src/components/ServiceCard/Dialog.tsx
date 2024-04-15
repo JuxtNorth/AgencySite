@@ -1,12 +1,13 @@
-import { CrossIcon, GiftIcon, ScheduleIcon } from '@/icons';
+import { CrossIcon, GiftIcon, ScheduleIcon, StarIcon } from '@/icons';
 import { FC, useCallback, useEffect, useRef, useState } from 'react';
 import { GlowButton } from '@/components/ui';
-import ReactHtmlParser from 'react-html-parser';
 import { PieChart } from 'react-minimal-pie-chart';
 
 export interface DialogProps {
 	title: string;
-	markdownContent: string;
+	paragraphs: string[];
+	emphasis: string;
+	deliverables: string[];
 	onClose: () => void;
 	isOpen: boolean;
 	stat: {
@@ -83,8 +84,21 @@ export const Dialog: FC<DialogProps> = (props) => {
 			<div className="relative hidden size-full grid-cols-[auto_24%] gap-x-loose rounded-[2.6rem] bg-surface p-9 lg:grid">
 				<article className="text-left">
 					<h1 className="mb-snug text-4xl">{props.title}</h1>
-					<div className="pl-2 text-sm text-font-primary xl:text-base 2xl:text-lg">
-						{ReactHtmlParser(props.markdownContent)}
+					<div className="pl-2 text-sm text-font-primary xl:text-[15px]">
+						{props.paragraphs.map((content) => (
+							<p className="text-base">{content}</p>
+						))}
+						<p className="continuous-gradient my-2 bg-clip-text text-lg text-transparent">
+							{props.emphasis}
+						</p>
+						<ul className="space-y-2">
+							{props.deliverables.map((content) => (
+								<li>
+									<StarIcon className="-mt-1 mr-2 inline text-primary" />
+									{content}
+								</li>
+							))}
+						</ul>
 					</div>
 				</article>
 				<section className="space-y-snug">

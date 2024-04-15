@@ -63,9 +63,9 @@ export const ServiceCard: FC<ServiceCardProps> = (props) => {
 			{/* I'm sorry for whoever has to modify this :( */}
 			<div
 				ref={cardRef}
-				className="service-card relative h-[18.5rem] rounded-2xl  p-px before:pointer-events-none after:absolute after:bottom-0 after:right-0 after:h-px after:w-full after:bg-slate-600 after:content-[''] hover:before:opacity-100 md:aspect-square md:size-full md:bg-[rgba(255,255,255,0.1)] md:before:absolute md:before:left-0 md:before:z-[3] md:before:size-full md:before:rounded-[inherit] md:before:bg-[radial-gradient(800px_circle_at_var(--mouse-x)_var(--mouse-y),rgba(255,255,255,0.06),transparent_40%)] md:before:opacity-0 md:before:transition-opacity md:before:duration-500 md:before:content-[''] md:after:top-0 md:after:z-[1] md:after:h-full md:after:rounded-[inherit] md:after:bg-transparent md:after:bg-[radial-gradient(600px_circle_at_var(--mouse-x)_var(--mouse-y),rgba(255,255,255,0.4),transparent_40%)] md:after:opacity-0 md:after:transition-opacity md:after:duration-500"
+				className="service-card relative h-[18.5rem] rounded-2xl p-px before:pointer-events-none after:absolute after:bottom-0 after:right-0 after:h-px after:w-full after:bg-slate-600 after:content-[''] hover:before:opacity-100 md:aspect-square md:size-full md:bg-[rgba(255,255,255,0.1)] md:before:absolute md:before:left-0 md:before:z-[3] md:before:size-full md:before:rounded-[inherit] md:before:bg-[radial-gradient(800px_circle_at_var(--mouse-x)_var(--mouse-y),rgba(255,255,255,0.06),transparent_40%)] md:before:opacity-0 md:before:transition-opacity md:before:duration-500 md:before:content-[''] md:after:top-0 md:after:z-[1] md:after:h-full md:after:rounded-[inherit] md:after:bg-transparent md:after:bg-[radial-gradient(600px_circle_at_var(--mouse-x)_var(--mouse-y),rgba(255,255,255,0.4),transparent_40%)] md:after:opacity-0 md:after:transition-opacity md:after:duration-500"
 			>
-				<article className="absolute left-0 top-0 z-[2] size-full rounded-[inherit] md:p-px">
+				<article className="absolute left-0 top-0 z-[2] size-full rounded-[inherit] md:p-px overflow-y-scroll">
 					<div className="flex size-full flex-col items-start gap-snug rounded-[inherit] p-snug md:bg-[rgb(28,27,36)] md:p-loose">
 						<div className="pt-2">{props.children}</div>
 						<div className="flex h-full flex-col items-start justify-between text-left">
@@ -81,7 +81,7 @@ export const ServiceCard: FC<ServiceCardProps> = (props) => {
 								onClick={onClick}
 								className="text-display z-[4] mb-8 mt-auto flex items-center gap-2 rounded-full bg-primary-varient px-4 py-2 text-xs font-semibold md:bg-transparent md:p-0 md:text-base"
 							>
-								Learn more
+								<span className="md:text-primary">Learn more</span>
 								<ArrowIcon className="md:hidden" />
 							</button>
 						</div>

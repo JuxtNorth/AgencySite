@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export const CaseStudies: FC = () => {
 	return (
 		<div className="m-4 mx-auto max-w-[100rem] p-2 pt-16 text-center lg:p-8">
-			<section className="size-full rounded-3xl p-snug text-center md:rounded-[4.2rem] lg:p-loose lg:text-left">
+			<section className="size-full rounded-3xl p-snug text-center md:rounded-[4.2rem] lg:p-loose">
 				<h1 className="text-4xl lg:text-7xl">Case Study</h1>
 				<h2 className="mb-loose text-xl lg:text-4xl">
 					on client <span className="text-secondary">results</span>

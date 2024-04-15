@@ -14,10 +14,10 @@ const VideoSlide: FC<VideoSlideProps> = ({ index, snappedIndex }) => {
 	return (
 		<Slide variant="vertical" className="overflow-hidden">
 			<Video
-				className="size-full rounded-2xl object-cover blur-[4px] transition-[filter] duration-300 lg:rounded-3xl"
+				className="w-full h-full rounded-sm object-cover blur-[4px] aspect-[3/4] transition-[filter] duration-300"
 				poster={`https://ik.imagekit.io/Hireachmedia/OurWork/thumbnails/tr:pr-true,q-80,w-580/poster-${index}.jpg`}
 				src={`https://ik.imagekit.io/Hireachmedia/OurWork/${index}.mp4`}
-				controls={(index - 1) === snappedIndex}
+				controls={index === snappedIndex}
 				loop
 				playsInline
 				muted
@@ -35,17 +35,21 @@ export const OurWorks: FC = () => {
 
 		if (slideRefs.current.length > 0) {
 			slideRefs.current.forEach((slide, i) => {
-				const observer = observeClassMutations(slide, 'is-snapped', (exists) => {
-					if (exists) setSnappedIndex(i)
-				});
-				observers.push(observer)
+				const observer = observeClassMutations(
+					slide,
+					'is-snapped',
+					(exists) => {
+						if (exists) setSnappedIndex(i);
+					}
+				);
+				observers.push(observer);
 			});
 		}
 
 		return () => {
-			observers.forEach(observer => observer.disconnect());
-		}
-	}, [ slideRefs ]);
+			observers.forEach((observer) => observer.disconnect());
+		};
+	}, [slideRefs]);
 
 	return (
 		<section className="mx-auto mt-12 max-w-[125rem] overflow-hidden text-center">
@@ -65,7 +69,7 @@ export const OurWorks: FC = () => {
 						ref={(elem) => (slideRefs.current[i] = elem!)}
 						className="last:mr-snug 2xl:last:mr-loose"
 					>
-						<VideoSlide index={(i % 8) + 1} snappedIndex={snappedIndex} />
+						<VideoSlide index={(i % 8) + 1} snappedIndex={(snappedIndex % 8) + 1} />
 						<div className="_stat_ mt-2 flex justify-between rounded-full py-1 opacity-0 duration-300">
 							<p className="rounded-lg px-2 py-1 text-xs font-semibold">
 								Lorem Ipsum
