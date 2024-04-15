@@ -18,13 +18,19 @@ export const Pricing: FC = () => {
 				</h1>
 				<p className="text-sm md:text-base">Lorem Ipsum Dolet Imet.</p>
 			</div>
-			<section className="grid grid-rows-3 gap-snug md:grid-cols-3 md:grid-rows-none">
-				{pricingPlans.map((props, i) => (
-					<PricingCard key={i} variant={'abc'[i] as 'a' | 'b' | 'c'} {...props}>
-						{icons[i]}
-					</PricingCard>
-				))}
-			</section>
+			<div className="w-fit overflow-x-scroll mx-auto ">
+				<section className="md:min-w-[72rem] grid grid-rows-3 gap-snug md:grid-cols-3 md:grid-rows-none">
+					{pricingPlans.map((props, i) => (
+						<PricingCard
+							key={i}
+							variant={'abc'[i] as 'a' | 'b' | 'c'}
+							{...props}
+						>
+							{icons[i]}
+						</PricingCard>
+					))}
+				</section>
+			</div>
 		</section>
 	);
 };

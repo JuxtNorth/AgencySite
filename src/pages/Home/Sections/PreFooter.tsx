@@ -18,7 +18,7 @@ export const PreFooter: FC = () => {
 				today.
 			</p>
 			<button className="relative overflow-hidden rounded-2xl px-loose py-snug font-display text-xl outline outline-1 outline-[#667] before:absolute before:-bottom-5 before:left-[50%] before:-z-[1] before:block before:size-5 before:-translate-x-[50%] before:rounded-full before:bg-primary before:transition-transform before:duration-500 before:content-[''] hover:outline-surface hover:before:scale-[15]">
-				<GlitterIcon className="mr-2 inline text-secondary" />
+				<GlitterIcon className="mr-2 inline text-secondary brightness-150" />
 				Start now
 			</button>
 		</section>

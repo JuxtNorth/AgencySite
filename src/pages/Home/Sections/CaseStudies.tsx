@@ -10,40 +10,43 @@ export const CaseStudies: FC = () => {
 				<h2 className="mb-loose text-xl lg:text-4xl">
 					on client <span className="text-secondary">results</span>
 				</h2>
-				<div className="space-y-snug rounded-2xl bg-surface p-snug text-lg font-semibold lg:space-y-loose lg:p-loose lg:py-loose lg:text-3xl">
-					<div className="flex w-full items-center gap-snug border-b border-slate-600 pb-snug md:pl-loose lg:pb-loose">
+				<div className="space-y-snug rounded-2xl bg-surface p-snug text-lg font-semibold lg:space-y-0 lg:p-loose lg:py-loose lg:text-3xl">
+				<Link
+						to="/casestudy/b"
+						className="flex w-full items-center gap-snug border-b border-slate-600 py-2 hover:bg-white/10 md:pl-loose lg:py-7"
+					>
 						<img
 							className="aspect-square h-12 rounded-full object-cover lg:mr-snug lg:h-20"
 							src="https://ik.imagekit.io/Hireachmedia/CaseStudy/1/tr:q-80,pr-true,w-320/profile.jpg"
 							alt="An image of foo bar"
 						/>
-						<Link to="/casestudy/a">
-							<h1 className="font-body">John Doe</h1>
-						</Link>
+						<h1 className="font-body text-[currentColor]">Jane Doe</h1>
 						<GoIcon className="text-sm lg:text-lg" />
-					</div>
-					<div className="flex w-full items-center gap-snug border-b border-slate-600 pb-snug md:pl-loose lg:pb-loose">
+					</Link>
+					<Link
+						to="/casestudy/b"
+						className="flex w-full items-center gap-snug border-b border-slate-600 py-2 hover:bg-white/10 md:pl-loose lg:py-7"
+					>
 						<img
 							className="aspect-square h-12 rounded-full object-cover lg:mr-snug lg:h-20"
 							src="https://ik.imagekit.io/Hireachmedia/CaseStudy/2/tr:q-80,pr-true,w-320/profile.jpg"
 							alt="An image of foo bar"
 						/>
-						<Link to="/casestudy/b">
-							<h1 className="font-body">Jane Doe</h1>
-						</Link>
+						<h1 className="font-body text-[currentColor]">John Doe</h1>
 						<GoIcon className="text-sm lg:text-lg" />
-					</div>
-					<div className="flex w-full items-center gap-snug border-b border-slate-600 pb-snug last:border-none last:pb-0 md:pl-loose lg:pb-loose">
+					</Link>
+					<Link
+						to="/casestudy/c"
+						className="flex w-full items-center gap-snug py-2 hover:bg-white/10 md:pl-loose lg:py-7"
+					>
 						<img
 							className="aspect-square h-12 rounded-full object-cover lg:mr-snug lg:h-20"
-							src="https://ik.imagekit.io/Hireachmedia/CaseStudy/1/tr:q-80,pr-true,w-320/profile.jpg"
+							src="https://ik.imagekit.io/Hireachmedia/CaseStudy/2/tr:q-80,pr-true,w-320/profile.jpg"
 							alt="An image of foo bar"
 						/>
-						<Link to="/casestudy/a">
-							<h1 className="font-body">Lorem Ipsum</h1>
-						</Link>
+						<h1 className="font-body text-[currentColor]">Jane Doe</h1>
 						<GoIcon className="text-sm lg:text-lg" />
-					</div>
+					</Link>
 				</div>
 			</section>
 		</div>

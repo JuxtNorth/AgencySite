@@ -34,7 +34,9 @@ export const Services: FC = () => {
 	return (
 		<section className="mx-auto max-w-[80rem] p-snug text-center md:p-loose">
 			<div className="rounded-3xl">
-				<h2 className="mb-12 mt-snug font-semibold">Our Services</h2>
+				<h2 className="mb-12 mt-snug text-4xl font-semibold md:text-5xl">
+					Our Services
+				</h2>
 				<section
 					onMouseMove={onMouseMove}
 					className="service-container grid grid-flow-row gap-snug md:grid-cols-2 md:p-loose lg:grid-cols-3"

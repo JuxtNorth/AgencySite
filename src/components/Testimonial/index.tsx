@@ -1,6 +1,6 @@
 import { FC, ReactNode, useState } from 'react';
 import { Video } from '@/components';
-import { EyeLightIcon, MoneyIcon, TrendIcon } from '@/icons';
+import { CrossIcon, EyeLightIcon, MoneyIcon, TrendIcon } from '@/icons';
 
 const Stat: FC<{ children: ReactNode; text: string }> = ({
 	children,
@@ -14,7 +14,20 @@ const Stat: FC<{ children: ReactNode; text: string }> = ({
 	);
 };
 
-export const TestimonialCard: FC = () => {
+export interface TestimonialCardProps {
+	author: string;
+	authorOccupation: string;
+	authorFollowerCount: string;
+	testimonial: string;
+	benefitedBy: {
+		reach: string;
+		views: string;
+		revenue: string;
+	};
+	index: number;
+}
+
+export const TestimonialCard: FC<TestimonialCardProps> = (props) => {
 	const [flipped, setFlipped] = useState(false);
 
 	return (
@@ -27,41 +40,51 @@ export const TestimonialCard: FC = () => {
 					<div className="hidden aspect-[11.5/16] h-full xl:block">
 						<Video
 							className="size-full overflow-clip rounded-3xl object-cover"
-							poster="https://ik.imagekit.io/Hireachmedia/OurWork/thumbnails/tr:pr-true,q-80,w-580/poster-2.jpg"
+							poster={`https://ik.imagekit.io/Hireachmedia/OurWork/thumbnails/tr:pr-true,q-80,w-580/poster-${props.index}.jpg`}
+							src={`https://ik.imagekit.io/Hireachmedia/Testimonials/${props.index}.mp4`}
+							controls
+							observe
 						/>
 					</div>
 					<div className="flex min-h-full flex-col justify-between">
 						<header className="flex w-full justify-between">
 							<div className="flex items-center gap-2">
-								<div className="h-12 w-12 rounded-full bg-primary" />
+								<div className="h-12 w-12 rounded-full bg-primary">
+									<img
+										width={120}
+										className="size-full object-cover rounded-full"
+										src={`https://ik.imagekit.io/Hireachmedia/Testimonials/profile/tr:pr-true,w-120,q-80/${props.index}.jpg`}
+										alt={`An image of ${props.author}`}
+									/>
+								</div>
 								<div className="flex flex-col text-left leading-tight">
-									<h1 className="text-xl font-bold">Lorem Ipsum</h1>
-									<p className="text-sm">Lorem Ipsum</p>
+									<h1 className="text-xl font-bold">{props.author}</h1>
+									<p className="text-sm">{props.authorOccupation}</p>
 								</div>
 							</div>
 							<div className="flex max-h-loose items-center rounded-full bg-primary px-snug">
-								<p className="mt-px font-semibold">1.5M</p>
+								<p className="mt-px font-display font-bold lg:text-sm">
+									{props.authorFollowerCount}
+								</p>
 							</div>
 						</header>
 						<p className="pl-tight text-left font-display text-[18px] font-semibold leading-snug lg:leading-relaxed xl:text-3xl ">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
-							molestiae excepturi earum tenetur porro iste hic saepe amet
-							voluptatibus facilis, id minima optio!
+							{props.testimonial}
 						</p>
 						<footer className="flex flex-col items-center justify-between gap-3 md:flex-row md:gap-0">
 							<section className="flex w-full justify-between">
-								<Stat text="400k+">
+								<Stat text={props.benefitedBy.reach}>
 									<TrendIcon />
 								</Stat>
-								<Stat text="12M+">
+								<Stat text={props.benefitedBy.views}>
 									<EyeLightIcon />
 								</Stat>
-								<Stat text="$60k+">
+								<Stat text={props.benefitedBy.revenue}>
 									<MoneyIcon />
 								</Stat>
 							</section>
 							<button
-								className="w-full rounded-full bg-[#b2ffa3] py-3 font-display text-xs font-semibold md:hidden md:text-sm lg:text-base xl:text-lg"
+								className="w-full rounded-full bg-primary py-3 font-display text-xs font-semibold md:hidden md:text-sm lg:text-base xl:text-lg"
 								onClick={() => setFlipped(!flipped)}
 							>
 								See Work
@@ -70,8 +93,21 @@ export const TestimonialCard: FC = () => {
 					</div>
 				</article>
 				<article className="absolute flex h-full w-full items-center justify-center [backface-visibility:hidden] [rotate:y_180deg]">
-					<div className="size-full rounded-3xl bg-rose-100">
-						<Video />
+					<div className="relative size-full overflow-hidden rounded-3xl">
+						<button
+							onClick={() => setFlipped(!flipped)}
+							className="absolute right-0 top-0 m-4 rounded-full bg-primary p-2.5 text-lg"
+						>
+							<CrossIcon />
+						</button>
+						<Video
+							className="size-full object-cover"
+							src={`https://ik.imagekit.io/Hireachmedia/Testimonials/${props.index}.mp4`}
+							poster={`https://ik.imagekit.io/Hireachmedia/OurWork/thumbnails/tr:pr-true,q-80,w-580/poster-${props.index}.jpg`}
+							shouldPause={!flipped}
+							controls
+							observe
+						/>
 					</div>
 				</article>
 			</div>

@@ -27,23 +27,27 @@ const blobVariants = cva('absolute size-32 rounded-full top-0 left-0', {
 	}
 });
 
-const highlightVariant = cva("flex items-center gap-2 rounded-full px-snug py-2", {
-	variants: {
-		variant: {
-			a: 'bg-primary',
-			b: 'bg-accent',
-			c: 'bg-secondary'
+const highlightVariant = cva(
+	'flex items-center gap-2 rounded-full px-snug py-2',
+	{
+		variants: {
+			variant: {
+				a: 'bg-primary',
+				b: 'bg-accent',
+				c: 'bg-secondary'
+			}
 		}
 	}
-});
+);
 
 export const PricingCard: FC<PricingCardProps> = (props) => {
 	const { variant = 'a' } = props;
 
 	return (
-		<article className="relative flex w-full flex-col justify-between overflow-hidden rounded-2xl bg-surface p-6 md:p-loose">
+		<article className="relative flex w-full flex-col justify-between overflow-hidden rounded-2xl bg-surface p-6 md:min-w-96 md:p-loose">
 			<div className={blobVariants({ variant })} />
 			<div className="z-[1]">
+				{props.recommended && <span className='absolute py-2 px-snug bg-rose-200/60 top-0 right-0 rounded-bl-2xl text-sm '>Recommended</span>}
 				<section className="flex h-56 flex-col justify-between border-b border-slate-400 pb-snug">
 					<div className="space-y-4">
 						<div className="flex items-center gap-2">
@@ -70,7 +74,7 @@ export const PricingCard: FC<PricingCardProps> = (props) => {
 			</div>
 			<div className={highlightVariant({ variant })}>
 				<MagicIcon className="shrink-0 md:text-sm" />
-				<p className="text-sm leading-tight">{props.bestFor}</p>
+				<p className="font-display text-sm leading-tight">{props.bestFor}</p>
 			</div>
 		</article>
 	);

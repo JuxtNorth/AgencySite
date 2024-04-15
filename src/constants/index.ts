@@ -6,3 +6,4 @@ export * from './perks';
 export * from './howItWorks';
 export * from './workflows';
 export * from './clients';
+export * from './testimonials';

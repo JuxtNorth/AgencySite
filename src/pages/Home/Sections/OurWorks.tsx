@@ -18,6 +18,7 @@ const VideoSlide: FC<VideoSlideProps> = ({ index, snappedIndex }) => {
 				poster={`https://ik.imagekit.io/Hireachmedia/OurWork/thumbnails/tr:pr-true,q-80,w-580/poster-${index}.jpg`}
 				src={`https://ik.imagekit.io/Hireachmedia/OurWork/${index}.mp4`}
 				controls={index === snappedIndex}
+				shouldPause={index !== snappedIndex}
 				loop
 				playsInline
 				muted
