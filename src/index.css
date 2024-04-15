@@ -41,7 +41,7 @@ strong {
 	--surface: 28, 27, 36;
 	--primary: 61, 76, 245;
 	--primary-varient: 82, 73, 244;
-	--secondary: 23, 225, 225;
+	--secondary: 137, 52, 235;
 	--accent: 241, 55, 114;
 	--font-primary: 246, 248, 247;
 	--muted: 136, 136, 136;
@@ -66,4 +66,24 @@ h6 {
 
 .service-container:hover > .service-card::after {
 	opacity: 1;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(var(--surface));
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #444;
 }

@@ -4,9 +4,9 @@ import { pricingPlans } from '@/constants';
 import { BoltIcon, CrownIcon, GlitterIcon } from '@/icons';
 
 const icons = [
-	<BoltIcon className="inline overflow-visible text-xl text-green-400" />,
-	<GlitterIcon className="inline overflow-visible text-xl text-primary" />,
-	<CrownIcon className="inline overflow-visible text-xl text-accent" />
+	<BoltIcon className="inline overflow-visible text-xl text-primary" />,
+	<GlitterIcon className="inline overflow-visible text-xl text-accent" />,
+	<CrownIcon className="inline overflow-visible text-xl text-secondary" />
 ];
 
 export const Pricing: FC = () => {

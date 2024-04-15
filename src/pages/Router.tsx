@@ -6,6 +6,8 @@ import { A, B } from './casestudy';
 import ScrollToTop from '@/lib/ScrollToTop';
 
 export const Router: FC = () => {
+	// const lenis = useLenis();
+
 	return (
 		<BrowserRouter>
 			<ScrollToTop />

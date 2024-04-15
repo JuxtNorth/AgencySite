@@ -17,25 +17,22 @@ export interface PricingCardProps {
 	variant?: 'a' | 'b' | 'c';
 }
 
-const containerVariants = cva(
-	'relative flex w-full flex-col justify-between overflow-hidden rounded-2xl bg-surface p-6 md:p-loose',
-	{
-		variants: {
-			variant: {
-				a: 'bg-cyan-900',
-				b: 'bg-blue-950',
-				c: 'bg-purple-950'
-			}
-		}
-	}
-);
-
 const blobVariants = cva('absolute size-32 rounded-full top-0 left-0', {
 	variants: {
 		variant: {
-			a: 'bg-cyan-600 blur-3xl',
-			b: 'bg-primary blur-3xl',
-			c: 'bg-accent blur-[80px] size-32'
+			a: 'bg-primary blur-3xl',
+			b: 'bg-accent blur-3xl',
+			c: 'bg-secondary blur-[80px] size-32'
+		}
+	}
+});
+
+const highlightVariant = cva("flex items-center gap-2 rounded-full px-snug py-2", {
+	variants: {
+		variant: {
+			a: 'bg-primary',
+			b: 'bg-accent',
+			c: 'bg-secondary'
 		}
 	}
 });
@@ -44,7 +41,7 @@ export const PricingCard: FC<PricingCardProps> = (props) => {
 	const { variant = 'a' } = props;
 
 	return (
-		<article className={containerVariants({ variant })}>
+		<article className="relative flex w-full flex-col justify-between overflow-hidden rounded-2xl bg-surface p-6 md:p-loose">
 			<div className={blobVariants({ variant })} />
 			<div className="z-[1]">
 				<section className="flex h-56 flex-col justify-between border-b border-slate-400 pb-snug">
@@ -59,7 +56,7 @@ export const PricingCard: FC<PricingCardProps> = (props) => {
 						</h1>
 						<p className="text-sm">{props.emphasis}</p>
 					</div>
-					<GlowButton variant={variant} className="w-full bg-black/30">
+					<GlowButton variant={variant} className="w-full">
 						{props.buttonLabel}
 					</GlowButton>
 				</section>
@@ -71,7 +68,7 @@ export const PricingCard: FC<PricingCardProps> = (props) => {
 					</ul>
 				</section>
 			</div>
-			<div className="flex items-center gap-2 rounded-full bg-primary-varient px-snug py-2">
+			<div className={highlightVariant({ variant })}>
 				<MagicIcon className="shrink-0 md:text-sm" />
 				<p className="text-sm leading-tight">{props.bestFor}</p>
 			</div>

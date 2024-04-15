@@ -10,13 +10,13 @@ export interface GlowButtonProps
 }
 
 const variants = cva(
-	'relative box-border overflow-hidden rounded-xl bg-slate-800 px-loose py-snug hover:ring-2  transition-all',
+	'relative box-border overflow-hidden rounded-xl px-loose py-snug hover:ring-2 transition-all',
 	{
 		variants: {
 			variant: {
-				a: 'hover:bg-primary-varient hover:[box-shadow:0px_0px_4px_1px_#fff2,0px_0px_32px_4px_rgba(var(--primary-varient),0.6)]',
-				b: 'hover:bg-primary hover:[box-shadow:0px_0px_4px_1px_#fff2,0px_0px_32px_4px_rgba(var(--primary),0.6)]',
-				c: 'hover:bg-accent hover:[box-shadow:0px_0px_4px_1px_#fff2,0px_0px_32px_4px_rgba(var(--accent),0.6)]'
+				a: 'bg-primary hover:[box-shadow:0px_0px_4px_1px_#fff2,0px_0px_32px_4px_rgba(var(--primary),0.6)]',
+				b: 'bg-accent hover:[box-shadow:0px_0px_4px_1px_#fff2,0px_0px_32px_4px_rgba(var(--accent),0.6)]',
+				c: 'bg-secondary hover:[box-shadow:0px_0px_4px_1px_#fff2,0px_0px_32px_4px_rgba(var(--secondary),0.6)]'
 			}
 		}
 	}

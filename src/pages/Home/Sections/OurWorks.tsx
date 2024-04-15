@@ -1,7 +1,7 @@
 import { FC, useEffect, useRef, useState } from 'react';
 import { Carousel, Slide, Video } from '@/components';
 import ClassNames from 'embla-carousel-class-names';
-// import AutoPlay from 'embla-carousel-autoplay';
+import AutoPlay from 'embla-carousel-autoplay';
 import { EyeIcon } from '@/icons';
 import { observeClassMutations } from '@/lib/observeClassMutations';
 
@@ -14,7 +14,7 @@ const VideoSlide: FC<VideoSlideProps> = ({ index, snappedIndex }) => {
 	return (
 		<Slide variant="vertical" className="overflow-hidden">
 			<Video
-				className="w-full h-full rounded-sm object-cover blur-[4px] aspect-[3/4] transition-[filter] duration-300"
+				className="aspect-[3/4] h-full w-full rounded-sm object-cover blur-[4px] transition-[filter] duration-300"
 				poster={`https://ik.imagekit.io/Hireachmedia/OurWork/thumbnails/tr:pr-true,q-80,w-580/poster-${index}.jpg`}
 				src={`https://ik.imagekit.io/Hireachmedia/OurWork/${index}.mp4`}
 				controls={index === snappedIndex}
@@ -61,7 +61,7 @@ export const OurWorks: FC = () => {
 				buttonXPosition="either"
 				buttonYPosition="middle"
 				className="gap-snug 2xl:gap-loose"
-				plugins={[ClassNames() /*AutoPlay({ duration: 120000000 }) */]}
+				plugins={[ClassNames(), AutoPlay({ duration: 1200 }) ]}
 			>
 				{new Array(12).fill(0).map((_, i) => (
 					<div
@@ -69,7 +69,10 @@ export const OurWorks: FC = () => {
 						ref={(elem) => (slideRefs.current[i] = elem!)}
 						className="last:mr-snug 2xl:last:mr-loose"
 					>
-						<VideoSlide index={(i % 8) + 1} snappedIndex={(snappedIndex % 8) + 1} />
+						<VideoSlide
+							index={(i % 8) + 1}
+							snappedIndex={(snappedIndex % 8) + 1}
+						/>
 						<div className="_stat_ mt-2 flex justify-between rounded-full py-1 opacity-0 duration-300">
 							<p className="rounded-lg px-2 py-1 text-xs font-semibold">
 								Lorem Ipsum
