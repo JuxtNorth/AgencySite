@@ -19,7 +19,7 @@
 			rgb(var(--secondary))
 		);
 		background-size: 300%;
-		animation: flow 2s linear infinite;
+		animation: flow 1.5s linear infinite;
 	}
 }
 

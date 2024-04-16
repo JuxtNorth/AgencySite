@@ -63,7 +63,7 @@ export const Dialog: FC<DialogProps> = (props) => {
 				<GiftIcon className="text-[72px] text-accent" />
 				<p>
 					View the website on a desktop to get a{' '}
-					<span className="bg-gradient-to-r from-primary to-secondary to-80% bg-clip-text text-transparent">
+					<span className="continuous-gradient bg-clip-text text-transparent">
 						free gift
 					</span>
 					.
