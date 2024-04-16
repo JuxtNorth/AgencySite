@@ -126,12 +126,12 @@ export const Dialog: FC<DialogProps> = (props) => {
 					</div>
 					<GlowButton
 						variant="b"
-						className="flex w-full items-center justify-center gap-snug rounded-full bg-transparent py-snug font-display text-accent outline outline-1 outline-slate-600 hover:text-font-primary hover:outline-0 hover:bg-accent"
+						className="flex w-full items-center justify-center gap-snug rounded-full bg-transparent py-snug font-display text-accent outline outline-1 outline-slate-600 hover:bg-accent hover:text-font-primary hover:outline-0"
 					>
 						<GiftIcon className="text-xl" />
 						Get your Gift
 					</GlowButton>
-					<GlowButton className="flex w-full items-center justify-center gap-snug rounded-full bg-transparent py-snug font-display text-font-primary outline outline-1 outline-slate-600 hover:outline-0 hover:bg-primary">
+					<GlowButton className="flex w-full items-center justify-center gap-snug rounded-full bg-transparent py-snug font-display text-font-primary outline outline-1 outline-slate-600 hover:bg-primary hover:outline-0">
 						<ScheduleIcon className="text-xl" />
 						Book a call
 					</GlowButton>

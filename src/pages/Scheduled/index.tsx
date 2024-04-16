@@ -1,74 +1,84 @@
 import { FC } from 'react';
-import { Video } from '@/components';
+import { Footer, Video } from '@/components';
 
 export const Scheduled: FC = () => {
 	return (
-		<main className="p-snug md:p-relaxed">
-			<section className="mx-auto max-w-[100rem] space-y-loose text-center">
-				<div className="space-y-4">
-					<h1>Important Next Steps</h1>
-					<p>Step 1: Watch this video as it is important before we speak</p>
-				</div>
-				<div className="mx-auto aspect-video w-full max-w-[52rem] rounded-2xl bg-blue-400"></div>
-				<p>
-					PS: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure
-					perferendis a dignissimos placeat quae.
-				</p>
-				<div className="flex justify-center gap-4">
-					<button className="cursor-pointer rounded-full bg-slate-700 px-4 py-2 text-sm text-white hover:bg-slate-600">
-						Button 1
-					</button>
-					<button className="cursor-pointer rounded-full bg-slate-700 px-4 py-2 text-sm text-white hover:bg-slate-600">
-						Button 2
-					</button>
-					<button className="cursor-pointer rounded-full bg-slate-700 px-4 py-2 text-sm text-white hover:bg-slate-600">
-						Button 3
-					</button>
-				</div>
-				<div className="h-full space-y-4 rounded-2xl bg-pink-100 p-snug">
+		<>
+			<main className="p-snug md:p-relaxed">
+				<section className="mx-auto max-w-[100rem] space-y-loose text-center">
+					<div className="space-y-4">
+						<h1 className="text-4xl font-bold md:text-5xl">
+							Important Next Steps
+						</h1>
+						<p>Step 1: Watch this video as it is important before we speak</p>
+					</div>
+					<Video
+						src="https://ik.imagekit.io/Hireachmedia/Scheduled/main.mp4"
+						className="mx-auto aspect-video w-full max-w-[52rem] rounded-2xl object-cover"
+					></Video>
 					<p>
-						Step 2: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-						Molestias nesciunt consequatur distinctio.
+						PS: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure
+						perferendis a dignissimos placeat quae.
 					</p>
-					<div className="grid grid-flow-row gap-snug md:grid-cols-2 lg:grid-cols-3">
-						<Video>
-							<h4 className="mb-snug">Lorem ipsum dolor sit amet.</h4>
-						</Video>
-						<Video>
-							<h4 className="mb-snug">Lorem ipsum dolor sit amet.</h4>
-						</Video>
-						<Video>
-							<h4 className="mb-snug">Lorem ipsum dolor sit amet.</h4>
-						</Video>
-						<Video>
-							<h4 className="mb-snug">Lorem ipsum dolor sit amet.</h4>
-						</Video>
-						<Video>
-							<h4 className="mb-snug">Lorem ipsum dolor sit amet.</h4>
-						</Video>
-						<Video>
-							<h4 className="mb-snug">Lorem ipsum dolor sit amet.</h4>
-						</Video>
+					<div className="flex justify-center gap-4">
+						<button className="cursor-pointer rounded-full bg-slate-700 px-4 py-2 text-sm text-white hover:bg-slate-600">
+							Button 1
+						</button>
+						<button className="cursor-pointer rounded-full bg-slate-700 px-4 py-2 text-sm text-white hover:bg-slate-600">
+							Button 2
+						</button>
+						<button className="cursor-pointer rounded-full bg-slate-700 px-4 py-2 text-sm text-white hover:bg-slate-600">
+							Button 3
+						</button>
 					</div>
-				</div>
-				<div className="space-y-loose pt-loose">
-					<h1>Our Members' Results</h1>
-					<div className="grid grid-flow-row gap-loose md:grid-cols-2 lg:grid-cols-3">
-						<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
-						<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
-						<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
-						<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
-						<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
-						<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
-						<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
-						<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
-						<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
-						<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
-						<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
-						<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
+					<div className="h-full space-y-4 rounded-2xl bg-surface p-snug">
+						<p className="mb-relaxed">
+							Step 2: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							Molestias nesciunt consequatur distinctio.
+						</p>
+						<div className="grid grid-flow-row gap-snug md:grid-cols-2 lg:grid-cols-3">
+							<Video>
+								<h4 className="mb-snug">Lorem ipsum dolor sit amet.</h4>
+							</Video>
+							<Video>
+								<h4 className="mb-snug">Lorem ipsum dolor sit amet.</h4>
+							</Video>
+							<Video>
+								<h4 className="mb-snug">Lorem ipsum dolor sit amet.</h4>
+							</Video>
+							<Video>
+								<h4 className="mb-snug">Lorem ipsum dolor sit amet.</h4>
+							</Video>
+							<Video>
+								<h4 className="mb-snug">Lorem ipsum dolor sit amet.</h4>
+							</Video>
+							<Video>
+								<h4 className="mb-snug">Lorem ipsum dolor sit amet.</h4>
+							</Video>
+						</div>
 					</div>
-				</div>
-			</section>
-		</main>
+					<div className="space-y-loose pt-loose">
+						<h1 className="text-4xl font-semibold md:text-5xl">
+							Our Members' Results
+						</h1>
+						<div className="grid grid-flow-row gap-loose md:grid-cols-2 lg:grid-cols-3">
+							<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
+							<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
+							<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
+							<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
+							<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
+							<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
+							<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
+							<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
+							<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
+							<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
+							<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
+							<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400"></div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<Footer />
+		</>
 	);
 };

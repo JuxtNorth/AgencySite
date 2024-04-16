@@ -15,7 +15,10 @@ export const Outcome: FC<OutcomeProps> = (props) => {
 			<p className="mb-snug">{props.contentBlock1}</p>
 			<ul className="mb-snug space-y-snug pl-2">
 				{props.list.map((content, index) => (
-					<li key={index}><StarIcon className='inline mb-1 mr-2 text-primary' />{content}</li>
+					<li key={index}>
+						<StarIcon className="mb-1 mr-2 inline text-primary" />
+						{content}
+					</li>
 				))}
 			</ul>
 			<p>{props.contentBlock2}</p>
