@@ -17,8 +17,10 @@ import {
 } from './Sections';
 import { Nav, Footer, /* PageLoader */ } from '@/components';
 import { GlowyBlob } from '@/components/ui';
+import { useAnimation } from '@/hooks/useAnimation';
 
 export const Home: FC = () => {
+	useAnimation();
 	return (
 		<>
 			{/* <PageLoader /> */}

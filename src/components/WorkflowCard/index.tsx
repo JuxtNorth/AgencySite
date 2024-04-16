@@ -41,13 +41,13 @@ const blobVariants = cva('absolute rounded-full', {
 });
 
 const containerVariants = cva(
-	'block aspect-[3/3.6] mx-auto md:mx-0 relative size-fit max-h-[28rem] w-[80%]',
+	'block aspect-[3/3.6] mx-auto md:mx-0 relative size-fit max-h-[28rem] w-[80%] [&.entered]:opacity-100 opacity-0 transition-[transform,opacity] ease-out duration-1000',
 	{
 		variants: {
 			type: {
-				a: '-rotate-[6deg]',
-				b: 'rotate-[7deg]',
-				c: '-rotate-[7deg]'
+				a: '[&.entered]:-rotate-[6deg] [&.entered]:translate-x-0 -translate-x-12 -rotate-[19deg] origin-bottom _anime_rotate',
+				b: '[&.entered]:rotate-[7deg] [&.entered]:translate-x-0 translate-x-12 rotate-[21deg] origin-bottom _anime_rotate_alternate',
+				c: '[&.entered]:-rotate-[7deg] [&.entered]:translate-x-0 -translate-x-12 -rotate-[20deg] origin-bottom _anime_rotate'
 			}
 		}
 	}
