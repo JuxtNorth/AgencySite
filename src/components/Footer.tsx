@@ -5,48 +5,49 @@ import { SocialLink } from '@/components/ui';
 
 export const Footer: FC = () => {
 	return (
-		<footer className="mx-auto mt-relaxed flex max-w-[100rem] justify-between bg-surface p-8 md:p-16">
-			<section className="flex flex-col items-start space-y-2 md:space-y-8">
-				<div className=" md:space-y-4">
-					<h1 className="w-44 text-xl font-normal md:w-72 md:text-4xl">
-						Hi-Reach Media
-					</h1>
-					<p className="pb-snug text-left text-xs font-light md:text-2xl">
-						Email us at <a href="mailto:foo@bar.com">foo@bar.com</a>{' '}
+		<div className='bg-surface w-full h-fit'>
+			<footer className="mx-auto mt-relaxed flex max-w-[100rem] justify-between p-8 md:p-16">
+				<section className="flex flex-col items-start space-y-2 md:space-y-8">
+					<div className=" md:space-y-4">
+						<h1 className="w-44 text-xl font-normal md:w-72 md:text-4xl">
+							Hi-Reach Media
+						</h1>
+						<p className="pb-snug text-left text-xs font-light md:text-2xl">
+							Email us at <a href="mailto:foo@bar.com">foo@bar.com</a>{' '}
+						</p>
+						<ul className="flex gap-2">
+							<SocialLink to="#">
+								<LinkedInIcon />
+							</SocialLink>
+							<SocialLink to="#">
+								<XIcon />
+							</SocialLink>
+							<SocialLink to="#">
+								<InstagramIcon />
+							</SocialLink>
+						</ul>
+					</div>
+					<p className="pt-snug text-xs md:text-xl">
+						2024 &copy; All rights reserved
 					</p>
-					<ul className="flex gap-2">
-						<SocialLink to="#">
-							<LinkedInIcon />
-						</SocialLink>
-						<SocialLink to="#">
-							<XIcon />
-						</SocialLink>
-						<SocialLink to="#">
-							<InstagramIcon />
-						</SocialLink>
+				</section>
+				<section className="flex flex-col justify-between pt-1">
+					<ul className="mx-auto w-full space-y-1.5 text-xs md:text-xl">
+						<li>
+							<a href="#">Privacy Policy</a>
+						</li>
+						<li>
+							<a href="#">Terms and Conditions</a>
+						</li>
+						<li>
+							<a href="#">Refund Policy</a>
+						</li>
 					</ul>
-				</div>
-				<p className="pt-snug text-xs md:text-xl">
-					2024 &copy; All rights reserved
-				</p>
-			</section>
-
-			<section className="flex flex-col justify-between pt-1">
-				<ul className="mx-auto w-full space-y-1.5 text-xs md:text-xl">
-					<li>
-						<a href="#">Privacy Policy</a>
-					</li>
-					<li>
-						<a href="#">Terms and Conditions</a>
-					</li>
-					<li>
-						<a href="#">Refund Policy</a>
-					</li>
-				</ul>
-				<p className="mx-auto flex items-center gap-1 whitespace-nowrap text-xs md:mx-0 md:text-xl">
-					Made with <HeartIcon className="text-rose-500" /> by Kiron Dey
-				</p>
-			</section>
-		</footer>
+					<p className="mx-auto flex items-center gap-1 whitespace-nowrap text-xs md:mx-0 md:text-xl">
+						Made with <HeartIcon className="text-rose-500" /> by Kiron Dey
+					</p>
+				</section>
+			</footer>
+		</div>
 	);
 };

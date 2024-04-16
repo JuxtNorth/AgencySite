@@ -12,7 +12,7 @@ export const Results: FC<ResultProps> = (props) => {
 				{props.highlights.map((text, index) => (
 					<div
 						key={index}
-						className="flex h-16 items-center justify-center rounded-full bg-red-200"
+						className="flex h-16 items-center justify-center rounded-full bg-surface"
 					>
 						<p className="text-[20px] font-semibold">{text}</p>
 					</div>

@@ -12,11 +12,11 @@ export interface MissionProps {
 
 export const Mission: FC<MissionProps> = (props) => {
 	return (
-		<section className="space-y-snug rounded-2xl bg-purple-300 p-loose md:rounded-3xl md:p-relaxed lg:grid lg:grid-cols-[64%_36%]">
-			<article className="space-y-snug md:my-loose lg:pr-loose">
-				<h2 className="mb-snug font-bold leading-tight">
+		<section className="space-y-snug rounded-2xl bg-surface p-loose md:rounded-3xl md:p-relaxed lg:grid lg:grid-cols-[64%_36%]">
+			<article className="space-y-snug lg:pr-12">
+				<h1 className="text-4xl font-semibold md:text-5xl">
 					Mission &<br className="md:hidden" /> Challenge
-				</h2>
+				</h1>
 				<p>{props.contentBlock1}</p>
 				<ul className="list-disc space-y-2 pl-snug">
 					{props.list.map((item) => (

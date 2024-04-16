@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home } from './Home';
 import { Scheduled } from './Scheduled';
-import { A, B } from './casestudy';
+import { A, B, C } from './casestudy';
 import ScrollToTop from '@/lib/ScrollToTop';
 
 export const Router: FC = () => {
@@ -17,6 +17,7 @@ export const Router: FC = () => {
 				<Route path="/casestudy">
 					<Route path="a" element={<A />} />
 					<Route path="b" element={<B />} />
+					<Route path="c" element={<C />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>

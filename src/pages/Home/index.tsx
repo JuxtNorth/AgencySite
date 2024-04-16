@@ -41,8 +41,8 @@ export const Home: FC = () => {
 				<Faq />
 				<ScheduleCalendar />
 				<PreFooter />
-				<Footer />
 			</main>
+			<Footer />
 		</>
 	);
 };

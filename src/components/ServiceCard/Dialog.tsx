@@ -104,20 +104,20 @@ export const Dialog: FC<DialogProps> = (props) => {
 				<section className="space-y-snug">
 					<div className="grid aspect-square w-full grid-cols-1 grid-rows-1 place-items-center rounded-[2.5rem] border border-slate-600 p-snug">
 						<p className="col-start-1 row-start-1 text-center text-sm text-primary">
-							Some Stat
+							{props.stat.title}
 						</p>
 						<PieChart
 							className="col-start-1 row-start-1"
 							data={[
 								{
-									title: 'foo',
+									title: 'value',
 									color: 'rgb(var(--primary))',
-									value: 80
+									value: props.stat.value
 								},
 								{
-									title: 'bar',
+									title: 'container',
 									color: 'rgba(var(--primary-varient),0.3)',
-									value: 20
+									value: 100 - props.stat.value
 								}
 							]}
 							rounded
@@ -125,13 +125,13 @@ export const Dialog: FC<DialogProps> = (props) => {
 						/>
 					</div>
 					<GlowButton
-						variant="c"
-						className="flex w-full items-center justify-center gap-snug rounded-full bg-transparent py-snug font-display text-accent outline outline-1 outline-slate-600 hover:text-font-primary hover:outline-0 "
+						variant="b"
+						className="flex w-full items-center justify-center gap-snug rounded-full bg-transparent py-snug font-display text-accent outline outline-1 outline-slate-600 hover:text-font-primary hover:outline-0 hover:bg-accent"
 					>
 						<GiftIcon className="text-xl" />
 						Get your Gift
 					</GlowButton>
-					<GlowButton className="flex w-full items-center justify-center gap-snug rounded-full bg-transparent py-snug font-display text-font-primary outline outline-1 outline-slate-600 hover:outline-0">
+					<GlowButton className="flex w-full items-center justify-center gap-snug rounded-full bg-transparent py-snug font-display text-font-primary outline outline-1 outline-slate-600 hover:outline-0 hover:bg-primary">
 						<ScheduleIcon className="text-xl" />
 						Book a call
 					</GlowButton>

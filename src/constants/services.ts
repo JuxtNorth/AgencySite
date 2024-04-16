@@ -9,8 +9,7 @@ export const services: Omit<ServiceCardProps, 'serialNo' | 'mousePos'>[] = [
 		dialog: {
 			paragraphs: [
 				'Today, you can begin to create a winning personal brand or you will continue to be jealous with the success and recognition of others. Treat your personal brand like your secondary business backing up the primary one.',
-				'We give clients the insights they need to succeed and remain distinctive. Our research and expertise in brand management allow us to advise Coaches, Consultants and online service providers on positioning their brand in various industries and markets',
-				''
+				'We give clients the insights they need to succeed and remain distinctive. Our research and expertise in brand management allow us to advise Coaches, Consultants and online service providers on positioning their brand in various industries and markets'
 			],
 			emphasis: 'Lorem Ipsum Doler Imet Contrectuer',
 			deliverables: [
@@ -20,8 +19,8 @@ export const services: Omit<ServiceCardProps, 'serialNo' | 'mousePos'>[] = [
 				'Competition Analysis'
 			],
 			stat: {
-				title: '',
-				value: 12
+				title: 'Some Stat',
+				value: 80
 			}
 		}
 	},
@@ -32,8 +31,7 @@ export const services: Omit<ServiceCardProps, 'serialNo' | 'mousePos'>[] = [
 		dialog: {
 			paragraphs: [
 				'Today, you can begin to create a winning personal brand or you will continue to be jealous with the success and recognition of others. Treat your personal brand like your secondary business backing up the primary one.',
-				'We give clients the insights they need to succeed and remain distinctive. Our research and expertise in brand management allow us to advise Coaches, Consultants and online service providers on positioning their brand in various industries and markets',
-				''
+				'We give clients the insights they need to succeed and remain distinctive. Our research and expertise in brand management allow us to advise Coaches, Consultants and online service providers on positioning their brand in various industries and markets'
 			],
 			emphasis: 'Lorem Ipsum Doler Imet Contrectuer',
 			deliverables: [
@@ -43,8 +41,8 @@ export const services: Omit<ServiceCardProps, 'serialNo' | 'mousePos'>[] = [
 				'Competition Analysis'
 			],
 			stat: {
-				title: '',
-				value: 12
+				title: 'Some Stat',
+				value: 80
 			}
 		}
 	},
@@ -55,8 +53,7 @@ export const services: Omit<ServiceCardProps, 'serialNo' | 'mousePos'>[] = [
 		dialog: {
 			paragraphs: [
 				'Today, you can begin to create a winning personal brand or you will continue to be jealous with the success and recognition of others. Treat your personal brand like your secondary business backing up the primary one.',
-				'We give clients the insights they need to succeed and remain distinctive. Our research and expertise in brand management allow us to advise Coaches, Consultants and online service providers on positioning their brand in various industries and markets',
-				''
+				'We give clients the insights they need to succeed and remain distinctive. Our research and expertise in brand management allow us to advise Coaches, Consultants and online service providers on positioning their brand in various industries and markets'
 			],
 			emphasis: 'Lorem Ipsum Doler Imet Contrectuer',
 			deliverables: [
@@ -66,8 +63,8 @@ export const services: Omit<ServiceCardProps, 'serialNo' | 'mousePos'>[] = [
 				'Competition Analysis'
 			],
 			stat: {
-				title: '',
-				value: 12
+				title: 'Some Stat',
+				value: 80
 			}
 		}
 	},
@@ -78,8 +75,7 @@ export const services: Omit<ServiceCardProps, 'serialNo' | 'mousePos'>[] = [
 		dialog: {
 			paragraphs: [
 				'Today, you can begin to create a winning personal brand or you will continue to be jealous with the success and recognition of others. Treat your personal brand like your secondary business backing up the primary one.',
-				'We give clients the insights they need to succeed and remain distinctive. Our research and expertise in brand management allow us to advise Coaches, Consultants and online service providers on positioning their brand in various industries and markets',
-				''
+				'We give clients the insights they need to succeed and remain distinctive. Our research and expertise in brand management allow us to advise Coaches, Consultants and online service providers on positioning their brand in various industries and markets'
 			],
 			emphasis: 'Lorem Ipsum Doler Imet Contrectuer',
 			deliverables: [
@@ -89,8 +85,8 @@ export const services: Omit<ServiceCardProps, 'serialNo' | 'mousePos'>[] = [
 				'Competition Analysis'
 			],
 			stat: {
-				title: '',
-				value: 12
+				title: 'Some Stat',
+				value: 80
 			}
 		}
 	},
@@ -101,8 +97,7 @@ export const services: Omit<ServiceCardProps, 'serialNo' | 'mousePos'>[] = [
 		dialog: {
 			paragraphs: [
 				'Today, you can begin to create a winning personal brand or you will continue to be jealous with the success and recognition of others. Treat your personal brand like your secondary business backing up the primary one.',
-				'We give clients the insights they need to succeed and remain distinctive. Our research and expertise in brand management allow us to advise Coaches, Consultants and online service providers on positioning their brand in various industries and markets',
-				''
+				'We give clients the insights they need to succeed and remain distinctive. Our research and expertise in brand management allow us to advise Coaches, Consultants and online service providers on positioning their brand in various industries and markets'
 			],
 			emphasis: 'Lorem Ipsum Doler Imet Contrectuer',
 			deliverables: [
@@ -112,8 +107,8 @@ export const services: Omit<ServiceCardProps, 'serialNo' | 'mousePos'>[] = [
 				'Competition Analysis'
 			],
 			stat: {
-				title: '',
-				value: 12
+				title: 'Some Stat',
+				value: 80
 			}
 		}
 	},
@@ -124,8 +119,7 @@ export const services: Omit<ServiceCardProps, 'serialNo' | 'mousePos'>[] = [
 		dialog: {
 			paragraphs: [
 				'Today, you can begin to create a winning personal brand or you will continue to be jealous with the success and recognition of others. Treat your personal brand like your secondary business backing up the primary one.',
-				'We give clients the insights they need to succeed and remain distinctive. Our research and expertise in brand management allow us to advise Coaches, Consultants and online service providers on positioning their brand in various industries and markets',
-				''
+				'We give clients the insights they need to succeed and remain distinctive. Our research and expertise in brand management allow us to advise Coaches, Consultants and online service providers on positioning their brand in various industries and markets'
 			],
 			emphasis: 'Lorem Ipsum Doler Imet Contrectuer',
 			deliverables: [
@@ -135,8 +129,8 @@ export const services: Omit<ServiceCardProps, 'serialNo' | 'mousePos'>[] = [
 				'Competition Analysis'
 			],
 			stat: {
-				title: '',
-				value: 12
+				title: 'Some Stat',
+				value: 80
 			}
 		}
 	}

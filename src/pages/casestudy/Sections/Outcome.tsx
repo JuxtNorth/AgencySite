@@ -1,3 +1,4 @@
+import { StarIcon } from '@/icons';
 import { FC } from 'react';
 
 export interface OutcomeProps {
@@ -10,13 +11,13 @@ export interface OutcomeProps {
 export const Outcome: FC<OutcomeProps> = (props) => {
 	return (
 		<section>
-			<h1 className="mb-snug font-bold">Outcome</h1>
+			<h1 className="mb-snug text-4xl font-semibold md:text-5xl">Outcome</h1>
 			<p className="mb-snug">{props.contentBlock1}</p>
-			<ol className="mb-snug list-decimal space-y-snug pl-snug lg:pl-loose">
+			<ul className="mb-snug space-y-snug pl-2">
 				{props.list.map((content, index) => (
-					<li key={index}>{content}</li>
+					<li key={index}><StarIcon className='inline mb-1 mr-2 text-primary' />{content}</li>
 				))}
-			</ol>
+			</ul>
 			<p>{props.contentBlock2}</p>
 			{props.images.map((props, index) => (
 				<img
