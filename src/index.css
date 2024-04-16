@@ -37,7 +37,7 @@ strong {
 }
 
 :root {
-	--background: 0,0,0;
+	--background: 0, 0, 0;
 	--surface: 28, 27, 36;
 	--primary: 61, 76, 245;
 	--primary-varient: 82, 73, 244;

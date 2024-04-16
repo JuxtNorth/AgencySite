@@ -7,7 +7,7 @@ import ReactHtmlParser from 'react-html-parser';
 
 export const Workflow: FC = () => {
 	return (
-		<section className="mx-auto mt-12 max-w-[70rem] p-snug md:p-loose">
+		<section className="mx-auto mt-12 max-w-[70rem] p-snug md:p-loose overflow-hidden">
 			<h1 className="mb-loose text-center text-4xl font-semibold md:mb-relaxed md:text-5xl">
 				Workflow
 			</h1>

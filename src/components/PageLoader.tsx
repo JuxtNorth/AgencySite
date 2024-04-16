@@ -14,7 +14,7 @@ export const PageLoader: FC = () => {
 			const timeline = anime.timeline({
 				targets: loaderRef.current,
 				complete: () => {
-					setVisibility(false)
+					setVisibility(false);
 				},
 				easing: 'easeOutExpo'
 			});
