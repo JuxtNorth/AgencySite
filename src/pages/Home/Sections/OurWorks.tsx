@@ -62,7 +62,7 @@ export const OurWorks: FC = () => {
 				buttonXPosition="either"
 				buttonYPosition="middle"
 				className="gap-snug 2xl:gap-loose"
-				plugins={[ClassNames(), AutoPlay({ duration: 1200 }) ]}
+				plugins={[ClassNames(), AutoPlay({ duration: 1200 })]}
 			>
 				{new Array(12).fill(0).map((_, i) => (
 					<div

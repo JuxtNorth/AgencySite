@@ -52,7 +52,7 @@ export const TestimonialCard: FC<TestimonialCardProps> = (props) => {
 								<div className="h-12 w-12 rounded-full bg-primary">
 									<img
 										width={120}
-										className="size-full object-cover rounded-full"
+										className="size-full rounded-full object-cover"
 										src={`https://ik.imagekit.io/Hireachmedia/Testimonials/profile/tr:pr-true,w-120,q-80/${props.index}.jpg`}
 										alt={`An image of ${props.author}`}
 									/>

@@ -9,7 +9,7 @@ export const ScheduleCalendar: FC = () => {
 				styles={{
 					minWidth: '320px',
 					height: '630px',
-					position: 'relative',
+					position: 'relative'
 				}}
 			/>
 		</section>

@@ -11,7 +11,7 @@ export const testimonials: Omit<TestimonialCardProps, 'index'>[] = [
 		benefitedBy: {
 			reach: '400k+',
 			views: '12M+',
-      revenue: '$60k+'
+			revenue: '$60k+'
 		}
 	},
 	{
@@ -24,7 +24,7 @@ export const testimonials: Omit<TestimonialCardProps, 'index'>[] = [
 		benefitedBy: {
 			reach: '400k+',
 			views: '12M+',
-      revenue: '$60k+'
+			revenue: '$60k+'
 		}
 	},
 	{
@@ -37,7 +37,7 @@ export const testimonials: Omit<TestimonialCardProps, 'index'>[] = [
 		benefitedBy: {
 			reach: '400k+',
 			views: '12M+',
-      revenue: '$60k+'
+			revenue: '$60k+'
 		}
 	},
 	{
@@ -50,7 +50,7 @@ export const testimonials: Omit<TestimonialCardProps, 'index'>[] = [
 		benefitedBy: {
 			reach: '400k+',
 			views: '12M+',
-      revenue: '$60k+'
+			revenue: '$60k+'
 		}
-	},
+	}
 ];

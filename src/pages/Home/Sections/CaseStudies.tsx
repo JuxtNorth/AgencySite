@@ -11,7 +11,7 @@ export const CaseStudies: FC = () => {
 					on client <span className="text-secondary">results</span>
 				</h2>
 				<div className="space-y-snug rounded-2xl bg-surface p-snug text-lg font-semibold lg:space-y-0 lg:p-loose lg:py-loose lg:text-3xl">
-				<Link
+					<Link
 						to="/casestudy/b"
 						className="flex w-full items-center gap-snug border-b border-slate-600 py-2 hover:bg-white/10 md:pl-loose lg:py-7"
 					>
