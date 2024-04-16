@@ -15,13 +15,13 @@ import {
 	ScheduleCalendar,
 	PreFooter
 } from './Sections';
-import { Nav, Footer, PageLoader } from '@/components';
+import { Nav, Footer, /* PageLoader */ } from '@/components';
 import { GlowyBlob } from '@/components/ui';
 
 export const Home: FC = () => {
 	return (
 		<>
-			<PageLoader />
+			{/* <PageLoader /> */}
 			<Nav />
 			<div className="absolute top-0 -z-20 h-screen w-full overflow-hidden">
 				<div className="size-full bg-gradient-to-b from-transparent from-60% to-background" />
