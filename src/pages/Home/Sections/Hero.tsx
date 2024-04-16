@@ -1,11 +1,27 @@
 import { Grid } from '@/components/ui';
 import { GlitterIcon } from '@/icons';
-import { FC, useEffect, useState } from 'react';
+// import anime from 'animejs';
+import { FC, useEffect, useRef, useState } from 'react';
 
 export const Hero: FC = () => {
 	const [isDesktop, setIsDesktop] = useState<boolean>(
 		window.matchMedia('(min-width: 768px)').matches
 	);
+
+	const containerRef = useRef<HTMLDivElement>(null);
+
+	useEffect(() => {
+		// if (containerRef.current) {
+		// 	anime({
+		// 		targets: containerRef.current,
+		// 		translateY: [72, 0],
+		// 		opacity: [0, 1],
+		// 		duration: 2000,
+		// 		delay: 3600,
+		// 		easing: 'easeOutQuad'
+		// 	});
+		// }
+	}, []);
 
 	useEffect(() => {
 		const onResize = () => {
@@ -30,28 +46,30 @@ export const Hero: FC = () => {
 						height={gridHeight}
 					/>
 				</div>
-				<h1 className="lg:ml-44 xl:ml-56 2xl:ml-80">FORGING</h1>
-				<div className="gap-snug lg:flex">
-					<h1 className="inline-block bg-gradient-to-r from-primary from-10% to-secondary bg-clip-text text-transparent">
-						PERSONAL BRAND
-					</h1>
-					<div className="hidden items-center pb-4 text-left leading-[0.2rem] lg:flex">
-						<p className="ml-4 mt-2.5 text-[clamp(1rem,1.2vw,1.5rem)] leading-[150%]">
-							Subscription here makes brands go <br /> viral there, grab your
-							seats.
-						</p>
+				<div ref={containerRef}>
+					<h1 className="lg:ml-44 xl:ml-56 2xl:ml-80">FORGING</h1>
+					<div className="gap-snug lg:flex">
+						<h1 className="inline-block bg-gradient-to-r from-primary from-10% to-secondary bg-clip-text text-transparent">
+							PERSONAL BRAND
+						</h1>
+						<div className="hidden items-center pb-4 text-left leading-[0.2rem] lg:flex">
+							<p className="ml-4 mt-2.5 text-[clamp(1rem,1.2vw,1.5rem)] leading-[150%]">
+								Subscription here makes brands go <br /> viral there, grab your
+								seats.
+							</p>
+						</div>
 					</div>
+					<h1 className="lg:ml-44">
+						FOR{' '}
+						<span className="inline-block bg-gradient-to-r from-accent to-primary to-60% bg-clip-text text-transparent">
+							SOCIAL VIRALITY
+						</span>
+					</h1>
 				</div>
-				<h1 className="lg:ml-44">
-					FOR{' '}
-					<span className="inline-block bg-gradient-to-r from-accent to-primary to-60% bg-clip-text text-transparent">
-						SOCIAL VIRALITY
-					</span>
-				</h1>
+				<p className="mt-2 w-[80%] mx-auto text-center text-xs lg:hidden">
+					Subscription here makes brands go viral there, grab your seats.
+				</p>
 			</div>
-			<p className="mt-2 w-[80%] text-center text-xs lg:hidden">
-				Subscription here makes brands go viral there, grab your seats.
-			</p>
 			<a
 				className="relative z-10 mt-16 cursor-pointer rounded-lg bg-primary px-6 py-4 text-xs"
 				href="#"

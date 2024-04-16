@@ -11,7 +11,7 @@ const icons = [
 
 export const Pricing: FC = () => {
 	return (
-		<section className="mx-auto max-w-[92rem] p-snug md:p-loose overflow-hidden">
+		<section className="mx-auto max-w-[92rem] overflow-hidden p-snug md:p-loose">
 			<div className="mx-auto w-72 space-y-tight pb-12 text-center md:w-[48rem]">
 				<h1 id="pricing" className="text-4xl font-semibold md:text-5xl">
 					The Pricing
