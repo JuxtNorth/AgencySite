@@ -1,27 +1,11 @@
 import { Grid } from '@/components/ui';
 import { GlitterIcon } from '@/icons';
-// import anime from 'animejs';
-import { FC, useEffect, useRef, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 
 export const Hero: FC = () => {
 	const [isDesktop, setIsDesktop] = useState<boolean>(
 		window.matchMedia('(min-width: 768px)').matches
 	);
-
-	const containerRef = useRef<HTMLDivElement>(null);
-
-	useEffect(() => {
-		// if (containerRef.current) {
-		// 	anime({
-		// 		targets: containerRef.current,
-		// 		translateY: [72, 0],
-		// 		opacity: [0, 1],
-		// 		duration: 2000,
-		// 		delay: 3600,
-		// 		easing: 'easeOutQuad'
-		// 	});
-		// }
-	}, []);
 
 	useEffect(() => {
 		const onResize = () => {
@@ -37,7 +21,7 @@ export const Hero: FC = () => {
 	const gridHeight = isDesktop ? 600 : 300;
 
 	return (
-		<header className="mx-auto flex min-h-[min(100vh,72rem)] max-w-[100rem] flex-col items-center justify-center lg:pt-16">
+		<header className="relative mx-auto flex min-h-[min(100vh,72rem)] max-w-[100rem] flex-col items-center justify-center lg:pt-16">
 			<div className="relative mb-2 text-center text-[clamp(1.86rem,7.8vw,7.5rem)] font-extrabold leading-[94%] md:text-[clamp(1.86rem,6vw,7.5rem)] md:font-bold md:leading-[98%]">
 				<div className="absolute -top-[42px] left-[calc(50%-150px)] lg:-top-[150px] lg:left-[calc(50%-337px)]">
 					<Grid
@@ -46,10 +30,10 @@ export const Hero: FC = () => {
 						height={gridHeight}
 					/>
 				</div>
-				<div ref={containerRef}>
+				<div>
 					<h1 className="lg:ml-44 xl:ml-56 2xl:ml-80">FORGING</h1>
 					<div className="gap-snug lg:flex">
-						<h1 className="inline-block gradient-reveal bg-gradient-to-r from-primary from-10% to-secondary bg-clip-text text-transparent">
+						<h1 className="inline-block bg-gradient-to-r from-primary from-10% to-secondary bg-clip-text text-transparent">
 							PERSONAL BRAND
 						</h1>
 						<div className="hidden items-center pb-4 text-left leading-[0.2rem] lg:flex">

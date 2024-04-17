@@ -32,7 +32,7 @@ export const handleAnimation = (
 export const useAnimation = () => {
 	useEffect(() => {
 		return handleAnimation(
-			'._anime_rotate, ._anime_rotate_alternate',
+			'._anime_generic_observable',
 			{},
 			(event) => {
 				const target = event.target as HTMLElement;
@@ -40,6 +40,15 @@ export const useAnimation = () => {
 			}
 		);
 	}, []);
+
+	useEffect(() => {
+		return handleAnimation('._anime_generic', {
+			translateY: [80, 0],
+			opacity: [0, 1],
+			duration: 400,
+			easing: 'easeOutExpo'
+		});
+	}, [])
 
 	useEffect(() => {
 		return handleAnimation('._anime_stagger_observe', {}, (event) => {
@@ -63,13 +72,9 @@ export const useAnimation = () => {
 	useEffect(() => {
 		document.querySelectorAll('._anime_paragraph');
 
-		document.querySelectorAll('._anime_rotate_alternate');
-
-		document.querySelectorAll('._anime_stagger');
-
 		const observables = Array.from(
 			document.querySelectorAll<HTMLElement>(
-				'._anime_heading, ._anime_paragraph, ._anime_rotate, ._anime_rotate_alternate, ._anime_stagger, ._anime_stagger_observe'
+				'._anime_heading, ._anime_paragraph, ._anime_generic, ._anime_generic_observable, ._anime_stagger_observe'
 			)
 		);
 		const unobserve = applyIntersectionEventDisptchers(...observables);

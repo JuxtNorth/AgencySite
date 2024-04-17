@@ -32,7 +32,7 @@ export const Services: FC = () => {
 	);
 
 	return (
-		<section className="mx-auto max-w-[80rem] p-snug text-center md:p-loose">
+		<section className="relative mx-auto max-w-[80rem] p-snug text-center md:p-loose overflow-hidden">
 			<div className="rounded-3xl">
 				<h1 id='services' className="mb-12 mt-snug text-4xl font-semibold md:text-5xl">
 					Our Services

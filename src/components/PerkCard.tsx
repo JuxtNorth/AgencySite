@@ -8,7 +8,7 @@ export interface PerkCardProps {
 
 export const PerkCard: FC<PerkCardProps> = (props) => {
 	return (
-		<article className="text-center md:mx-0 md:h-full md:w-full">
+		<article className="_anime_generic opacity-0 text-center md:mx-0 md:h-full md:w-full">
 			{props.children}
 			<h1 className="mb-1 text-base font-semibold md:text-3xl">
 				{props.title}

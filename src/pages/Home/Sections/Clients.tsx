@@ -4,7 +4,6 @@ import Sparkles from '@/assets/scribbles/sparkles.svg';
 import { clients } from '@/constants';
 
 export const Clients: FC = () => {
-	
 	return (
 		<section className="z-20 mx-auto flex max-w-[76rem] flex-col items-center p-snug md:p-loose">
 			<section className="w-full rounded-3xl p-snug py-loose text-center lg:flex lg:justify-between lg:p-loose lg:text-left xl:p-relaxed">
@@ -28,6 +27,7 @@ export const Clients: FC = () => {
 					<div className="mx-auto grid w-fit grid-flow-row grid-cols-2 gap-loose px-loose pb-loose lg:grid-cols-3">
 						{clients.map((props, i) => (
 							<Avatar
+								variant="bordered"
 								profileUrl={`https://ik.imagekit.io/Hireachmedia/Clients/tr:w-400,pr-true/${i + 1}.jpg`}
 								{...props}
 								key={i}

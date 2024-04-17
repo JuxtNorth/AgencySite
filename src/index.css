@@ -21,10 +21,6 @@
 		background-size: 300%;
 		animation: flow 1.5s linear infinite;
 	}
-	.gradient-reveal {
-		background-size: 160%;
-		animation: reveal 1.5s ease-out 1 forwards;
-	}
 }
 
 strong {
@@ -37,15 +33,6 @@ strong {
 	}
 	to {
 		background-position: 100%;
-	}
-}
-
-@keyframes reveal {
-	from {
-		background-position: 100%;
-	}
-	to {
-		background-position: 0%;
 	}
 }
 
