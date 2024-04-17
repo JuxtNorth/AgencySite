@@ -43,6 +43,16 @@ export const ServiceCard: FC<ServiceCardProps> = (props) => {
 		return () => window.removeEventListener('resize', onResize);
 	}, [card]);
 
+	useEffect(() => {
+		const onScroll = () => {
+			if (card) setRect(card.getBoundingClientRect());
+		};
+
+		window.addEventListener('scroll', onScroll);
+
+		return () => window.removeEventListener('scroll', onScroll);
+	}, [card]);
+
 	if (card) {
 		card.style.setProperty('--mouse-x', `${props.mousePos.x - rect.left}px`);
 		card.style.setProperty('--mouse-y', `${props.mousePos.y - rect.top}px`);

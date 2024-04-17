@@ -1,7 +1,6 @@
 import { FC, useEffect, useState } from 'react';
 import Trend from '@/assets/scribbles/Trend.svg';
 import { BurgerIcon } from '@/icons';
-import { Link } from 'react-router-dom';
 import { MobileMenu } from './MobileMenu';
 
 export const Nav: FC = () => {
@@ -32,36 +31,36 @@ export const Nav: FC = () => {
 			>
 				<div className="flex items-center gap-2">
 					<img className="size-5 invert" src={Trend} />
-					<p className="font-body text-xs font-bold">Hi Reach Media</p>
+					<a href="#" className="font-body text-xs font-bold">Hi Reach Media</a>
 				</div>
 				<div className="flex items-center gap-2 ">
 					<menu className="mr-loose hidden gap-snug text-xs lg:flex">
 						<li>
-							<Link className="hover:underline" to="#">
+							<a className="hover:underline" href="#works">
 								Our Work
-							</Link>
+							</a>
 						</li>
 						<li>
-							<Link className="hover:underline" to="#">
-								Pricing
-							</Link>
+							<a className="hover:underline" href="#workflow">
+								Workflow
+							</a>
 						</li>
 						<li>
-							<Link className="hover:underline" to="#">
+							<a className="hover:underline" href="#testimonials">
 								Reviews
-							</Link>
+							</a>
 						</li>
 						<li>
-							<Link className="hover:underline" to="#">
-								About
-							</Link>
+							<a className="hover:underline" href="#services">
+								Services
+							</a>
 						</li>
 					</menu>
 					<a
 						className="flex grow-0 items-center justify-center rounded-full border border-primary px-6 py-2 font-display text-sm leading-7"
-						href="#schedule"
+						href="#pricing"
 					>
-						Book a call
+						See Pricing
 					</a>
 					<button
 						onClick={() => setOpen(true)}
