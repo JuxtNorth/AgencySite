@@ -5,7 +5,7 @@ const getIntersectionObserver = (function () {
 			const { target } = entry;
 			target.dispatchEvent(new CustomEvent(name));
 		});
-	});
+	}, { threshold: 0.5 });
 
 	return () => {
 		return io;

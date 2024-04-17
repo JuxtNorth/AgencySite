@@ -18,10 +18,8 @@ export const Workflow: FC = () => {
 				opacity: [0, 1],
 				duration: 800,
 				delay: anime.stagger(120),
-				easing: 'easeOutExpo',
+				easing: 'easeOutExpo'
 			});
-
-			console.log("rendered animation")
 		});
 	}, []);
 
@@ -40,19 +38,17 @@ export const Workflow: FC = () => {
 						)}
 					>
 						<WorkflowCard {...props} />
-						<article
-							className="_anime_stagger_observe hidden w-full md:block"
-						>
-							<p className="font-display text-lg font-semibold text-muted">
+						<article className="_anime_stagger_observe hidden w-full md:block">
+							<p className="font-display text-lg font-semibold text-muted opacity-0">
 								{props.serialNo}
 							</p>
-							<h1 className="max-w-80 text-4xl">{props.header}</h1>
-							<p className="mt-loose text-sm font-semibold lg:text-lg">
+							<h1 className="max-w-80 text-4xl opacity-0">{props.header}</h1>
+							<p className="mt-loose text-sm font-semibold opacity-0 lg:text-lg">
 								{props.description}
 							</p>
 							<div
 								className={cn(
-									'mt-loose flex gap-2',
+									'mt-loose flex gap-2 opacity-0',
 									['text-primary', 'text-accent', 'text-secondary'][i] as string
 								)}
 							>

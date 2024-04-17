@@ -8,9 +8,12 @@ export const handleAnimation = (
 	cb?: (event: CustomEvent) => void
 ) => {
 	const onEnter = (event: CustomEvent) => {
-		const { target } = event;
-		anime({ targets: target, ...props });
-		if (cb) cb(event);
+		const target = event.target as HTMLElement;
+		if (!target.dataset.viewed) {
+			target.dataset.viewed = 'true';
+			anime({ targets: target, ...props });
+			if (cb) cb(event);
+		}
 	};
 	const nodes = document.querySelectorAll(className);
 	nodes.forEach((node) => {
@@ -39,9 +42,7 @@ export const useAnimation = () => {
 	}, []);
 
 	useEffect(() => {
-		return handleAnimation('._anime_heading', {
-			
-		});
+		return handleAnimation('._anime_heading', {});
 	}, []);
 
 	useEffect(() => {
