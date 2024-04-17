@@ -1,13 +1,32 @@
-import { FC } from 'react';
+import { FC, useEffect } from 'react';
 import { WorkflowCard } from '@/components';
 import { workflows } from '@/constants';
 import { cn, parseBoldDirective } from '@/lib/utils';
 import { StarIcon } from '@/icons';
 import ReactHtmlParser from 'react-html-parser';
+import { handleAnimation } from '@/hooks';
+import anime from 'animejs';
 
 export const Workflow: FC = () => {
+	useEffect(() => {
+		return handleAnimation('._anime_stagger_observe', {}, (event) => {
+			const target = event.target as HTMLElement;
+			const targets = target.childNodes;
+			anime({
+				targets,
+				translateY: [24, 0],
+				opacity: [0, 1],
+				duration: 800,
+				delay: anime.stagger(120),
+				easing: 'easeOutExpo',
+			});
+
+			console.log("rendered animation")
+		});
+	}, []);
+
 	return (
-		<section className="mx-auto mt-12 max-w-[70rem] p-snug md:p-loose overflow-hidden">
+		<section className="mx-auto mt-12 max-w-[70rem] overflow-hidden p-snug md:p-loose">
 			<h1 className="mb-loose text-center text-4xl font-semibold md:mb-relaxed md:text-5xl">
 				Workflow
 			</h1>
@@ -21,7 +40,9 @@ export const Workflow: FC = () => {
 						)}
 					>
 						<WorkflowCard {...props} />
-						<article className="hidden w-full md:block">
+						<article
+							className="_anime_stagger_observe hidden w-full md:block"
+						>
 							<p className="font-display text-lg font-semibold text-muted">
 								{props.serialNo}
 							</p>

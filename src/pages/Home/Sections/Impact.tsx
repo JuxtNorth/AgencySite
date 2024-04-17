@@ -11,30 +11,30 @@ export const Impact: FC = () => {
 			<div className="mt-loose flex-col items-center md:flex md:space-y-0">
 				<div className="mb-16 flex w-full flex-col justify-between gap-16 md:flex-row md:gap-0">
 					<div className="mx-auto text-center">
-						<h2 className="gsap-header text-4xl font-bold text-primary md:text-7xl">
+						<h2 className="_anime_heading text-4xl font-bold text-primary md:text-7xl">
 							<AnimatedStat target={2400000} />+
 						</h2>
-						<p className="gsap-para text-sm text-muted">
+						<p className="_anime_paragraph text-sm text-muted">
 							<EyeIcon className="mr-1 inline text-primary" />
 							organic views
 						</p>
 					</div>
 					<div className="mx-auto text-center">
-						<h2 className="gsap-header text-4xl font-bold text-accent md:text-7xl">
+						<h2 className="_anime_heading text-4xl font-bold text-accent md:text-7xl">
 							<AnimatedStat target={1200000} />+
 						</h2>
-						<p className="gsap-para text-sm text-muted">
+						<p className="_anime_paragraph text-sm text-muted">
 							<GlitterIcon className="mr-1 inline text-accent" />
 							gained followers
 						</p>
 					</div>
 				</div>
 				<div className="mx-auto text-center">
-					<h2 className="gsap-header text-4xl font-bold text-secondary md:text-7xl">
+					<h2 className="_anime_heading text-4xl font-bold text-secondary md:text-7xl">
 						&#36;
 						<AnimatedStat target={400000} />+
 					</h2>
-					<p className="gsap-para text-sm text-muted">
+					<p className="_anime_paragraph text-sm text-muted">
 						<MoneyIcon className="mr-1 inline text-secondary" />
 						revenue generated
 					</p>

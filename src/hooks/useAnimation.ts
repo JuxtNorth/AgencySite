@@ -2,7 +2,7 @@ import { applyIntersectionEventDisptchers } from '@/lib/applyIntersectionEventDi
 import anime, { AnimeAnimParams } from 'animejs';
 import { useEffect } from 'react';
 
-const handleAnimation = (
+export const handleAnimation = (
 	className: string,
 	props: AnimeAnimParams,
 	cb?: (event: CustomEvent) => void
@@ -23,6 +23,9 @@ const handleAnimation = (
 	};
 };
 
+/**
+ * Handles animations of the listed classnames. Helpful for generl
+ */
 export const useAnimation = () => {
 	useEffect(() => {
 		return handleAnimation(
@@ -36,8 +39,12 @@ export const useAnimation = () => {
 	}, []);
 
 	useEffect(() => {
-		document.querySelectorAll('._anime_heading');
+		return handleAnimation('._anime_heading', {
+			
+		});
+	}, []);
 
+	useEffect(() => {
 		document.querySelectorAll('._anime_paragraph');
 
 		document.querySelectorAll('._anime_rotate_alternate');
@@ -46,7 +53,7 @@ export const useAnimation = () => {
 
 		const observables = Array.from(
 			document.querySelectorAll<HTMLElement>(
-				'._anime_heading, ._anime_paragraph, ._anime_rotate, ._anime_rotate_alternate, ._anime_stagger'
+				'._anime_heading, ._anime_paragraph, ._anime_rotate, ._anime_rotate_alternate, ._anime_stagger, ._anime_stagger_observe'
 			)
 		);
 		const unobserve = applyIntersectionEventDisptchers(...observables);
