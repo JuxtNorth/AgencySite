@@ -7,7 +7,7 @@ export const Clients: FC = () => {
 	
 	return (
 		<section className="z-20 mx-auto flex max-w-[76rem] flex-col items-center p-snug md:p-loose">
-			<section className="w-full rounded-3xl bg-surface p-snug py-loose text-center lg:flex lg:justify-between lg:p-loose lg:text-left xl:p-relaxed">
+			<section className="w-full rounded-3xl p-snug py-loose text-center lg:flex lg:justify-between lg:p-loose lg:text-left xl:p-relaxed">
 				<div className="lg:flex lg:flex-col lg:justify-between">
 					<div>
 						<h1 className="gsap-header text-4xl font-semibold leading-none lg:text-7xl">
