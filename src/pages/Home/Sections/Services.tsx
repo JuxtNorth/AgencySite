@@ -32,9 +32,12 @@ export const Services: FC = () => {
 	);
 
 	return (
-		<section className="relative mx-auto max-w-[80rem] p-snug text-center md:p-loose overflow-hidden">
+		<section className="relative mx-auto max-w-[80rem] overflow-hidden p-snug text-center md:p-loose">
 			<div className="rounded-3xl">
-				<h1 id='services' className="mb-12 mt-snug text-4xl font-semibold md:text-5xl">
+				<h1
+					id="services"
+					className="mb-12 mt-snug text-4xl font-semibold md:text-5xl"
+				>
 					Our Services
 				</h1>
 				<section

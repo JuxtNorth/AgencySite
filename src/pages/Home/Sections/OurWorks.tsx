@@ -55,7 +55,9 @@ export const OurWorks: FC = () => {
 	return (
 		<section className="mx-auto mt-12 max-w-[125rem] overflow-hidden text-center">
 			<div className="mb-loose xl:mb-16">
-				<h1 className="text-4xl font-semibold md:text-5xl" id='works'>Our Work</h1>
+				<h1 className="text-4xl font-semibold md:text-5xl" id="works">
+					Our Work
+				</h1>
 				<p className="text-sm md:text-base">Making your vision a reality</p>
 			</div>
 			<Carousel

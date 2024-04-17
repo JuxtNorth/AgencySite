@@ -1,11 +1,14 @@
 const getIntersectionObserver = (function () {
-	const io = new IntersectionObserver((entries) => {
-		entries.forEach((entry) => {
-			const name = entry.isIntersecting ? 'enter' : 'leave';
-			const { target } = entry;
-			target.dispatchEvent(new CustomEvent(name));
-		});
-	}, { threshold: 0.5 });
+	const io = new IntersectionObserver(
+		(entries) => {
+			entries.forEach((entry) => {
+				const name = entry.isIntersecting ? 'enter' : 'leave';
+				const { target } = entry;
+				target.dispatchEvent(new CustomEvent(name));
+			});
+		},
+		{ threshold: 0.5 }
+	);
 
 	return () => {
 		return io;

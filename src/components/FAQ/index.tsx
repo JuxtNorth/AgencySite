@@ -17,7 +17,10 @@ export const FAQAccordion: FC<FAQAccordionProps> = (props) => {
 	return (
 		<Accordion
 			type="single"
-			className={cn("relative py-tight before:absolute before:left-[50%] before:top-0 before:-z-[1] before:h-full before:w-[calc(100%+3.8rem)] before:-translate-x-[50%] before:rounded-md before:content-[''] hover:transition-colors hover:before:bg-white/10", props.className)}
+			className={cn(
+				"relative py-tight before:absolute before:left-[50%] before:top-0 before:-z-[1] before:h-full before:w-[calc(100%+3.8rem)] before:-translate-x-[50%] before:rounded-md before:content-[''] hover:transition-colors hover:before:bg-white/10",
+				props.className
+			)}
 			collapsible
 		>
 			<AccordionItem className="border-none" value="item-1">

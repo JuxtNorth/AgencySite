@@ -45,7 +45,7 @@ export const Hero: FC = () => {
 					</div>
 					<h1 className="lg:ml-44">
 						FOR{' '}
-						<span className="inline-block gradient-reveal bg-gradient-to-r from-accent to-primary to-60% bg-clip-text text-transparent">
+						<span className="gradient-reveal inline-block bg-gradient-to-r from-accent to-primary to-60% bg-clip-text text-transparent">
 							SOCIAL VIRALITY
 						</span>
 					</h1>

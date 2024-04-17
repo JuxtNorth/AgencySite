@@ -25,7 +25,10 @@ export const Workflow: FC = () => {
 
 	return (
 		<section className="mx-auto mt-12 max-w-[70rem] overflow-hidden p-snug md:p-loose">
-			<h1 id='workflow' className="mb-loose text-center text-4xl font-semibold md:mb-relaxed md:text-5xl">
+			<h1
+				id="workflow"
+				className="mb-loose text-center text-4xl font-semibold md:mb-relaxed md:text-5xl"
+			>
 				Workflow
 			</h1>
 			<div className="space-y-10 lg:space-y-relaxed">

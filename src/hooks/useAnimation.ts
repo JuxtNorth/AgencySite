@@ -31,14 +31,10 @@ export const handleAnimation = (
  */
 export const useAnimation = () => {
 	useEffect(() => {
-		return handleAnimation(
-			'._anime_generic_observable',
-			{},
-			(event) => {
-				const target = event.target as HTMLElement;
-				if (target) target.classList.add('entered');
-			}
-		);
+		return handleAnimation('._anime_generic_observable', {}, (event) => {
+			const target = event.target as HTMLElement;
+			if (target) target.classList.add('entered');
+		});
 	}, []);
 
 	useEffect(() => {
@@ -48,7 +44,7 @@ export const useAnimation = () => {
 			duration: 400,
 			easing: 'easeOutExpo'
 		});
-	}, [])
+	}, []);
 
 	useEffect(() => {
 		return handleAnimation('._anime_stagger_observe', {}, (event) => {
