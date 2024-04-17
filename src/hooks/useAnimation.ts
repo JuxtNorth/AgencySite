@@ -42,6 +42,21 @@ export const useAnimation = () => {
 	}, []);
 
 	useEffect(() => {
+		return handleAnimation('._anime_stagger_observe', {}, (event) => {
+			const target = event.target as HTMLElement;
+			const targets = target.childNodes;
+			anime({
+				targets,
+				translateY: [target.classList.contains('stagger-y-64') ? 64 : 24, 0],
+				opacity: [0, 1],
+				duration: 400,
+				delay: anime.stagger(60),
+				easing: 'easeOutExpo'
+			});
+		});
+	}, []);
+
+	useEffect(() => {
 		return handleAnimation('._anime_heading', {});
 	}, []);
 

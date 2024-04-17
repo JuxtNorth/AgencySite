@@ -3,6 +3,7 @@ import { FeatureItem } from './FeatureItem';
 import { MagicIcon } from '@/icons';
 import { cva } from 'class-variance-authority';
 import { GlowButton } from '@/components/ui';
+import { cn } from '@/lib/utils';
 
 export interface PricingCardProps {
 	name: string;
@@ -15,6 +16,7 @@ export interface PricingCardProps {
 	children: ReactNode;
 	recommended?: boolean;
 	variant?: 'a' | 'b' | 'c';
+	className?: string;
 }
 
 const blobVariants = cva('absolute size-32 rounded-full top-0 left-0', {
@@ -44,25 +46,30 @@ export const PricingCard: FC<PricingCardProps> = (props) => {
 	const { variant = 'a' } = props;
 
 	return (
-		<article className="relative flex w-full flex-col justify-between overflow-hidden rounded-2xl bg-surface p-6 md:min-w-96 md:p-loose">
+		<article
+			className={cn(
+				'relative flex w-full flex-col justify-between overflow-hidden rounded-2xl bg-surface p-6 md:min-w-[22rem] md:p-loose',
+				props.className
+			)}
+		>
 			<div className={blobVariants({ variant })} />
 			<div className="z-[1]">
 				{props.recommended && (
-					<span className="absolute right-0 top-0 rounded-bl-2xl bg-rose-200/60 px-snug py-2 text-sm ">
+					<span className="absolute right-0 top-0 rounded-bl-2xl bg-rose-200/60 px-snug py-2 text-[13px] ">
 						Recommended
 					</span>
 				)}
-				<section className="flex h-56 flex-col justify-between border-b border-slate-400 pb-snug">
-					<div className="space-y-4">
+				<section className="flex h-52 flex-col justify-between border-b border-slate-400 pb-snug">
+					<div className="space-y-2">
 						<div className="flex items-center gap-2">
 							{props.children}
-							<h2 className="text-xl font-semibold"> {props.name}</h2>
+							<h2 className="text-lg font-semibold">{props.name}</h2>
 						</div>
-						<h1 className="font-body text-4xl">
+						<h1 className="font-body text-[34px]">
 							{props.pricing}{' '}
-							<span className="text-lg font-normal">per month</span>
+							<span className="text-base font-normal">per month</span>
 						</h1>
-						<p className="text-sm">{props.emphasis}</p>
+						<p className="text-xs">{props.emphasis}</p>
 					</div>
 					<GlowButton variant={variant} className="w-full">
 						{props.buttonLabel}

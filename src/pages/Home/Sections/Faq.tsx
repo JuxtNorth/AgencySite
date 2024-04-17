@@ -1,26 +1,9 @@
-import { FC, useEffect } from 'react';
+import { FC } from 'react';
 import { FAQAccordion } from '@/components';
 import { FAQs } from '@/constants';
 import Discover from '@/assets/scribbles/Discover.svg';
-import { handleAnimation } from '@/hooks';
-import anime from 'animejs';
 
 export const Faq: FC = () => {
-	useEffect(() => {
-		return handleAnimation('._anime_stagger_observe', {}, (event) => {
-			const target = event.target as HTMLElement;
-			const targets = target.childNodes;
-			anime({
-				targets,
-				translateY: [24, 0],
-				opacity: [0, 1],
-				duration: 400,
-				delay: anime.stagger(60),
-				easing: 'easeOutExpo'
-			});
-		});
-	}, []);
-
 	return (
 		<section className="mx-auto mt-24 max-w-[100rem] space-y-4 md:mt-12 md:grid md:grid-cols-[70%_30%] md:p-loose">
 			<section className="px-loose md:px-0 md:pr-loose">
@@ -31,9 +14,9 @@ export const Faq: FC = () => {
 						Questions
 					</h1>
 				</div>
-				<div className="space-y-tight _anime_stagger_observe">
+				<div className="_anime_stagger_observe space-y-tight">
 					{FAQs.map((props, i) => (
-						<FAQAccordion className='opacity-0' {...props} key={i} />
+						<FAQAccordion className="opacity-0" {...props} key={i} />
 					))}
 				</div>
 			</section>
