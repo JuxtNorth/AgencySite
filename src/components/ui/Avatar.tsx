@@ -6,7 +6,7 @@ const avatarVariants = cva('mb-2 size-20 rounded-full bg-primary md:size-36', {
 		variant: {
 			default: '',
 			bordered:
-				"relative before:content-[''] before:size-full before:rounded-full before:border before:border-slate-500 mb-4 before:absolute before:scale-[1.1]"
+				"relative before:content-[''] before:size-full before:rounded-full before:border before:border-slate-500 mb-4 before:absolute before:scale-[1.1] before:left-0 before:top-0"
 		}
 	}
 });

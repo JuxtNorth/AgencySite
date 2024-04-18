@@ -4,6 +4,7 @@ import { MagicIcon } from '@/icons';
 import { cva } from 'class-variance-authority';
 import { GlowButton } from '@/components/ui';
 import { cn } from '@/lib/utils';
+import { useMediaQuery } from '@/hooks';
 
 export interface PricingCardProps {
 	name: string;
@@ -43,13 +44,16 @@ const highlightVariant = cva(
 );
 
 export const PricingCard: FC<PricingCardProps> = (props) => {
+	const { match: isDesktop } = useMediaQuery();
+
 	const { variant = 'a' } = props;
 
 	return (
 		<article
 			className={cn(
 				'relative flex w-full flex-col justify-between overflow-hidden rounded-2xl bg-surface p-6 md:min-w-[22rem] md:p-loose',
-				props.className
+				props.className || '',
+				isDesktop ? '' : '_anime_generic'
 			)}
 		>
 			<div className={blobVariants({ variant })} />

@@ -32,3 +32,7 @@ export default {
 ## Known Issues
 
 - Using animejs version 2.0 because of a bug in v3.9.? that won't update a js object. Fix: Check if that issue still exists, if no, upgrade using `pnpm i animejs`. (it has been fixed. there was an issue with vite that was causing it, restarting the dev server worked.)
+
+## Adding/Updating animations
+
+- The app uses animejs to render anima
