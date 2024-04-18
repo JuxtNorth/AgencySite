@@ -98,7 +98,7 @@ export const TestimonialCard: FC<TestimonialCardProps> = (props) => {
 					<div className="relative size-full overflow-hidden rounded-3xl">
 						<button
 							onClick={() => setFlipped(false)}
-							className="absolute right-0 top-0 m-4 rounded-full bg-blood-red p-2.5 text-lg"
+							className="absolute right-0 top-0 m-4 rounded-full bg-blood-red p-2.5 text-lg z-[1]"
 						>
 							<CrossIcon />
 						</button>
