@@ -84,8 +84,8 @@ export const TestimonialCard: FC<TestimonialCardProps> = (props) => {
 								</Stat>
 							</section>
 							<button
-								className="w-full rounded-full bg-blood-red py-3 font-display text-xs font-semibold md:hidden md:text-sm lg:text-base xl:text-lg"
-								onClick={() => setFlipped(false)}
+								className="w-full rounded-full bg-surface-new brightness-125 py-3 font-display text-xs font-semibold md:hidden md:text-sm lg:text-base xl:text-lg"
+								onClick={() => setFlipped(true)}
 							>
 								See Work
 							</button>
@@ -95,7 +95,7 @@ export const TestimonialCard: FC<TestimonialCardProps> = (props) => {
 				<article className="absolute flex h-full w-full items-center justify-center [backface-visibility:hidden] [rotate:y_180deg]">
 					<div className="relative size-full overflow-hidden rounded-3xl">
 						<button
-							onClick={() => setFlipped(!flipped)}
+							onClick={() => setFlipped(false)}
 							className="absolute right-0 top-0 m-4 rounded-full bg-blood-red p-2.5 text-lg"
 						>
 							<CrossIcon />
