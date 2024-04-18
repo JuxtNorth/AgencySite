@@ -15,8 +15,8 @@ const variants = cva(
 		variants: {
 			variant: {
 				a: 'bg-primary hover:[box-shadow:0px_0px_4px_1px_#fff2,0px_0px_32px_4px_rgba(var(--primary),0.6)]',
-				b: 'bg-accent hover:[box-shadow:0px_0px_4px_1px_#fff2,0px_0px_32px_4px_rgba(var(--accent),0.6)]',
-				c: 'bg-secondary hover:[box-shadow:0px_0px_4px_1px_#fff2,0px_0px_32px_4px_rgba(var(--secondary),0.6)]'
+				b: 'bg-accent hover:[box-shadow:0px_0px_4px_1px_#fff2,0px_0px_32px_4px_rgba(var(--blood-red),0.6)]',
+				c: 'bg-orange hover:[box-shadow:0px_0px_4px_1px_#fff2,0px_0px_32px_4px_rgba(var(--orange),0.6)]'
 			}
 		}
 	}

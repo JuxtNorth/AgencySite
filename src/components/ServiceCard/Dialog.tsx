@@ -59,8 +59,8 @@ export const Dialog: FC<DialogProps> = (props) => {
 			data-open={visible}
 			className="w-[80%] max-w-[100rem] scale-[2] overflow-visible bg-transparent opacity-0 duration-300 ease-[cubic-bezier(0.165,0.840,0.440,1.000)] backdrop:bg-black/80 backdrop:backdrop-blur-sm xl:w-[70%] [&[data-open='true']]:scale-[1] [&[data-open='true']]:opacity-100 [&[data-open='true']]:duration-[400ms]"
 		>
-			<div className="flex size-full flex-col items-center gap-loose rounded-3xl bg-surface p-loose text-font-primary lg:hidden">
-				<GiftIcon className="text-[72px] text-accent" />
+			<div className="flex size-full flex-col items-center gap-loose rounded-3xl bg-surface-new p-loose text-font-primary lg:hidden">
+				<GiftIcon className="text-[72px] text-blood-red" />
 				<p>
 					View the website on a desktop to get a{' '}
 					<span className="continuous-gradient bg-clip-text text-transparent">
@@ -81,12 +81,12 @@ export const Dialog: FC<DialogProps> = (props) => {
 			>
 				<CrossIcon />
 			</button>
-			<div className="relative hidden size-full grid-cols-[auto_24%] gap-x-loose rounded-[2.6rem] bg-surface p-9 lg:grid">
+			<div className="relative hidden size-full grid-cols-[auto_24%] gap-x-loose rounded-[2.6rem] bg-surface-new p-9 lg:grid">
 				<article className="text-left">
-					<h1 className="mb-snug text-4xl">{props.title}</h1>
+					<h1 className="mb-snug text-4xl text-blood-red">{props.title}</h1>
 					<div className="pl-2 text-sm text-font-primary xl:text-[15px]">
 						{props.paragraphs.map((content) => (
-							<p className="text-base">{content}</p>
+							<p className="text-base mb-[1rem]">{content}</p>
 						))}
 						<p className="continuous-gradient my-2 bg-clip-text text-lg text-transparent">
 							{props.emphasis}
@@ -94,7 +94,7 @@ export const Dialog: FC<DialogProps> = (props) => {
 						<ul className="space-y-2">
 							{props.deliverables.map((content) => (
 								<li>
-									<StarIcon className="-mt-1 mr-2 inline text-primary" />
+									<StarIcon className="-mt-1 mr-2 inline text-blood-red" />
 									{content}
 								</li>
 							))}
@@ -103,7 +103,7 @@ export const Dialog: FC<DialogProps> = (props) => {
 				</article>
 				<section className="space-y-snug">
 					<div className="grid aspect-square w-full grid-cols-1 grid-rows-1 place-items-center rounded-[2.5rem] border border-slate-600 p-snug">
-						<p className="col-start-1 row-start-1 text-center text-sm text-primary">
+						<p className="col-start-1 row-start-1 text-center text-sm text-blood-red">
 							{props.stat.title}
 						</p>
 						<PieChart
@@ -111,12 +111,12 @@ export const Dialog: FC<DialogProps> = (props) => {
 							data={[
 								{
 									title: 'value',
-									color: 'rgb(var(--primary))',
+									color: 'rgb(var(--blood-red))',
 									value: props.stat.value
 								},
 								{
 									title: 'container',
-									color: 'rgba(var(--primary-varient),0.3)',
+									color: 'rgba(var(--blood-red),0.3)',
 									value: 100 - props.stat.value
 								}
 							]}
@@ -126,12 +126,12 @@ export const Dialog: FC<DialogProps> = (props) => {
 					</div>
 					<GlowButton
 						variant="b"
-						className="flex w-full items-center justify-center gap-snug rounded-full bg-transparent py-snug font-display text-accent outline outline-1 outline-slate-600 hover:bg-accent hover:text-font-primary hover:outline-0"
+						className="flex w-full items-center justify-center gap-snug rounded-full bg-transparent py-snug font-display text-blood-red outline outline-1 outline-slate-600 hover:bg-blood-red hover:text-font-primary hover:outline-0"
 					>
 						<GiftIcon className="text-xl" />
 						Get your Gift
 					</GlowButton>
-					<GlowButton className="flex w-full items-center justify-center gap-snug rounded-full bg-transparent py-snug font-display text-font-primary outline outline-1 outline-slate-600 hover:bg-primary hover:outline-0">
+					<GlowButton variant='c' className="flex w-full items-center justify-center gap-snug rounded-full bg-transparent py-snug font-display text-font-primary outline outline-1 outline-slate-600 hover:bg-orange hover:outline-0">
 						<ScheduleIcon className="text-xl" />
 						Book a call
 					</GlowButton>

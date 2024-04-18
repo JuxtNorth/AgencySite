@@ -11,12 +11,12 @@ import {
 } from '@/icons';
 
 const icons = [
-	<RankingIcon className="overflow-visible text-2xl text-accent md:text-3xl" />,
-	<ContentIcon className="overflow-visible text-2xl text-accent md:text-3xl" />,
-	<MagicIcon className="overflow-visible text-2xl text-accent md:text-3xl" />,
-	<SalesIcon className="overflow-visible text-2xl text-accent md:text-3xl" />,
-	<CustomisationIcon className="overflow-visible text-2xl text-accent md:text-3xl" />,
-	<LeadIcon className="overflow-visible text-2xl text-accent md:text-3xl" />
+	<RankingIcon className="overflow-visible text-2xl md:text-3xl" />,
+	<ContentIcon className="overflow-visible text-2xl md:text-3xl" />,
+	<MagicIcon className="overflow-visible text-2xl md:text-3xl" />,
+	<SalesIcon className="overflow-visible text-2xl md:text-3xl" />,
+	<CustomisationIcon className="overflow-visible text-2xl md:text-3xl" />,
+	<LeadIcon className="overflow-visible text-2xl md:text-3xl" />
 ];
 
 export const Services: FC = () => {
@@ -36,7 +36,7 @@ export const Services: FC = () => {
 			<div className="rounded-3xl">
 				<h1
 					id="services"
-					className="mb-12 mt-snug text-4xl font-semibold md:text-5xl"
+					className="mb-12 mt-snug text-4xl font-semibold md:text-5xl text-blood-red"
 				>
 					Our Services
 				</h1>
