@@ -34,13 +34,13 @@ export const Footer: FC = () => {
 				<section className="flex flex-col justify-between pt-1">
 					<ul className="mx-auto w-full space-y-1.5 text-xs md:text-xl">
 						<li>
-							<a href="#">Privacy Policy</a>
+							<a href="/privacy">Privacy Policy</a>
 						</li>
 						<li>
-							<a href="#">Terms and Conditions</a>
+							<a href="/terms">Terms and Conditions</a>
 						</li>
 						<li>
-							<a href="#">Refund Policy</a>
+							<a href="/refund-policy">Refund Policy</a>
 						</li>
 					</ul>
 					<p className="mx-auto flex items-center gap-1 whitespace-nowrap text-xs md:mx-0 md:text-xl">
