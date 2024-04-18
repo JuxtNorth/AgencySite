@@ -15,7 +15,9 @@ export default {
 				secondary: 'rgb(var(--secondary))',
 				accent: 'rgb(var(--accent))',
 				'font-primary': 'rgb(var(--font-primary))',
-				muted: 'rgb(var(--muted))'
+				muted: 'rgb(var(--muted))',
+				'blood-red': 'rgb(var(--blood-red))',
+				'surface-new': 'rgb(var(--surface-new))'
 			},
 			spacing: {
 				tight: '0.25rem',

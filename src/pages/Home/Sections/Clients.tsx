@@ -9,22 +9,22 @@ export const Clients: FC = () => {
 			<section className="w-full rounded-3xl p-snug py-loose text-center lg:flex lg:justify-between lg:p-loose lg:text-left xl:p-relaxed">
 				<div className="lg:flex lg:flex-col lg:justify-between">
 					<div>
-						<h1 className="gsap-header text-4xl font-semibold leading-none lg:text-7xl">
+						<h1 className="gsap-header text-blood-red text-4xl font-semibold leading-none lg:text-7xl">
 							Our <br className="hidden lg:inline" />
 							Clients
 						</h1>
-						<p className="gsap-para text-sm lg:text-lg">
+						<p className="gsap-para text-sm lg:text-lg font-semibold text-muted">
 							Lorem Ipsum Doler Imet Constrctuer
 						</p>
 					</div>
 					<img
-						className="mx-auto mb-loose mt-snug size-24 invert md:mb-0 lg:size-44"
+						className="mx-auto mb-loose mt-snug size-24 md:mb-0 lg:size-44"
 						src={Sparkles}
 						alt="An image of three sparkles"
 					/>
 				</div>
 				<div>
-					<div className="mx-auto grid w-fit grid-flow-row grid-cols-2 gap-loose px-loose pb-loose lg:grid-cols-3">
+					<div className="mx-auto grid w-fit grid-flow-row grid-cols-2 gap-x-[2.4rem] gap-y-loose px-loose pb-loose lg:grid-cols-3">
 						{clients.map((props, i) => (
 							<Avatar
 								variant="bordered"
