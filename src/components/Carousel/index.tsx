@@ -11,11 +11,12 @@ interface CarouselProps {
 	children?: ReactNode;
 	buttonXPosition?: 'edge' | 'center' | 'either';
 	buttonYPosition?: 'middle' | 'default';
+	buttonStyle?: 'default' | 'mono';
 	plugins?: EmblaPluginType[];
 	className?: string;
 }
 
-const buttonVariants = cva('w-full flex gap-snug pointer-events-none', {
+const buttonsVariants = cva('w-full flex gap-snug pointer-events-none', {
 	variants: {
 		buttons: {
 			edge: 'ml-snug',
@@ -30,14 +31,23 @@ const buttonVariants = cva('w-full flex gap-snug pointer-events-none', {
 	}
 });
 
+const buttonVariant = cva("pointer-events-auto cursor-pointer rounded-full p-snug md:p-6 md:text-2xl", {
+	variants: {
+		variant: {
+			default: 'bg-blood-red',
+			mono: 'bg-surface-new hover:brightness-125 transition-[filter]',
+		}
+	}
+})
+
+
 export const Carousel: FC<CarouselProps> = (props) => {
 	const [emblaRef, emblaApi] = useEmblaCarousel(
 		{ loop: true, skipSnaps: true },
 		props.plugins
 	);
 
-	const { buttonXPosition = 'edge' } = props;
-	const { buttonYPosition = 'default' } = props;
+	const { buttonXPosition = 'edge', buttonYPosition = 'default', buttonStyle = 'default' } = props;
 
 	const scrollPrev = useCallback(() => {
 		if (emblaApi) emblaApi.scrollPrev();
@@ -58,19 +68,19 @@ export const Carousel: FC<CarouselProps> = (props) => {
 				</div>
 			</div>
 			<div
-				className={buttonVariants({
+				className={buttonsVariants({
 					buttons: buttonXPosition,
 					vertical: buttonYPosition
 				})}
 			>
 				<button
-					className="pointer-events-auto cursor-pointer rounded-full bg-blood-red p-snug md:p-6 md:text-2xl"
+					className={buttonVariant({ variant: buttonStyle })}
 					onClick={scrollPrev}
 				>
 					<ChevronLeftIcon />
 				</button>
 				<button
-					className="pointer-events-auto cursor-pointer rounded-full bg-blood-red p-snug md:p-6 md:text-2xl"
+					className={buttonVariant({ variant: buttonStyle })}
 					onClick={scrollNext}
 				>
 					<ChevronRightIcon />

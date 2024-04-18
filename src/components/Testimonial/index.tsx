@@ -8,7 +8,7 @@ const Stat: FC<{ children: ReactNode; text: string }> = ({
 }) => {
 	return (
 		<div className="flex items-center gap-2">
-			<div className="rounded-full bg-primary p-2">{children}</div>
+			<div className="rounded-full p-2 bg-blood-red">{children}</div>
 			<p className="text-[12px] font-semibold lg:text-[16px]">{text}</p>
 		</div>
 	);
@@ -33,7 +33,7 @@ export const TestimonialCard: FC<TestimonialCardProps> = (props) => {
 	return (
 		<div className="flex min-h-[32rem] min-w-0 max-w-[100rem] flex-[0_0_100%] p-loose md:px-24 lg:min-h-[30rem] lg:px-60">
 			<div
-				className="relative h-fit min-h-full w-full rounded-3xl bg-surface transition-[rotate] duration-300 [perspective:1000px] [transform-style:preserve-3d] [&[data-flipped='true']]:[rotate:y_180deg]"
+				className="relative h-fit min-h-full w-full rounded-3xl bg-surface-new transition-[rotate] duration-300 [perspective:1000px] [transform-style:preserve-3d] [&[data-flipped='true']]:[rotate:y_180deg]"
 				data-flipped={flipped}
 			>
 				<article className="absolute flex h-full w-full flex-col p-6 [backface-visibility:hidden] md:flex-row md:gap-loose md:p-loose">
@@ -49,7 +49,7 @@ export const TestimonialCard: FC<TestimonialCardProps> = (props) => {
 					<div className="flex min-h-full flex-col justify-between">
 						<header className="flex w-full justify-between">
 							<div className="flex items-center gap-2">
-								<div className="h-12 w-12 rounded-full bg-primary">
+								<div className="h-12 w-12 rounded-full bg-blood-red">
 									<img
 										width={120}
 										className="size-full rounded-full object-cover"
@@ -58,11 +58,11 @@ export const TestimonialCard: FC<TestimonialCardProps> = (props) => {
 									/>
 								</div>
 								<div className="flex flex-col text-left leading-tight">
-									<h1 className="text-xl font-bold">{props.author}</h1>
-									<p className="text-sm">{props.authorOccupation}</p>
+									<h1 className="text-xl font-bold text-blood-red">{props.author}</h1>
+									<p className="text-sm text-muted">{props.authorOccupation}</p>
 								</div>
 							</div>
-							<div className="flex max-h-loose items-center rounded-full bg-primary px-snug">
+							<div className="flex max-h-loose items-center rounded-full bg-blood-red px-snug">
 								<p className="mt-px font-display font-bold lg:text-sm">
 									{props.authorFollowerCount}
 								</p>
@@ -84,8 +84,8 @@ export const TestimonialCard: FC<TestimonialCardProps> = (props) => {
 								</Stat>
 							</section>
 							<button
-								className="w-full rounded-full bg-primary py-3 font-display text-xs font-semibold md:hidden md:text-sm lg:text-base xl:text-lg"
-								onClick={() => setFlipped(!flipped)}
+								className="w-full rounded-full bg-blood-red py-3 font-display text-xs font-semibold md:hidden md:text-sm lg:text-base xl:text-lg"
+								onClick={() => setFlipped(false)}
 							>
 								See Work
 							</button>
@@ -96,7 +96,7 @@ export const TestimonialCard: FC<TestimonialCardProps> = (props) => {
 					<div className="relative size-full overflow-hidden rounded-3xl">
 						<button
 							onClick={() => setFlipped(!flipped)}
-							className="absolute right-0 top-0 m-4 rounded-full bg-primary p-2.5 text-lg"
+							className="absolute right-0 top-0 m-4 rounded-full bg-blood-red p-2.5 text-lg"
 						>
 							<CrossIcon />
 						</button>
