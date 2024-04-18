@@ -6,13 +6,13 @@ export const CaseStudies: FC = () => {
 	return (
 		<div className="m-4 mx-auto max-w-[100rem] p-2 pt-16 text-center lg:p-8">
 			<section className="size-full rounded-3xl p-snug text-center md:rounded-[4.2rem] lg:p-loose">
-				<h1 className="text-4xl lg:text-7xl">Case Study</h1>
-				<h2 className="mb-loose text-xl lg:text-4xl">
-					on client <span className="text-secondary">results</span>
+				<h1 className="text-4xl lg:text-7xl text-blood-red">Case Study</h1>
+				<h2 className="mb-loose text-xl lg:text-4xl text-muted">
+					on client results
 				</h2>
-				<div className="space-y-snug rounded-2xl bg-surface p-snug text-lg font-semibold lg:space-y-0 lg:p-loose lg:py-loose lg:text-3xl">
+				<div className="space-y-snug rounded-2xl md:rounded-3xl bg-surface-new text-blood-red brightness-125 p-snug text-lg font-semibold lg:space-y-0 lg:p-loose lg:py-loose lg:text-3xl">
 					<Link
-						to="/casestudy/b"
+						to="/casestudy/a"
 						className="flex w-full items-center gap-snug border-b border-slate-600 py-2 hover:bg-white/10 md:pl-loose lg:py-7"
 					>
 						<img
@@ -21,7 +21,7 @@ export const CaseStudies: FC = () => {
 							alt="An image of foo bar"
 						/>
 						<h1 className="font-body text-[currentColor]">Jane Doe</h1>
-						<GoIcon className="text-sm lg:text-lg" />
+						<GoIcon className="text-sm lg:text-xl text-font-primary" />
 					</Link>
 					<Link
 						to="/casestudy/b"
@@ -33,7 +33,7 @@ export const CaseStudies: FC = () => {
 							alt="An image of foo bar"
 						/>
 						<h1 className="font-body text-[currentColor]">John Doe</h1>
-						<GoIcon className="text-sm lg:text-lg" />
+						<GoIcon className="text-sm lg:text-xl text-font-primary" />
 					</Link>
 					<Link
 						to="/casestudy/c"
@@ -45,7 +45,7 @@ export const CaseStudies: FC = () => {
 							alt="An image of foo bar"
 						/>
 						<h1 className="font-body text-[currentColor]">Jane Doe</h1>
-						<GoIcon className="text-sm lg:text-lg" />
+						<GoIcon className="text-sm lg:text-xl text-font-primary" />
 					</Link>
 				</div>
 			</section>
