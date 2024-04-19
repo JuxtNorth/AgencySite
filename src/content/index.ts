@@ -8,4 +8,4 @@ export * from './workflows';
 export * from './clients';
 export * from './testimonials';
 export * from './works';
-export * from './caseStudyLinks'
+export * from './caseStudyLinks';

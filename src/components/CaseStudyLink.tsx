@@ -12,7 +12,7 @@ export const CaseStudyLink: FC<CaseStudyLinkProps> = (props) => {
 	return (
 		<Link
 			to={props.url}
-			className="flex w-full items-center gap-snug border-b border-slate-600 last:border-none py-2 hover:bg-white/10 md:pl-loose lg:py-7"
+			className="flex w-full items-center gap-snug border-b border-slate-600 py-2 last:border-none hover:bg-white/10 md:pl-loose lg:py-7"
 		>
 			<img
 				className="aspect-square h-12 rounded-full object-cover lg:mr-snug lg:h-20"

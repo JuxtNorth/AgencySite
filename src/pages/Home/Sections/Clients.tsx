@@ -8,7 +8,7 @@ export const Clients: FC = () => {
 		<section className="z-20 mx-auto flex max-w-[76rem] flex-col items-center p-snug md:p-loose">
 			<section className="w-full rounded-3xl p-snug py-loose text-center lg:flex lg:justify-between lg:p-loose lg:text-left xl:p-relaxed">
 				<div className="lg:flex lg:flex-col lg:justify-between">
-					<div className='_anime_stagger_observe'>
+					<div className="_anime_stagger_observe">
 						<h1 className="text-4xl font-semibold leading-none text-blood-red lg:text-7xl">
 							Our <br className="hidden lg:inline" />
 							Clients
@@ -29,7 +29,7 @@ export const Clients: FC = () => {
 							<Avatar
 								variant="bordered"
 								profileUrl={`https://ik.imagekit.io/Hireachmedia/Clients/tr:w-400,pr-true/${i + 1}.jpg`}
-								className='_anime_generic opacity-0'
+								className="_anime_generic opacity-0"
 								{...props}
 								key={i}
 							/>

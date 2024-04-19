@@ -5,8 +5,8 @@ import { Scheduled } from './Scheduled';
 import { A, B, C } from './casestudy';
 import ScrollToTop from '@/lib/ScrollToTop';
 import { PolicyPage } from '@/components';
+import { Page404 } from './Page404';
 
-// https://random-data-api.com/api/v3/projects/bb87cbbc-7f6d-4225-9c7b-4421807ad551?api_key=gs8VqaxotQNIB06x6soO6w
 export const Router: FC = () => {
 	return (
 		<BrowserRouter>
@@ -25,6 +25,7 @@ export const Router: FC = () => {
 					path="/refund-policy"
 					element={<PolicyPage path="refundPolicy" />}
 				/>
+				<Route path="*" element={<Page404 />} />
 			</Routes>
 		</BrowserRouter>
 	);

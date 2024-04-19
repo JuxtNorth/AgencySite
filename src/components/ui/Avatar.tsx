@@ -24,7 +24,7 @@ export const Avatar: FC<AvatarProps> = (props) => {
 	const { variant = 'default' } = props;
 
 	return (
-		<div className={cn("flex flex-col items-center", props.className)}>
+		<div className={cn('flex flex-col items-center', props.className)}>
 			<div className={avatarVariants({ variant })}>
 				{props.profileUrl && (
 					<img
