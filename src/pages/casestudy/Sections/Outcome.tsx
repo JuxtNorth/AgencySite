@@ -10,13 +10,13 @@ export interface OutcomeProps {
 
 export const Outcome: FC<OutcomeProps> = (props) => {
 	return (
-		<section>
-			<h1 className="mb-snug text-4xl font-semibold md:text-5xl">Outcome</h1>
-			<p className="mb-snug">{props.contentBlock1}</p>
-			<ul className="mb-snug space-y-snug pl-2">
+		<section className='space-y-snug md:space-y-loose'>
+			<h1 className="text-4xl font-semibold md:text-5xl text-blood-red">Outcome</h1>
+			<p>{props.contentBlock1}</p>
+			<ul className="space-y-3 pl-2">
 				{props.list.map((content, index) => (
 					<li key={index}>
-						<StarIcon className="mb-1 mr-2 inline text-primary" />
+						<StarIcon className="mb-1 mr-2 inline text-blood-red" />
 						{content}
 					</li>
 				))}
