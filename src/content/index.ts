@@ -7,3 +7,4 @@ export * from './howItWorks';
 export * from './workflows';
 export * from './clients';
 export * from './testimonials';
+export * from './works';

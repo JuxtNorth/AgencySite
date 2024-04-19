@@ -4,6 +4,7 @@ import ClassNames from 'embla-carousel-class-names';
 import AutoPlay from 'embla-carousel-autoplay';
 import { EyeIcon } from '@/icons';
 import { observeClassMutations } from '@/lib/observeClassMutations';
+import { works } from '@/content';
 
 interface VideoSlideProps {
 	index: number;
@@ -69,7 +70,7 @@ export const OurWorks: FC = () => {
 				className="gap-snug 2xl:gap-loose"
 				plugins={[ClassNames(), AutoPlay({ duration: 1200 })]}
 			>
-				{new Array(12).fill(0).map((_, i) => (
+				{works.map((_, i) => (
 					<div
 						key={i}
 						ref={(elem) => (slideRefs.current[i] = elem!)}
