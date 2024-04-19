@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { Header, Mission, Outcome, Results } from '../Sections';
 import { ScheduleCalendar } from '@/pages/Home/Sections';
-import { Footer } from '@/components';
+import { Footer, Nav } from '@/components';
 
 const data = {
 	header: {
@@ -67,7 +67,8 @@ const data = {
 export const B: FC = () => {
 	return (
 		<>
-			<main className="mx-auto max-w-[100rem] space-y-loose p-snug md:p-loose">
+			<Nav />
+			<main className="mx-auto mt-16 max-w-[100rem] space-y-loose p-snug md:p-loose">
 				<Header {...data.header} />
 				<Mission {...data.mission} />
 				<Outcome {...data.outcome} />
