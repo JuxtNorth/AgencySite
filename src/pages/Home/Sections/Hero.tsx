@@ -33,7 +33,7 @@ export const Hero: FC = () => {
 				<div>
 					<h1 className="lg:ml-44 xl:ml-56 2xl:ml-80">FORGING</h1>
 					<div className="gap-snug lg:flex">
-						<h1 className="inline-block bg-gradient-to-r from-primary from-10% to-secondary bg-clip-text text-transparent">
+						<h1 className="inline-block bg-gradient-to-r from-[#ff4444] from-10% to-[#f4b446] bg-clip-text text-transparent">
 							PERSONAL BRAND
 						</h1>
 						<div className="hidden items-center pb-4 text-left leading-[0.2rem] lg:flex">
@@ -45,7 +45,7 @@ export const Hero: FC = () => {
 					</div>
 					<h1 className="lg:ml-44">
 						FOR{' '}
-						<span className="gradient-reveal inline-block bg-gradient-to-r from-accent to-primary to-60% bg-clip-text text-transparent">
+						<span className="gradient-reveal inline-block bg-gradient-to-r from-[#ff2576] to-blood-red to-60% bg-clip-text text-transparent">
 							SOCIAL VIRALITY
 						</span>
 					</h1>
@@ -55,7 +55,7 @@ export const Hero: FC = () => {
 				</p>
 			</div>
 			<a
-				className="relative z-10 mt-16 cursor-pointer rounded-lg bg-primary px-6 py-4 text-xs"
+				className="relative z-10 mt-16 cursor-pointer rounded-lg bg-blood-red px-6 py-4 text-xs"
 				href="#"
 			>
 				<GlitterIcon className="mr-2 inline text-sm" />
