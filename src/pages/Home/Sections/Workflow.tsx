@@ -1,6 +1,6 @@
 import { FC, useEffect } from 'react';
 import { WorkflowCard } from '@/components';
-import { workflows } from '@/constants';
+import { workflows } from '@/content';
 import { cn, parseBoldDirective } from '@/lib/utils';
 import { StarIcon } from '@/icons';
 import ReactHtmlParser from 'react-html-parser';

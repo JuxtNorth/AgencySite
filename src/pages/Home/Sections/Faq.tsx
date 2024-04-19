@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { FAQAccordion } from '@/components';
-import { FAQs } from '@/constants';
+import { FAQs } from '@/content';
 import Discover from '@/assets/scribbles/Discover.svg';
 
 export const Faq: FC = () => {

@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { HowItWorksCard } from '@/components';
-import { howItWorks } from '@/constants';
+import { howItWorks } from '@/content';
 import Ideate from '@/assets/illustrations/undraw_thought_process_re_om58.svg';
 import Strategy from '@/assets/illustrations/undraw_business_decisions_re_84ag.svg';
 import Videos from '@/assets/illustrations/undraw_video_files_fu10.svg';

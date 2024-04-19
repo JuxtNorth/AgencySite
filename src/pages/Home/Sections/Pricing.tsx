@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { PricingCard } from '@/components';
-import { pricingPlans } from '@/constants';
+import { pricingPlans } from '@/content';
 import { BoltIcon, CrownIcon, GlitterIcon } from '@/icons';
 import { useMediaQuery } from '@/hooks';
 import { cn } from '@/lib/utils';

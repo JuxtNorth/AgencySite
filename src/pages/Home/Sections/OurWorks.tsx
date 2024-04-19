@@ -55,7 +55,10 @@ export const OurWorks: FC = () => {
 	return (
 		<section className="mx-auto mt-12 max-w-[125rem] overflow-hidden text-center">
 			<div className="mb-loose xl:mb-16">
-				<h1 className="text-4xl font-semibold md:text-5xl text-blood-red" id="works">
+				<h1
+					className="text-4xl font-semibold text-blood-red md:text-5xl"
+					id="works"
+				>
 					Our Work
 				</h1>
 				<p className="text-sm md:text-base">Making your vision a reality</p>
@@ -76,12 +79,12 @@ export const OurWorks: FC = () => {
 							index={(i % 8) + 1}
 							snappedIndex={(snappedIndex % 8) + 1}
 						/>
-						<div className="_stat_ mt-2 flex justify-between rounded-full py-1 opacity-0 duration-300 text-blood-red">
-							<p className="rounded-lg px-2 py-1 text-sm font-bold bg-surface-new">
+						<div className="_stat_ mt-2 flex justify-between rounded-full py-1 text-blood-red opacity-0 duration-300">
+							<p className="rounded-lg bg-surface-new px-2 py-1 text-sm font-bold">
 								Lorem Ipsum
 							</p>
-							<p className="rounded-lg px-2 py-1 text-sm font-bold font-display bg-surface-new">
-								<EyeIcon className="inline mb-[2px] text-white" /> 10M+
+							<p className="rounded-lg bg-surface-new px-2 py-1 font-display text-sm font-bold">
+								<EyeIcon className="mb-[2px] inline text-white" /> 10M+
 							</p>
 						</div>
 					</div>

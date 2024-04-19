@@ -9,3 +9,5 @@ export * from './GlowyBlob';
 export * from './Stars';
 export * from './GlowButton';
 export * from './AnimatedStat';
+export * from './Video';
+export * from './LoadingSpinner';

@@ -2,13 +2,14 @@ import { FC, useEffect, useState } from 'react';
 import Trend from '@/assets/scribbles/Trend.svg';
 import { BurgerIcon } from '@/icons';
 import { MobileMenu } from './MobileMenu';
+import { HashLink } from 'react-router-hash-link';
 
 export const Nav: FC = () => {
 	const [blur, setBlur] = useState(0);
 	const [open, setOpen] = useState(false);
 
 	useEffect(() => {
-		const onScroll = () => {
+		const onScroll: EventListener = () => {
 			const { scrollTop } = document.documentElement;
 			if (scrollTop > 64) {
 				setBlur(40);
@@ -38,32 +39,32 @@ export const Nav: FC = () => {
 				<div className="flex items-center gap-2 ">
 					<menu className="mr-loose hidden gap-snug text-xs lg:flex">
 						<li>
-							<a className="hover:underline" href="#works">
+							<HashLink className="hover:underline" to="/#works">
 								Our Work
-							</a>
+							</HashLink>
 						</li>
 						<li>
-							<a className="hover:underline" href="#workflow">
+							<HashLink className="hover:underline" to="/#workflow">
 								Workflow
-							</a>
+							</HashLink>
 						</li>
 						<li>
-							<a className="hover:underline" href="#testimonials">
+							<HashLink className="hover:underline" to="/#testimonials">
 								Reviews
-							</a>
+							</HashLink>
 						</li>
 						<li>
-							<a className="hover:underline" href="#services">
+							<HashLink className="hover:underline" to="/#services">
 								Services
-							</a>
+							</HashLink>
 						</li>
 					</menu>
-					<a
+					<HashLink
 						className="flex grow-0 items-center justify-center rounded-full border border-primary px-6 py-2 font-display text-sm leading-7"
-						href="#pricing"
+						to="/#pricing"
 					>
 						See Pricing
-					</a>
+					</HashLink>
 					<button
 						onClick={() => setOpen(true)}
 						data-open={open}

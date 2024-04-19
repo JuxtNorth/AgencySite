@@ -1,6 +1,6 @@
 import { FC, useCallback, useState } from 'react';
 import { ServiceCard } from '@/components';
-import { services } from '@/constants';
+import { services } from '@/content';
 import {
 	RankingIcon,
 	ContentIcon,
@@ -36,7 +36,7 @@ export const Services: FC = () => {
 			<div className="rounded-3xl">
 				<h1
 					id="services"
-					className="mb-12 mt-snug text-4xl font-semibold md:text-5xl text-blood-red"
+					className="mb-12 mt-snug text-4xl font-semibold text-blood-red md:text-5xl"
 				>
 					Our Services
 				</h1>

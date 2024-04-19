@@ -34,7 +34,9 @@ export const Avatar: FC<AvatarProps> = (props) => {
 				)}
 			</div>
 			<h3 className="text-sm">{props?.name}</h3>
-			<p className="text-xs font-semibold font-display text-blood-red">{props?.stat}</p>
+			<p className="font-display text-xs font-semibold text-blood-red">
+				{props?.stat}
+			</p>
 		</div>
 	);
 };

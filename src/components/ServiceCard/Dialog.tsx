@@ -86,7 +86,7 @@ export const Dialog: FC<DialogProps> = (props) => {
 					<h1 className="mb-snug text-4xl text-blood-red">{props.title}</h1>
 					<div className="pl-2 text-sm text-font-primary xl:text-[15px]">
 						{props.paragraphs.map((content) => (
-							<p className="text-base mb-[1rem]">{content}</p>
+							<p className="mb-[1rem] text-base">{content}</p>
 						))}
 						<p className="continuous-gradient my-2 bg-clip-text text-lg text-transparent">
 							{props.emphasis}
@@ -131,7 +131,10 @@ export const Dialog: FC<DialogProps> = (props) => {
 						<GiftIcon className="text-xl" />
 						Get your Gift
 					</GlowButton>
-					<GlowButton variant='c' className="flex w-full items-center justify-center gap-snug rounded-full bg-transparent py-snug font-display text-font-primary outline outline-1 outline-slate-600 hover:bg-orange hover:outline-0">
+					<GlowButton
+						variant="c"
+						className="flex w-full items-center justify-center gap-snug rounded-full bg-transparent py-snug font-display text-font-primary outline outline-1 outline-slate-600 hover:bg-orange hover:outline-0"
+					>
 						<ScheduleIcon className="text-xl" />
 						Book a call
 					</GlowButton>

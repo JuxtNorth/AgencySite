@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { PerkCard } from '@/components';
-import { perks } from '@/constants';
+import { perks } from '@/content';
 import { BlobOverlay, type BlobIndex } from '@/components/ui';
 
 import Peace from '@/assets/scribbles/peace.svg';

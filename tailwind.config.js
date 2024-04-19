@@ -18,7 +18,7 @@ export default {
 				muted: 'rgb(var(--muted))',
 				'blood-red': 'rgb(var(--blood-red))',
 				'surface-new': 'rgb(var(--surface-new))',
-				'orange': 'rgb(var(--orange))'
+				orange: 'rgb(var(--orange))'
 			},
 			spacing: {
 				tight: '0.25rem',

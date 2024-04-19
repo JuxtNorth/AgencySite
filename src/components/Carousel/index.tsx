@@ -31,15 +31,17 @@ const buttonsVariants = cva('w-full flex gap-snug pointer-events-none', {
 	}
 });
 
-const buttonVariant = cva("pointer-events-auto cursor-pointer rounded-full p-snug md:p-6 md:text-2xl", {
-	variants: {
-		variant: {
-			default: 'bg-blood-red',
-			mono: 'bg-surface-new hover:brightness-125 transition-[filter]',
+const buttonVariant = cva(
+	'pointer-events-auto cursor-pointer rounded-full p-snug md:p-6 md:text-2xl',
+	{
+		variants: {
+			variant: {
+				default: 'bg-blood-red',
+				mono: 'bg-surface-new hover:brightness-125 transition-[filter]'
+			}
 		}
 	}
-})
-
+);
 
 export const Carousel: FC<CarouselProps> = (props) => {
 	const [emblaRef, emblaApi] = useEmblaCarousel(
@@ -47,7 +49,11 @@ export const Carousel: FC<CarouselProps> = (props) => {
 		props.plugins
 	);
 
-	const { buttonXPosition = 'edge', buttonYPosition = 'default', buttonStyle = 'default' } = props;
+	const {
+		buttonXPosition = 'edge',
+		buttonYPosition = 'default',
+		buttonStyle = 'default'
+	} = props;
 
 	const scrollPrev = useCallback(() => {
 		if (emblaApi) emblaApi.scrollPrev();

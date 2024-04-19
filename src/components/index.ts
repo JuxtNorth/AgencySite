@@ -9,5 +9,6 @@ export * from './FAQ';
 export * from './Carousel';
 export * from './PerkCard';
 export * from './HowItWorksCard';
-export * from './Video';
+export * from './ui/Video';
 export * from './PageLoader';
+export * from './PolicyPage';
