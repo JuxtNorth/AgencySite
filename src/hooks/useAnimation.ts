@@ -27,7 +27,9 @@ export const handleAnimation = (
 };
 
 /**
- * Handles animations of the listed classnames. Helpful for generl
+ * Handles intersection enabled animations of the listed classnames.
+ * Check implementation to see how to add other type of animations.
+ * I didn't have much time so I rushed it.
  */
 export const useAnimation = () => {
 	useEffect(() => {
