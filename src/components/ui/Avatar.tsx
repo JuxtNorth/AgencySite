@@ -1,3 +1,4 @@
+import { cn } from '@/lib/utils';
 import { cva } from 'class-variance-authority';
 import { FC } from 'react';
 
@@ -16,13 +17,14 @@ export interface AvatarProps {
 	name?: string;
 	stat?: string;
 	variant?: 'default' | 'bordered';
+	className?: string;
 }
 
 export const Avatar: FC<AvatarProps> = (props) => {
 	const { variant = 'default' } = props;
 
 	return (
-		<div className="flex flex-col items-center">
+		<div className={cn("flex flex-col items-center", props.className)}>
 			<div className={avatarVariants({ variant })}>
 				{props.profileUrl && (
 					<img
