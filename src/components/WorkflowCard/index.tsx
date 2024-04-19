@@ -99,7 +99,7 @@ export const WorkflowCard: FC<WorkflowCardProps> = (props) => {
 			onClick={() => !isDesktop && setExpanded(!expanded)}
 			className={cn(containerVariants({ type: aesthetics }), 'card')}
 		>
-			<div className="relative mx-auto flex size-full flex-col justify-between overflow-hidden rounded-3xl bg-surface p-6 md:w-full max-w-96 lg:max-w-auto">
+			<div className="lg:max-w-auto relative mx-auto flex size-full max-w-96 flex-col justify-between overflow-hidden rounded-3xl bg-surface p-6 md:w-full">
 				{expanded && (
 					<div className="absolute left-0 top-0 z-20 flex size-full flex-col justify-between p-loose">
 						<div>

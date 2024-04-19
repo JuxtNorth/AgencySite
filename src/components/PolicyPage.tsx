@@ -20,7 +20,7 @@ export const PolicyPage: FC<{ path: string }> = ({ path }) => {
 				<>
 					<main className="mt-relaxed space-y-loose p-loose lg:mt-loose lg:p-relaxed">
 						<div className="space-y-2">
-							<h1 className="text-4xl font-semibold md:text-5xl text-blood-red">
+							<h1 className="text-4xl font-semibold text-blood-red md:text-5xl">
 								{data?.title}
 							</h1>
 							<p className="text-sm text-muted md:text-base">
