@@ -12,3 +12,4 @@ export * from './HowItWorksCard';
 export * from './ui/Video';
 export * from './PageLoader';
 export * from './PolicyPage';
+export * from './CaseStudyLink';
