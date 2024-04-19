@@ -60,7 +60,7 @@ export const Nav: FC = () => {
 						</li>
 					</menu>
 					<HashLink
-						className="flex grow-0 items-center justify-center rounded-full border border-primary px-6 py-2 font-display text-sm leading-7"
+						className="flex grow-0 items-center justify-center rounded-full border border-blood-red px-6 py-2 font-display text-sm leading-7"
 						to="/#pricing"
 					>
 						See Pricing
@@ -68,7 +68,7 @@ export const Nav: FC = () => {
 					<button
 						onClick={() => setOpen(true)}
 						data-open={open}
-						className="flex items-center justify-center rounded-full bg-primary p-3.5 text-xl transition-transform lg:hidden [&[data-open='true']]:translate-x-16"
+						className="flex items-center justify-center rounded-full bg-blood-red p-3.5 text-xl transition-transform lg:hidden [&[data-open='true']]:translate-x-16"
 					>
 						<BurgerIcon />
 					</button>

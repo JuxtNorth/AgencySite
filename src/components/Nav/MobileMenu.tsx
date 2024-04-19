@@ -53,7 +53,7 @@ export const MobileMenu: FC<MobileMenuProps> = ({ isOpen, onClose }) => {
 			<button
 				ref={closeBtnRef}
 				onClick={onClose}
-				className="w-fit rounded-full bg-primary p-snug text-xl"
+				className="w-fit rounded-full bg-blood-red p-snug text-xl"
 			>
 				<CrossIcon />
 			</button>
