@@ -1,11 +1,65 @@
 import { Grid } from '@/components/ui';
 import { GlitterIcon } from '@/icons';
-import { FC, useEffect, useState } from 'react';
+import anime from 'animejs';
+import { FC, useEffect, useRef, useState } from 'react';
 
 export const Hero: FC = () => {
 	const [isDesktop, setIsDesktop] = useState<boolean>(
 		window.matchMedia('(min-width: 768px)').matches
 	);
+
+	const heading1 = useRef<HTMLHeadingElement>(null);
+	const heading2 = useRef<HTMLHeadingElement>(null);
+	const heading3 = useRef<HTMLHeadingElement>(null);
+	const para = useRef<HTMLParagraphElement>(null);
+	const button = useRef<HTMLAnchorElement>(null);
+
+	useEffect(() => {
+		const duration = 1500;
+		const curve = 'cubicBezier(0, 0, .3, 1)';
+
+		if (heading1.current) {
+			anime({
+				targets: heading1.current,
+				translateX: [64, 0],
+				opacity: [0, 1],
+				easing: curve,
+				duration
+			});
+
+			anime({
+				targets: heading3.current,
+				translateX: [40, 0],
+				opacity: [0, 1],
+				easing: curve,
+				duration
+			});
+
+			anime({
+				targets: heading2.current,
+				translateX: [-60, 0],
+				opacity: [0, 1],
+				easing: curve,
+				duration
+			});
+
+			anime({
+				targets: button.current,
+				translateY: [60, 0],
+				opacity: [0, 1],
+				easing: curve,
+				duration
+			});
+
+			anime({
+				targets: para.current,
+				opacity: [0, 1],
+				easing: 'linear',
+				duration: 1000,
+				delay: duration - 1000
+			});
+		}
+	}, []);
 
 	useEffect(() => {
 		const onResize = () => {
@@ -31,19 +85,27 @@ export const Hero: FC = () => {
 					/>
 				</div>
 				<div>
-					<h1 className="lg:ml-44 xl:ml-56 2xl:ml-80">FORGING</h1>
+					<h1 ref={heading1} className="lg:ml-44 xl:ml-56 2xl:ml-80">
+						FORGING
+					</h1>
 					<div className="gap-snug lg:flex">
-						<h1 className="inline-block bg-gradient-to-r from-[#ff4444] from-10% to-[#f4b446] bg-clip-text text-transparent">
+						<h1
+							ref={heading2}
+							className="inline-block bg-gradient-to-r from-[#ff4444] from-10% to-[#f4b446] bg-clip-text text-transparent"
+						>
 							PERSONAL BRAND
 						</h1>
 						<div className="hidden items-center pb-4 text-left leading-[0.2rem] lg:flex">
-							<p className="ml-4 mt-2.5 text-[clamp(1rem,1.2vw,1.5rem)] leading-[150%]">
+							<p
+								ref={para}
+								className="ml-4 mt-2.5 text-[clamp(1rem,1.2vw,1.5rem)] leading-[150%]"
+							>
 								Subscription here makes brands go <br /> viral there, grab your
 								seats.
 							</p>
 						</div>
 					</div>
-					<h1 className="lg:ml-44">
+					<h1 ref={heading3} className="lg:ml-44">
 						FOR{' '}
 						<span className="gradient-reveal inline-block bg-gradient-to-r from-[#ff2576] to-blood-red to-60% bg-clip-text text-transparent">
 							SOCIAL VIRALITY
@@ -55,6 +117,7 @@ export const Hero: FC = () => {
 				</p>
 			</div>
 			<a
+				ref={button}
 				className="relative z-10 mt-16 cursor-pointer rounded-lg bg-blood-red px-6 py-4 text-xs"
 				href="#"
 			>
