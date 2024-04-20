@@ -34,7 +34,7 @@ export const GlowyBlob: FC<GlowyBlobProps> = () => {
 	return (
 		<div
 			ref={ref}
-			className="absolute left-[80%] top-[90%] -z-[11] size-[14rem] animate-blob rounded-[50%] bg-gradient-to-l from-blood-red to-[#f4b446] opacity-80 brightness-75 blur-md [translate:-50%_-50%] lg:size-[36vmax]"
+			className="absolute left-[80%] top-[90%] -z-[11] size-[14rem] animate-blob rounded-[50%] bg-gradient-to-l from-blood-red to-[#d93690] opacity-80 brightness-50 blur-md [translate:-50%_-50%] lg:size-[23vmax]"
 		></div>
 	);
 };
