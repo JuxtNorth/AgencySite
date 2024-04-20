@@ -91,7 +91,7 @@ export const Hero: FC = () => {
 					<div className="gap-snug lg:flex">
 						<h1
 							ref={heading2}
-							className="inline-block bg-gradient-to-r from-[#ff4444] from-10% to-[#f4b446] bg-clip-text text-transparent"
+							className="inline-block bg-gradient-to-r from-blood-red from-10% to-[#d93690] bg-clip-text text-transparent"
 						>
 							PERSONAL BRAND
 						</h1>
@@ -107,7 +107,7 @@ export const Hero: FC = () => {
 					</div>
 					<h1 ref={heading3} className="lg:ml-44">
 						FOR{' '}
-						<span className="gradient-reveal inline-block bg-gradient-to-r from-[#ff2576] to-blood-red to-60% bg-clip-text text-transparent">
+						<span className="gradient-reveal inline-block bg-gradient-to-r from-[#d93690] to-blood-red to-60% bg-clip-text text-transparent">
 							SOCIAL VIRALITY
 						</span>
 					</h1>
