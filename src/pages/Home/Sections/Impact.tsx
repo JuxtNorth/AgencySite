@@ -14,18 +14,18 @@ export const Impact: FC = () => {
 						<h2 className="_anime_heading text-4xl font-bold text-[#d93667] md:text-7xl">
 							<AnimatedStat target={2400000} />+
 						</h2>
-						<p className="_anime_paragraph text-sm text-muted">
+						<p className="_anime_paragraph text-sm">
 							<EyeIcon className="mr-1 inline text-[#d93667]" />
-							organic views
+							<span className="silver-moving-gradient bg-clip-text text-transparent">organic views</span>
 						</p>
 					</div>
 					<div className="mx-auto text-center">
 						<h2 className="_anime_heading text-4xl font-bold text-blood-red md:text-7xl">
 							<AnimatedStat target={1200000} />+
 						</h2>
-						<p className="_anime_paragraph text-sm text-muted">
+						<p className="_anime_paragraph text-sm">
 							<GlitterIcon className="mr-1 inline text-blood-red" />
-							gained followers
+							<span className="silver-moving-gradient bg-clip-text text-transparent">gained followers</span>
 						</p>
 					</div>
 				</div>
@@ -34,9 +34,9 @@ export const Impact: FC = () => {
 						&#36;
 						<AnimatedStat target={400000} />+
 					</h2>
-					<p className="_anime_paragraph text-sm text-muted">
+					<p className="_anime_paragraph text-sm">
 						<MoneyIcon className="mr-1 inline text-[#d95736]" />
-						revenue generated
+						<span className="silver-moving-gradient bg-clip-text text-transparent">revenue generated</span>
 					</p>
 				</div>
 			</div>
