@@ -18,7 +18,7 @@ export const PolicyPage: FC<{ path: string }> = ({ path }) => {
 			<Nav />
 			{data ? (
 				<>
-					<main className="mt-relaxed space-y-loose p-loose lg:mt-loose lg:p-relaxed">
+					<main className="mt-relaxed space-y-loose p-loose lg:mt-loose lg:p-24">
 						<div className="space-y-2">
 							<h1 className="text-4xl font-semibold text-blood-red md:text-5xl">
 								{data?.title}
