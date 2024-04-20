@@ -51,7 +51,7 @@ export const Scheduled: FC = () => {
 						referrerPolicy="strict-origin-when-cross-origin"
 						allowFullScreen
 					/>
-					<p className='text-sm md:text-base'>
+					<p className="text-sm md:text-base">
 						PS: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure
 						perferendis a dignissimos placeat quae.
 					</p>

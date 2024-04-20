@@ -6,7 +6,7 @@ import {
 	OurWorks,
 	Testimonials,
 	CaseStudies,
-	HowItWorks,
+	// HowItWorks,
 	Services,
 	Workflow,
 	MembershipPerks,
@@ -37,7 +37,7 @@ export const Home: FC = () => {
 				<Workflow />
 				<Testimonials />
 				<CaseStudies />
-				<HowItWorks />
+				{/* <HowItWorks /> */}
 				<Services />
 				<Pricing />
 				<MembershipPerks />

@@ -38,18 +38,16 @@ export const Dialog: FC<DialogProps> = (props) => {
 		}, 280);
 	}, [onCloseResponse]);
 
-	
-
 	useEffect(() => {
 		// Close modal if user clicks outside it's main content
-	const onClick = (event: Event) => {
-		if (event.target === dialogRef.current!) {
-			onClose();
-		}
-	};
+		const onClick = (event: Event) => {
+			if (event.target === dialogRef.current!) {
+				onClose();
+			}
+		};
 		window.addEventListener('click', onClick);
 		return () => window.removeEventListener('click', onClick);
-	}, [ onClose ]);
+	}, [onClose]);
 
 	return (
 		<dialog

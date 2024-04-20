@@ -11,7 +11,7 @@ export const GlowyBlob: FC<GlowyBlobProps> = () => {
 		const { clientX, clientY } = e;
 		const x = `${clientX}px`;
 		const y = `${clientY}px`;
-		
+
 		ref.current!.animate(
 			{ left: x, top: y },
 			{ duration: 4200, fill: 'forwards' }
