@@ -52,7 +52,7 @@ export const Workflow: FC = () => {
 							<div
 								className={cn(
 									'mt-loose flex gap-2 opacity-0',
-									['text-primary', 'text-accent', 'text-secondary'][i] as string
+									['text-magenta', 'text-blood-red', 'text-orange'][i] as string
 								)}
 							>
 								<StarIcon className="mt-0.5" />

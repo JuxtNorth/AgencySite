@@ -22,9 +22,9 @@ const shapeVariants = cva(
 	{
 		variants: {
 			aesthetics: {
-				a: 'bg-primary [box-shadow:0px_0px_8px_4px_rgba(var(--primary),0.5),0px_0px_9px_12px_rgba(var(--primary),0.2)]',
-				b: 'bg-accent [box-shadow:0px_0px_8px_4px_rgba(var(--accent),0.5),0px_0px_9px_12px_rgba(var(--accent),0.2)]',
-				c: 'bg-secondary [box-shadow:0px_0px_8px_4px_rgba(var(--secondary),0.5),0px_0px_9px_12px_rgba(var(--secondary),0.2)]'
+				a: 'bg-magenta [box-shadow:0px_0px_8px_4px_rgba(var(--magenta),0.5),0px_0px_9px_12px_rgba(var(--magenta),0.2)]',
+				b: 'bg-blood-red [box-shadow:0px_0px_8px_4px_rgba(var(--blood-red),0.5),0px_0px_9px_12px_rgba(var(--blood-red),0.2)]',
+				c: 'bg-orange [box-shadow:0px_0px_8px_4px_rgba(var(--orange),0.5),0px_0px_9px_12px_rgba(var(--orange),0.2)]'
 			}
 		}
 	}
@@ -33,9 +33,9 @@ const shapeVariants = cva(
 const blobVariants = cva('absolute rounded-full', {
 	variants: {
 		type: {
-			a: 'size-24 blur-[48px] bottom-0 right-0 bg-primary',
-			b: 'size-36 blur-[64px] bottom-0 right-12 bg-accent',
-			c: 'size-24 blur-[50px] bottom-0 right-0 bg-secondary'
+			a: 'size-24 blur-[48px] bottom-0 right-0 bg-magenta',
+			b: 'size-36 blur-[64px] bottom-0 right-12 bg-blood-red',
+			c: 'size-24 blur-[50px] bottom-0 right-0 bg-orange'
 		}
 	}
 });
@@ -56,9 +56,9 @@ const containerVariants = cva(
 const emphasisVariant = cva('', {
 	variants: {
 		type: {
-			a: 'text-primary',
-			b: 'text-accent',
-			c: 'text-secondary'
+			a: 'text-magenta',
+			b: 'text-blood-red',
+			c: 'text-orange'
 		}
 	}
 });
@@ -159,7 +159,7 @@ export const WorkflowCard: FC<WorkflowCardProps> = (props) => {
 			</div>
 			{!isDesktop && (
 				<p className="absolute left-[50%] mt-1 -translate-x-[50%] whitespace-nowrap text-xs">
-					click to <strong className="text-accent">learn more</strong>.
+					click to <strong className="text-blood-red">learn more</strong>.
 				</p>
 			)}
 		</div>
