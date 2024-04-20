@@ -1,4 +1,4 @@
-import { FC, ReactNode, useEffect, useRef, useState } from 'react';
+import { FC, ReactNode, useCallback, useEffect, useRef, useState } from 'react';
 import { Dialog, type DialogProps } from './Dialog';
 import { ArrowIcon } from '@/icons';
 
@@ -33,25 +33,23 @@ export const ServiceCard: FC<ServiceCardProps> = (props) => {
 		if (card) setRect(card.getBoundingClientRect());
 	}, [card]);
 
-	useEffect(() => {
-		const onResize = () => {
-			if (card) setRect(card.getBoundingClientRect());
-		};
+	const onResize = useCallback(() => {
+		if (card) setRect(card.getBoundingClientRect());
+	}, [card]);
 
+	const onScroll = useCallback(() => {
+		if (card) setRect(card.getBoundingClientRect());
+	}, [card]);
+
+	useEffect(() => {
 		window.addEventListener('resize', onResize);
-
 		return () => window.removeEventListener('resize', onResize);
-	}, [card]);
+	}, [onResize]);
 
 	useEffect(() => {
-		const onScroll = () => {
-			if (card) setRect(card.getBoundingClientRect());
-		};
-
 		window.addEventListener('scroll', onScroll);
-
 		return () => window.removeEventListener('scroll', onScroll);
-	}, [card]);
+	}, [onScroll]);
 
 	if (card) {
 		card.style.setProperty('--mouse-x', `${props.mousePos.x - rect.left}px`);

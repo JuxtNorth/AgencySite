@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from 'react';
+import { FC, useCallback, useEffect, useState } from 'react';
 import Trend from '@/assets/scribbles/Trend.svg';
 import { BurgerIcon } from '@/icons';
 import { MobileMenu } from './MobileMenu';
@@ -8,20 +8,19 @@ export const Nav: FC = () => {
 	const [blur, setBlur] = useState(0);
 	const [open, setOpen] = useState(false);
 
-	useEffect(() => {
-		const onScroll: EventListener = () => {
-			const { scrollTop } = document.documentElement;
-			if (scrollTop > 64) {
-				setBlur(40);
-			} else {
-				setBlur(0);
-			}
-		};
-
-		window.addEventListener('scroll', onScroll);
-
-		return () => window.removeEventListener('scroll', onScroll);
+	const onScroll: EventListener = useCallback(() => {
+		const { scrollTop } = document.documentElement;
+		if (scrollTop > 64) {
+			setBlur(40);
+		} else {
+			setBlur(0);
+		}
 	}, []);
+
+	useEffect(() => {
+		window.addEventListener('scroll', onScroll);
+		return () => window.removeEventListener('scroll', onScroll);
+	}, [onScroll]);
 
 	return (
 		<>
