@@ -16,7 +16,9 @@ export const Impact: FC = () => {
 						</h2>
 						<p className="_anime_paragraph text-sm">
 							<EyeIcon className="mr-1 inline text-[#d93667]" />
-							<span className="silver-moving-gradient bg-clip-text text-transparent">organic views</span>
+							<span className="silver-moving-gradient bg-clip-text text-transparent">
+								organic views
+							</span>
 						</p>
 					</div>
 					<div className="mx-auto text-center">
@@ -25,7 +27,9 @@ export const Impact: FC = () => {
 						</h2>
 						<p className="_anime_paragraph text-sm">
 							<GlitterIcon className="mr-1 inline text-blood-red" />
-							<span className="silver-moving-gradient bg-clip-text text-transparent">gained followers</span>
+							<span className="silver-moving-gradient bg-clip-text text-transparent">
+								gained followers
+							</span>
 						</p>
 					</div>
 				</div>
@@ -36,7 +40,9 @@ export const Impact: FC = () => {
 					</h2>
 					<p className="_anime_paragraph text-sm">
 						<MoneyIcon className="mr-1 inline text-[#d95736]" />
-						<span className="silver-moving-gradient bg-clip-text text-transparent">revenue generated</span>
+						<span className="silver-moving-gradient bg-clip-text text-transparent">
+							revenue generated
+						</span>
 					</p>
 				</div>
 			</div>

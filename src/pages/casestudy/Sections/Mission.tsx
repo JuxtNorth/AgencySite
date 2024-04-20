@@ -13,7 +13,7 @@ export interface MissionProps {
 export const Mission: FC<MissionProps> = (props) => {
 	return (
 		<section className="space-y-snug rounded-2xl bg-surface-new p-loose md:rounded-3xl md:p-relaxed lg:grid lg:grid-cols-[64%_36%]">
-			<article className="space-y-snug md:space-y-loose lg:pr-12 text-lg mb-loose lg:mb-0">
+			<article className="mb-loose space-y-snug text-lg md:space-y-loose lg:mb-0 lg:pr-12">
 				<h1 className="text-4xl font-bold text-blood-red md:text-5xl">
 					Mission &<br className="md:hidden" /> Challenge
 				</h1>
