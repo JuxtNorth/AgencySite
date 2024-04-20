@@ -31,9 +31,9 @@ export const Nav: FC = () => {
 			>
 				<div className="flex items-center gap-2">
 					<img className="size-5 invert" src={Trend} />
-					<a href="#" className="font-body text-xs font-bold">
+					<HashLink to="/" className="font-body text-xs font-bold">
 						Hi Reach Media
-					</a>
+					</HashLink>
 				</div>
 				<div className="flex items-center gap-2 ">
 					<menu className="mr-loose hidden gap-snug text-xs lg:flex">

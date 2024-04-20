@@ -10,7 +10,7 @@ export const CaseStudies: FC = () => {
 				<h2 className="mb-loose text-xl text-muted lg:text-4xl">
 					on client results
 				</h2>
-				<div className="space-y-snug rounded-2xl bg-surface-new p-snug text-lg font-semibold text-font-primary brightness-125 md:rounded-3xl lg:space-y-0 lg:p-loose lg:py-loose lg:text-3xl">
+				<div className="rounded-2xl bg-surface-new p-snug text-lg font-semibold text-font-primary brightness-125 md:rounded-3xl lg:space-y-0 lg:p-loose lg:py-loose lg:text-3xl">
 					{caseStudyLinks.map((props, index) => (
 						<CaseStudyLink {...props} index={index + 1} />
 					))}

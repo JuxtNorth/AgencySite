@@ -8,7 +8,7 @@ export interface ResultProps {
 export const Results: FC<ResultProps> = (props) => {
 	return (
 		<>
-			<section className="grid grid-flow-row grid-cols-1 gap-snug md:grid-cols-2 lg:grid-cols-3 p-snug">
+			<section className="grid grid-flow-row grid-cols-1 gap-snug p-snug md:grid-cols-2 lg:grid-cols-3">
 				{props.highlights.map((text, index) => (
 					<div
 						key={index}

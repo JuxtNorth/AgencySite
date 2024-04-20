@@ -7,7 +7,7 @@ export interface HeaderProps {
 
 export const Header: FC<HeaderProps> = (props) => {
 	return (
-		<header className="space-y-tight rounded-2xl text-center py-16 md:py-relaxed px-snug">
+		<header className="space-y-tight rounded-2xl px-snug py-16 text-center md:py-relaxed">
 			<h1 className="mb-snug text-4xl font-bold text-blood-red md:text-[clamp(2.5rem,6vw,5rem)]">
 				{props.title}
 			</h1>
