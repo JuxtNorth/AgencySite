@@ -27,7 +27,7 @@ export const Pricing: FC = () => {
 			<div className="mx-auto overflow-y-hidden overflow-x-scroll">
 				<section
 					className={cn(
-						'grid w-fit grid-rows-3 gap-snug md:min-w-[72rem] md:grid-cols-3 md:grid-rows-none',
+						'mx-auto grid w-fit grid-rows-3 gap-snug md:min-w-[72rem] md:grid-cols-3 md:grid-rows-none',
 						isDesktop ? '_anime_stagger_observe' : ''
 					)}
 				>
