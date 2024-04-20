@@ -10,7 +10,7 @@ export interface OutcomeProps {
 
 export const Outcome: FC<OutcomeProps> = (props) => {
 	return (
-		<section className="space-y-snug text-lg md:space-y-loose">
+		<section className="space-y-snug md:text-lg md:space-y-loose p-snug text-sm">
 			<h1 className="text-4xl font-semibold text-blood-red md:text-5xl">
 				Outcome
 			</h1>
