@@ -2,6 +2,7 @@ import { CrossIcon, GiftIcon, ScheduleIcon, StarIcon } from '@/icons';
 import { FC, useCallback, useEffect, useRef, useState } from 'react';
 import { GlowButton } from '@/components/ui';
 import { PieChart } from 'react-minimal-pie-chart';
+import { jumpToSection } from '@/lib/utils';
 
 export interface DialogProps {
 	title: string;
@@ -130,6 +131,10 @@ export const Dialog: FC<DialogProps> = (props) => {
 					<GlowButton
 						variant="c"
 						className="flex w-full items-center justify-center gap-snug rounded-full bg-transparent py-snug font-display text-font-primary outline outline-1 outline-slate-600 hover:bg-orange hover:outline-0"
+						onClick={() => {
+							jumpToSection("schedule");
+							onClose();
+						}}
 					>
 						<ScheduleIcon className="text-xl" />
 						Book a call

@@ -1,6 +1,7 @@
 import { CrossIcon } from '@/icons';
 import { FC, useEffect, useRef } from 'react';
 import anime from 'animejs';
+import { jumpToSection } from '@/lib/utils';
 
 export interface MobileMenuProps {
 	isOpen: boolean;
@@ -38,16 +39,44 @@ export const MobileMenu: FC<MobileMenuProps> = ({ isOpen, onClose }) => {
 			</h1>
 			<menu className="space-y-2 text-center font-display text-4xl font-extrabold text-surface">
 				<li className="mx-auto w-fit rounded-full border border-slate-500 px-8 py-2">
-					Workflow
+					<button
+						onClick={() => {
+							onClose();
+							jumpToSection('workflow');
+						}}
+					>
+						Workflow
+					</button>
 				</li>
 				<li className="mx-auto w-fit rounded-full border border-slate-500 px-8 py-2">
-					Our Works
+					<button
+						onClick={() => {
+							onClose();
+							jumpToSection('works');
+						}}
+					>
+						Our Works
+					</button>
 				</li>
 				<li className="mx-auto w-fit rounded-full border border-slate-500 px-8 py-2">
-					Pricing
+					<button
+						onClick={() => {
+							onClose();
+							jumpToSection('pricing');
+						}}
+					>
+						Pricing
+					</button>
 				</li>
 				<li className="mx-auto w-fit rounded-full border border-slate-500 px-8 py-2">
-					FAQs
+					<button
+						onClick={() => {
+							onClose();
+							jumpToSection('questions');
+						}}
+					>
+						FAQs
+					</button>
 				</li>
 			</menu>
 			<button

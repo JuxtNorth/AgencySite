@@ -4,6 +4,7 @@ import { InlineWidget } from 'react-calendly';
 export const ScheduleCalendar: FC = () => {
 	return (
 		<section className="overflow-hidden pt-loose">
+			<div id="schedule" />
 			<InlineWidget
 				url="https://calendly.com/anant-d9-m"
 				styles={{

@@ -25,3 +25,9 @@ export const parseBoldDirective = (text: string): string => {
 	const html = text.replace(regexBold, '<strong>$1</strong>');
 	return html;
 };
+
+export const jumpToSection = (id: string) => {
+	document.getElementById(id)?.scrollIntoView({
+		behavior: 'smooth'
+	});
+};

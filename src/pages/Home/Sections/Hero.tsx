@@ -2,6 +2,7 @@ import { Grid } from '@/components/ui';
 import { GlitterIcon } from '@/icons';
 import anime from 'animejs';
 import { FC, useEffect, useRef, useState } from 'react';
+import { HashLink } from 'react-router-hash-link';
 
 export const Hero: FC = () => {
 	const [isDesktop, setIsDesktop] = useState<boolean>(
@@ -116,14 +117,14 @@ export const Hero: FC = () => {
 					Subscription here makes brands go viral there, grab your seats.
 				</p>
 			</div>
-			<a
+			<HashLink
 				ref={button}
 				className="relative z-10 mt-16 cursor-pointer rounded-lg bg-blood-red px-6 py-4 text-xs"
-				href="#"
+				to="#schedule"
 			>
 				<GlitterIcon className="mr-2 inline text-sm" />
 				Book a Call
-			</a>
+			</HashLink>
 		</header>
 	);
 };
