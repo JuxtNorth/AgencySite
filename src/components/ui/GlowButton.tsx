@@ -6,7 +6,7 @@ export interface GlowButtonProps
 	extends ButtonHTMLAttributes<HTMLButtonElement> {
 	className: string;
 	children: ReactNode;
-	variant?: 'a' | 'b' | 'c' | 'bloodred';
+	variant?: 'a' | 'b' | 'c'
 }
 
 const variants = cva(
@@ -14,11 +14,9 @@ const variants = cva(
 	{
 		variants: {
 			variant: {
-				a: 'bg-primary hover:[box-shadow:0px_0px_4px_1px_#fff2,0px_0px_32px_4px_rgba(var(--primary),0.6)]',
-				b: 'bg-accent hover:[box-shadow:0px_0px_4px_1px_#fff2,0px_0px_32px_4px_rgba(var(--blood-red),0.6)]',
+				a: 'bg-magenta hover:[box-shadow:0px_0px_4px_1px_#fff2,0px_0px_32px_4px_rgba(var(--magenta),0.6)]',
+				b: 'bg-blood-red hover:[box-shadow:0px_0px_4px_1px_#fff2,0px_0px_32px_4px_rgba(var(--blood-red),0.6)]',
 				c: 'bg-orange hover:[box-shadow:0px_0px_4px_1px_#fff2,0px_0px_32px_4px_rgba(var(--orange),0.6)]',
-				bloodred:
-					'bg-blood-red hover:[box-shadow:0px_0px_4px_1px_#fff2,0px_0px_32px_4px_rgba(var(--blood-red),0.6)]'
 			}
 		}
 	}

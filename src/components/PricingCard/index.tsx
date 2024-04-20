@@ -20,27 +20,24 @@ export interface PricingCardProps {
 	className?: string;
 }
 
-const blobVariants = cva(
-	'absolute size-32 rounded-full top-0 left-0 bg-blood-red',
-	{
-		variants: {
-			variant: {
-				a: 'blur-3xl',
-				b: 'blur-3xl',
-				c: 'blur-[80px] size-32'
-			}
+const blobVariants = cva('absolute size-32 rounded-full top-0 left-0', {
+	variants: {
+		variant: {
+			a: 'bg-magenta blur-3xl',
+			b: 'bg-blood-red blur-3xl',
+			c: 'bg-orange blur-[80px] size-32'
 		}
 	}
-);
+});
 
 const highlightVariant = cva(
-	'flex items-center gap-2 rounded-full px-snug py-2 bg-blood-red',
+	'flex items-center gap-2 rounded-full px-snug py-2',
 	{
 		variants: {
 			variant: {
-				a: '',
-				b: '',
-				c: ''
+				a: 'bg-magenta',
+				b: 'bg-blood-red',
+				c: 'bg-orange'
 			}
 		}
 	}
@@ -78,7 +75,7 @@ export const PricingCard: FC<PricingCardProps> = (props) => {
 						</h1>
 						<p className="text-xs">{props.emphasis}</p>
 					</div>
-					<GlowButton variant="bloodred" className="w-full">
+					<GlowButton variant={variant} className="w-full">
 						{props.buttonLabel}
 					</GlowButton>
 				</section>

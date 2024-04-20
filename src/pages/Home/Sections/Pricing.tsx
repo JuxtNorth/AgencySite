@@ -6,9 +6,9 @@ import { useMediaQuery } from '@/hooks';
 import { cn } from '@/lib/utils';
 
 const icons = [
-	<BoltIcon className="inline overflow-visible text-xl text-blood-red" />,
+	<BoltIcon className="inline overflow-visible text-xl text-magenta" />,
 	<GlitterIcon className="inline overflow-visible text-xl text-blood-red" />,
-	<CrownIcon className="inline overflow-visible text-xl text-blood-red" />
+	<CrownIcon className="inline overflow-visible text-xl text-orange" />
 ];
 
 export const Pricing: FC = () => {
