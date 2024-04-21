@@ -56,17 +56,17 @@ export const Scheduled: FC = () => {
 						perferendis a dignissimos placeat quae.
 					</p>
 					<div className="flex justify-center gap-4">
-						<button className="cursor-pointer rounded-full bg-surface-new px-5 py-2 font-display text-sm text-blue hover:brightness-125">
+						<button className="cursor-pointer rounded-full bg-surface px-5 py-2 font-display text-sm text-blue hover:brightness-125">
 							Button 1
 						</button>
-						<button className="cursor-pointer rounded-full bg-surface-new px-5 py-2 font-display text-sm text-blood-red hover:brightness-125">
+						<button className="cursor-pointer rounded-full bg-surface px-5 py-2 font-display text-sm text-blood-red hover:brightness-125">
 							Button 2
 						</button>
-						<button className="cursor-pointer rounded-full bg-surface-new px-5 py-2 font-display text-sm text-green hover:brightness-125">
+						<button className="cursor-pointer rounded-full bg-surface px-5 py-2 font-display text-sm text-green hover:brightness-125">
 							Button 3
 						</button>
 					</div>
-					<div className="rounded-2xl bg-surface-new p-snug py-loose">
+					<div className="rounded-2xl bg-surface p-snug py-loose">
 						<p className="mb-2 lg:mb-loose">
 							Step 2: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 							Molestias nesciunt consequatur distinctio.

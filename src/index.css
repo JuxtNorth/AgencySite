@@ -43,7 +43,7 @@ strong {
 
 :root {
 	--background: 17, 17, 17;
-	--surface: 28, 27, 36;
+	--surface: 25, 25, 25;
 	--primary: 61, 76, 245;
 	--primary-varient: 82, 73, 244;
 	--secondary: 137, 52, 235;
@@ -53,7 +53,6 @@ strong {
 	--blood-red: 217, 55, 56;
 	--green: 84, 191, 80;
 	--blue: 92, 114, 231;
-	--surface-new: 25, 25, 25;
 }
 
 body {

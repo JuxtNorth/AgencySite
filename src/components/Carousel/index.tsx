@@ -37,7 +37,7 @@ const buttonVariant = cva(
 		variants: {
 			variant: {
 				default: 'bg-blood-red',
-				mono: 'bg-surface-new hover:brightness-125 transition-[filter]'
+				mono: 'bg-surface hover:brightness-125 transition-[filter]'
 			}
 		}
 	}

@@ -22,7 +22,7 @@ export const TestimonialCard: FC<TestimonialCardProps> = (props) => {
 	return (
 		<div className="flex min-h-[32rem] min-w-0 max-w-[100rem] flex-[0_0_100%] p-loose md:px-24 lg:min-h-[30rem] lg:px-60">
 			<div
-				className="relative h-fit min-h-full w-full rounded-3xl bg-surface-new transition-[rotate] duration-300 [perspective:1000px] [transform-style:preserve-3d] [&[data-flipped='true']]:[rotate:y_180deg]"
+				className="relative h-fit min-h-full w-full rounded-3xl bg-surface transition-[rotate] duration-300 [perspective:1000px] [transform-style:preserve-3d] [&[data-flipped='true']]:[rotate:y_180deg]"
 				data-flipped={flipped}
 			>
 				<article className="absolute flex h-full w-full flex-col p-6 [backface-visibility:hidden] md:flex-row md:gap-loose md:p-loose">
@@ -75,7 +75,7 @@ export const TestimonialCard: FC<TestimonialCardProps> = (props) => {
 								</Stat>
 							</section>
 							<button
-								className="w-full rounded-full bg-surface-new py-3 font-display text-xs font-semibold brightness-125 hover:brightness-150 md:hidden md:text-sm lg:text-base xl:text-lg"
+								className="w-full rounded-full bg-surface py-3 font-display text-xs font-semibold brightness-125 hover:brightness-150 md:hidden md:text-sm lg:text-base xl:text-lg"
 								onClick={() => setFlipped(true)}
 							>
 								See Work

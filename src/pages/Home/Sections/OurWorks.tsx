@@ -81,10 +81,10 @@ export const OurWorks: FC = () => {
 							snappedIndex={(snappedIndex % 8) + 1}
 						/>
 						<div className="_stat_ mt-2 flex justify-between rounded-full py-1 text-blood-red opacity-0 duration-300">
-							<p className="rounded-lg bg-surface-new px-2 py-1 text-sm font-bold">
+							<p className="rounded-lg bg-surface px-2 py-1 text-sm font-bold">
 								Lorem Ipsum
 							</p>
-							<p className="rounded-lg bg-surface-new px-2 py-1 font-display text-sm font-bold">
+							<p className="rounded-lg bg-surface px-2 py-1 font-display text-sm font-bold">
 								<EyeIcon className="mb-[2px] inline text-white" /> 10M+
 							</p>
 						</div>

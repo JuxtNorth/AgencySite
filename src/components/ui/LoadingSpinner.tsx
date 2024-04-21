@@ -7,7 +7,7 @@ export const LoadingSpinner: FC<{ className?: string }> = ({ className }) => {
 			<svg
 				aria-hidden="true"
 				className={cn(
-					'size-12 animate-spin fill-blood-red text-surface-new',
+					'size-12 animate-spin fill-blood-red text-surface',
 					className
 				)}
 				viewBox="0 0 100 101"

@@ -51,7 +51,7 @@ export const PricingCard: FC<PricingCardProps> = (props) => {
 	return (
 		<article
 			className={cn(
-				'relative flex w-full flex-col justify-between overflow-hidden rounded-2xl bg-surface-new p-6 md:min-w-[22rem] md:p-loose',
+				'relative flex w-full flex-col justify-between overflow-hidden rounded-2xl bg-surface p-6 md:min-w-[22rem] md:p-loose',
 				props.className || '',
 				isDesktop ? '' : '_anime_generic'
 			)}

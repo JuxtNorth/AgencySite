@@ -17,7 +17,6 @@ export default {
 				'font-primary': 'rgb(var(--font-primary))',
 				muted: 'rgb(var(--muted))',
 				'blood-red': 'rgb(var(--blood-red))',
-				'surface-new': 'rgb(var(--surface-new))',
 				green: 'rgb(var(--green))',
 				blue: 'rgb(var(--blue))'
 			},

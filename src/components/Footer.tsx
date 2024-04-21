@@ -5,7 +5,7 @@ import { SocialLink } from '@/components/ui';
 
 export const Footer: FC = () => {
 	return (
-		<div className="h-fit w-full bg-surface-new">
+		<div className="h-fit w-full bg-surface">
 			<footer className="mx-auto mt-relaxed flex max-w-[100rem] justify-between p-8 md:p-16">
 				<section className="flex flex-col items-start space-y-2 md:space-y-8">
 					<div className=" md:space-y-4">
