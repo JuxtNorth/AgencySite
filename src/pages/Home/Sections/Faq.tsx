@@ -21,7 +21,7 @@ export const Faq: FC = () => {
 				</div>
 			</section>
 			<section className="px-loose pb-loose md:px-0 md:pb-0">
-				<div className="rounded-2xl bg-surface-new p-6">
+			<div className="rounded-2xl bg-surface-new p-6">
 					<h1 className="mb-2 text-4xl font-semibold">Have more questions?</h1>
 					<p className="text-lg leading-tight">
 						Schedule a 15 minute call to have all your questions addressed.

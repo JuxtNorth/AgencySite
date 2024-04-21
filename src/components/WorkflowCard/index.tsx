@@ -22,9 +22,9 @@ const shapeVariants = cva(
 	{
 		variants: {
 			aesthetics: {
-				a: 'bg-magenta [box-shadow:0px_0px_8px_4px_rgba(var(--magenta),0.5),0px_0px_9px_12px_rgba(var(--magenta),0.2)]',
+				a: 'bg-magenta [box-shadow:0px_0px_8px_4px_rgba(var(--magenta),.5),0px_0px_9px_12px_rgba(var(--magenta),.2)',
 				b: 'bg-blood-red [box-shadow:0px_0px_8px_4px_rgba(var(--blood-red),0.5),0px_0px_9px_12px_rgba(var(--blood-red),0.2)]',
-				c: 'bg-orange [box-shadow:0px_0px_8px_4px_rgba(var(--orange),0.5),0px_0px_9px_12px_rgba(var(--orange),0.2)]'
+				c: 'bg-orange [box-shadow:0px_0px_8px_4px_rgba(var(--orange),.5),0px_0px_9px_12px_rgba(var(--orange),.2)]'
 			}
 		}
 	}

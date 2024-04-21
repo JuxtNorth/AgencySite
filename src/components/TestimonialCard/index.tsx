@@ -1,18 +1,7 @@
-import { FC, ReactNode, useState } from 'react';
+import { FC, useState } from 'react';
 import { Video } from '@/components';
 import { CrossIcon, EyeLightIcon, MoneyIcon, TrendIcon } from '@/icons';
-
-const Stat: FC<{ children: ReactNode; text: string }> = ({
-	children,
-	text
-}) => {
-	return (
-		<div className="flex items-center gap-2">
-			<div className="rounded-full bg-blood-red p-2">{children}</div>
-			<p className="text-[12px] font-semibold lg:text-[16px]">{text}</p>
-		</div>
-	);
-};
+import { Stat } from './Stat';
 
 export interface TestimonialCardProps {
 	author: string;
@@ -64,7 +53,7 @@ export const TestimonialCard: FC<TestimonialCardProps> = (props) => {
 									<p className="text-sm text-muted">{props.authorOccupation}</p>
 								</div>
 							</div>
-							<div className="flex max-h-loose items-center rounded-full bg-blood-red px-snug">
+							<div className="flex max-h-loose items-center rounded-full bg-orange px-snug">
 								<p className="mt-px font-display font-bold lg:text-sm">
 									{props.authorFollowerCount}
 								</p>
@@ -75,13 +64,13 @@ export const TestimonialCard: FC<TestimonialCardProps> = (props) => {
 						</p>
 						<footer className="flex flex-col items-center justify-between gap-3 md:flex-row md:gap-0">
 							<section className="flex w-full justify-between">
-								<Stat text={props.benefitedBy.reach}>
+								<Stat text={props.benefitedBy.reach} variant='a'>
 									<TrendIcon />
 								</Stat>
-								<Stat text={props.benefitedBy.views}>
+								<Stat text={props.benefitedBy.views} variant='b'>
 									<EyeLightIcon />
 								</Stat>
-								<Stat text={props.benefitedBy.revenue}>
+								<Stat text={props.benefitedBy.revenue} variant='c'>
 									<MoneyIcon />
 								</Stat>
 							</section>
