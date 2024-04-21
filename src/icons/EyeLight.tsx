@@ -17,7 +17,7 @@ export const EyeLightIcon: FC<IconProps> = (props) => {
 				<path d="M12,7a5,5,0,1,0,5,5A5.006,5.006,0,0,0,12,7Zm0,8a3,3,0,1,1,3-3A3,3,0,0,1,12,15Z" />
 			</svg>
 			<span className="sr-only">
-				{props?.label || 'Arrow pointing to the right'}
+				{props?.label || 'Eye Icon'}
 			</span>
 		</>
 	);
