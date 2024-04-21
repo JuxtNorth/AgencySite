@@ -100,7 +100,7 @@ export const Dialog: FC<DialogProps> = (props) => {
 				</article>
 				<section className="space-y-snug">
 					<div className="grid aspect-square w-full grid-cols-1 grid-rows-1 place-items-center rounded-[2.5rem] border border-slate-600 p-snug">
-						<p className="col-start-1 row-start-1 text-center text-sm text-magenta">
+						<p className="col-start-1 row-start-1 text-center text-sm text-blue">
 							{props.stat.title}
 						</p>
 						<PieChart
@@ -108,12 +108,12 @@ export const Dialog: FC<DialogProps> = (props) => {
 							data={[
 								{
 									title: 'value',
-									color: 'rgb(var(--magenta))',
+									color: 'rgb(var(--blue))',
 									value: props.stat.value
 								},
 								{
 									title: 'container',
-									color: 'rgba(var(--magenta),0.3)',
+									color: 'rgba(var(--blue),0.3)',
 									value: 100 - props.stat.value
 								}
 							]}
@@ -130,7 +130,7 @@ export const Dialog: FC<DialogProps> = (props) => {
 					</GlowButton>
 					<GlowButton
 						variant="c"
-						className="flex w-full items-center justify-center gap-snug rounded-full bg-transparent py-snug font-display text-font-primary outline outline-1 outline-slate-600 hover:bg-orange hover:outline-0"
+						className="flex w-full items-center justify-center gap-snug rounded-full bg-transparent py-snug font-display text-font-primary outline outline-1 outline-slate-600 hover:bg-green hover:outline-0"
 						onClick={() => {
 							jumpToSection('schedule');
 							onClose();

@@ -11,11 +11,11 @@ export const Impact: FC = () => {
 			<div className="mt-loose flex-col items-center md:flex md:space-y-0">
 				<div className="mb-16 flex w-full flex-col justify-between gap-16 md:flex-row md:gap-0">
 					<div className="mx-auto text-center">
-						<h2 className="_anime_heading text-4xl font-bold text-magenta md:text-7xl">
+						<h2 className="_anime_heading text-4xl font-bold text-blue md:text-7xl">
 							<AnimatedStat target={2400000} />+
 						</h2>
 						<p className="_anime_paragraph text-sm">
-							<EyeIcon className="mr-1 inline text-magenta" />
+							<EyeIcon className="mr-1 inline text-blue" />
 							<span className="silver-moving-gradient bg-clip-text text-transparent">
 								organic views
 							</span>
@@ -34,12 +34,12 @@ export const Impact: FC = () => {
 					</div>
 				</div>
 				<div className="mx-auto text-center">
-					<h2 className="_anime_heading text-4xl font-bold text-orange md:text-7xl">
+					<h2 className="_anime_heading text-4xl font-bold text-green md:text-7xl">
 						&#36;
 						<AnimatedStat target={400000} />+
 					</h2>
 					<p className="_anime_paragraph text-sm">
-						<MoneyIcon className="mr-1 inline text-orange" />
+						<MoneyIcon className="mr-1 inline text-green" />
 						<span className="silver-moving-gradient bg-clip-text text-transparent">
 							revenue generated
 						</span>

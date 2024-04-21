@@ -4,9 +4,9 @@ import { cva } from 'class-variance-authority';
 const statIconVarients = cva('rounded-full p-2', {
 	variants: {
 		variant: {
-			a: 'bg-magenta',
+			a: 'bg-blue',
 			b: 'bg-blood-red',
-			c: 'bg-orange'
+			c: 'bg-green'
 		}
 	}
 });

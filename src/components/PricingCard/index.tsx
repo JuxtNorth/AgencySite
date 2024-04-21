@@ -23,9 +23,9 @@ export interface PricingCardProps {
 const blobVariants = cva('absolute size-32 rounded-full top-0 left-0', {
 	variants: {
 		variant: {
-			a: 'bg-magenta blur-3xl',
+			a: 'bg-blue blur-3xl',
 			b: 'bg-blood-red blur-3xl',
-			c: 'bg-orange blur-[80px] size-32'
+			c: 'bg-green blur-[80px] size-32'
 		}
 	}
 });
@@ -35,9 +35,9 @@ const highlightVariant = cva(
 	{
 		variants: {
 			variant: {
-				a: 'bg-magenta',
+				a: 'bg-blue',
 				b: 'bg-blood-red',
-				c: 'bg-orange'
+				c: 'bg-green'
 			}
 		}
 	}

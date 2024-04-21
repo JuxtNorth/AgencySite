@@ -22,9 +22,9 @@ const shapeVariants = cva(
 	{
 		variants: {
 			aesthetics: {
-				a: 'bg-magenta [box-shadow:0px_0px_8px_4px_rgba(var(--magenta),.5),0px_0px_9px_12px_rgba(var(--magenta),.2)',
+				a: 'bg-blue [box-shadow:0px_0px_8px_4px_rgba(var(--blue),.5),0px_0px_9px_12px_rgba(var(--blue),.2)',
 				b: 'bg-blood-red [box-shadow:0px_0px_8px_4px_rgba(var(--blood-red),0.5),0px_0px_9px_12px_rgba(var(--blood-red),0.2)]',
-				c: 'bg-orange [box-shadow:0px_0px_8px_4px_rgba(var(--orange),.5),0px_0px_9px_12px_rgba(var(--orange),.2)]'
+				c: 'bg-green [box-shadow:0px_0px_8px_4px_rgba(var(--green),.5),0px_0px_9px_12px_rgba(var(--green),.2)]'
 			}
 		}
 	}
@@ -33,9 +33,9 @@ const shapeVariants = cva(
 const blobVariants = cva('absolute rounded-full', {
 	variants: {
 		type: {
-			a: 'size-24 blur-[48px] bottom-0 right-0 bg-magenta',
+			a: 'size-24 blur-[48px] bottom-0 right-0 bg-blue',
 			b: 'size-36 blur-[64px] bottom-0 right-12 bg-blood-red',
-			c: 'size-24 blur-[50px] bottom-0 right-0 bg-orange'
+			c: 'size-24 blur-[50px] bottom-0 right-0 bg-green'
 		}
 	}
 });
@@ -56,9 +56,9 @@ const containerVariants = cva(
 const emphasisVariant = cva('', {
 	variants: {
 		type: {
-			a: 'text-magenta',
+			a: 'text-blue',
 			b: 'text-blood-red',
-			c: 'text-orange'
+			c: 'text-green'
 		}
 	}
 });

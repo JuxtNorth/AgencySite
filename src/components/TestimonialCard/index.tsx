@@ -53,7 +53,7 @@ export const TestimonialCard: FC<TestimonialCardProps> = (props) => {
 									<p className="text-sm text-muted">{props.authorOccupation}</p>
 								</div>
 							</div>
-							<div className="flex max-h-loose items-center rounded-full bg-orange px-snug">
+							<div className="flex max-h-loose items-center rounded-full bg-green px-snug">
 								<p className="mt-px font-display font-bold lg:text-sm">
 									{props.authorFollowerCount}
 								</p>

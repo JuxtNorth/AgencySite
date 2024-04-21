@@ -56,13 +56,13 @@ export const Scheduled: FC = () => {
 						perferendis a dignissimos placeat quae.
 					</p>
 					<div className="flex justify-center gap-4">
-						<button className="cursor-pointer rounded-full bg-surface-new px-5 py-2 font-display text-sm text-magenta hover:brightness-125">
+						<button className="cursor-pointer rounded-full bg-surface-new px-5 py-2 font-display text-sm text-blue hover:brightness-125">
 							Button 1
 						</button>
 						<button className="cursor-pointer rounded-full bg-surface-new px-5 py-2 font-display text-sm text-blood-red hover:brightness-125">
 							Button 2
 						</button>
-						<button className="cursor-pointer rounded-full bg-surface-new px-5 py-2 font-display text-sm text-orange hover:brightness-125">
+						<button className="cursor-pointer rounded-full bg-surface-new px-5 py-2 font-display text-sm text-green hover:brightness-125">
 							Button 3
 						</button>
 					</div>
@@ -84,7 +84,7 @@ export const Scheduled: FC = () => {
 										referrerPolicy="strict-origin-when-cross-origin"
 										allowFullScreen
 									></iframe>
-									<p className="text-magenta">{title}</p>
+									<p className="text-blue">{title}</p>
 								</div>
 							))}
 						</div>
