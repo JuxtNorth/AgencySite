@@ -64,13 +64,13 @@ export const TestimonialCard: FC<TestimonialCardProps> = (props) => {
 						</p>
 						<footer className="flex flex-col items-center justify-between gap-3 md:flex-row md:gap-0">
 							<section className="flex w-full justify-between">
-								<Stat text={props.benefitedBy.reach} variant='a'>
+								<Stat text={props.benefitedBy.reach} variant="a">
 									<TrendIcon />
 								</Stat>
-								<Stat text={props.benefitedBy.views} variant='b'>
+								<Stat text={props.benefitedBy.views} variant="b">
 									<EyeLightIcon />
 								</Stat>
-								<Stat text={props.benefitedBy.revenue} variant='c'>
+								<Stat text={props.benefitedBy.revenue} variant="c">
 									<MoneyIcon />
 								</Stat>
 							</section>

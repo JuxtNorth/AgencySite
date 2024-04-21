@@ -17,9 +17,7 @@ export interface StatProps {
 	variant?: 'a' | 'b' | 'c';
 }
 
-export const Stat: FC<StatProps> = ({
-	children, text, variant = 'a'
-}) => {
+export const Stat: FC<StatProps> = ({ children, text, variant = 'a' }) => {
 	return (
 		<div className="flex items-center gap-2">
 			<div className={statIconVarients({ variant })}>{children}</div>

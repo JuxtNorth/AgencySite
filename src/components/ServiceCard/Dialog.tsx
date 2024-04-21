@@ -132,7 +132,7 @@ export const Dialog: FC<DialogProps> = (props) => {
 						variant="c"
 						className="flex w-full items-center justify-center gap-snug rounded-full bg-transparent py-snug font-display text-font-primary outline outline-1 outline-slate-600 hover:bg-orange hover:outline-0"
 						onClick={() => {
-							jumpToSection("schedule");
+							jumpToSection('schedule');
 							onClose();
 						}}
 					>

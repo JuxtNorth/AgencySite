@@ -84,7 +84,7 @@ export const Scheduled: FC = () => {
 										referrerPolicy="strict-origin-when-cross-origin"
 										allowFullScreen
 									></iframe>
-									<p className='text-magenta'>{title}</p>
+									<p className="text-magenta">{title}</p>
 								</div>
 							))}
 						</div>
