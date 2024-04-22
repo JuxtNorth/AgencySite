@@ -100,7 +100,7 @@ export const Dialog: FC<DialogProps> = (props) => {
 				</article>
 				<section className="space-y-snug">
 					<div className="grid aspect-square w-full grid-cols-1 grid-rows-1 place-items-center rounded-[2.5rem] border border-slate-600 p-snug">
-						<p className="col-start-1 row-start-1 text-center text-sm text-blue">
+						<p className="col-start-1 row-start-1 text-center text-sm text-[#9837F1]">
 							{props.stat.title}
 						</p>
 						<PieChart
@@ -108,12 +108,12 @@ export const Dialog: FC<DialogProps> = (props) => {
 							data={[
 								{
 									title: 'value',
-									color: 'rgb(var(--blue))',
+									color: '#9837F1',
 									value: props.stat.value
 								},
 								{
 									title: 'container',
-									color: 'rgba(var(--blue),0.3)',
+									color: '#9837F149',
 									value: 100 - props.stat.value
 								}
 							]}
@@ -128,9 +128,8 @@ export const Dialog: FC<DialogProps> = (props) => {
 						<GiftIcon className="text-xl" />
 						Get your Gift
 					</GlowButton>
-					<GlowButton
-						variant="c"
-						className="flex w-full items-center justify-center gap-snug rounded-full bg-transparent py-snug font-display text-font-primary outline outline-1 outline-slate-600 hover:bg-green hover:outline-0"
+					<button
+						className="flex w-full items-center justify-center gap-snug rounded-full py-snug font-display text-font-primary bg-blue"
 						onClick={() => {
 							jumpToSection('schedule');
 							onClose();
@@ -138,7 +137,7 @@ export const Dialog: FC<DialogProps> = (props) => {
 					>
 						<ScheduleIcon className="text-xl" />
 						Book a call
-					</GlowButton>
+					</button>
 				</section>
 			</div>
 		</dialog>
