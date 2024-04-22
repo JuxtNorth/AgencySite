@@ -36,7 +36,7 @@ export const Faq: FC = () => {
 					/>
 					<a
 						href="#"
-						className="flex w-full items-center justify-center rounded-full bg-blood-red py-snug font-display text-[1.3rem] font-semibold"
+						className="flex w-full items-center justify-center rounded-full bg-blue py-snug font-display text-[1.3rem] font-semibold"
 					>
 						Book a Call
 					</a>
