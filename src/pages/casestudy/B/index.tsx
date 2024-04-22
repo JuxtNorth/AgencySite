@@ -68,7 +68,7 @@ export const B: FC = () => {
 	return (
 		<>
 			<Nav />
-			<main className="mx-auto mt-16 max-w-[100rem] space-y-loose p-snug md:p-loose">
+			<main className="mx-auto mt-16 max-w-[100rem] space-y-loose">
 				<Header {...data.header} />
 				<Mission {...data.mission} />
 				<Outcome {...data.outcome} />
