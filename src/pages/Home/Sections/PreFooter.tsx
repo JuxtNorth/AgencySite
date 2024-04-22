@@ -17,8 +17,8 @@ export const PreFooter: FC = () => {
 				</span>{' '}
 				today.
 			</p>
-			<button className="group relative overflow-hidden rounded-2xl px-loose py-snug font-display text-xl outline outline-1 outline-[#667] before:absolute before:-bottom-5 before:left-[50%] before:-z-[1] before:block before:size-5 before:-translate-x-[50%] before:rounded-full before:bg-blood-red before:transition-transform before:duration-500 before:content-[''] hover:outline-surface hover:before:scale-[15]">
-				<GlitterIcon className="mr-2 inline text-blue transition-colors group-hover:text-font-primary" />
+			<button className="relative overflow-hidden rounded-2xl px-loose py-snug font-display text-xl after:absolute after:-bottom-5 after:left-[50%] after:-z-[1] after:block after:size-5 after:-translate-x-[50%] after:rounded-full after:bg-green after:transition-transform after:duration-500 after:content-[''] hover:after:scale-[15] before:content-[''] before:size-52 before:-z-[1] before:bg-blue  before:absolute before:top-0 before:left-0">
+				<GlitterIcon className="mr-2 inline transition-colors" />
 				Start now
 			</button>
 		</section>
