@@ -3,7 +3,7 @@ import { InlineWidget, useCalendlyEventListener } from 'react-calendly';
 
 export const ScheduleCalendar: FC = () => {
 	useCalendlyEventListener({
-		onEventScheduled: (e) => console.log(e.data.payload),
+		onEventScheduled: (e) => console.log(e.data.payload)
 	});
 	return (
 		<section className="overflow-hidden pt-loose">

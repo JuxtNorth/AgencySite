@@ -129,7 +129,7 @@ export const Dialog: FC<DialogProps> = (props) => {
 						Get your Gift
 					</GlowButton>
 					<button
-						className="flex w-full items-center justify-center gap-snug rounded-full py-snug font-display text-font-primary bg-blue"
+						className="flex w-full items-center justify-center gap-snug rounded-full bg-blue py-snug font-display text-font-primary"
 						onClick={() => {
 							jumpToSection('schedule');
 							onClose();

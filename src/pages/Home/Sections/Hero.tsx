@@ -101,8 +101,8 @@ export const Hero: FC = () => {
 								ref={para}
 								className="ml-4 mt-2.5 text-[clamp(1rem,1.2vw,1.5rem)] leading-[150%]"
 							>
-								<span className='text-blue'>Subscription here</span> makes brands go <br /> viral there, grab your
-								seats.
+								<span className="text-blue">Subscription here</span> makes
+								brands go <br /> viral there, grab your seats.
 							</p>
 						</div>
 					</div>
@@ -114,7 +114,8 @@ export const Hero: FC = () => {
 					</h1>
 				</div>
 				<p className="mx-auto mt-2 w-[80%] text-center text-xs lg:hidden">
-					<span className='text-blue'>Subscription here</span> makes brands go viral there, grab your seats.
+					<span className="text-blue">Subscription here</span> makes brands go
+					viral there, grab your seats.
 				</p>
 			</div>
 			<HashLink

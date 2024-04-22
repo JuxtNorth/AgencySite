@@ -30,9 +30,7 @@ export const PolicyPage: FC<{ path: string }> = ({ path }) => {
 								Last Updated on {data?.lastUpdated}
 							</em>
 						</div>
-						<p className="!mb-16 text-[1.1rem]">
-							{data?.subTitle}
-						</p>
+						<p className="!mb-16 text-[1.1rem]">{data?.subTitle}</p>
 						<div className="space-y-4 lg:px-12">
 							{data?.content.map((text) => <p>{HtmlParser(text)}</p>)}
 						</div>
