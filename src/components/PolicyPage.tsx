@@ -33,7 +33,7 @@ export const PolicyPage: FC<{ path: string }> = ({ path }) => {
 						<p className="!mb-16 text-[1.1rem]">
 							{data?.subTitle}
 						</p>
-						<div className="space-y-4 text-[#ddd] lg:px-12">
+						<div className="space-y-4 lg:px-12">
 							{data?.content.map((text) => <p>{HtmlParser(text)}</p>)}
 						</div>
 					</main>
