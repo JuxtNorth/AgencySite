@@ -22,7 +22,7 @@ const shapeVariants = cva(
 	{
 		variants: {
 			aesthetics: {
-				a: 'bg-blue [box-shadow:0px_0px_8px_4px_rgba(var(--blue),.5),0px_0px_9px_12px_rgba(var(--blue),.2)',
+				a: 'bg-blue [box-shadow:0px_0px_8px_4px_rgba(var(--blue),.5),0px_0px_9px_12px_rgba(var(--blue),.2)]',
 				b: 'bg-blood-red [box-shadow:0px_0px_8px_4px_rgba(var(--blood-red),0.5),0px_0px_9px_12px_rgba(var(--blood-red),0.2)]',
 				c: 'bg-green [box-shadow:0px_0px_8px_4px_rgba(var(--green),.5),0px_0px_9px_12px_rgba(var(--green),.2)]'
 			}
