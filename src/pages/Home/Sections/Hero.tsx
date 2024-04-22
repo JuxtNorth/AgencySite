@@ -101,7 +101,7 @@ export const Hero: FC = () => {
 								ref={para}
 								className="ml-4 mt-2.5 text-[clamp(1rem,1.2vw,1.5rem)] leading-[150%]"
 							>
-								Subscription here makes brands go <br /> viral there, grab your
+								<span className='text-blue'>Subscription here</span> makes brands go <br /> viral there, grab your
 								seats.
 							</p>
 						</div>
@@ -114,12 +114,12 @@ export const Hero: FC = () => {
 					</h1>
 				</div>
 				<p className="mx-auto mt-2 w-[80%] text-center text-xs lg:hidden">
-					Subscription here makes brands go viral there, grab your seats.
+					<span className='text-blue'>Subscription here</span> makes brands go viral there, grab your seats.
 				</p>
 			</div>
 			<HashLink
 				ref={button}
-				className="relative z-10 mt-16 cursor-pointer rounded-lg bg-blood-red px-6 py-4 text-xs"
+				className="relative z-10 mt-16 cursor-pointer rounded-lg bg-blue px-6 py-4 text-xs"
 				to="#schedule"
 			>
 				<GlitterIcon className="mr-2 inline text-sm" />
