@@ -17,13 +17,13 @@ export const Footer: FC = () => {
 						</p>
 						<ul className="flex gap-2">
 							<SocialLink to="#">
-								<LinkedInIcon />
+								<LinkedInIcon className='text-[#00a0dc]'/>
 							</SocialLink>
 							<SocialLink to="#">
 								<XIcon />
 							</SocialLink>
 							<SocialLink to="#">
-								<InstagramIcon />
+								<InstagramIcon className='text-rose-500' />
 							</SocialLink>
 						</ul>
 					</div>
