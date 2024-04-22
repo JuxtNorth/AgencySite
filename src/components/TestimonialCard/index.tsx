@@ -47,7 +47,7 @@ export const TestimonialCard: FC<TestimonialCardProps> = (props) => {
 									/>
 								</div>
 								<div className="flex flex-col text-left leading-tight">
-									<h1 className="text-xl font-bold text-blood-red">
+									<h1 className="text-xl font-bold text-blue">
 										{props.author}
 									</h1>
 									<p className="text-sm text-muted">{props.authorOccupation}</p>
