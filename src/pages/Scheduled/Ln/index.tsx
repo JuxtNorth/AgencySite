@@ -29,7 +29,7 @@ const embedSRCs = [
 	}
 ];
 
-export const Scheduled: FC = () => {
+export const Ln: FC = () => {
 	return (
 		<>
 			<Nav />

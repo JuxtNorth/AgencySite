@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home } from './Home';
-import { Scheduled } from './Scheduled';
+import { Ig, Ln  } from './Scheduled';
 import { A, B, C } from './casestudy';
 import ScrollToTop from '@/lib/ScrollToTop';
 import { PolicyPage } from '@/components';
@@ -17,7 +17,10 @@ export const Router: FC = () => {
 					<Route path="b" element={<B />} />
 					<Route path="c" element={<C />} />
 				</Route>
-				<Route path="/scheduled" element={<Scheduled />} />
+				<Route path="/scheduled">
+					<Route path="ig" element={<Ig />} />
+					<Route path="ln" element={<Ln />}/>
+				</Route>
 				<Route path="/" element={<Home />} />
 				<Route path="/privacy" element={<PolicyPage path="privacy" />} />
 				<Route path="/terms" element={<PolicyPage path="terms" />} />

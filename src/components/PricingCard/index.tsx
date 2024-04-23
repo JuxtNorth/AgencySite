@@ -5,6 +5,7 @@ import { cva } from 'class-variance-authority';
 import { GlowButton } from '@/components/ui';
 import { cn } from '@/lib/utils';
 import { useMediaQuery } from '@/hooks';
+import { useNavigate } from 'react-router-dom';
 
 export interface PricingCardProps {
 	name: string;
@@ -18,6 +19,7 @@ export interface PricingCardProps {
 	recommended?: boolean;
 	variant?: 'a' | 'b' | 'c';
 	className?: string;
+	linkTo: string;
 }
 
 const blobVariants = cva('absolute size-32 rounded-full top-0 left-0', {
@@ -44,6 +46,8 @@ const highlightVariant = cva(
 );
 
 export const PricingCard: FC<PricingCardProps> = (props) => {
+	const navigate = useNavigate();
+
 	const { match: isDesktop } = useMediaQuery();
 
 	const { variant = 'a' } = props;
@@ -75,7 +79,9 @@ export const PricingCard: FC<PricingCardProps> = (props) => {
 						</h1>
 						<p className="text-xs">{props.emphasis}</p>
 					</div>
-					<GlowButton variant={variant} className="w-full">
+					<GlowButton variant={variant} className="w-full" onClick={() => {
+						navigate(props.linkTo)
+					}}>
 						{props.buttonLabel}
 					</GlowButton>
 				</section>

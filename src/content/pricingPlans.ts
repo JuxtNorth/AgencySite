@@ -19,7 +19,8 @@ export const pricingPlans: Omit<PricingCardProps, 'children'>[] = [
 			'Monthly growth reports',
 			'Pause or cancel anytime'
 		],
-		bestFor: 'Built for LinkedIn maverick'
+		bestFor: 'Built for LinkedIn maverick',
+		linkTo: '/scheduled/ln'
 	},
 	{
 		name: 'Virality Assistant',
@@ -39,7 +40,8 @@ export const pricingPlans: Omit<PricingCardProps, 'children'>[] = [
 			'Pause or cancel anytime'
 		],
 		bestFor: 'Tailored to increase reach of your brand.',
-		recommended: true
+		recommended: true,
+		linkTo: '/scheduled/ig'
 	},
 	{
 		name: 'Growth Partner',
@@ -54,6 +56,7 @@ export const pricingPlans: Omit<PricingCardProps, 'children'>[] = [
 			'Funnel building, VSL scripting and appointment setting',
 			'Automation Setup'
 		],
-		bestFor: 'Best choice for business growth.'
+		bestFor: 'Best choice for business growth.',
+		linkTo: '/scheduled/ig'
 	}
 ];
