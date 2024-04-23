@@ -100,7 +100,7 @@ export const Dialog: FC<DialogProps> = (props) => {
 				</article>
 				<section className="space-y-snug">
 					<div className="grid aspect-square w-full grid-cols-1 grid-rows-1 place-items-center rounded-[2.5rem] border border-slate-600 p-snug">
-						<p className="col-start-1 row-start-1 text-center text-sm text-[#9837F1]">
+						<p className="col-start-1 row-start-1 text-center text-sm text-green">
 							{props.stat.title}
 						</p>
 						<PieChart
@@ -108,12 +108,12 @@ export const Dialog: FC<DialogProps> = (props) => {
 							data={[
 								{
 									title: 'value',
-									color: '#9837F1',
+									color: 'rgb(var(--green))',
 									value: props.stat.value
 								},
 								{
 									title: 'container',
-									color: '#9837F149',
+									color: 'rgba(var(--green), 0.2)',
 									value: 100 - props.stat.value
 								}
 							]}
