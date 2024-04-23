@@ -63,7 +63,7 @@ export const PricingCard: FC<PricingCardProps> = (props) => {
 			<div className={blobVariants({ variant })} />
 			<div className="z-[1]">
 				{props.recommended && (
-					<span className="absolute right-0 top-0 rounded-bl-2xl bg-rose-200/60 px-snug py-2 text-[13px] ">
+					<span className="absolute right-0 top-0 rounded-bl-2xl bg-rose-200/60 px-snug py-2 text-[13px]">
 						Recommended
 					</span>
 				)}

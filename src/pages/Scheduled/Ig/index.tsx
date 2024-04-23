@@ -95,18 +95,9 @@ export const Ig: FC = () => {
 						</h1>
 						<div className="grid grid-flow-row gap-loose md:grid-cols-2 lg:grid-cols-3">
 							{/* Replace with images, preferably store the src's and alt atribs in an array and load it here with the same classNames */}
-							<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400 object-cover"></div>
-							<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400 object-cover"></div>
-							<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400 object-cover"></div>
-							<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400 object-cover"></div>
-							<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400 object-cover"></div>
-							<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400 object-cover"></div>
-							<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400 object-cover"></div>
-							<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400 object-cover"></div>
-							<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400 object-cover"></div>
-							<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400 object-cover"></div>
-							<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400 object-cover"></div>
-							<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400 object-cover"></div>
+							{new Array(12).fill(0).map(() => (
+								<div className="aspect-[4/3] w-full rounded-2xl bg-rose-400 object-cover" />
+							))}
 						</div>
 					</div>
 				</section>
@@ -114,4 +105,4 @@ export const Ig: FC = () => {
 			<Footer />
 		</>
 	);
-};
+}
