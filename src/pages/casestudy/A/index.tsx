@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { Header, Mission, Outcome, Results } from '../Sections';
 import { ScheduleCalendar } from '@/pages/Home/Sections';
-import { Footer, Nav } from '@/components';
+import { Footer, Nav, PreFooter } from '@/components';
 
 const data = {
 	header: {
@@ -74,6 +74,7 @@ export const A: FC = () => {
 				<Outcome {...data.outcome} />
 				<Results {...data.results} />
 				<ScheduleCalendar />
+				<PreFooter />
 			</main>
 			<Footer />
 		</>
