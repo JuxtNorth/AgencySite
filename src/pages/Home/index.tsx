@@ -12,10 +12,9 @@ import {
 	MembershipPerks,
 	Pricing,
 	Faq,
-	ScheduleCalendar,
-	PreFooter
+	ScheduleCalendar
 } from './Sections';
-import { Nav, Footer /* PageLoader */ } from '@/components';
+import { Nav, Footer, PreFooter /* PageLoader */ } from '@/components';
 import { GlowyBlob } from '@/components/ui';
 import { useAnimation } from '@/hooks/useAnimation';
 
