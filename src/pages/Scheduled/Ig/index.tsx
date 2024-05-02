@@ -105,4 +105,4 @@ export const Ig: FC = () => {
 			<Footer />
 		</>
 	);
-}
+};

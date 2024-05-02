@@ -15,7 +15,7 @@ export const Pricing: FC = () => {
 	const { match: isDesktop } = useMediaQuery();
 
 	return (
-		<section className="mx-auto max-w-[92rem] overflow-hidden p-snug md:p-loose mt-loose md:mt-0">
+		<section className="mx-auto mt-loose max-w-[92rem] overflow-hidden p-snug md:mt-0 md:p-loose">
 			<div className="mx-auto w-72 space-y-tight pb-12 text-center md:w-[48rem]">
 				<h1
 					id="pricing"

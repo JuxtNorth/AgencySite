@@ -38,22 +38,25 @@ export const Nav: FC = () => {
 				<div className="flex items-center gap-2 ">
 					<menu className="mr-loose hidden gap-snug text-sm lg:flex">
 						<li>
-							<HashLink className="hover:underline font-bold" to="/#works">
+							<HashLink className="font-bold hover:underline" to="/#works">
 								Our Work
 							</HashLink>
 						</li>
 						<li>
-							<HashLink className="hover:underline font-bold" to="/#workflow">
+							<HashLink className="font-bold hover:underline" to="/#workflow">
 								Workflow
 							</HashLink>
 						</li>
 						<li>
-							<HashLink className="hover:underline font-bold" to="/#testimonials">
+							<HashLink
+								className="font-bold hover:underline"
+								to="/#testimonials"
+							>
 								Reviews
 							</HashLink>
 						</li>
 						<li>
-							<HashLink className="hover:underline font-bold" to="/#services">
+							<HashLink className="font-bold hover:underline" to="/#services">
 								Services
 							</HashLink>
 						</li>

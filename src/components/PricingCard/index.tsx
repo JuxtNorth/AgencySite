@@ -79,9 +79,13 @@ export const PricingCard: FC<PricingCardProps> = (props) => {
 						</h1>
 						<p className="text-xs">{props.emphasis}</p>
 					</div>
-					<GlowButton variant={variant} className="w-full" onClick={() => {
-						navigate(props.linkTo)
-					}}>
+					<GlowButton
+						variant={variant}
+						className="w-full"
+						onClick={() => {
+							navigate(props.linkTo);
+						}}
+					>
 						{props.buttonLabel}
 					</GlowButton>
 				</section>

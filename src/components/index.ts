@@ -13,4 +13,4 @@ export * from './ui/Video';
 export * from './PageLoader';
 export * from './PolicyPage';
 export * from './CaseStudyLink';
-export * from "./PreFooter";
+export * from './PreFooter';
