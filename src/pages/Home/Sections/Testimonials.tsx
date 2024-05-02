@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import { Carousel, TestimonialCard } from '@/components';
 import { testimonials } from '@/content';
+import AutoPlay from 'embla-carousel-autoplay';
 
 export const Testimonials: FC = () => {
 	return (
@@ -11,7 +12,7 @@ export const Testimonials: FC = () => {
 			>
 				Client Reviews
 			</h1>
-			<Carousel buttonStyle="mono" buttonXPosition="center">
+			<Carousel buttonStyle="mono" buttonXPosition="center" plugins={[ AutoPlay({ duration: 1200, stopOnInteraction: true }) ]}>
 				{testimonials.map((props, index) => (
 					<TestimonialCard {...props} index={index + 1} />
 				))}
