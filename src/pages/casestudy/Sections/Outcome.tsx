@@ -1,5 +1,14 @@
-import { StarIcon } from '@/icons';
 import { FC } from 'react';
+import { StarIcon } from '@/icons';
+import { highlightVariant } from '@/lib/highlightVariant';
+import { VariantProps } from 'class-variance-authority';
+import { cn } from '@/lib/utils';
+
+function getVariant(index: number) {
+	return 'abcefd'[index % 6] as VariantProps<
+		typeof highlightVariant
+	>['variant'];
+}
 
 export interface OutcomeProps {
 	contentBlock1: string;
@@ -18,7 +27,12 @@ export const Outcome: FC<OutcomeProps> = (props) => {
 			<ul className="space-y-3 pl-2">
 				{props.list.map((content, index) => (
 					<li key={index}>
-						<StarIcon className="mb-1 mr-2 inline overflow-visible text-blood-red" />
+						<StarIcon
+							className={cn(
+								'mb-1 mr-2 inline overflow-visible',
+								highlightVariant({ variant: getVariant(index) })
+							)}
+						/>
 						{content}
 					</li>
 				))}

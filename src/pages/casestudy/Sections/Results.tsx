@@ -1,8 +1,15 @@
+import { cn } from '@/lib/utils';
+import { highlightVariant } from '@/lib/highlightVariant';
+import { VariantProps } from 'class-variance-authority';
 import { FC } from 'react';
 
 export interface ResultProps {
 	highlights: string[];
 	images: Array<{ src: string; alt: string }>;
+}
+
+function getVariant(index: number) {
+	return 'abcdef'[index % 6] as VariantProps<typeof highlightVariant>["variant"];
 }
 
 export const Results: FC<ResultProps> = (props) => {
@@ -18,7 +25,14 @@ export const Results: FC<ResultProps> = (props) => {
 							key={index}
 							className="flex h-24 items-center justify-center rounded-2xl border border-gray-500 bg-surface"
 						>
-							<p className="text-[20px] font-semibold text-blood-red">{text}</p>
+							<p
+								className={cn(
+									'text-[20px] font-semibold',
+									highlightVariant({ variant: getVariant(index) })
+								)}
+							>
+								{text}
+							</p>
 						</div>
 					))}
 				</div>
