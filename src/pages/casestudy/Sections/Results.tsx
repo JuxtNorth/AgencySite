@@ -9,7 +9,9 @@ export interface ResultProps {
 }
 
 function getVariant(index: number) {
-	return 'abcdef'[index % 6] as VariantProps<typeof highlightVariant>["variant"];
+	return 'abcdef'[index % 6] as VariantProps<
+		typeof highlightVariant
+	>['variant'];
 }
 
 export const Results: FC<ResultProps> = (props) => {

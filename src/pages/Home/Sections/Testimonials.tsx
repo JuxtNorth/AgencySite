@@ -12,7 +12,11 @@ export const Testimonials: FC = () => {
 			>
 				Client Reviews
 			</h1>
-			<Carousel buttonStyle="mono" buttonXPosition="center" plugins={[ AutoPlay({ duration: 1200, stopOnInteraction: true }) ]}>
+			<Carousel
+				buttonStyle="mono"
+				buttonXPosition="center"
+				plugins={[AutoPlay({ duration: 1200, stopOnInteraction: true })]}
+			>
 				{testimonials.map((props, index) => (
 					<TestimonialCard {...props} index={index + 1} />
 				))}
